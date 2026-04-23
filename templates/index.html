@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>watch-go.com Dashboard</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="site-header">
+  <h1>watch-go.com Dashboard</h1>
+  <p class="tagline">Wear Beauty. Live Smart.</p>
+</header>
+
+<section class="summary">
+  <span class="summary-item">총 <strong>{{total}}</strong>개 앱</span>
+  <span class="summary-item">마지막 업데이트 <strong>{{built_at_display}}</strong></span>
+  <span class="summary-item summary-ok">{{succeeded}} ok</span>
+  <span class="summary-item summary-no-docs">{{no_docs}} no docs</span>
+  <span class="summary-item summary-failed">{{failed}} failed</span>
+</section>
+
+<nav class="filters" data-filter-nav>
+  <button class="filter active" data-filter="all">전체</button>
+  <button class="filter" data-filter="watchface">Watch Face</button>
+  <button class="filter" data-filter="app">App</button>
+</nav>
+
+<main class="grid">
+{{cards}}
+</main>
+
+<footer class="site-footer">
+  <p>watch-go.com Dashboard — 공개 정보 기반 대시보드</p>
+  <p>빌드 시각: {{built_at_display}}</p>
+</footer>
+
+<script>
+  document.querySelectorAll('[data-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.card').forEach(card => {
+        card.hidden = f !== 'all' && card.dataset.category !== f;
+      });
+    });
+  });
+</script>
+</body>
+</html>

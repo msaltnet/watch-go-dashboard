@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{name}} — watch-go Dashboard</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-header">
+  <p><a href="../index.html">← Dashboard</a></p>
+  <h1>{{name}}</h1>
+  <p class="identity">{{identity}}</p>
+  <ul class="app-links">
+    <li><strong>번호:</strong> #{{id}}</li>
+    <li><strong>패키지:</strong> <code>{{package}}</code></li>
+    <li><strong>랜딩:</strong> <a href="{{landing}}">{{landing}}</a></li>
+    <li><strong>Repo:</strong> <a href="https://github.com/{{repo}}">{{repo}}</a></li>
+  </ul>
+  {{status_badge}}
+</header>
+
+<section class="detail-section">
+  <h2>소개</h2>
+  {{overview_block}}
+</section>
+
+<section class="detail-section">
+  <h2>업데이트</h2>
+  {{updates_block}}
+</section>
+
+<footer class="site-footer">
+  <p>빌드 시각: {{built_at_display}}</p>
+</footer>
+</body>
+</html>
