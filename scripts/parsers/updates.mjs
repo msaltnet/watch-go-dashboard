@@ -1,6 +1,6 @@
 import { marked } from 'marked';
 
-const HEADER_RE = /^##\s+(v[^\s]+)\s*[—–-]+\s*(\d{4}-\d{2}-\d{2})\s*$/;
+const HEADER_RE = /^##\s+(v\S+)\s*[—–-]+\s*(\d{4}-\d{2}-\d{2})\s*$/;
 
 export function parseUpdates(markdown) {
   const lines = markdown.split(/\r?\n/);
@@ -26,9 +26,9 @@ export function parseUpdates(markdown) {
   const parsed = sections.map(s => ({
     version: s.version,
     date: s.date,
-    items_html: marked.parse(s.body.join('\n').trim() || ''),
+    items_html: marked.parse(s.body.join('\n').trim()),
   }));
 
-  parsed.sort((a, b) => b.date.localeCompare(a.date));
+  parsed.sort((a, b) => b.date.localeCompare(a.date) || b.version.localeCompare(a.version, undefined, { numeric: true }));
   return parsed;
 }

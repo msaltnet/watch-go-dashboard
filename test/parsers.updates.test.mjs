@@ -37,6 +37,19 @@ test('parses multiple versions in reverse chronological order (newest first)', (
   assert.equal(result[1].version, 'v1.0.0');
 });
 
+test('orders same-date releases by version descending', () => {
+  const md = `## v1.0.0 — 2026-04-23
+- first
+
+## v1.0.1 — 2026-04-23
+- hotfix
+`;
+  const result = parseUpdates(md);
+  assert.equal(result.length, 2);
+  assert.equal(result[0].version, 'v1.0.1');
+  assert.equal(result[1].version, 'v1.0.0');
+});
+
 test('skips headers without a valid date', () => {
   const md = `## v1.0.0 — coming soon
 - 준비중
