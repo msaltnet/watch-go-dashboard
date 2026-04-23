@@ -9,9 +9,8 @@ function findPrevious(previous, meta) {
 export function mergeFetchResults({ previous, fresh, builtAt }) {
   const total = fresh.length;
   const succeededCount = fresh.filter(r => r.status === 'ok').length;
-  const failedCount = fresh.filter(r => r.status === 'fetch_failed').length;
-  const nonFailedCount = total - failedCount;
-  if (nonFailedCount === 0 && total > 1) {
+  const hasPrevious = previous.apps && previous.apps.length > 0;
+  if (succeededCount === 0 && (total > 1 || !hasPrevious)) {
     throw new Error('all apps failed — refusing to overwrite previous data');
   }
 

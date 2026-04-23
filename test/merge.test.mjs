@@ -53,8 +53,8 @@ test('fetch_failed keeps previous data but updates status', () => {
   assert.equal(merged.stats.failed, 1);
 });
 
-test('no_docs status records app with null doc fields', () => {
-  const previous = { apps: [] };
+test('no_docs status records app when previous data exists', () => {
+  const previous = { apps: [{ ...appMeta, fetch_status: 'ok', overview_html: '<p>old</p>', updates: [] }] };
   const fresh = [{ meta: appMeta, status: 'no_docs' }];
   const merged = mergeFetchResults({ previous, fresh, builtAt: '2026-04-23T00:00:00+09:00' });
 
@@ -69,6 +69,15 @@ test('throws when all apps fail (prevents overwriting previous data)', () => {
     { meta: appMeta, status: 'fetch_failed' },
     { meta: { ...appMeta, id: 200 }, status: 'fetch_failed' },
   ];
+  assert.throws(
+    () => mergeFetchResults({ previous: { apps: [] }, fresh, builtAt: '2026-04-23T00:00:00+09:00' }),
+    /all apps failed/i
+  );
+});
+
+test('throws when all apps are no_docs (no successes)', () => {
+  const appMeta2 = { id: 1, name: 'A', identity: 'a', package: 'p', landing: 'l', repo: 'r' };
+  const fresh = [{ meta: appMeta2, status: 'no_docs' }];
   assert.throws(
     () => mergeFetchResults({ previous: { apps: [] }, fresh, builtAt: '2026-04-23T00:00:00+09:00' }),
     /all apps failed/i
