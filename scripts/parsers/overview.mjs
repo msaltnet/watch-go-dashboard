@@ -6,17 +6,14 @@ export function parseOverview(markdown, repo, branch = 'main', subdir = null) {
   const rawBase = `https://raw.githubusercontent.com/${repo}/${branch}/${docsBase}`;
 
   const renderer = new marked.Renderer();
+  const origImage = renderer.image.bind(renderer);
   renderer.image = ({ href, title, text }) => {
-    if (href && !/^https?:\/\//.test(href) && !href.startsWith('/')) {
+    const isAbsolute = /^([a-z][a-z0-9+.-]*:|\/\/|\/|#)/i.test(href);
+    if (href && !isAbsolute) {
       const cleaned = href.replace(/^\.\//, '');
       href = `${rawBase}/${cleaned}`;
     }
-    let out = `<img src="${href}" alt="${text}"`;
-    if (title) {
-      out += ` title="${title}"`;
-    }
-    out += '>';
-    return out;
+    return origImage({ href, title, text });
   };
 
   const rawHtml = marked.parse(markdown, { renderer });

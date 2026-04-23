@@ -48,3 +48,13 @@ test('respects docs_subdir when rewriting image paths', () => {
     /msaltnet\/sample-app\/main\/docs\/clean\/images\/x\.png/
   );
 });
+
+test('does not rewrite protocol-relative URLs', () => {
+  const html = parseOverview('![x](//cdn.example.com/x.png)', REPO, BRANCH);
+  assert.match(html, /src="\/\/cdn\.example\.com\/x\.png"/);
+});
+
+test('does not rewrite data URIs or fragment-only references', () => {
+  const dataUri = parseOverview('![x](data:image/png;base64,AAAA)', REPO, BRANCH);
+  assert.match(dataUri, /src="data:image\/png;base64,AAAA"/);
+});
