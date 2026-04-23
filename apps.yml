@@ -1,0 +1,129 @@
+apps:
+  - id: 100
+    name: "My Photo Watch Face: watch-go"
+    identity: "내 사진을 워치페이스로 — 손목 위에 나만의 얼굴을"
+    package: "com.watch_go.myphotowatchface"
+    landing: "https://watch-go.com/100"
+    repo: "msaltnet/MyPhotoWatchFace"
+
+  - id: 102
+    variant: "clean"
+    name: "My Photo Watch Face: Clean"
+    identity: "깔끔한 레이아웃으로 내 사진을 담은 미니멀 워치페이스"
+    package: "com.watch_go.new_my_photo_watch_face"
+    landing: "https://watch-go.com/102"
+    repo: "msaltnet/wff-watch-face"
+    docs_subdir: "clean"
+
+  - id: 102
+    variant: "thin"
+    name: "My Photo Watch Face: Thin"
+    identity: "얇고 세련된 라인으로 완성하는 내 사진 워치페이스"
+    package: "com.watch_go.new_my_photo_watch_face_thin"
+    landing: "https://watch-go.com/102"
+    repo: "msaltnet/wff-watch-face"
+    docs_subdir: "thin"
+
+  - id: 102
+    variant: "cute"
+    name: "My Photo Watch Face: Cute"
+    identity: "귀엽고 사랑스러운 감성의 내 사진 워치페이스"
+    package: "com.watch_go.new_my_photo_watch_face_cute"
+    landing: "https://watch-go.com/102"
+    repo: "msaltnet/wff-watch-face"
+    docs_subdir: "cute"
+
+  - id: 103
+    name: "Quote Moment Watch Face"
+    identity: "매 순간 영감을 주는 명언이 흐르는 워치페이스"
+    package: "com.watch_go.quote_moment_watch_face"
+    landing: "https://watch-go.com/103"
+    repo: "msaltnet/wff-watch-face"
+    docs_subdir: "quote-moment"
+
+  - id: 104
+    name: "My Photo Circle Watch Face"
+    identity: "원형 프레임 속 내 사진으로 꾸미는 워치페이스"
+    package: "com.watch_go.my_photo_circle_wff"
+    landing: "https://watch-go.com/104"
+    repo: "msaltnet/wff-watch-face"
+    docs_subdir: "photo-circle"
+
+  - id: 105
+    name: "My Photo Quote: Daily Inspire"
+    identity: "내 사진과 오늘의 명언이 함께하는 워치페이스"
+    package: "com.watch_go.photo_quote_wff"
+    landing: "https://watch-go.com/105"
+    repo: "msaltnet/wff-watch-face"
+    docs_subdir: "photo-quote"
+
+  - id: 106
+    name: "LED Board Watch Face"
+    identity: "Watch LED Scroller와 연동되는 LED 전광판 컴플리케이션 워치페이스"
+    package: "com.watch_go.led_board_watch_face"
+    landing: "https://watch-go.com/106"
+    repo: "msaltnet/wff-watch-face"
+    docs_subdir: "led-board"
+
+  - id: 200
+    name: "Double Check: To-Do & List"
+    identity: "손목에서 바로 체크하는 심플한 투두 & 리스트 앱"
+    package: "com.watch_go.doublecheck"
+    landing: "https://watch-go.com/200"
+    repo: "msaltnet/double-check-pro"
+
+  - id: 201
+    name: "Watch LED Scroller & Banner"
+    identity: "손목 위에서 빛나는 LED 전광판 텍스트 스크롤러"
+    package: "com.watch_go.watchledscroller"
+    landing: "https://watch-go.com/201"
+    repo: "msaltnet/watch-led-scroller"
+
+  - id: 202
+    name: "My Photo Watch Frame: watch-go"
+    identity: "내 사진을 멋진 프레임으로 감싸는 워치 앱"
+    package: "com.watch_go.myphotowatchframe"
+    landing: "https://watch-go.com/202"
+    repo: "msaltnet/my-photo-watch-frame"
+
+  - id: 203
+    name: "Crypto Watch: Bitcoin & Tile"
+    identity: "손목에서 실시간으로 확인하는 암호화폐 시세 위젯"
+    package: "com.watch_go.cryptowatch"
+    landing: "https://watch-go.com/203"
+    repo: "msaltnet/crypto-watch"
+
+  - id: 204
+    name: "Multi Counter: Tally & Click"
+    identity: "탭 한 번으로 여러 항목을 동시에 세는 멀티 카운터"
+    package: "com.watch_go.multicounter"
+    landing: "https://watch-go.com/204"
+    repo: "msaltnet/watch-go-multi-counter"
+
+  - id: 205
+    name: "Pomodoro Timer: Focus & Study"
+    identity: "손목 위에서 집중력을 키우는 뽀모도로 타이머"
+    package: "com.watch_go.pomodoro"
+    landing: "https://watch-go.com/205"
+    repo: "msaltnet/watch-pomodoro-timer"
+
+  - id: 206
+    name: "2048 Watch Game: Rank & Logic"
+    identity: "워치에서 즐기는 두뇌 자극 2048 퍼즐 게임"
+    package: "com.watch_go.watch2048"
+    landing: "https://watch-go.com/206"
+    repo: "msaltnet/2048-watch"
+
+  - id: 207
+    name: "Quote Moment: Daily Inspire"
+    identity: "매일 새로운 명언으로 하루를 시작하는 인스파이어 앱"
+    package: "com.watch_go.quotemoment"
+    landing: "https://watch-go.com/207"
+    repo: "msaltnet/quote-moment"
+
+  - id: 208
+    name: "Remote Camera: Watch Control"
+    identity: "워치로 스마트폰 카메라를 원격 제어하는 셔터 앱"
+    package: "com.watch_go.remotecamwatch"
+    landing: "https://watch-go.com/208"
+    repo: "msaltnet/remote-cam-watch"
