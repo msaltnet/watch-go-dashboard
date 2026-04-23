@@ -38,11 +38,11 @@ function jsonResponse(content) {
 
 test('collects docs for all apps with mocked fetch (happy path)', async () => {
   const fetchMap = {
-    'https://api.github.com/repos/owner/a/contents/docs/overview.md': jsonResponse('# A overview'),
-    'https://api.github.com/repos/owner/a/contents/docs/updates.md':
+    'https://api.github.com/repos/owner/a/contents/docs/overview.md?ref=main': jsonResponse('# A overview'),
+    'https://api.github.com/repos/owner/a/contents/docs/updates.md?ref=main':
       jsonResponse('## v1.0.0 — 2026-04-01\n- first'),
-    'https://api.github.com/repos/owner/b/contents/docs/overview.md': jsonResponse('# B overview'),
-    'https://api.github.com/repos/owner/b/contents/docs/updates.md':
+    'https://api.github.com/repos/owner/b/contents/docs/overview.md?ref=main': jsonResponse('# B overview'),
+    'https://api.github.com/repos/owner/b/contents/docs/updates.md?ref=main':
       jsonResponse('## v2.0.0 — 2026-04-10\n- shipped'),
   };
   const results = await collectAppDocs({
@@ -87,8 +87,22 @@ test('uses docs_subdir when provided', async () => {
     token: 'fake',
     fetchFn,
   });
-  assert.ok(calls.some(u => u.endsWith('/contents/docs/clean/overview.md')));
-  assert.ok(calls.some(u => u.endsWith('/contents/docs/clean/updates.md')));
+  assert.ok(calls.some(u => u.includes('/contents/docs/clean/overview.md')));
+  assert.ok(calls.some(u => u.includes('/contents/docs/clean/updates.md')));
+});
+
+test('sends ?ref=branch when app specifies a custom branch', async () => {
+  const calls = [];
+  const fetchFn = async (url) => {
+    calls.push(url);
+    return { status: 404, ok: false, json: async () => ({}) };
+  };
+  await collectAppDocs({
+    appsYml: `apps:\n  - id: 300\n    name: A\n    identity: a\n    package: p\n    landing: l\n    repo: owner/x\n    branch: master\n`,
+    token: 'fake',
+    fetchFn,
+  });
+  assert.ok(calls.every(u => u.includes('?ref=master')));
 });
 
 test('throws when token missing', async () => {

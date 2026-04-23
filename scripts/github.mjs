@@ -1,7 +1,8 @@
 const API_BASE = 'https://api.github.com';
 
-export async function fetchDocFile({ repo, path, token, fetchFn = fetch }) {
-  const url = `${API_BASE}/repos/${repo}/contents/${path}`;
+export async function fetchDocFile({ repo, path, token, ref, fetchFn = fetch }) {
+  const query = ref ? `?ref=${encodeURIComponent(ref)}` : '';
+  const url = `${API_BASE}/repos/${repo}/contents/${path}${query}`;
   const headers = {
     Accept: 'application/vnd.github+json',
     'X-GitHub-Api-Version': '2022-11-28',

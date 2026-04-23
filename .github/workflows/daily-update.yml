@@ -7,6 +7,11 @@ on:
 
 permissions:
   contents: write
+  actions: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -27,13 +32,22 @@ jobs:
         run: node scripts/fetch-docs.mjs
 
       - name: Commit data/apps.json if changed
+        id: commit
         run: |
           if git diff --quiet data/apps.json; then
             echo "No changes to apps.json — skipping commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data/apps.json
             git commit -m "chore: daily docs update"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Trigger deploy workflow
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run deploy.yml --ref main

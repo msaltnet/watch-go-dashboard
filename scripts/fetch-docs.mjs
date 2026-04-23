@@ -19,10 +19,11 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
     const basePath = subdir ? `docs/${subdir}` : 'docs';
     const overviewPath = `${basePath}/overview.md`;
     const updatesPath = `${basePath}/updates.md`;
+    const branch = meta.branch ?? 'main';
 
     const [overview, updates] = await Promise.all([
-      fetchDocFile({ repo: meta.repo, path: overviewPath, token, fetchFn }),
-      fetchDocFile({ repo: meta.repo, path: updatesPath, token, fetchFn }),
+      fetchDocFile({ repo: meta.repo, path: overviewPath, token, ref: branch, fetchFn }),
+      fetchDocFile({ repo: meta.repo, path: updatesPath, token, ref: branch, fetchFn }),
     ]);
 
     if (overview.status === 'auth_failed' || updates.status === 'auth_failed') {
@@ -39,7 +40,7 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
     }
 
     const overview_html = overview.status === 'ok'
-      ? parseOverview(overview.content, meta.repo, meta.branch ?? 'main', subdir ?? null)
+      ? parseOverview(overview.content, meta.repo, branch, subdir ?? null)
       : null;
     const updatesArr = updates.status === 'ok' ? parseUpdates(updates.content) : [];
 

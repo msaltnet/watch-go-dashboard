@@ -30,8 +30,11 @@ function renderUpdatesBlock(app) {
   <span class="update-date">${escapeHtml(u.date)}</span>
   ${u.items_html}
 </li>`).join('');
+  const branch = app.branch ?? 'main';
+  const subdirPath = app.docs_subdir ? `docs/${app.docs_subdir}` : 'docs';
+  const moreHref = `https://github.com/${app.repo}/blob/${branch}/${subdirPath}/updates.md`;
   const more = app.updates.length > 5
-    ? `<p class="empty-state"><a href="https://github.com/${escapeHtml(app.repo)}/blob/main/docs/updates.md">전체 업데이트 이력 보기 ↗</a></p>`
+    ? `<p class="empty-state"><a href="${escapeHtml(moreHref)}">전체 업데이트 이력 보기 ↗</a></p>`
     : '';
   return `<ul class="updates-list">${items}</ul>${more}`;
 }
