@@ -1,4 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
 import { parse as parseYaml } from 'yaml';
 import { fetchDocFile } from './github.mjs';
 import { parseUpdates } from './parsers/updates.mjs';
@@ -38,7 +39,7 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
     }
 
     const overview_html = overview.status === 'ok'
-      ? parseOverview(overview.content, meta.repo, 'main', subdir ?? null)
+      ? parseOverview(overview.content, meta.repo, meta.branch ?? 'main', subdir ?? null)
       : null;
     const updatesArr = updates.status === 'ok' ? parseUpdates(updates.content) : [];
 
@@ -73,8 +74,7 @@ async function main() {
   console.log(`built_at=${merged.built_at} stats=${JSON.stringify(merged.stats)}`);
 }
 
-const isEntry = import.meta.url === `file://${process.argv[1].replace(/\\/g, '/')}`
-  || import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/'));
+const isEntry = import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isEntry) {
   main().catch(err => {
     console.error(err);
