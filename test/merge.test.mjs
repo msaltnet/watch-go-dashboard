@@ -33,35 +33,46 @@ test('ok result overwrites previous entry entirely', () => {
   assert.equal(merged.stats.failed, 0);
 });
 
-test('fetch_failed keeps previous data but updates status', () => {
+test('fetch_failed keeps previous data but updates status (partial failure)', () => {
   const previous = {
-    apps: [{
-      ...appMeta,
-      fetch_status: 'ok',
-      overview_html: '<p>old</p>',
-      updates: [],
-      last_successful_fetch: '2026-04-20T00:00:00+09:00',
-    }],
+    apps: [
+      {
+        ...appMeta,
+        fetch_status: 'ok',
+        overview_html: '<p>old</p>',
+        updates: [],
+        last_successful_fetch: '2026-04-20T00:00:00+09:00',
+      },
+    ],
   };
-  const fresh = [{ meta: appMeta, status: 'fetch_failed' }];
+  const fresh = [
+    { meta: appMeta, status: 'fetch_failed' },
+    { meta: { ...appMeta, id: 200 }, status: 'ok', overview_html: '<p>ok</p>', updates: [] },
+  ];
   const now = '2026-04-23T00:00:00+09:00';
   const merged = mergeFetchResults({ previous, fresh, builtAt: now });
 
-  assert.equal(merged.apps[0].fetch_status, 'fetch_failed');
-  assert.equal(merged.apps[0].overview_html, '<p>old</p>');
-  assert.equal(merged.apps[0].last_successful_fetch, '2026-04-20T00:00:00+09:00');
+  const failedApp = merged.apps.find(a => a.id === 100);
+  assert.equal(failedApp.fetch_status, 'fetch_failed');
+  assert.equal(failedApp.overview_html, '<p>old</p>');
+  assert.equal(failedApp.last_successful_fetch, '2026-04-20T00:00:00+09:00');
   assert.equal(merged.stats.failed, 1);
+  assert.equal(merged.stats.succeeded, 1);
 });
 
-test('no_docs status records app when previous data exists', () => {
-  const previous = { apps: [{ ...appMeta, fetch_status: 'ok', overview_html: '<p>old</p>', updates: [] }] };
-  const fresh = [{ meta: appMeta, status: 'no_docs' }];
+test('no_docs status records app with null doc fields (when mixed with successes)', () => {
+  const previous = { apps: [] };
+  const fresh = [
+    { meta: appMeta, status: 'no_docs' },
+    { meta: { ...appMeta, id: 200 }, status: 'ok', overview_html: '<p>x</p>', updates: [] },
+  ];
   const merged = mergeFetchResults({ previous, fresh, builtAt: '2026-04-23T00:00:00+09:00' });
 
-  assert.equal(merged.apps[0].fetch_status, 'no_docs');
-  assert.equal(merged.apps[0].overview_html, null);
-  assert.deepEqual(merged.apps[0].updates, []);
-  assert.equal(merged.apps[0].last_successful_fetch, null);
+  const noDocsApp = merged.apps.find(a => a.id === 100);
+  assert.equal(noDocsApp.fetch_status, 'no_docs');
+  assert.equal(noDocsApp.overview_html, null);
+  assert.deepEqual(noDocsApp.updates, []);
+  assert.equal(noDocsApp.last_successful_fetch, null);
 });
 
 test('throws when all apps fail (prevents overwriting previous data)', () => {
