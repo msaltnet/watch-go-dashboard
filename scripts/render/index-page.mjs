@@ -19,15 +19,16 @@ function renderCard(app, builtAt) {
     ? `<div class="card-version">${escapeHtml(app.latest_version)} · ${escapeHtml(app.latest_update_date)}</div>`
     : `<div class="card-version empty">버전 정보 없음</div>`;
 
+  const landing = (app.landing || '').replace(/^https?:\/\//, '');
   return `
-<a class="card" href="${detailPath(app)}" data-category="${categoryFromId(app.id)}">
+<a class="card" href="${escapeHtml(detailPath(app))}" data-category="${escapeHtml(categoryFromId(app.id))}">
   <span class="card-id">#${escapeHtml(app.id)}${app.variant ? ` · ${escapeHtml(app.variant)}` : ''}</span>
   <h2 class="card-name">${escapeHtml(app.name)}</h2>
   <p class="card-identity">${escapeHtml(app.identity)}</p>
   ${versionLine}
   ${renderBadge(app, builtAt)}
   <div class="card-links">
-    <span>🔗 ${escapeHtml(app.landing.replace(/^https?:\/\//, ''))}</span>
+    <span>🔗 ${escapeHtml(landing)}</span>
     <span>💻 ${escapeHtml(app.repo)}</span>
   </div>
 </a>`.trim();
