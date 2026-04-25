@@ -102,7 +102,9 @@ test('sends ?ref=branch when app specifies a custom branch', async () => {
     token: 'fake',
     fetchFn,
   });
-  assert.ok(calls.every(u => u.includes('?ref=master')));
+  const apiCalls = calls.filter(u => u.startsWith('https://api.github.com/'));
+  assert.ok(apiCalls.length > 0);
+  assert.ok(apiCalls.every(u => u.includes('?ref=master')));
 });
 
 test('throws when token missing', async () => {

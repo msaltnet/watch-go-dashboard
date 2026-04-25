@@ -9,8 +9,13 @@
 <body>
 <header class="site-header">
   <p><a href="../index.html">← Dashboard</a></p>
-  <h1>{{name}}</h1>
-  <p class="identity">{{identity}}</p>
+  <div class="detail-head">
+    {{icon}}
+    <div>
+      <h1>{{name}}</h1>
+      <p class="identity">{{identity}}</p>
+    </div>
+  </div>
   <ul class="app-links">
     <li><strong>번호:</strong> #{{id}}</li>
     <li><strong>패키지:</strong> <code>{{package}}</code></li>

@@ -124,3 +124,31 @@ test('renderDetailPage renders update with no date', async () => {
   assert.match(html, /v2\.3\.0/);
   assert.ok(!html.includes('update-date'));
 });
+
+test('renderIndexPage shows icon when icon_url is present', async () => {
+  const { index } = await loadTemplates();
+  const data = {
+    ...fixture,
+    apps: [{ ...fixture.apps[0], icon_url: 'https://watch-go.com/205/icon.png' }],
+  };
+  const html = renderIndexPage(data, index);
+  assert.match(html, /<img class="card-icon"/);
+  assert.match(html, /src="https:\/\/watch-go\.com\/205\/icon\.png"/);
+});
+
+test('renderIndexPage shows placeholder when icon_url missing', async () => {
+  const { index } = await loadTemplates();
+  const data = {
+    ...fixture,
+    apps: [{ ...fixture.apps[0], icon_url: null }],
+  };
+  const html = renderIndexPage(data, index);
+  assert.match(html, /card-icon-placeholder/);
+});
+
+test('renderDetailPage shows detail icon when icon_url is present', async () => {
+  const { detail } = await loadTemplates();
+  const app = { ...fixture.apps[0], icon_url: 'https://watch-go.com/205/icon.png' };
+  const html = renderDetailPage(app, fixture, detail);
+  assert.match(html, /<img class="detail-icon"/);
+});

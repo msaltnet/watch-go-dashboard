@@ -98,6 +98,33 @@ a:hover { text-decoration: underline; }
   box-shadow: 0 6px 16px rgba(0,0,0,.08);
   text-decoration: none;
 }
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.card-head-text {
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+  min-width: 0;
+  flex: 1;
+}
+.card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  flex: 0 0 56px;
+  background: var(--bg);
+  object-fit: cover;
+}
+.card-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--muted);
+}
 .card-id {
   color: var(--muted);
   font-size: .8rem;
@@ -155,6 +182,30 @@ a:hover { text-decoration: underline; }
 .updates-list li:first-child { border-top: none; }
 .update-version { font-weight: 600; }
 .update-date { color: var(--muted); font-size: .85rem; margin-left: .5rem; }
+
+.detail-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: .25rem 0 .5rem;
+}
+.detail-head h1 { margin: 0; }
+.detail-head .identity { margin: .15rem 0 0; color: var(--muted); }
+.detail-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 18px;
+  flex: 0 0 96px;
+  background: var(--bg);
+  object-fit: cover;
+}
+.detail-icon-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: var(--muted);
+}
 
 .app-links {
   list-style: none;

@@ -34,6 +34,45 @@ test('ok result overwrites previous entry entirely', () => {
   assert.equal(merged.stats.failed, 0);
 });
 
+test('passes icon_url through on ok status', () => {
+  const fresh = [{
+    meta: appMeta,
+    status: 'ok',
+    overview_html: '<p>x</p>',
+    updates: [],
+    icon_url: 'https://watch-go.com/100/icon.png',
+  }];
+  const merged = mergeFetchResults({
+    previous: { apps: [] },
+    fresh,
+    builtAt: '2026-04-23T00:00:00+09:00',
+  });
+  assert.equal(merged.apps[0].icon_url, 'https://watch-go.com/100/icon.png');
+});
+
+test('falls back to previous icon_url when fresh fetch returns null', () => {
+  const previous = {
+    apps: [{
+      ...appMeta,
+      fetch_status: 'ok',
+      overview_html: '<p>old</p>',
+      updates: [],
+      icon_url: 'https://watch-go.com/100/icon.png',
+    }],
+  };
+  const fresh = [
+    { meta: appMeta, status: 'ok', overview_html: '<p>new</p>', updates: [], icon_url: null },
+    { meta: { ...appMeta, id: 200 }, status: 'ok', overview_html: '<p>x</p>', updates: [] },
+  ];
+  const merged = mergeFetchResults({
+    previous,
+    fresh,
+    builtAt: '2026-04-23T00:00:00+09:00',
+  });
+  const first = merged.apps.find(a => a.id === 100);
+  assert.equal(first.icon_url, 'https://watch-go.com/100/icon.png');
+});
+
 test('exposes latest_update_label from first update entry', () => {
   const fresh = [{
     meta: appMeta,

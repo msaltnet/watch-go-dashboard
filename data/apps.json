@@ -1,9 +1,9 @@
 {
-  "built_at": "2026-04-25T10:29:38.660+09:00",
+  "built_at": "2026-04-25T10:47:36.674+09:00",
   "stats": {
     "total": 17,
-    "succeeded": 5,
-    "no_docs": 12,
+    "succeeded": 17,
+    "no_docs": 0,
     "failed": 0
   },
   "apps": [
@@ -58,7 +58,7 @@
       "latest_update_date": null,
       "latest_update_label": "현재 빌드",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 102,
@@ -68,14 +68,34 @@
       "package": "com.watch_go.new_my_photo_watch_face",
       "landing": "https://watch-go.com/102",
       "repo": "msaltnet/wff-watch-face",
-      "docs_subdir": "clean",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
+      "branch": "master",
+      "docs_subdir": "new-my-photo-watch-face",
+      "overview_html": "<h1>My Photo Watch Face: Clean — Overview</h1>\n<p>Watch Face Format(WFF) 기반의 <strong>사진 배경 + 깔끔한 산세리프 시계</strong> 워치페이스입니다. 기본(Basic) 스타일로 어떤 사진 위에도 잘 보이는 가독성을 우선합니다. 같은 브랜드의 Thin(얇은 라인), Cute(귀여운 감성) 버전과 <strong>동일한 코드 구조의 디자인 변형</strong>이며, 이 Clean 버전이 가장 범용적입니다.</p>\n<p>Kotlin 코드 없이 <strong>선언적 XML만으로 구성된 WFF 전용 워치페이스</strong>입니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>사진 배경</strong> — Photo 합성 컴플리케이션을 통해 갤러리의 어떤 사진이든 즉시 배경으로 설정</li>\n<li><strong>깔끔한 기본 폰트</strong> — 산세리프 계열, 상황을 가리지 않는 가독성</li>\n<li><strong>그라디언트 텍스트</strong> — 사진 위에서도 읽히도록 전문적인 그라디언트 스타일 제공</li>\n<li><strong>시간 크기 조절</strong> — 시계 텍스트 크기 커스터마이징</li>\n<li><strong>시간 위치 이동</strong> — 위 / 중앙 / 아래</li>\n<li><strong>WFF 기반 저전력 설계</strong> — 선언적 XML로 런타임 오버헤드 최소화</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>Watch Face Format (WFF)</strong> — Google의 선언적 XML 워치페이스 포맷</li>\n<li><strong>코드 없음</strong> — Kotlin/Java 런타임 코드 없이 XML과 리소스만으로 동작</li>\n<li><strong>빌드:</strong> Gradle Kotlin DSL</li>\n<li><strong>validator 플러그인</strong> — 같은 폴더의 <code>:validator-plugin</code> 모듈로 빌드 시 WFF 스펙 검증</li>\n<li><strong>리소스 생성 파이프라인</strong> — Python 스크립트로 XML 프리빌드<ul>\n<li><code>generate_expressions.py</code> → <code>expressions.xml</code></li>\n<li><code>generate_digital_clocks.py</code> → <code>digital_clocks.xml</code> / <code>digital_clocks_with_dates.xml</code></li>\n<li><code>generate_bitmap_fonts_per_image.py</code> → <code>bitmap_fonts.xml</code></li>\n<li><code>make_expression.py</code> — 개별 수식 편의 함수</li>\n</ul>\n</li>\n</ul>\n<h2>사진 배경 방식</h2>\n<p>WFF 워치페이스에서는 런타임 코드로 이미지를 바꿀 수 없습니다. 대신 <strong>Photo 합성(Composite) 컴플리케이션</strong> 슬롯을 활용합니다.</p>\n<ol>\n<li>워치페이스 편집 모드에서 이미지 컴플리케이션 슬롯을 선택.</li>\n<li>시스템이 제공하는 <strong>Photo</strong> 컴플리케이션을 지정.</li>\n<li>갤러리에서 사진을 고르면 워치페이스 배경으로 표시됩니다.</li>\n</ol>\n<p>별도 컴패니언 앱 없이도 Wear OS 시스템 기능만으로 사진 설정이 완료됩니다.</p>\n<h2>시리즈 비교 (Clean / Thin / Cute)</h2>\n<table>\n<thead>\n<tr>\n<th>변형</th>\n<th>특징</th>\n<th>패키지</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Clean (본 앱)</strong></td>\n<td>산세리프 기본 폰트, 범용 가독성</td>\n<td><code>com.watch_go.new_my_photo_watch_face</code></td>\n</tr>\n<tr>\n<td>Thin</td>\n<td>얇고 세련된 라인, 미니멀</td>\n<td><code>com.watch_go.new_my_photo_watch_face_thin</code></td>\n</tr>\n<tr>\n<td>Cute</td>\n<td>귀엽고 사랑스러운 감성</td>\n<td><code>com.watch_go.new_my_photo_watch_face_cute</code></td>\n</tr>\n</tbody></table>\n<p>셋 모두 동일한 레이아웃 제어(크기/위치)와 사진 배경 방식을 공유하며, <strong>폰트와 색상 톤</strong>이 다릅니다.</p>\n<h2>관련 앱</h2>\n<ul>\n<li><strong>My Photo Watch Face: Album</strong> (100) — Canvas 기반 전통 포맷, 더 풍부한 커스터마이징</li>\n<li><strong>My Photo Watch Frame</strong> (202) — 모바일 위젯 연동 강화</li>\n<li><strong>My Photo Circle Watch Face</strong> (104) — 원형 프레임</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v2.1.0",
+          "date": null,
+          "label": "현재 빌드",
+          "items_html": "<ul>\n<li><code>build.gradle.kts</code> 기준 <code>versionName = &quot;2.1.0&quot;</code>, <code>versionCode = 12</code></li>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.x",
+          "date": null,
+          "label": "초기 출시",
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.0.x",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v2.1.0",
       "latest_update_date": null,
-      "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "latest_update_label": "현재 빌드",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 102,
@@ -84,15 +104,28 @@
       "identity": "얇고 세련된 라인으로 완성하는 내 사진 워치페이스",
       "package": "com.watch_go.new_my_photo_watch_face_thin",
       "landing": "https://watch-go.com/102",
-      "repo": "msaltnet/wff-watch-face",
-      "docs_subdir": "thin",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
+      "repo": "msaltnet/new-my-photo-watch-face-thin",
+      "branch": "master",
+      "overview_html": "<h1>My Photo Watch Face: Thin — Overview</h1>\n<p>Watch Face Format(WFF) 기반의 <strong>사진 배경 + 얇고 감각적인 시계</strong> 워치페이스입니다. 얇은 타이포그래피가 사진을 최대한 가리지 않아 가족·반려동물·풍경·아트 같은 <strong>디테일이 많은 사진</strong>을 손목 위 잡지 표지처럼 보여주는 데 최적화되어 있습니다.</p>\n<p>같은 브랜드의 Clean / Cute 버전과 <strong>동일한 코드 구조의 디자인 변형</strong>이며, 이 Thin 버전은 <strong>미니멀·예술적</strong> 분위기를 강조합니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>사진 배경 노출 극대화</strong> — 얇은 폰트로 사진 시야 방해 최소화</li>\n<li><strong>Photo 합성 컴플리케이션</strong> — 갤러리의 어떤 이미지든 즉시 배경으로</li>\n<li><strong>감성 그라디언트 오버레이</strong> — 사진 분위기를 살리는 은은한 그라디언트</li>\n<li><strong>시간 크기 조절</strong></li>\n<li><strong>시간 위치 이동</strong> — 위 / 중앙 / 아래</li>\n<li><strong>WFF 기반 저전력 설계</strong></li>\n</ul>\n<h2>디자인 포지셔닝</h2>\n<ul>\n<li><strong>Clean</strong>: 범용 · 깔끔한 기본 산세리프</li>\n<li><strong>Thin (본 앱)</strong>: 미니멀 · 얇은 예술적 타이포그래피</li>\n<li><strong>Cute</strong>: 귀엽고 사랑스러운 감성</li>\n</ul>\n<p>Thin은 \"워치를 <strong>디지털 아트</strong>로 만드는\" 포지션입니다. 디테일한 사진, 감성 풍경, 패션 컷, 셀카에 특히 잘 어울립니다.</p>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>Watch Face Format (WFF)</strong> — Google의 선언적 XML 워치페이스 포맷</li>\n<li><strong>코드 없음</strong> — Kotlin/Java 런타임 코드 없이 XML 리소스로만 동작</li>\n<li><strong>빌드:</strong> Gradle Kotlin DSL</li>\n<li><strong>validator 플러그인</strong> — 빌드 시 WFF 스펙 검증</li>\n<li><strong>리소스 생성 파이프라인</strong> — Python 스크립트<ul>\n<li><code>generate_expressions.py</code> → <code>expressions.xml</code></li>\n<li><code>generate_digital_clocks.py</code> → <code>digital_clocks.xml</code> / <code>digital_clocks_with_dates.xml</code></li>\n<li><code>generate_bitmap_fonts_per_image.py</code> → <code>bitmap_fonts.xml</code></li>\n</ul>\n</li>\n</ul>\n<h2>사진 배경 방식</h2>\n<p>WFF 워치페이스 특성상 런타임 코드로 이미지를 교체할 수 없어 <strong>Photo 합성 컴플리케이션</strong>을 사용합니다. Clean 버전과 동일한 방식이며, 자세한 절차는 <a href=\"user-guide.md\">user-guide.md</a> 참고.</p>\n<h2>시리즈 · 관련 앱</h2>\n<ul>\n<li><strong>Clean</strong> (같은 102) — 산세리프 기본, 가장 범용</li>\n<li><strong>Cute</strong> (같은 102) — 귀여운 감성</li>\n<li><strong>My Photo Watch Face: Album</strong> (100) — Canvas 기반, 풍부한 커스터마이징</li>\n<li><strong>My Photo Watch Frame</strong> (202) — 모바일 위젯 연동</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": "현재 빌드",
+          "items_html": "<ul>\n<li><code>build.gradle.kts</code> 기준 <code>versionName = &quot;2.0.0&quot;</code></li>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.x",
+          "date": null,
+          "label": "초기 출시",
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v2.0.0",
       "latest_update_date": null,
-      "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "latest_update_label": "현재 빌드",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 102,
@@ -101,15 +134,28 @@
       "identity": "귀엽고 사랑스러운 감성의 내 사진 워치페이스",
       "package": "com.watch_go.new_my_photo_watch_face_cute",
       "landing": "https://watch-go.com/102",
-      "repo": "msaltnet/wff-watch-face",
-      "docs_subdir": "cute",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
+      "repo": "msaltnet/new-my-photo-watch-face-acme",
+      "branch": "master",
+      "overview_html": "<h1>My Photo Watch Face: Cute — Overview</h1>\n<p>Watch Face Format(WFF) 기반의 <strong>사진 배경 + 둥글고 부드러운 시계</strong> 워치페이스입니다. 둥근 곡선의 귀여운 폰트와 파스텔/카와이 감성 그라디언트로 손목에 사랑스러운 분위기를 더합니다. 아기·키즈, 반려동물, 커플 사진에 특히 잘 어울리는 포지셔닝입니다.</p>\n<p>같은 브랜드의 Clean / Thin 버전과 <strong>동일한 코드 구조의 디자인 변형</strong>이며, 이 Cute 버전은 <strong>카와이·파스텔</strong> 감성을 강조합니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>귀여운 둥근 폰트</strong> — 부드러운 곡선의 아기자기한 타이포그래피</li>\n<li><strong>소프트 그라디언트</strong> — 파스텔 톤의 은은한 오버레이</li>\n<li><strong>Photo 합성 컴플리케이션</strong> — 갤러리의 어떤 사진이든 즉시 배경으로</li>\n<li><strong>시간 크기 조절</strong></li>\n<li><strong>시간 위치 이동</strong> — 위 / 중앙 / 아래</li>\n<li><strong>WFF 기반 저전력 설계</strong></li>\n</ul>\n<h2>디자인 포지셔닝</h2>\n<ul>\n<li>Clean — 산세리프 기본, 가장 범용</li>\n<li>Thin — 얇은 라인, 미니멀·예술적</li>\n<li><strong>Cute (본 앱)</strong> — 둥글고 사랑스러운, 파스텔·카와이</li>\n</ul>\n<p>추천 사용 케이스:</p>\n<ul>\n<li>👶 아기·키즈 사진</li>\n<li>🐶 반려동물 사진</li>\n<li>💖 커플·데이트 사진</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>Watch Face Format (WFF)</strong> — Google의 선언적 XML 워치페이스 포맷</li>\n<li><strong>코드 없음</strong> — Kotlin/Java 런타임 코드 없이 XML 리소스로만 동작</li>\n<li><strong>빌드:</strong> Gradle Kotlin DSL</li>\n<li><strong>validator 플러그인</strong> — 빌드 시 WFF 스펙 검증</li>\n<li><strong>리소스 생성 파이프라인</strong> — Python 스크립트<ul>\n<li><code>generate_expressions.py</code> → <code>expressions.xml</code></li>\n<li><code>generate_digital_clocks.py</code> → <code>digital_clocks.xml</code> / <code>digital_clocks_with_dates.xml</code></li>\n<li><code>generate_bitmap_fonts_per_image.py</code> → <code>bitmap_fonts.xml</code></li>\n</ul>\n</li>\n</ul>\n<h2>사진 배경 방식</h2>\n<p>Clean / Thin과 동일하게 <strong>Photo 합성 컴플리케이션</strong>으로 사진을 설정합니다. 자세한 절차는 <a href=\"user-guide.md\">user-guide.md</a> 참고.</p>\n<h2>시리즈 · 관련 앱</h2>\n<ul>\n<li><strong>Clean</strong> (같은 102) — 범용 산세리프</li>\n<li><strong>Thin</strong> (같은 102) — 얇은 미니멀</li>\n<li><strong>My Photo Watch Face: Album</strong> (100) — Canvas 기반, 풍부한 커스터마이징</li>\n<li><strong>My Photo Watch Frame</strong> (202) — 모바일 위젯 연동</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": "현재 빌드",
+          "items_html": "<ul>\n<li><code>build.gradle.kts</code> 기준 <code>versionName = &quot;2.0.0&quot;</code></li>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.x",
+          "date": null,
+          "label": "초기 출시",
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v2.0.0",
       "latest_update_date": null,
-      "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "latest_update_label": "현재 빌드",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 103,
@@ -118,14 +164,22 @@
       "package": "com.watch_go.quote_moment_watch_face",
       "landing": "https://watch-go.com/103",
       "repo": "msaltnet/wff-watch-face",
-      "docs_subdir": "quote-moment",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
+      "branch": "master",
+      "docs_subdir": "quote-moment-watch-face",
+      "overview_html": "<h1>Quote Moment Watch Face — Overview</h1>\n<p>Watch Face Format(WFF) 기반의 <strong>명언 + 디지털 시계</strong> 워치페이스입니다. 화면 중앙에 <strong>Long Text 컴플리케이션</strong>으로 받은 문구를 크게 표시하고, 위·아래 공간에 디지털 시계를 배치해 \"손목을 볼 때마다 중요한 것을 떠올리게\" 합니다. 시계 폰트와 레이아웃은 <code>new-my-photo-watch-face</code> (Clean/Thin/Cute 시리즈)와 같은 구조를 공유하며, <strong>컴플리케이션 종류(Long Text)와 위치</strong>가 핵심 차이점입니다.</p>\n<p>같은 브랜드의 모바일 앱 <strong>Quote Moment</strong>(207번)와 짝을 이루도록 설계되어 있어, 207번 앱이 제공하는 Long Text 컴플리케이션을 이 워치페이스의 중앙 슬롯에 연결하는 것이 가장 자연스러운 사용법입니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>중앙 Long Text 컴플리케이션</strong> — 문구/가사/메모를 시계 중앙에 크게 표시</li>\n<li><strong>상·하 디지털 시계</strong> — 시간과 날짜를 위·아래 공간에 배치</li>\n<li><strong>무제한 문구</strong> — 동반 모바일 앱(Quote Moment 207)에서 문구를 관리하고 Long Text 컴플리케이션으로 공급</li>\n<li><strong>그라디언트 컬러 테마</strong> — 감정과 가독성을 살리는 프리셋</li>\n<li><strong>폰트 선택</strong> — 여러 감성의 폰트 제공</li>\n<li><strong>시간 크기·위치 조절</strong> — 가독성 또는 문구 강조로 레이아웃 균형 조정</li>\n<li><strong>WFF 기반 저전력</strong> — AOD에서도 효율적으로 표시</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>Watch Face Format (WFF)</strong> — Google의 선언적 XML 워치페이스 포맷</li>\n<li><strong>코드 없음</strong> — Kotlin/Java 런타임 코드 없이 XML 리소스로만 동작</li>\n<li><strong>Long Text 컴플리케이션 슬롯</strong> — 중앙에 큰 문구 표시</li>\n<li><strong>빌드:</strong> Gradle Kotlin DSL</li>\n<li><strong>validator 플러그인</strong> — 빌드 시 WFF 스펙 검증 (<code>validateWff</code>)</li>\n<li><strong>메모리 푸트프린트 평가:</strong> <code>./gradlew memoryFootprint</code></li>\n<li><strong>디바이스 설치:</strong> <code>./gradlew validateWffAndInstall [--device &lt;deviceid&gt;]</code></li>\n<li><strong>리소스 생성 파이프라인</strong> — Python 스크립트<ul>\n<li><code>generate_expressions.py</code> → <code>expressions.xml</code></li>\n<li><code>generate_digital_clocks.py</code> → <code>digital_clocks_with_dates.xml</code></li>\n<li><code>generate_bitmap_fonts_per_image.py</code> → <code>bitmap_fonts.xml</code></li>\n</ul>\n</li>\n</ul>\n<h2>빌드 메모</h2>\n<p>README 기준 로컬 빌드 환경:</p>\n<pre><code class=\"language-powershell\">$env:JAVA_HOME = \"C:\\Program Files\\Android\\Android Studio1\\jbr\"\n\n./gradlew assembleDebug                     # 디버그 빌드 (validateWff 자동 실행)\n./gradlew validateWff                        # WFF XML 검증만\n./gradlew memoryFootprint                    # 메모리 푸트프린트 평가\n./gradlew validateWffAndInstall              # 빌드 + 검증 + 설치\n./gradlew validateWffAndInstall --device emulator-5554\n</code></pre>\n<h2>레이아웃 개요</h2>\n<pre><code>┌──────────────────┐\n│   [디지털 시계]    │  ← 상단 (시:분)\n│                  │\n│   \"큰 인용구\"      │  ← 중앙 Long Text 컴플리케이션\n│                  │\n│   [날짜/요일]      │  ← 하단 디지털 시계 (날짜 포함)\n└──────────────────┘\n</code></pre>\n<h2>관련 앱</h2>\n<ul>\n<li><strong>Quote Moment</strong> (207) — 모바일 명언 앱. 이 워치페이스의 Long Text 컴플리케이션을 채우는 데 가장 자연스러운 제공자</li>\n<li><strong>My Photo Watch Face: Clean / Thin / Cute</strong> (102) — 같은 시계 레이아웃 구조를 공유하는 사진 버전</li>\n<li><strong>My Photo Quote</strong> (105) — 사진 + 명언 조합</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v1.0.0",
+          "date": null,
+          "label": "현재 빌드, 초기 출시",
+          "items_html": "<ul>\n<li><code>build.gradle.kts</code> 기준 <code>versionName = &quot;1.0.0&quot;</code>, <code>versionCode = 2</code></li>\n<li>Long Text 컴플리케이션 기반 중앙 문구 표시</li>\n<li>시계 레이아웃 및 그라디언트/폰트 프리셋 제공</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v1.0.0",
       "latest_update_date": null,
-      "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "latest_update_label": "현재 빌드, 초기 출시",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 104,
@@ -134,14 +188,28 @@
       "package": "com.watch_go.my_photo_circle_wff",
       "landing": "https://watch-go.com/104",
       "repo": "msaltnet/wff-watch-face",
-      "docs_subdir": "photo-circle",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
+      "branch": "master",
+      "docs_subdir": "my-photo-circle-watch-face",
+      "overview_html": "<h1>My Photo Circle Watch Face — Overview</h1>\n<p>Watch Face Format(WFF) 기반의 <strong>큰 원형 사진 + 디지털 시계</strong> 워치페이스입니다. 화면의 약 70%를 차지하는 대형 원형 이미지 컴플리케이션이 주인공이고, 양 옆에 작은 원형 컴플리케이션 2개와 위·아래 디지털 시계가 보조로 배치됩니다. <strong>시계 위치를 위/아래로 전환</strong>하면 사진 위치도 그에 맞춰 반전되므로, 피사체(얼굴, 중요 부분)를 시계가 가리지 않도록 레이아웃을 즉시 조정할 수 있습니다.</p>\n<p>같은 브랜드의 다른 WFF 사진 워치페이스(Clean/Thin/Cute, 102)와 <strong>레이아웃 철학이 다릅니다</strong>. 102 시리즈는 배경 전체를 사진으로 채우는 방식이고, 본 앱(104)은 <strong>원형 사진</strong>과 <strong>별도 정보 컴플리케이션</strong>을 함께 배치한 <strong>정보형·앨범형</strong> 레이아웃입니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>대형 원형 사진</strong> — 화면 약 70%를 차지하는 큰 이미지 컴플리케이션 슬롯</li>\n<li><strong>양 옆 소형 컴플리케이션</strong> — 배터리·날씨·걸음수·날짜 등 보조 정보 2개</li>\n<li><strong>위·아래 디지털 시계</strong> — 시간과 날짜/요일</li>\n<li><strong>스마트 시계 위치 토글</strong> — 시계가 위면 사진이 아래, 시계가 아래면 사진이 위 (피사체 보호)</li>\n<li><strong>WFF 기반 저전력</strong> — AoD에서도 효율적</li>\n</ul>\n<h2>레이아웃</h2>\n<pre><code>[시계 위]                    [시계 아래]\n┌──────────────┐            ┌──────────────┐\n│ [ 디지털시계 ]  │            │  ◎ 대형 원형  │\n│              │            │    사진       │\n│  ◎ 대형 원형   │            │ ◯ ◯ 소형 2개 │\n│    사진       │    ↔       │              │\n│ ◯ ◯ 소형 2개  │            │ [ 디지털시계 ] │\n└──────────────┘            └──────────────┘\n</code></pre>\n<ul>\n<li>시계가 <strong>위</strong>에 있으면 원형 사진은 <strong>아래</strong></li>\n<li>시계가 <strong>아래</strong>에 있으면 원형 사진은 <strong>위</strong></li>\n<li>양 옆 소형 컴플리케이션 위치도 사진 위치에 맞춰 조정</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>Watch Face Format (WFF)</strong> — Google의 선언적 XML 워치페이스 포맷</li>\n<li><strong>코드 없음</strong> — Kotlin/Java 런타임 코드 없이 XML 리소스로만 동작</li>\n<li><strong>이미지 컴플리케이션 슬롯</strong> — 대형 원형 1개 + 소형 원형 2개</li>\n<li><strong>빌드:</strong> Gradle Kotlin DSL</li>\n<li><strong>validator 플러그인</strong> — 빌드 시 WFF 스펙 검증 (<code>validateWff</code>)</li>\n<li><strong>메모리 푸트프린트 평가:</strong> <code>./gradlew memoryFootprint</code></li>\n<li><strong>디바이스 설치:</strong> <code>./gradlew validateWffAndInstall [--device &lt;deviceid&gt;]</code></li>\n<li><strong>리소스 생성 파이프라인</strong> — Python 스크립트<ul>\n<li><code>generate_expressions.py</code> → <code>expressions.xml</code></li>\n<li><code>generate_digital_clocks.py</code> → <code>digital_clocks_with_dates.xml</code></li>\n<li><code>generate_bitmap_fonts_per_image.py</code> → <code>bitmap_fonts.xml</code></li>\n</ul>\n</li>\n</ul>\n<h2>빌드 메모</h2>\n<pre><code class=\"language-powershell\">$env:JAVA_HOME = \"C:\\Program Files\\Android\\Android Studio1\\jbr\"\n\n./gradlew assembleDebug                     # 디버그 빌드 (validateWff 자동 실행)\n./gradlew validateWff                        # WFF XML 검증만\n./gradlew memoryFootprint                    # 메모리 푸트프린트 평가\n./gradlew validateWffAndInstall              # 빌드 + 검증 + 설치\n./gradlew validateWffAndInstall --device emulator-5554\n</code></pre>\n<h2>사진 설정 방식</h2>\n<p>중앙의 대형 원형 슬롯은 <strong>이미지 컴플리케이션</strong>을 사용합니다. 일반적으로 <strong>Photo 합성 컴플리케이션</strong>을 지정해 갤러리 사진을 배치합니다. 사이드의 소형 컴플리케이션은 배터리/걸음수/날씨 등 시스템 제공 컴플리케이션을 선택합니다.</p>\n<h2>관련 앱</h2>\n<ul>\n<li><strong>My Photo Watch Face: Clean / Thin / Cute</strong> (102) — 배경 전체를 사진으로 채우는 시리즈</li>\n<li><strong>My Photo Watch Face: Album</strong> (100) — Canvas 기반, 풍부한 커스터마이징</li>\n<li><strong>My Photo Watch Frame</strong> (202) — 모바일 위젯 연동 강화</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": "현재 빌드",
+          "items_html": "<ul>\n<li><code>build.gradle.kts</code> 기준 <code>versionName = &quot;2.0.0&quot;</code>, <code>versionCode = 2</code></li>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.x",
+          "date": null,
+          "label": "초기 출시",
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v2.0.0",
       "latest_update_date": null,
-      "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "latest_update_label": "현재 빌드",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 105,
@@ -150,14 +218,28 @@
       "package": "com.watch_go.photo_quote_wff",
       "landing": "https://watch-go.com/105",
       "repo": "msaltnet/wff-watch-face",
-      "docs_subdir": "photo-quote",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
+      "branch": "master",
+      "docs_subdir": "photo-quote-watch-face",
+      "overview_html": "<h1>My Photo Quote: Daily Inspire — Overview</h1>\n<p>Watch Face Format(WFF) 기반의 <strong>사진 + 명언 + 디지털 시계</strong> 조합 워치페이스입니다. 소중한 사진과 의미 있는 문구를 같은 화면에 담아 손목을 매일의 영감 캔버스로 만듭니다.</p>\n<p>104번 My Photo Circle Watch Face의 원형 사진 레이아웃을 기반으로, **보조 컴플리케이션 중 하나를 문구(Long Text)**로 활용한다고 볼 수 있습니다. 시계 크기·위치는 편집 모드에서 자유롭게 조정 가능합니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>큰 사진 컴플리케이션</strong> — 중심에 가족·반려동물·여행 사진 표시</li>\n<li><strong>문구 컴플리케이션</strong> — 명언·확언·메모 같은 Long Text 표시</li>\n<li><strong>위·아래 디지털 시계</strong></li>\n<li><strong>감각적 그라디언트</strong> — 어떤 사진 위에서도 가독성 유지</li>\n<li><strong>시간 크기·위치 조절</strong></li>\n<li><strong>WFF 기반 저전력</strong> — AoD에서도 효율적</li>\n<li><strong>편리한 설정</strong> — 워치 추가 설정 없이 모바일에서 관리 후 즉시 동기화</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>Watch Face Format (WFF)</strong> — 선언적 XML 워치페이스 포맷</li>\n<li><strong>코드 없음</strong> — Kotlin/Java 런타임 코드 없이 XML 리소스만</li>\n<li><strong>컴플리케이션 슬롯</strong><ul>\n<li>이미지 컴플리케이션 (사진용)</li>\n<li>Long Text 컴플리케이션 (문구용)</li>\n</ul>\n</li>\n<li><strong>빌드:</strong> Gradle Kotlin DSL</li>\n<li><strong>validator 플러그인</strong> — 빌드 시 WFF 스펙 검증</li>\n<li><strong>리소스 생성 파이프라인</strong> — Python 스크립트<ul>\n<li><code>generate_expressions.py</code> → <code>expressions.xml</code></li>\n<li><code>generate_digital_clocks.py</code> → <code>digital_clocks_with_dates.xml</code></li>\n<li><code>generate_bitmap_fonts_per_image.py</code> → <code>bitmap_fonts.xml</code></li>\n</ul>\n</li>\n</ul>\n<h2>빌드 메모</h2>\n<pre><code class=\"language-powershell\">$env:JAVA_HOME = \"C:\\Program Files\\Android\\Android Studio1\\jbr\"\n\n./gradlew assembleDebug\n./gradlew validateWff\n./gradlew memoryFootprint\n./gradlew validateWffAndInstall [--device &lt;deviceid&gt;]\n</code></pre>\n<h2>컴플리케이션 설정</h2>\n<h3>이미지 슬롯</h3>\n<p>시스템의 <strong>Photo 합성 컴플리케이션</strong>을 선택해 갤러리 사진을 표시합니다.</p>\n<h3>문구 슬롯</h3>\n<p><strong>Long Text 컴플리케이션</strong>을 제공하는 앱(예: <strong>Quote Moment</strong> 207번)을 선택하면 명언이 표시됩니다. 시스템/다른 앱의 Long Text도 사용할 수 있습니다.</p>\n<p>두 컴플리케이션을 함께 사용해 <strong>사진의 분위기 + 문구의 메시지</strong>를 한 화면에서 볼 수 있습니다.</p>\n<h2>관련 앱</h2>\n<ul>\n<li><strong>Quote Moment</strong> (207, 모바일) — Long Text 컴플리케이션 제공자로 가장 자연스러운 페어</li>\n<li><strong>Quote Moment Watch Face</strong> (103) — 문구 중심, Long Text를 중앙에 크게</li>\n<li><strong>My Photo Circle Watch Face</strong> (104) — 사진만, 보조 원형 컴플리케이션 2개</li>\n<li><strong>My Photo Watch Face: Clean / Thin / Cute</strong> (102) — 풀스크린 사진</li>\n<li><strong>My Photo Watch Face: Album</strong> (100) — Canvas 기반 앨범</li>\n</ul>\n<h2>포지셔닝 요약</h2>\n<table>\n<thead>\n<tr>\n<th>워치페이스</th>\n<th>사진</th>\n<th>문구</th>\n<th>특징</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>100 Album</td>\n<td>전체 배경, 순환</td>\n<td>—</td>\n<td>앨범형</td>\n</tr>\n<tr>\n<td>102 Clean/Thin/Cute</td>\n<td>전체 배경</td>\n<td>—</td>\n<td>디자인 감성 변형</td>\n</tr>\n<tr>\n<td>103 Quote Moment</td>\n<td>—</td>\n<td>중앙 큰 문구</td>\n<td>문구 중심</td>\n</tr>\n<tr>\n<td><strong>105 My Photo Quote (본 앱)</strong></td>\n<td><strong>원형</strong></td>\n<td><strong>Long Text</strong></td>\n<td><strong>사진 + 문구 조합</strong></td>\n</tr>\n<tr>\n<td>104 Photo Circle</td>\n<td>원형</td>\n<td>정보 컴플리케이션</td>\n<td>사진 + 시스템 정보</td>\n</tr>\n</tbody></table>\n",
+      "updates": [
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": "현재 빌드",
+          "items_html": "<ul>\n<li><code>build.gradle.kts</code> 기준 <code>versionName = &quot;2.0.0&quot;</code>, <code>versionCode = 2</code></li>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.x",
+          "date": null,
+          "label": "초기 출시",
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v2.0.0",
       "latest_update_date": null,
-      "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "latest_update_label": "현재 빌드",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 106,
@@ -166,14 +248,22 @@
       "package": "com.watch_go.led_board_watch_face",
       "landing": "https://watch-go.com/106",
       "repo": "msaltnet/wff-watch-face",
-      "docs_subdir": "led-board",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
+      "branch": "master",
+      "docs_subdir": "led-board-watch-face",
+      "overview_html": "<h1>LED Board Watch Face — Overview</h1>\n<p>Watch Face Format(WFF) 기반의 <strong>레트로 LED 전광판 + 사진 배경</strong> 워치페이스입니다. 공항 안내판, 경기장 전광판, 구형 디지털 시계에서 영감을 받은 <strong>도트 매트릭스 비트맵 폰트</strong>로 시간을 표시하고, 배경에는 갤러리 사진을 배치할 수 있습니다. 빈티지 LED 감성과 현대 Wear OS의 조합이 핵심 특징입니다.</p>\n<p>같은 브랜드의 <strong>Watch LED Scroller &amp; Banner</strong>(201번) 앱과 워치페이스 컴플리케이션을 연동하면, 201 앱에서 편집한 LED 스크롤 문구를 <strong>Photo Complication</strong>으로 이 워치페이스 배경에 띄울 수도 있습니다(레트로 LED 룩을 더욱 강화).</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>LED 도트 매트릭스 폰트</strong> — 픽셀 완벽 비트맵 폰트로 빈티지 전광판 감성</li>\n<li><strong>사진 배경</strong> — Photo 합성 컴플리케이션으로 갤러리 사진 설정</li>\n<li><strong>다양한 LED 컬러 테마</strong> — 여러 LED 색상 프리셋</li>\n<li><strong>폰트 크기 조절</strong> — 중간 / 크게</li>\n<li><strong>시간 위치</strong> — 화면 상단 / 하단</li>\n<li><strong>WFF 기반 저전력</strong> — AoD에서도 효율적</li>\n<li><strong>Watch LED Scroller 연동</strong> — 201 앱의 LED 스크롤 메시지를 이미지 컴플리케이션으로 배경에 표시 가능</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>Watch Face Format (WFF)</strong> — Google의 선언적 XML 워치페이스 포맷</li>\n<li><strong>코드 없음</strong> — Kotlin/Java 런타임 코드 없이 XML 리소스만</li>\n<li><strong>비트맵 도트 매트릭스 폰트</strong> — 픽셀 LED 룩 구현</li>\n<li><strong>빌드:</strong> Gradle Kotlin DSL</li>\n<li><strong>validator 플러그인</strong> — 빌드 시 WFF 스펙 검증</li>\n<li><strong>리소스 생성 파이프라인</strong> — Python 스크립트<ul>\n<li><code>generate_expressions.py</code> → <code>expressions.xml</code></li>\n<li><code>generate_digital_clocks.py</code> → <code>digital_clocks.xml</code> / <code>digital_clocks_with_dates.xml</code></li>\n<li><code>generate_bitmap_fonts_per_image.py</code> → <code>bitmap_fonts.xml</code> (LED 도트 폰트 생성의 핵심)</li>\n</ul>\n</li>\n</ul>\n<h2>빌드 메모</h2>\n<pre><code class=\"language-powershell\">$env:JAVA_HOME = \"C:\\Program Files\\Android\\Android Studio1\\jbr\"\n\n./gradlew assembleDebug                     # 디버그 빌드 (validateWff 자동 실행)\n./gradlew validateWff                        # WFF XML 검증만\n./gradlew memoryFootprint                    # 메모리 푸트프린트 평가\n./gradlew validateWffAndInstall              # 빌드 + 검증 + 설치\n</code></pre>\n<h2>관련 앱 · 연동</h2>\n<h3>Watch LED Scroller &amp; Banner (201)</h3>\n<p>같은 브랜드의 모바일+워치 LED 스크롤 앱. 워치페이스 컴플리케이션을 제공하므로 편집 모드에서 이미지 컴플리케이션 슬롯에 <strong>Watch LED Scroller의 Photo Complication</strong>을 선택하면, 201 앱에서 작성한 LED 스크롤 문구가 이 워치페이스 배경에 작은 프리뷰로 표시됩니다. 전광판 감성을 극대화하는 조합입니다.</p>\n<h3>비슷한 사진 기반 WFF 워치페이스</h3>\n<ul>\n<li><strong>My Photo Watch Face: Clean / Thin / Cute</strong> (102) — 범용 사진 풀스크린</li>\n<li><strong>My Photo Circle Watch Face</strong> (104) — 원형 사진 + 정보 컴플리케이션</li>\n<li><strong>My Photo Quote</strong> (105) — 사진 + 문구</li>\n</ul>\n<h2>포지셔닝</h2>\n<table>\n<thead>\n<tr>\n<th>특징</th>\n<th>값</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>타깃 감성</td>\n<td>레트로 · 빈티지 · 아케이드</td>\n</tr>\n<tr>\n<td>시계 폰트</td>\n<td>도트 매트릭스(비트맵)</td>\n</tr>\n<tr>\n<td>배경</td>\n<td>사진 (Photo 컴플리케이션)</td>\n</tr>\n<tr>\n<td>가독성</td>\n<td>강한 대비 기반으로 매우 우수</td>\n</tr>\n</tbody></table>\n",
+      "updates": [
+        {
+          "version": "v1.0.0",
+          "date": null,
+          "label": "현재 빌드, 초기 출시",
+          "items_html": "<ul>\n<li><code>build.gradle.kts</code> 기준 <code>versionName = &quot;1.0.0&quot;</code>, <code>versionCode = 1</code></li>\n<li>LED 도트 매트릭스 + 사진 배경 워치페이스 초기 출시</li>\n<li>LED 컬러 테마와 비트맵 폰트 프리셋 제공</li>\n<li>Watch LED Scroller(201) 연동을 위한 이미지 컴플리케이션 슬롯</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v1.0.0",
       "latest_update_date": null,
-      "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "latest_update_label": "현재 빌드, 초기 출시",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 200,
@@ -182,13 +272,33 @@
       "package": "com.watch_go.doublecheck",
       "landing": "https://watch-go.com/200",
       "repo": "msaltnet/double-check-pro",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
-      "latest_update_date": null,
+      "branch": "master",
+      "overview_html": "<h1>Double Check — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 재사용 가능한 체크리스트 앱입니다. 완료 후 항목이 사라지는 일반 투두와 달리, \"리셋\" 한 번으로 같은 리스트를 반복해서 쓸 수 있도록 설계했습니다. 장보기, 여행 짐, 일상 루틴처럼 주기적으로 반복되는 체크 작업에 최적화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>재사용 체크리스트</strong> — \"리셋\" 버튼으로 모든 항목을 한 번에 미체크 상태로 되돌려 리스트 전체를 반복 사용</li>\n<li><strong>Wear OS 동기화</strong> — 워치에서 항목 체크. 모바일-워치 간 <code>lastModified</code> 타임스탬프 기반 차분 동기화</li>\n<li><strong>홈 화면 위젯</strong> — 앱을 열지 않고 위젯에서 바로 항목 체크</li>\n<li><strong>URL 공유</strong> — 리스트를 <code>https://watch-go.com/double-check?k=…</code> 링크로 만들어 지인에게 전달, 링크 열면 바로 가져오기</li>\n<li><strong>Explore 게시판</strong> — 다른 사용자가 공유한 리스트(장보기/여행/운동 등)를 카테고리별로 탐색하고 다운로드</li>\n<li><strong>Google 로그인 업로드</strong> — 내 리스트를 공개 게시판에 공유 (조회·다운로드는 로그인 불필요)</li>\n<li><strong>휴지통</strong> — 삭제한 리스트 복원</li>\n<li><strong>오프라인 우선</strong> — 로컬 Room DB에 저장, 계정·동기화 서버 의존 없음</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment + Navigation Component (SafeArgs), ViewBinding + DataBinding, ViewModel, Room 2.7, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS (Compose BOM 2024.11), Wear Compose Material/Foundation</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MobileSyncService</code>, <code>WearSyncService</code>, <code>DataLayerListenerService</code>)</li>\n<li><strong>백엔드(공유 기능):</strong> AWS API Gateway + Lambda (serverless), DynamoDB, Google OAuth (Credential Manager)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 34 (워치) / compileSdk 35, Kotlin 2.0.21, AGP 8.6.0, Java 17(앱)/11(워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 <code>:app</code> 모듈의 Navigation Component로 <code>bunchlist</code> / <code>bunchdetail</code> / <code>editbunch</code> / <code>explore</code> / <code>trash</code> 화면을 묶음</li>\n<li>공유 라이브러리: <code>:watch-go-info-fragment</code> (브랜드 공용 인포 화면), <code>:onboarding</code> (<code>net.msalt.onboarding</code> 패키지)</li>\n<li>로컬 저장소: <code>DoubleCheckDatabase</code> (Room) — 엔티티 <code>Bunch</code>, <code>CheckItem</code>, Repository 패턴</li>\n<li>워치는 <code>bunchlist</code> / <code>detail</code> 2화면만 제공하며, 항목의 checked/pin 상태는 워치 내부에 독자 저장 (모바일과 병합하지 않음)</li>\n<li>공유 API는 별도 API Gateway(<code>serverless-for-dc-board</code>)를 통해 DynamoDB <code>DoubleCheckBoardTable</code>에 업로드, UGC 정책 준수를 위해 Soft Delete + 신고 누적 시 자동 블라인드</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v7.0.1",
+          "date": "2026-04-04",
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음 (버그 수정 추정)</li>\n</ul>\n"
+        },
+        {
+          "version": "v7.0.0",
+          "date": "2026-03-29",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 위젯 — 이제 위젯에서 바로 더블 체크하세요</li>\n<li>디자인 개선 — 어둡고 세련된 색으로 아름다우면서도 더욱 편리한 사용성을 제공합니다</li>\n<li>공유 링크 가져오기 — 가져오기/내보내기 기능을 공유 리스트로 통합해서 사용성을 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.0",
+          "date": "2023-02-26",
+          "label": null,
+          "items_html": "<ul>\n<li>첫 릴리스</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v7.0.1",
+      "latest_update_date": "2026-04-04",
       "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 201,
@@ -318,7 +428,7 @@
       "latest_update_date": null,
       "latest_update_label": "준비 중",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 202,
@@ -327,13 +437,27 @@
       "package": "com.watch_go.myphotowatchframe",
       "landing": "https://watch-go.com/202",
       "repo": "msaltnet/my-photo-watch-frame",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
-      "latest_update_date": null,
+      "branch": "master",
+      "overview_html": "<h1>My Photo Watch Frame — Overview</h1>\n<p>Wear OS 워치를 개인 사진 액자로 바꾸는 앱입니다. 모바일 갤러리에서 선택한 사진을 워치로 전송해 전용 워치페이스의 배경으로 띄우거나, 다른 워치페이스의 사진 컴플리케이션으로 사용할 수 있습니다. 홈 화면 위젯으로 같은 사진을 폰에도 표시할 수 있어 폰과 워치의 룩을 한 번에 맞출 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>사진 워치페이스</strong> — Watch Face Format (WFF) 기반의 전용 풀스크린 사진 워치페이스</li>\n<li><strong>포토 컴플리케이션</strong> — 다른 호환 워치페이스 위에 미니 사진 앨범 표시</li>\n<li><strong>무제한 사진 전송</strong> — 갤러리 다중 선택 또는 다른 앱에서 공유해 워치로 전송, 개수 제한 없음</li>\n<li><strong>ML Kit 얼굴 중심 크롭</strong> — 얼굴을 인식해 인물이 중앙에 오도록 자동 크롭</li>\n<li><strong>2x2 / 4x4 홈 화면 위젯</strong> — 폰 홈에도 같은 사진 액자</li>\n<li><strong>Wear OS 타일</strong> — 타일에서 사진을 빠르게 넘겨보기</li>\n<li><strong>스타일 커스터마이징</strong> — 폰트, 색상, 시간 위치, 가독성용 그라디언트 오버레이</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin 2.1.0, Java 17 (app/wear), Java 11 (라이브러리)</li>\n<li><strong>모바일 앱:</strong> XML Layouts, MVVM (ViewModel + LiveData + Coroutines), Navigation</li>\n<li><strong>워치 앱:</strong> Jetpack Compose (Wear), Canvas 렌더링 (<code>MyCanvasView</code>), Wear Tiles 1.5.0-beta01</li>\n<li><strong>사진 최적화:</strong> ML Kit Face Detection, BitmapFactory (최대 3840px 디코딩)</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>/image</code>, <code>/start-sync</code>, <code>/update-settings</code>, <code>/sync-response</code> / <code>/sync-reply</code>, <code>/watch-version</code>)</li>\n<li><strong>위젯:</strong> AppWidgetProvider + AlarmManager 기반 갱신 스케줄러</li>\n<li><strong>빌드:</strong> AGP 8.6.0, Gradle 8.7 (루트 Groovy, 서브모듈 Kotlin DSL 혼용)</li>\n<li><strong>CI/CD:</strong> GitHub Actions (<code>android-release.yml</code>) — <code>v*</code>, <code>mobile-v*</code>, <code>wear-v*</code> 태그로 AAB 자동 서명·업로드</li>\n</ul>\n<h2>이미지 처리 파이프라인</h2>\n<ol>\n<li>갤러리 선택 또는 외부 앱 공유</li>\n<li>BitmapFactory로 최대 3840px까지 디코딩</li>\n<li>ML Kit Face Detection 기반 얼굴 중심 크롭</li>\n<li>워치용 <strong>450×450</strong>, 위젯용 <strong>900px</strong> 리사이즈</li>\n<li>JPEG <strong>90%</strong> 품질 압축</li>\n<li>Wearable Data Layer로 워치 전송</li>\n</ol>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code> + <code>MainViewModel</code>, <code>WearClient</code>로 워치와 통신</li>\n<li>워치 (<code>:wear</code>) — <code>MyPhotoFrameActivity</code>, <code>MyCanvasView</code> (Canvas 렌더), <code>DataLayerListenerService</code>, <code>MyPhotoComplicationService</code>, <code>MyPhotoTileService</code></li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code> (ViewPager2)</li>\n<li>빌드 스크립트 혼용: 루트는 <code>.gradle</code>(Groovy), 하위 모듈은 <code>.gradle.kts</code>(Kotlin DSL)</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v5.5.0",
+          "date": "2026-03-27",
+          "label": null,
+          "items_html": "<ul>\n<li>성능 개선 — 이미지 처리가 빨라지고 배터리 효율이 향상되었습니다</li>\n<li>위젯 개선 — 모바일 위젯의 사진 표시 품질이 향상되었습니다</li>\n<li>watch-go.com GPT 추가 — 사용 팁과 앱 추천을 GPT에게 물어볼 수 있습니다</li>\n</ul>\n"
+        },
+        {
+          "version": "v5.0.0",
+          "date": "2026-02-27",
+          "label": null,
+          "items_html": "<ul>\n<li>2x2 / 4x4 모바일 홈 위젯</li>\n<li>Wear OS 타일 제공자</li>\n<li>포토 컴플리케이션</li>\n<li>ML Kit 얼굴 중심 자동 크롭</li>\n<li>Watch Face Format (WFF) 기반 워치페이스</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v5.5.0",
+      "latest_update_date": "2026-03-27",
       "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 203,
@@ -342,13 +466,27 @@
       "package": "com.watch_go.cryptowatch",
       "landing": "https://watch-go.com/203",
       "repo": "msaltnet/crypto-watch",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
-      "latest_update_date": null,
+      "branch": "master",
+      "overview_html": "<h1>Crypto Watch — Overview</h1>\n<p>Android 모바일과 Wear OS 워치에서 암호화폐 실시간 시세를 확인할 수 있는 앱입니다. 홈 화면 위젯, 워치페이스 컴플리케이션, Wear OS 타일을 통해 <strong>앱을 열지 않고도</strong> BTC/ETH/알트코인 가격과 24시간 등락률, 공포탐욕지수를 확인할 수 있습니다. 모바일에서 선택한 거래소·코인 조합이 워치로 즉시 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>가격 타일 위젯</strong> — 최대 6개 코인(거래소 + 심볼 조합) 실시간 가격 및 24시간 등락률</li>\n<li><strong>차트 위젯</strong> — MA5 / MA10 / MA20 이동평균선이 그려진 실시간 차트</li>\n<li><strong>공포탐욕지수</strong> — 시장 심리를 컬러 링으로 시각화</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 시계 화면에서 바로 시세 확인</li>\n<li><strong>Wear OS 타일</strong> — 스와이프로 여러 코인 확인 + 인터랙티브 캔들스틱/라인 차트</li>\n<li><strong>다중 거래소 지원</strong> — Binance, Upbit, Bybit, OKX, Bitget</li>\n<li><strong>자동 갱신</strong> — 백그라운드에서 주기적으로 가격 갱신</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, ViewBinding, Navigation Component, MVVM (<code>MainViewModel</code>)</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS</li>\n<li><strong>공유 모듈:</strong> <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API — 경로 <code>/update-settings</code>, <code>/watch-version</code></li>\n<li><strong>거래소 API (<code>ExchangeDataFetcher</code>):</strong> Binance, Upbit, Bybit, OKX, Bitget (가격 + K-line 캔들)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n<li><strong>설정 저장:</strong> SharedPreferences (<code>configExchange1</code>~`configExchange6<code>, legacy </code>configExchange` 호환)</li>\n</ul>\n<h2>설정 직렬화 포맷</h2>\n<p>폰 → 워치로 전송되는 설정 문자열 포맷:</p>\n<pre><code>%EXCHANGE:SYMBOL%,%...%,#INTERVAL#,!FG:0or1!\n</code></pre>\n<p>예: <code>%EX_BINANCE:BTCUSDT%,%%,%%,%%,%%,%%,#1h#,!FG:1!</code></p>\n<ul>\n<li>빈 슬롯은 <code>%%</code>로 표시</li>\n<li><code>#INTERVAL#</code> — 차트 인터벌 (예: <code>1h</code>)</li>\n<li><code>!FG:0or1!</code> — 공포탐욕지수 표시 여부</li>\n</ul>\n<h2>거래소 지원 매트릭스</h2>\n<table>\n<thead>\n<tr>\n<th>거래소</th>\n<th>심볼 예시</th>\n<th>등락률 API</th>\n<th>비고</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Binance</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td></td>\n</tr>\n<tr>\n<td>Upbit</td>\n<td><code>KRW-BTC</code></td>\n<td>지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bybit</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td><code>price24hPcnt</code>가 소수 → ×100 필요</td>\n</tr>\n<tr>\n<td>OKX</td>\n<td><code>BTC-USDT</code></td>\n<td>미지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bitget</td>\n<td><code>BTCUSDT</code></td>\n<td>미지원</td>\n<td>API 불안정</td>\n</tr>\n</tbody></table>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainViewModel</code>이 설정을 <code>getConfigString()</code>으로 직렬화해 <code>WearClient</code>로 워치에 전송</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 설정 수신, <code>ExchangeDataFetcher</code>가 거래소별 API 호출</li>\n<li>위젯/컴플리케이션/타일은 같은 <code>ExchangeDataFetcher</code>를 공유하여 폰/워치 양측에서 일관된 데이터 사용</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v9.0.0",
+          "date": "2026-04-05",
+          "label": null,
+          "items_html": "<ul>\n<li>디자인 개선 — 다크 톤으로 가독성과 사용성이 향상되었습니다</li>\n<li>설정 프리뷰 — 모바일 앱에서 변경 즉시 결과를 미리 볼 수 있습니다</li>\n<li>모바일 위젯 — 위젯에서 바로 시세를 빠르게 확인할 수 있습니다</li>\n</ul>\n"
+        },
+        {
+          "version": "v8.0.0",
+          "date": "2026-03-07",
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v9.0.0",
+      "latest_update_date": "2026-04-05",
       "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 204,
@@ -496,7 +634,7 @@
       "latest_update_date": null,
       "latest_update_label": "개발 중",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 205,
@@ -590,7 +728,7 @@
       "latest_update_date": null,
       "latest_update_label": "개발 중",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 206,
@@ -599,13 +737,27 @@
       "package": "com.watch_go.watch2048",
       "landing": "https://watch-go.com/206",
       "repo": "msaltnet/2048-watch",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
-      "latest_update_date": null,
+      "branch": "master",
+      "overview_html": "<h1>2048 Watch Game — Overview</h1>\n<p>Wear OS 워치에서 즐기는 2048 퍼즐 게임입니다. 클래식 숫자 합치기 퍼즐을 원형/사각형 작은 화면에 맞게 최적화했으며, 주간/월간 글로벌 랭킹 서버와 연결되어 전 세계 플레이어와 경쟁할 수 있습니다. 모바일 앱은 랭킹 확인, 이름 등록, 설정 관리 용도로 사용됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>2048 퍼즐</strong> — 스와이프로 타일을 합쳐 2048 타일을 만들거나 최고 점수 도전</li>\n<li><strong>햅틱 피드백</strong> — 타일 합칠 때 진동</li>\n<li><strong>자동 저장</strong> — 앱을 나갔다가 돌아와도 이어하기</li>\n<li><strong>플레이 타임 표시</strong> — 설정에 따라 워치 화면에 HH:MM 형식으로 표시 (1분 주기 갱신, 실제 플레이 시간만 측정)</li>\n<li><strong>글로벌 랭킹</strong> — 주간·월간 랭킹 서버 등록·조회</li>\n<li><strong>유니크 이름 시스템</strong> — 한 번 등록된 이름은 글로벌 유니크, 본인만 변경 가능</li>\n<li><strong>애니메이션 On/Off</strong> — 워치 게임 전환 애니메이션 조정</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>백엔드(랭킹):</strong> AWS API Gateway + Lambda + DynamoDB (<code>Ranking2048Table</code>)</li>\n<li><strong>인증:</strong><ul>\n<li><code>POST /ranking</code> (v1) — 쿼리 파라미터 <code>c</code>에 CRC 체크섬</li>\n<li><code>POST /ranking/v2</code>, <code>POST /ranking/name</code> — <code>X-Api-Key</code> 헤더</li>\n<li><code>DELETE /ranking</code> — <code>X-Admin-Secret-Key</code> (관리자)</li>\n</ul>\n</li>\n</ul>\n<h2>랭킹 API 요약</h2>\n<table>\n<thead>\n<tr>\n<th>엔드포인트</th>\n<th>용도</th>\n<th>인증</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST /ranking</code> (v1)</td>\n<td>점수 등록 (레거시)</td>\n<td>CRC 쿼리</td>\n</tr>\n<tr>\n<td><code>POST /ranking/v2</code></td>\n<td>점수 등록 (play_time, user_id, account_type 포함)</td>\n<td><code>X-Api-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /ranking/name/check</code></td>\n<td>이름 중복 확인 (소유자 체크 포함)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /ranking/name</code></td>\n<td>이름 등록/변경 (글로벌 유니크)</td>\n<td><code>X-Api-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /ranking/week</code></td>\n<td>주간 랭킹 (top N, 상세 포함 옵션)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /ranking/month</code></td>\n<td>월간 랭킹</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /ranking/month/stat</code></td>\n<td>월별 일간 통계</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>DELETE /ranking</code></td>\n<td>관리자 기록 삭제</td>\n<td><code>X-Admin-Secret-Key</code></td>\n</tr>\n</tbody></table>\n<h3>CRC 계산 (v1 호환)</h3>\n<pre><code class=\"language-python\">def get_crc(point):\n  res = point % 10 + point % 100 + point % 1000\n  res += 31\n  return res * res\n</code></pre>\n<h3>DynamoDB 스키마 (<code>Ranking2048Table</code>)</h3>\n<ul>\n<li><strong>PK:</strong> <code>period</code> (ISO 주차, 예: <code>2025-W05</code>)</li>\n<li><strong>SK:</strong> <code>sortKey</code> (역순 점수 + 타임스탬프, 예: <code>999997952#2025-02-03T12:34:56</code>)</li>\n<li><strong>GSI:</strong> <code>UniqueCheckIndex</code> (period + uniqueKey, 중복 체크)</li>\n<li>속성: name, country, code, point, play_time, user_id, account_type, ip, timestamp, uniqueKey(<code>name#code#point</code>)</li>\n</ul>\n<h3>프라이버시</h3>\n<p><code>GET</code> 응답의 <code>user_id</code>는 앞 3글자만 노출되고 나머지는 <code>*</code> 마스킹. <code>account_type</code>은 GET 응답에 포함되지 않음.</p>\n<h2>아키텍처 요약</h2>\n<ul>\n<li><strong>Play Time 측정:</strong> 워치 화면이 켜져 있을 때만 카운트, <code>SharedPreferences</code> 저장, 1분 주기 UI 갱신 (게임 성능 방해 방지)</li>\n<li><strong>주간 랭킹:</strong> ISO 8601 주차 계산 (월요일 시작), <code>period</code>로 쿼리, <code>sortKey</code>로 자동 정렬 (점수 내림차순, 시간 오름차순)</li>\n<li><strong>월간 랭킹:</strong> 해당 월의 모든 주차 수집 → <code>timestamp</code> 기준 월 1일~말일 필터 → 점수 내림차순 정렬</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v4.0.1",
+          "date": "2026-03-07",
+          "label": null,
+          "items_html": "<ul>\n<li>점수 관련 소폭 버그 수정</li>\n</ul>\n"
+        },
+        {
+          "version": "v4.0.0",
+          "date": "2026-03-03",
+          "label": null,
+          "items_html": "<ul>\n<li>랭킹 2.0 — 유니크 이름으로 랭킹 기록을 등록할 수 있습니다</li>\n<li>애니메이션 설정 — 워치에서 게임 전환 애니메이션을 On/Off 할 수 있습니다</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v4.0.1",
+      "latest_update_date": "2026-03-07",
       "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 207,
@@ -614,13 +766,57 @@
       "package": "com.watch_go.quotemoment",
       "landing": "https://watch-go.com/207",
       "repo": "msaltnet/quote-moment",
-      "overview_html": null,
-      "updates": [],
-      "latest_version": null,
-      "latest_update_date": null,
+      "branch": "master",
+      "overview_html": "<h1>Quote Moment — Overview</h1>\n<p>Android 모바일과 Wear OS 워치에서 매일 새로운 명언과 긍정 확언을 보여주는 앱입니다. 워치페이스 컴플리케이션, 타일, 전용 액자 앱, 모바일 홈 화면 위젯, 알림 등 다양한 표면에서 같은 명언 풀을 공유합니다. 온라인 <strong>Explore 탭</strong>에서 다른 사용자가 공유한 명언 리스트를 탐색·다운로드할 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>명언 리스트 관리</strong> — Room DB 기반, 리스트당 최대 <strong>20개</strong>의 명언 보관, 추가·삭제·편집</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 워치페이스에 명언 표시, 탭 시 다음 명언으로 전환(설정 On/Off)</li>\n<li><strong>Wear OS 타일</strong> — 스와이프로 오늘의 명언 확인</li>\n<li><strong>워치 액자 앱</strong> — 앰비언트 모드 지원 전체 화면 명언</li>\n<li><strong>모바일 홈 위젯</strong> — 2x2 / 4x2 등 다양한 크기, 자동 갱신</li>\n<li><strong>알림</strong> — 설정한 시간에 명언 푸시</li>\n<li><strong>커스터마이징</strong> — 폰트 / 글자 크기 / 색상 / 문구 교체 간격 / 셔플 / 시간 표시</li>\n<li><strong>Explore 온라인 탐색</strong> — 카테고리(motivation / relationships / life / success / healing / etc)별 리스트 다운로드, 좋아요, 업로드(Google 로그인)</li>\n<li><strong>모바일 ↔ 워치 리스트 단위 동기화</strong> — Message API 기반</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin, Gradle Kotlin DSL</li>\n<li><strong>모바일:</strong> MVVM (ViewModel + LiveData + Flow), Room, ViewBinding, Navigation Component, Material Design</li>\n<li><strong>워치:</strong> Jetpack Compose for Wear OS, Wear Complications API, Horologist Tiles</li>\n<li><strong>모바일 ↔ 워치 통신:</strong> Wearable Data Layer — <strong>Message API</strong> 기반 (Data API 미사용)</li>\n<li><strong>백엔드(Explore):</strong> AWS API Gateway + Lambda + DynamoDB, Google OAuth (업로드/좋아요)</li>\n<li><strong>Firebase:</strong> Analytics, Crashlytics</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n</ul>\n<h2>동기화 프로토콜</h2>\n<table>\n<thead>\n<tr>\n<th>Path</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/quote-sync-start</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 시작 알림</td>\n</tr>\n<tr>\n<td><code>/quote-sync-request</code></td>\n<td>Wear → Mobile</td>\n<td>타임스탬프 기반 동기화 요청</td>\n</tr>\n<tr>\n<td><code>/quote-sync-response</code></td>\n<td>Mobile → Wear</td>\n<td><code>QuoteList</code> JSON 전송</td>\n</tr>\n<tr>\n<td><code>/quote-resync</code></td>\n<td>Mobile → Wear</td>\n<td>전체 재동기화</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n</tbody></table>\n<h2>데이터 스키마</h2>\n<ul>\n<li><strong>QuoteList</strong> — <code>listId</code>, <code>title</code>, <code>category</code>, <code>language</code>, <code>updatedAt</code>, <code>isDeleted</code></li>\n<li><strong>Quote</strong> — <code>id</code>, <code>listId</code>(FK), <code>text</code>, <code>author</code></li>\n<li>리스트당 최대 20개 명언</li>\n</ul>\n<h2>Explore API 요약</h2>\n<table>\n<thead>\n<tr>\n<th>엔드포인트</th>\n<th>용도</th>\n<th>인증</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST /quotes</code></td>\n<td>명언 리스트 업로드</td>\n<td>Google OAuth 또는 <code>X-Admin-Secret-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /quotes</code></td>\n<td>리스트 조회 (카테고리·언어·정렬·페이지네이션)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /quotes/{id}</code></td>\n<td>리스트 상세</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/download</code></td>\n<td>다운로드 카운트 증가 + 데이터 반환</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/like</code></td>\n<td>좋아요 토글</td>\n<td>Google OAuth</td>\n</tr>\n<tr>\n<td><code>GET /quotes/{id}/like</code></td>\n<td>본인 좋아요 여부</td>\n<td>Google OAuth</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/report</code></td>\n<td>신고 (10회 누적 시 자동 블라인드)</td>\n<td>없음</td>\n</tr>\n</tbody></table>\n<p>카테고리: <code>motivation</code>, <code>relationships</code>, <code>life</code>, <code>success</code>, <code>healing</code>, <code>etc</code> (대소문자 구분 없음). 언어 필터 지정 시 <strong>영어(en)는 항상 포함</strong>. 업로드 Rate Limiting: 10분 10개.</p>\n<h2>프로젝트 구조</h2>\n<pre><code>quote-moment/\n├── app/                    # 모바일 앱\n│   └── src/main/java/com/watch_go/quotemoment/\n│       ├── MainActivity.kt, MainViewModel.kt, WearClient.kt\n│       ├── data/           # Room DB (Quote, QuoteList, DAO)\n│       ├── main/           # MainFragment, QuoteAdapter\n│       └── settings/       # 설정 화면\n├── wear/                   # Wear OS 앱\n│   └── src/main/java/com/watch_go/quotemoment/\n│       ├── QuoteMomentActivity.kt       # 액자 앱\n│       ├── QuoteComplicationProvider.kt # 컴플리케이션\n│       ├── QuoteTileService.kt          # 타일\n│       └── DataLayerListenerService.kt\n├── onboarding/             # git submodule\n└── watch-go-info-fragment/ # git submodule\n</code></pre>\n",
+      "updates": [
+        {
+          "version": "v5.5.0",
+          "date": "2026-04-20",
+          "label": null,
+          "items_html": "<ul>\n<li>디자인 개선 — 세련된 색으로 아름다우면서도 더욱 편리한 사용성을 제공합니다</li>\n</ul>\n"
+        },
+        {
+          "version": "v5.0.0",
+          "date": "2026-03-23",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 위젯 기능 추가 — 이제 모바일 위젯으로 당신의 영감을 스타일링하세요</li>\n<li>알림 설정 기능 — 날마다 알림으로 명언을 통해 영감을 얻으세요</li>\n</ul>\n"
+        },
+        {
+          "version": "v4.0.0",
+          "date": "2026-02-20",
+          "label": null,
+          "items_html": "<ul>\n<li>인용구 Explore — 다른 사용자가 공유한 명언 리스트 탐색</li>\n</ul>\n"
+        },
+        {
+          "version": "v3.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>인용구 카테고리</li>\n<li>Resync 기능</li>\n<li>온보딩</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>Complication 전환 기능</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.5.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>인용구 등록 가능</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>첫 버전</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v5.5.0",
+      "latest_update_date": "2026-04-20",
       "latest_update_label": null,
-      "fetch_status": "no_docs",
-      "last_successful_fetch": null
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     },
     {
       "id": 208,
@@ -666,7 +862,7 @@
       "latest_update_date": "2026-04-20",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+      "last_successful_fetch": "2026-04-25T10:47:36.674+09:00"
     }
   ]
 }

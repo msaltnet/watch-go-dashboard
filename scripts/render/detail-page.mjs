@@ -45,6 +45,12 @@ function renderUpdatesBlock(app) {
   return `<ul class="updates-list">${items}</ul>${more}`;
 }
 
+function renderIcon(app) {
+  return app.icon_url
+    ? `<img class="detail-icon" src="${escapeHtml(app.icon_url)}" alt="" width="96" height="96">`
+    : `<div class="detail-icon detail-icon-placeholder" aria-hidden="true">📱</div>`;
+}
+
 export function renderDetailPage(app, data, template) {
   return fillTemplate(template, {
     id: escapeHtml(app.id),
@@ -53,6 +59,7 @@ export function renderDetailPage(app, data, template) {
     package: escapeHtml(app.package),
     landing: escapeHtml(app.landing),
     repo: escapeHtml(app.repo),
+    icon: renderIcon(app),
     status_badge: renderStatusBadge(app, data.built_at),
     overview_block: renderOverviewBlock(app),
     updates_block: renderUpdatesBlock(app),

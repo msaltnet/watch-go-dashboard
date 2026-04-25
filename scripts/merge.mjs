@@ -15,6 +15,8 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
 
   const apps = fresh.map(result => {
     const { meta, status } = result;
+    const prev = findPrevious(previous, meta);
+    const icon_url = result.icon_url ?? prev?.icon_url ?? null;
     if (status === 'ok') {
       const first = result.updates[0];
       return {
@@ -24,6 +26,7 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
         latest_version: first?.version ?? null,
         latest_update_date: first?.date ?? null,
         latest_update_label: first?.label ?? null,
+        icon_url,
         fetch_status: 'ok',
         last_successful_fetch: builtAt,
       };
@@ -36,14 +39,14 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
         latest_version: null,
         latest_update_date: null,
         latest_update_label: null,
+        icon_url,
         fetch_status: 'no_docs',
         last_successful_fetch: null,
       };
     }
     // fetch_failed: preserve previous entry if exists
-    const prev = findPrevious(previous, meta);
     if (prev) {
-      return { ...prev, fetch_status: 'fetch_failed' };
+      return { ...prev, icon_url, fetch_status: 'fetch_failed' };
     }
     return {
       ...meta,
@@ -52,6 +55,7 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
       latest_version: null,
       latest_update_date: null,
       latest_update_label: null,
+      icon_url,
       fetch_status: 'fetch_failed',
       last_successful_fetch: null,
     };

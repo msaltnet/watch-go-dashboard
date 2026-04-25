@@ -29,10 +29,18 @@ function renderCard(app, builtAt) {
   }
 
   const landing = (app.landing || '').replace(/^https?:\/\//, '');
+  const icon = app.icon_url
+    ? `<img class="card-icon" src="${escapeHtml(app.icon_url)}" alt="" loading="lazy" width="56" height="56">`
+    : `<div class="card-icon card-icon-placeholder" aria-hidden="true">📱</div>`;
   return `
 <a class="card" href="${escapeHtml(detailPath(app))}" data-category="${escapeHtml(categoryFromId(app.id))}">
-  <span class="card-id">#${escapeHtml(app.id)}${app.variant ? ` · ${escapeHtml(app.variant)}` : ''}</span>
-  <h2 class="card-name">${escapeHtml(app.name)}</h2>
+  <div class="card-head">
+    ${icon}
+    <div class="card-head-text">
+      <span class="card-id">#${escapeHtml(app.id)}${app.variant ? ` · ${escapeHtml(app.variant)}` : ''}</span>
+      <h2 class="card-name">${escapeHtml(app.name)}</h2>
+    </div>
+  </div>
   <p class="card-identity">${escapeHtml(app.identity)}</p>
   ${versionLine}
   ${renderBadge(app, builtAt)}

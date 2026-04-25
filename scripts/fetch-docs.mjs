@@ -5,6 +5,7 @@ import { fetchDocFile } from './github.mjs';
 import { parseUpdates } from './parsers/updates.mjs';
 import { parseOverview } from './parsers/overview.mjs';
 import { mergeFetchResults } from './merge.mjs';
+import { fetchIconUrl } from './landing.mjs';
 
 function describeFetch(r) {
   const detail = [r.http && `http=${r.http}`, r.reason && `reason=${r.reason}`].filter(Boolean).join(' ');
@@ -26,26 +27,27 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
     const updatesPath = `${basePath}/updates.md`;
     const branch = meta.branch ?? 'main';
 
-    const [overview, updates] = await Promise.all([
+    const [overview, updates, icon_url] = await Promise.all([
       fetchDocFile({ repo: meta.repo, path: overviewPath, token, ref: branch, fetchFn }),
       fetchDocFile({ repo: meta.repo, path: updatesPath, token, ref: branch, fetchFn }),
+      fetchIconUrl({ landing: meta.landing, id: meta.id, fetchFn }),
     ]);
 
     const probe = `[${meta.id}${meta.variant ? '-' + meta.variant : ''} ${meta.repo}@${branch}] overview=${describeFetch(overview)} updates=${describeFetch(updates)}`;
 
     if (overview.status === 'auth_failed' || updates.status === 'auth_failed') {
       console.warn(`fetch_failed (auth) ${probe}`);
-      results.push({ meta, status: 'fetch_failed' });
+      results.push({ meta, status: 'fetch_failed', icon_url });
       continue;
     }
     if (overview.status === 'error' || updates.status === 'error') {
       console.warn(`fetch_failed (error) ${probe}`);
-      results.push({ meta, status: 'fetch_failed' });
+      results.push({ meta, status: 'fetch_failed', icon_url });
       continue;
     }
     if (overview.status === 'not_found' && updates.status === 'not_found') {
       console.warn(`no_docs ${probe}`);
-      results.push({ meta, status: 'no_docs' });
+      results.push({ meta, status: 'no_docs', icon_url });
       continue;
     }
 
@@ -59,6 +61,7 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
       status: 'ok',
       overview_html,
       updates: updatesArr,
+      icon_url,
     });
   }
 
