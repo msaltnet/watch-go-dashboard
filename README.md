@@ -110,9 +110,34 @@ PAT가 만료되면 모든 앱 fetch가 실패하여 `Daily Docs Update` job이 
 
 ## 시크릿 설정
 
-GitHub repo 설정 → `Settings → Secrets and variables → Actions`에서:
+### Fine-grained PAT 발급
 
-- `DOCS_FETCH_TOKEN` — Fine-grained PAT, 각 앱 repo의 `Contents: Read-only` 권한
+1. GitHub `Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token`
+2. 다음과 같이 설정:
+
+   | 항목 | 값 |
+   |---|---|
+   | Token name | `watch-go-dashboard-fetch` |
+   | Expiration | 90일 또는 1년 (만료 시 Actions가 fail로 알려 줌) |
+   | Resource owner | `msaltnet` |
+   | Repository access | **Only select repositories** — `apps.yml`의 모든 repo (현재 11개) 선택. `All repositories`는 피할 것. |
+   | Repository permissions | **Contents: Read-only** 만 활성화. 나머지는 모두 `No access`. (Metadata는 자동 read-only.) |
+   | Account permissions | 전부 `No access` |
+
+3. 발급 후 토큰 값(`github_pat_...`)을 복사. 이 화면을 닫으면 다시 못 봅니다.
+
+### Secret 등록
+
+대시보드 repo → `Settings → Secrets and variables → Actions → New repository secret`:
+
+- **Name:** `DOCS_FETCH_TOKEN`
+- **Value:** 위에서 복사한 토큰
+
+등록 후 Actions 탭에서 `Daily Docs Update`를 수동 실행해 검증.
+
+### 만료·갱신
+
+PAT 만료 시 `Daily Docs Update` job이 401로 fail하고 GitHub가 이메일 알림을 보냅니다. 사이트는 마지막 성공 데이터로 계속 표시됩니다 (merge fallback 덕분). 갱신은 PAT 재발급 또는 기존 PAT의 만료일 연장 → secret 값 교체.
 
 ## Pages 설정
 
