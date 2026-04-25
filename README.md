@@ -6,6 +6,42 @@
 - 공개 정보만 취급 (비밀값 없음)
 - GitHub Pages 정적 호스팅
 
+## 동작 방식
+
+```
+[각 앱 repo]                    [이 repo]                        [GitHub Pages]
+docs/app/overview.md   ──┐
+docs/app/updates.md      │
+                         │     ① fetch-docs.mjs (Actions, 매일 03:00 KST)
+                         └──▶  GitHub Contents API로 fetch
+                               + Markdown 파싱
+                               + DOMPurify sanitize
+                                          │
+                                          ▼
+                               data/apps.json  ──── git commit & push
+                                          │
+                                          ▼
+                               ② render-site.mjs (Actions, push 시)
+                                  apps.json + 템플릿 → 정적 HTML
+                                          │
+                                          ▼
+                               dist/index.html               ──▶  공개 대시보드
+                               dist/app/<id>.html                  https://<owner>
+                               dist/styles.css                     .github.io/...
+```
+
+**3단계 파이프라인:**
+
+1. **수집 (`scripts/fetch-docs.mjs`)** — `apps.yml` 17개 엔트리를 읽고, 각 repo의 `docs/app/{overview,updates}.md`를 GitHub API로 받아옴. `updates.md`는 버전 헤더(`## v1.2.3 — YYYY-MM-DD` 등)로 파싱해 구조화. 결과는 `data/apps.json`에 누적 저장. 일부 repo가 실패하면 이전 데이터를 유지(부분 실패 허용), 전부 실패하면 Actions가 fail해서 사이트를 보호.
+
+2. **렌더링 (`scripts/render-site.mjs`)** — `data/apps.json` + `templates/*.html` + `public/styles.css` 를 합쳐 `dist/`에 정적 HTML 생성. 페이지는 두 종류:
+   - `index.html` — 카드 그리드 (앱 번호, 정체성, 최신 버전, 상태 배지)
+   - `app/<id>.html` — 각 앱 상세 페이지 (overview 본문 + 최신 5개 업데이트)
+
+3. **배포** — `actions/upload-pages-artifact` + `actions/deploy-pages`로 GitHub Pages에 게시. 두 워크플로우(`daily-update`, `deploy`)로 분리되어, 데이터만 갱신될 때와 템플릿/스크립트가 바뀔 때 모두 자동 재배포.
+
+데이터 모델과 실패 처리 정책은 [`docs/superpowers/specs/2026-04-23-watch-go-dashboard-design.md`](docs/superpowers/specs/2026-04-23-watch-go-dashboard-design.md)에 자세히 적혀 있습니다.
+
 ## 구성
 
 ```
