@@ -5,6 +5,7 @@ apps:
     package: "com.watch_go.myphotowatchface"
     landing: "https://watch-go.com/100"
     repo: "msaltnet/MyPhotoWatchFace"
+    branch: "watchface"
 
   - id: 102
     variant: "clean"
