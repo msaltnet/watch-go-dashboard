@@ -3,40 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{name}} — watch-go Dashboard</title>
+<title>{{name}} — watch-go Atelier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-<header class="site-header">
-  <p><a href="../index.html">← Dashboard</a></p>
+<body class="detail">
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header detail-header">
+  <p class="back"><a href="../index.html"><span aria-hidden="true">←</span> Atelier</a></p>
+  <div class="header-rule" role="presentation"></div>
   <div class="detail-head">
-    {{icon}}
-    <div>
-      <h1>{{name}}</h1>
+    <div class="detail-icon-wrap">{{icon}}</div>
+    <div class="detail-head-text">
+      <span class="detail-tag mono">№ {{id}}</span>
+      <h1 class="display detail-name">{{name}}</h1>
       <p class="identity">{{identity}}</p>
     </div>
   </div>
   <ul class="app-links">
-    <li><strong>번호:</strong> #{{id}}</li>
-    <li><strong>패키지:</strong> <code>{{package}}</code></li>
-    <li><strong>랜딩:</strong> <a href="{{landing}}">{{landing}}</a></li>
-    <li><strong>Repo:</strong> <a href="https://github.com/{{repo}}">{{repo}}</a></li>
+    <li><span class="meta-key">패키지</span><code class="mono">{{package}}</code></li>
+    <li><span class="meta-key">랜딩</span><a href="{{landing}}">{{landing}}</a></li>
+    <li><span class="meta-key">Repo</span><a href="https://github.com/{{repo}}">{{repo}}</a></li>
   </ul>
   {{status_badge}}
 </header>
 
 <section class="detail-section">
-  <h2>소개</h2>
-  {{overview_block}}
+  <header class="section-head">
+    <span class="section-no">I</span>
+    <h2>소개</h2>
+  </header>
+  <div class="prose">
+    {{overview_block}}
+  </div>
 </section>
 
 <section class="detail-section">
-  <h2>업데이트</h2>
+  <header class="section-head">
+    <span class="section-no">II</span>
+    <h2>업데이트 이력</h2>
+  </header>
   {{updates_block}}
 </section>
 
 <footer class="site-footer">
-  <p>빌드 시각: {{built_at_display}}</p>
+  <div class="footer-rule" role="presentation"></div>
+  <div class="footer-row">
+    <p class="footer-mark">watch-go.com — Wear Beauty. Live Smart.</p>
+    <p class="footer-meta">Compiled <span class="mono">{{built_at_display}}</span></p>
+  </div>
 </footer>
 </body>
 </html>

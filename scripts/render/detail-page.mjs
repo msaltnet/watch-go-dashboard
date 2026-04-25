@@ -31,9 +31,11 @@ function renderUpdatesBlock(app) {
       : '';
     return `
 <li>
-  <span class="update-version">${escapeHtml(versionText)}</span>
-  ${dateSpan}
-  ${u.items_html}
+  <div class="update-meta">
+    <span class="update-version">${escapeHtml(versionText)}</span>
+    ${dateSpan}
+  </div>
+  <div class="update-body">${u.items_html}</div>
 </li>`;
   }).join('');
   const branch = app.branch ?? 'main';

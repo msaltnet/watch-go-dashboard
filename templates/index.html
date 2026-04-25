@@ -3,27 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>watch-go.com Dashboard</title>
+<title>watch-go.com — Atelier of Time</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+<div class="grain" aria-hidden="true"></div>
+
 <header class="site-header">
-  <h1>watch-go.com Dashboard</h1>
-  <p class="tagline">Wear Beauty. Live Smart.</p>
+  <div class="header-row">
+    <div class="brand">
+      <span class="brand-mark">W·G</span>
+      <span class="brand-meta">Atelier № <span class="brand-no">2026</span></span>
+    </div>
+    <div class="header-clock" aria-hidden="true">
+      <span class="header-clock-label">Last impression</span>
+      <span class="header-clock-time">{{built_at_display}}</span>
+    </div>
+  </div>
+  <div class="header-rule" role="presentation"></div>
+  <h1 class="display">
+    <span class="display-line">Wear Beauty.</span>
+    <span class="display-line display-italic">Live Smart.</span>
+  </h1>
+  <p class="kicker">A field journal of {{total}} timepieces &amp; tools, observed daily from their native repositories.</p>
 </header>
 
-<section class="summary">
-  <span class="summary-item">총 <strong>{{total}}</strong>개 앱</span>
-  <span class="summary-item">마지막 업데이트 <strong>{{built_at_display}}</strong></span>
-  <span class="summary-item summary-ok">{{succeeded}} ok</span>
-  <span class="summary-item summary-no-docs">{{no_docs}} no docs</span>
-  <span class="summary-item summary-failed">{{failed}} failed</span>
+<section class="summary" aria-label="Build summary">
+  <div class="summary-grid">
+    <div class="summary-cell">
+      <span class="summary-label">Total</span>
+      <span class="summary-value">{{total}}</span>
+    </div>
+    <div class="summary-cell summary-ok">
+      <span class="summary-label">Live</span>
+      <span class="summary-value">{{succeeded}}</span>
+    </div>
+    <div class="summary-cell summary-no-docs">
+      <span class="summary-label">Pending</span>
+      <span class="summary-value">{{no_docs}}</span>
+    </div>
+    <div class="summary-cell summary-failed">
+      <span class="summary-label">Issue</span>
+      <span class="summary-value">{{failed}}</span>
+    </div>
+  </div>
 </section>
 
-<nav class="filters" data-filter-nav>
-  <button class="filter active" data-filter="all">전체</button>
-  <button class="filter" data-filter="watchface">Watch Face</button>
-  <button class="filter" data-filter="app">App</button>
+<nav class="filters" data-filter-nav aria-label="Category filter">
+  <button class="filter active" data-filter="all">
+    <span class="filter-key">A</span><span class="filter-label">전체</span>
+  </button>
+  <button class="filter" data-filter="watchface">
+    <span class="filter-key">W</span><span class="filter-label">Watch Face</span>
+  </button>
+  <button class="filter" data-filter="app">
+    <span class="filter-key">P</span><span class="filter-label">App</span>
+  </button>
 </nav>
 
 <main class="grid">
@@ -31,8 +70,11 @@
 </main>
 
 <footer class="site-footer">
-  <p>watch-go.com Dashboard — 공개 정보 기반 대시보드</p>
-  <p>빌드 시각: {{built_at_display}}</p>
+  <div class="footer-rule" role="presentation"></div>
+  <div class="footer-row">
+    <p class="footer-mark">watch-go.com — Wear Beauty. Live Smart.</p>
+    <p class="footer-meta">Compiled <span class="mono">{{built_at_display}}</span></p>
+  </div>
 </footer>
 
 <script>
