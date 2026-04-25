@@ -6,6 +6,11 @@ import { parseUpdates } from './parsers/updates.mjs';
 import { parseOverview } from './parsers/overview.mjs';
 import { mergeFetchResults } from './merge.mjs';
 
+function describeFetch(r) {
+  const detail = [r.http && `http=${r.http}`, r.reason && `reason=${r.reason}`].filter(Boolean).join(' ');
+  return detail ? `${r.status}(${detail})` : r.status;
+}
+
 export async function collectAppDocs({ appsYml, token, fetchFn }) {
   if (!token) {
     throw new Error('DOCS_FETCH_TOKEN environment variable is required');
@@ -26,15 +31,20 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
       fetchDocFile({ repo: meta.repo, path: updatesPath, token, ref: branch, fetchFn }),
     ]);
 
+    const probe = `[${meta.id}${meta.variant ? '-' + meta.variant : ''} ${meta.repo}@${branch}] overview=${describeFetch(overview)} updates=${describeFetch(updates)}`;
+
     if (overview.status === 'auth_failed' || updates.status === 'auth_failed') {
+      console.warn(`fetch_failed (auth) ${probe}`);
       results.push({ meta, status: 'fetch_failed' });
       continue;
     }
     if (overview.status === 'error' || updates.status === 'error') {
+      console.warn(`fetch_failed (error) ${probe}`);
       results.push({ meta, status: 'fetch_failed' });
       continue;
     }
     if (overview.status === 'not_found' && updates.status === 'not_found') {
+      console.warn(`no_docs ${probe}`);
       results.push({ meta, status: 'no_docs' });
       continue;
     }
