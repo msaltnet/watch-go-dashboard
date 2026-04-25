@@ -34,9 +34,24 @@ npm install
 
 ### 환경 변수
 
+`DOCS_FETCH_TOKEN`에 Fine-grained PAT을 설정합니다. 토큰 값은 보통 `github_pat_...`로 시작합니다.
+
+**bash / zsh (macOS, Linux, Git Bash):**
 ```bash
-export DOCS_FETCH_TOKEN="ghp_xxx..."   # Fine-grained PAT
+export DOCS_FETCH_TOKEN="github_pat_..."
 ```
+
+**PowerShell (Windows):**
+```powershell
+$env:DOCS_FETCH_TOKEN = "github_pat_..."
+```
+
+**cmd (Windows):**
+```cmd
+set DOCS_FETCH_TOKEN=github_pat_...
+```
+
+세 명령 모두 현재 터미널 세션에서만 유효합니다. 영구 등록이 필요하면 셸 rc 파일이나 시스템 환경 변수에 추가하세요.
 
 ### 명령어
 
