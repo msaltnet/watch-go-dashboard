@@ -72,6 +72,7 @@ apps:
     package: "com.watch_go.doublecheck"
     landing: "https://watch-go.com/200"
     repo: "msaltnet/double-check-pro"
+    branch: "master"
 
   - id: 201
     name: "Watch LED Scroller & Banner"
@@ -86,6 +87,7 @@ apps:
     package: "com.watch_go.myphotowatchframe"
     landing: "https://watch-go.com/202"
     repo: "msaltnet/my-photo-watch-frame"
+    branch: "master"
 
   - id: 203
     name: "Crypto Watch: Bitcoin & Tile"
@@ -93,6 +95,7 @@ apps:
     package: "com.watch_go.cryptowatch"
     landing: "https://watch-go.com/203"
     repo: "msaltnet/crypto-watch"
+    branch: "master"
 
   - id: 204
     name: "Multi Counter: Tally & Click"
@@ -114,6 +117,7 @@ apps:
     package: "com.watch_go.watch2048"
     landing: "https://watch-go.com/206"
     repo: "msaltnet/2048-watch"
+    branch: "master"
 
   - id: 207
     name: "Quote Moment: Daily Inspire"
@@ -121,6 +125,7 @@ apps:
     package: "com.watch_go.quotemoment"
     landing: "https://watch-go.com/207"
     repo: "msaltnet/quote-moment"
+    branch: "master"
 
   - id: 208
     name: "Remote Camera: Watch Control"
