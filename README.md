@@ -71,9 +71,13 @@ python -m http.server --directory dist 8000
      # branch: "master"    # 선택: 기본 브랜치가 main이 아닐 때
    ```
 
-2. **Fine-grained PAT 권한 갱신** — GitHub 설정에서 `DOCS_FETCH_TOKEN` PAT의 repository access 목록에 새 repo를 추가합니다.
+2. **⚠ Fine-grained PAT 권한 갱신 (필수)** — GitHub `Settings → Developer settings → Personal access tokens → Fine-grained tokens`에서 `DOCS_FETCH_TOKEN`으로 사용 중인 PAT을 열어 **Repository access 목록에 새 repo를 추가**합니다.
+   - 이 단계를 빠뜨리면 새 앱이 `fetch_failed`로만 표시되고, 데이터가 영영 채워지지 않습니다 (PAT은 명시된 repo만 접근 가능).
+   - PAT 자체를 새로 발급하지는 말고, 기존 토큰의 repo 목록만 업데이트하세요. 토큰 값을 바꾸면 secret도 새 값으로 갱신해야 합니다.
 
 3. PR을 만들어 머지합니다. 머지 후 `deploy` 워크플로우가 재빌드합니다. 실제 데이터는 다음 일일 업데이트(03:00 KST)에 채워지거나, Actions 탭에서 "Daily Docs Update" 워크플로우를 수동 실행할 수 있습니다.
+
+4. 새 앱 카드가 `⚠ 문서 수집 실패` 또는 `⚠ N일 전 데이터` 배지로 보이면 PAT 권한 갱신을 먼저 의심하세요.
 
 ## 운영
 
