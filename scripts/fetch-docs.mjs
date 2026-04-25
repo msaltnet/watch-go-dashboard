@@ -73,6 +73,17 @@ async function main() {
 
   await writeFile('data/apps.json', JSON.stringify(merged, null, 2) + '\n', 'utf8');
   console.log(`built_at=${merged.built_at} stats=${JSON.stringify(merged.stats)}`);
+
+  for (const status of ['no_docs', 'fetch_failed']) {
+    const apps = merged.apps.filter(a => a.fetch_status === status);
+    if (apps.length === 0) continue;
+    console.log(`\n${status} (${apps.length}):`);
+    for (const a of apps) {
+      const slug = a.variant ? `${a.id}-${a.variant}` : a.id;
+      const sub = a.docs_subdir ? ` [docs/app/${a.docs_subdir}/]` : '';
+      console.log(`  #${slug}  ${a.name}  →  ${a.repo}${sub}`);
+    }
+  }
 }
 
 const isEntry = import.meta.url === pathToFileURL(process.argv[1]).href;
