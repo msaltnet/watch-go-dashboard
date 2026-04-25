@@ -15,9 +15,18 @@ function renderBadge(app, builtAt) {
 }
 
 function renderCard(app, builtAt) {
-  const versionLine = app.latest_version
-    ? `<div class="card-version">${escapeHtml(app.latest_version)} · ${escapeHtml(app.latest_update_date)}</div>`
-    : `<div class="card-version empty">버전 정보 없음</div>`;
+  let versionLine;
+  if (app.latest_version) {
+    const versionLabel = app.latest_update_label
+      ? `${app.latest_version} (${app.latest_update_label})`
+      : app.latest_version;
+    const trailing = app.latest_update_date
+      ? ` · ${escapeHtml(app.latest_update_date)}`
+      : '';
+    versionLine = `<div class="card-version">${escapeHtml(versionLabel)}${trailing}</div>`;
+  } else {
+    versionLine = `<div class="card-version empty">버전 정보 없음</div>`;
+  }
 
   const landing = (app.landing || '').replace(/^https?:\/\//, '');
   return `

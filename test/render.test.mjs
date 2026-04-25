@@ -94,3 +94,33 @@ test('renderDetailPage throws on undefined template placeholder', async () => {
   const badTemplate = '<html>{{bogus_placeholder}}</html>';
   assert.throws(() => renderDetailPage(fixture.apps[0], fixture, badTemplate), /Missing template value/);
 });
+
+test('renderIndexPage shows unreleased label on card', async () => {
+  const { index } = await loadTemplates();
+  const data = {
+    ...fixture,
+    apps: [{
+      ...fixture.apps[0],
+      updates: [{ version: 'v7.0.0', date: null, label: '개발 중', items_html: '<ul></ul>' }],
+      latest_version: 'v7.0.0',
+      latest_update_date: null,
+      latest_update_label: '개발 중',
+    }],
+  };
+  const html = renderIndexPage(data, index);
+  assert.match(html, /v7\.0\.0 \(개발 중\)/);
+});
+
+test('renderDetailPage renders update with no date', async () => {
+  const { detail } = await loadTemplates();
+  const app = {
+    ...fixture.apps[0],
+    updates: [{ version: 'v2.3.0', date: null, label: null, items_html: '<ul><li>x</li></ul>' }],
+    latest_version: 'v2.3.0',
+    latest_update_date: null,
+    latest_update_label: null,
+  };
+  const html = renderDetailPage(app, fixture, detail);
+  assert.match(html, /v2\.3\.0/);
+  assert.ok(!html.includes('update-date'));
+});

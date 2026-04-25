@@ -13,8 +13,31 @@ test('parses single version section', () => {
   assert.equal(result.length, 1);
   assert.equal(result[0].version, 'v7.0.0');
   assert.equal(result[0].date, '2026-04-23');
+  assert.equal(result[0].label, null);
   assert.match(result[0].items_html, /홈 화면 위젯 추가/);
   assert.match(result[0].items_html, /<ul>/);
+});
+
+test('parses version-only header (no date)', () => {
+  const md = `## v2.3.0
+- 세부 변경 내용 정보 없음
+`;
+  const result = parseUpdates(md);
+  assert.equal(result.length, 1);
+  assert.equal(result[0].version, 'v2.3.0');
+  assert.equal(result[0].date, null);
+  assert.equal(result[0].label, null);
+});
+
+test('parses unreleased label like "(개발 중)"', () => {
+  const md = `## v7.0.0 (개발 중)
+- 위젯 작업
+`;
+  const result = parseUpdates(md);
+  assert.equal(result.length, 1);
+  assert.equal(result[0].version, 'v7.0.0');
+  assert.equal(result[0].date, null);
+  assert.equal(result[0].label, '개발 중');
 });
 
 test('returns empty array when no version headers', () => {
@@ -50,7 +73,9 @@ test('orders same-date releases by version descending', () => {
   assert.equal(result[1].version, 'v1.0.0');
 });
 
-test('skips headers without a valid date', () => {
+test('skips dash-prefixed header with non-date suffix', () => {
+  // `## v1.0.0 — coming soon` — dash form requires YYYY-MM-DD; this header is malformed.
+  // Use `(...)` for unreleased status instead.
   const md = `## v1.0.0 — coming soon
 - 준비중
 
@@ -60,6 +85,26 @@ test('skips headers without a valid date', () => {
   const result = parseUpdates(md);
   assert.equal(result.length, 1);
   assert.equal(result[0].version, 'v2.0.0');
+});
+
+test('orders unreleased (label) above dated above undated', () => {
+  const md = `## v6.0.0 — 2026-03-01
+- a
+
+## v2.3.0
+- b
+
+## v7.0.0 (개발 중)
+- c
+`;
+  const result = parseUpdates(md);
+  assert.equal(result.length, 3);
+  assert.equal(result[0].version, 'v7.0.0');
+  assert.equal(result[0].label, '개발 중');
+  assert.equal(result[1].version, 'v6.0.0');
+  assert.equal(result[1].date, '2026-03-01');
+  assert.equal(result[2].version, 'v2.3.0');
+  assert.equal(result[2].date, null);
 });
 
 test('handles different em-dash variants (— vs --)', () => {

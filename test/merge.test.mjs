@@ -28,9 +28,30 @@ test('ok result overwrites previous entry entirely', () => {
   assert.equal(merged.apps[0].overview_html, '<p>new</p>');
   assert.equal(merged.apps[0].latest_version, 'v1.0.0');
   assert.equal(merged.apps[0].latest_update_date, '2026-01-01');
+  assert.equal(merged.apps[0].latest_update_label, null);
   assert.equal(merged.apps[0].last_successful_fetch, now);
   assert.equal(merged.stats.succeeded, 1);
   assert.equal(merged.stats.failed, 0);
+});
+
+test('exposes latest_update_label from first update entry', () => {
+  const fresh = [{
+    meta: appMeta,
+    status: 'ok',
+    overview_html: '<p>x</p>',
+    updates: [
+      { version: 'v7.0.0', date: null, label: '개발 중', items_html: '<ul></ul>' },
+      { version: 'v6.0.0', date: '2026-03-01', label: null, items_html: '<ul></ul>' },
+    ],
+  }];
+  const merged = mergeFetchResults({
+    previous: { apps: [] },
+    fresh,
+    builtAt: '2026-04-23T00:00:00+09:00',
+  });
+  assert.equal(merged.apps[0].latest_version, 'v7.0.0');
+  assert.equal(merged.apps[0].latest_update_date, null);
+  assert.equal(merged.apps[0].latest_update_label, '개발 중');
 });
 
 test('fetch_failed keeps previous data but updates status (partial failure)', () => {

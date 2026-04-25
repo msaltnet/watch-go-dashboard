@@ -16,7 +16,7 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
 
   for (const meta of apps) {
     const subdir = meta.docs_subdir;
-    const basePath = subdir ? `docs/${subdir}` : 'docs';
+    const basePath = subdir ? `docs/app/${subdir}` : 'docs/app';
     const overviewPath = `${basePath}/overview.md`;
     const updatesPath = `${basePath}/updates.md`;
     const branch = meta.branch ?? 'main';

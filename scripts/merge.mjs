@@ -23,6 +23,7 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
         updates: result.updates,
         latest_version: first?.version ?? null,
         latest_update_date: first?.date ?? null,
+        latest_update_label: first?.label ?? null,
         fetch_status: 'ok',
         last_successful_fetch: builtAt,
       };
@@ -34,6 +35,7 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
         updates: [],
         latest_version: null,
         latest_update_date: null,
+        latest_update_label: null,
         fetch_status: 'no_docs',
         last_successful_fetch: null,
       };
@@ -49,6 +51,7 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
       updates: [],
       latest_version: null,
       latest_update_date: null,
+      latest_update_label: null,
       fetch_status: 'fetch_failed',
       last_successful_fetch: null,
     };

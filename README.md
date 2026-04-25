@@ -2,7 +2,7 @@
 
 [watch-go.com](https://watch-go.com) 브랜드의 Wear OS / Android 앱 현황을 한눈에 보여주는 개발자 공유용 정적 대시보드입니다.
 
-- 각 앱 repo의 `docs/overview.md`, `docs/updates.md`를 하루 1회 수집
+- 각 앱 repo의 `docs/app/overview.md`, `docs/app/updates.md`를 하루 1회 수집
 - 공개 정보만 취급 (비밀값 없음)
 - GitHub Pages 정적 호스팅
 
@@ -87,7 +87,7 @@ python -m http.server --directory dist 8000
 - 대시보드 요약 바에 `ok / no docs / failed` 카운트 표시
 - 각 카드 배지:
   - 성공: 배지 없음
-  - `no_docs`: "데이터 없음" (해당 repo에 `docs/overview.md`, `docs/updates.md`가 없음)
+  - `no_docs`: "데이터 없음" (해당 repo에 `docs/app/overview.md`, `docs/app/updates.md`가 없음)
   - `fetch_failed`: "⚠ N일 전 데이터" 또는 "⚠ 문서 수집 실패"
 
 ### PAT 만료 대응
@@ -119,7 +119,7 @@ GitHub repo 설정 → `Settings → Secrets and variables → Actions`에서:
 
 - [`docs/superpowers/specs/2026-04-23-watch-go-dashboard-design.md`](docs/superpowers/specs/2026-04-23-watch-go-dashboard-design.md) — 설계 문서
 - [`docs/superpowers/plans/2026-04-23-watch-go-dashboard.md`](docs/superpowers/plans/2026-04-23-watch-go-dashboard.md) — 구현 플랜
-- [`documentation-guide.md`](documentation-guide.md) — 각 앱 repo의 `docs/` 작성 가이드 (대시보드가 의존하는 포맷)
+- [`documentation-guide.md`](documentation-guide.md) — 각 앱 repo의 `docs/app/` 작성 가이드 (대시보드가 의존하는 포맷)
 
 ## 라이선스
 

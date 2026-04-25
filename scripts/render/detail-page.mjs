@@ -24,14 +24,20 @@ function renderUpdatesBlock(app) {
   if (!app.updates || app.updates.length === 0) {
     return '<p class="empty-state">데이터 없음</p>';
   }
-  const items = app.updates.slice(0, 5).map(u => `
+  const items = app.updates.slice(0, 5).map(u => {
+    const versionText = u.label ? `${u.version} (${u.label})` : u.version;
+    const dateSpan = u.date
+      ? `<span class="update-date">${escapeHtml(u.date)}</span>`
+      : '';
+    return `
 <li>
-  <span class="update-version">${escapeHtml(u.version)}</span>
-  <span class="update-date">${escapeHtml(u.date)}</span>
+  <span class="update-version">${escapeHtml(versionText)}</span>
+  ${dateSpan}
   ${u.items_html}
-</li>`).join('');
+</li>`;
+  }).join('');
   const branch = app.branch ?? 'main';
-  const subdirPath = app.docs_subdir ? `docs/${app.docs_subdir}` : 'docs';
+  const subdirPath = app.docs_subdir ? `docs/app/${app.docs_subdir}` : 'docs/app';
   const moreHref = `https://github.com/${app.repo}/blob/${branch}/${subdirPath}/updates.md`;
   const more = app.updates.length > 5
     ? `<p class="empty-state"><a href="${escapeHtml(moreHref)}">전체 업데이트 이력 보기 ↗</a></p>`

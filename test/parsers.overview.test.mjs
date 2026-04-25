@@ -22,7 +22,7 @@ test('rewrites relative image paths to repo raw URL', () => {
   const html = parseOverview(md, REPO, BRANCH);
   assert.match(
     html,
-    /src="https:\/\/raw\.githubusercontent\.com\/msaltnet\/sample-app\/main\/docs\/images\/icon\.png"/
+    /src="https:\/\/raw\.githubusercontent\.com\/msaltnet\/sample-app\/main\/docs\/app\/images\/icon\.png"/
   );
 });
 
@@ -31,7 +31,7 @@ test('rewrites images without leading dot-slash', () => {
   const html = parseOverview(md, REPO, BRANCH);
   assert.match(
     html,
-    /src="https:\/\/raw\.githubusercontent\.com\/msaltnet\/sample-app\/main\/docs\/images\/icon\.png"/
+    /src="https:\/\/raw\.githubusercontent\.com\/msaltnet\/sample-app\/main\/docs\/app\/images\/icon\.png"/
   );
 });
 
@@ -45,7 +45,7 @@ test('respects docs_subdir when rewriting image paths', () => {
   const html = parseOverview('![x](images/x.png)', REPO, BRANCH, 'clean');
   assert.match(
     html,
-    /msaltnet\/sample-app\/main\/docs\/clean\/images\/x\.png/
+    /msaltnet\/sample-app\/main\/docs\/app\/clean\/images\/x\.png/
   );
 });
 
