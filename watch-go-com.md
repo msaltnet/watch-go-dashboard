@@ -42,28 +42,27 @@ aws amplify + serverless-api 로 서빙되는 static web site
 
 ## App Info
 ### Android, Wear OS
-관리 번호, 앱 이름, 웹 페이지, 패키지 이름
+저장소 brunch 와 문서 위치는 wff 모노레포(8개 앱이 한 저장소)와 단일 앱 저장소가 다릅니다. 모든 앱 문서 6종은 각 앱의 `docs/app/`에 평면 배치됩니다.
 
-| 번호 | 앱 이름 | 웹 페이지 | 패키지 이름 | GitHub Repo |
-|---|---|---|---|---|
-| 100 | My Photo Watch Face: watch-go | https://watch-go.com/100 | com.watch_go.myphotowatchface | [MyPhotoWatchFace](https://github.com/msaltnet/MyPhotoWatchFace) |
-| 102 | My Photo Watch Face: Clean | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) |
-| 102 | My Photo Watch Face: Thin | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face_thin | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) |
-| 102 | My Photo Watch Face: Cute | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face_cute | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) |
-| 103 | Quote Moment Watch Face | https://watch-go.com/103 | com.watch_go.quote_moment_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) |
-| 104 | My Photo Circle Watch Face | https://watch-go.com/104 | com.watch_go.my_photo_circle_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) |
-| 105 | My Photo Quote: Daily Inspire | https://watch-go.com/105 | com.watch_go.photo_quote_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) |
-| 106 | LED Board Watch Face | https://watch-go.com/106 | com.watch_go.led_board_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) |
-| 200 | Double Check: To-Do & List | https://watch-go.com/200 | com.watch_go.doublecheck | [double-check-pro](https://github.com/msaltnet/double-check-pro) |
-| 201 | Watch LED Scroller & Banner | https://watch-go.com/201 | com.watch_go.watchledscroller | [watch-led-scroller](https://github.com/msaltnet/watch-led-scroller) |
-| 202 | My Photo Watch Frame: watch-go | https://watch-go.com/202 | com.watch_go.myphotowatchframe | [my-photo-watch-frame](https://github.com/msaltnet/my-photo-watch-frame) |
-| 203 | Crypto Watch: Bitcoin & Tile | https://watch-go.com/203 | com.watch_go.cryptowatch | [crypto-watch](https://github.com/msaltnet/crypto-watch) |
-| 204 | Multi Counter: Tally & Click | https://watch-go.com/204 | com.watch_go.multicounter | [watch-go-multi-counter](https://github.com/msaltnet/watch-go-multi-counter) |
-| 205 | Pomodoro Timer: Focus & Study | https://watch-go.com/205 | com.watch_go.pomodoro | [watch-pomodoro-timer](https://github.com/msaltnet/watch-pomodoro-timer) |
-| 206 | 2048 Watch Game: Rank & Logic | https://watch-go.com/206 | com.watch_go.watch2048 | [2048-watch](https://github.com/msaltnet/2048-watch) |
-| 207 | Quote Moment: Daily Inspire | https://watch-go.com/207 | com.watch_go.quotemoment | [quote-moment](https://github.com/msaltnet/quote-moment) |
-| 208 | Remote Camera: Watch Control | https://watch-go.com/208 | com.watch_go.remotecamwatch | [remote-cam-watch](https://github.com/msaltnet/remote-cam-watch) |
-
+| 번호 | 앱 이름 | 웹 페이지 | 패키지 이름 | GitHub Repo | 브랜치 | 문서 위치 |
+|---|---|---|---|---|---|---|
+| 100 | My Photo Watch Face: watch-go | https://watch-go.com/100 | com.watch_go.myphotowatchface | [MyPhotoWatchFace](https://github.com/msaltnet/MyPhotoWatchFace) | watchface | `docs/app/` |
+| 102 | My Photo Watch Face: Clean | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `new-my-photo-watch-face/docs/app/` |
+| 102 | My Photo Watch Face: Thin | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face_thin | [new-my-photo-watch-face-thin](https://github.com/msaltnet/new-my-photo-watch-face-thin) | master | `docs/app/` |
+| 102 | My Photo Watch Face: Cute | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face_cute | [new-my-photo-watch-face-acme](https://github.com/msaltnet/new-my-photo-watch-face-acme) | master | `docs/app/` |
+| 103 | Quote Moment Watch Face | https://watch-go.com/103 | com.watch_go.quote_moment_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `quote-moment-watch-face/docs/app/` |
+| 104 | My Photo Circle Watch Face | https://watch-go.com/104 | com.watch_go.my_photo_circle_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `my-photo-circle-watch-face/docs/app/` |
+| 105 | My Photo Quote: Daily Inspire | https://watch-go.com/105 | com.watch_go.photo_quote_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `photo-quote-watch-face/docs/app/` |
+| 106 | LED Board Watch Face | https://watch-go.com/106 | com.watch_go.led_board_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `led-board-watch-face/docs/app/` |
+| 200 | Double Check: To-Do & List | https://watch-go.com/200 | com.watch_go.doublecheck | [double-check-pro](https://github.com/msaltnet/double-check-pro) | master | `docs/app/` |
+| 201 | Watch LED Scroller & Banner | https://watch-go.com/201 | com.watch_go.watchledscroller | [watch-led-scroller](https://github.com/msaltnet/watch-led-scroller) | main | `docs/app/` |
+| 202 | My Photo Watch Frame: watch-go | https://watch-go.com/202 | com.watch_go.myphotowatchframe | [my-photo-watch-frame](https://github.com/msaltnet/my-photo-watch-frame) | master | `docs/app/` |
+| 203 | Crypto Watch: Bitcoin & Tile | https://watch-go.com/203 | com.watch_go.cryptowatch | [crypto-watch](https://github.com/msaltnet/crypto-watch) | master | `docs/app/` |
+| 204 | Multi Counter: Tally & Click | https://watch-go.com/204 | com.watch_go.multicounter | [watch-go-multi-counter](https://github.com/msaltnet/watch-go-multi-counter) | main | `docs/app/` |
+| 205 | Pomodoro Timer: Focus & Study | https://watch-go.com/205 | com.watch_go.pomodoro | [watch-pomodoro-timer](https://github.com/msaltnet/watch-pomodoro-timer) | main | `docs/app/` |
+| 206 | 2048 Watch Game: Rank & Logic | https://watch-go.com/206 | com.watch_go.watch2048 | [2048-watch](https://github.com/msaltnet/2048-watch) | master | `docs/app/` |
+| 207 | Quote Moment: Daily Inspire | https://watch-go.com/207 | com.watch_go.quotemoment | [quote-moment](https://github.com/msaltnet/quote-moment) | master | `docs/app/` |
+| 208 | Remote Camera: Watch Control | https://watch-go.com/208 | com.watch_go.remotecamwatch | [remote-cam-watch](https://github.com/msaltnet/remote-cam-watch) | main | `docs/app/` |
 
 ### 앱 정체성 한 줄 요약
 

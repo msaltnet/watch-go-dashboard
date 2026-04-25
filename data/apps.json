@@ -1,5 +1,672 @@
 {
-  "built_at": null,
-  "stats": { "total": 0, "succeeded": 0, "no_docs": 0, "failed": 0 },
-  "apps": []
+  "built_at": "2026-04-25T10:29:38.660+09:00",
+  "stats": {
+    "total": 17,
+    "succeeded": 5,
+    "no_docs": 12,
+    "failed": 0
+  },
+  "apps": [
+    {
+      "id": 100,
+      "name": "My Photo Watch Face: watch-go",
+      "identity": "내 사진을 워치페이스로 — 손목 위에 나만의 얼굴을",
+      "package": "com.watch_go.myphotowatchface",
+      "landing": "https://watch-go.com/100",
+      "repo": "msaltnet/MyPhotoWatchFace",
+      "branch": "watchface",
+      "overview_html": "<h1>My Photo Watch Face: Album — Overview</h1>\n<p>사진을 직접 워치페이스에 담는 Wear OS 앱입니다. 모바일에서 사진을 추가하거나 갤러리·다른 앱에서 공유해 손쉽게 워치로 전송하고, 전용 워치페이스뿐 아니라 Wear OS 타일과 포토 컴플리케이션으로도 같은 앨범을 활용할 수 있습니다. AI 얼굴 인식으로 인물 사진을 더 자연스럽게 크롭합니다.</p>\n<p>브랜드 내에 사진 워치페이스가 여러 종 있습니다. 이 앱(100번, Album)은 가장 초기부터 제공된 사진 워치페이스로, 컴패니언 앱 + 커스텀 워치페이스 모듈의 전통적 구성입니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>사진 워치페이스</strong> — 전용 풀스크린 사진 워치페이스</li>\n<li><strong>타일</strong> — 앱을 열지 않고 타일에서 사진 앨범 감상</li>\n<li><strong>포토 컴플리케이션</strong> — 이미지 슬롯을 지원하는 다른 워치페이스에 내 앨범 표시</li>\n<li><strong>AI 얼굴 인식</strong> — 사진 속 얼굴을 감지해 프레임 중앙 배치</li>\n<li><strong>디지털 시계 커스터마이징</strong> — 폰트 / 색상 / 크기 / 위치 조정</li>\n<li><strong>사진 관리</strong> — 무제한 추가, 탭으로 변경, 순서 변경, 셔플</li>\n<li><strong>Always-on Display</strong> — 여러 AoD 스타일 제공</li>\n<li><strong>외부 공유 수신</strong> — 다른 앱에서 공유된 사진을 바로 워치로 전송</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin</li>\n<li><strong>구성 모듈:</strong><ul>\n<li><code>:app</code> — 모바일 컴패니언 (사진 선택/편집/전송)</li>\n<li><code>:watchface</code> — Wear OS 워치페이스 (전통적 Canvas 기반)</li>\n<li><code>:onboarding</code>, <code>:watch-go-info-fragment</code> — 브랜드 공용 라이브러리</li>\n</ul>\n</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>AI:</strong> ML Kit 기반 얼굴 인식</li>\n<li><strong>빌드:</strong> Gradle (Groovy DSL), Firebase 통합, 서명 키 <code>key.properties</code></li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일에서 갤러리 다중 선택 또는 외부 공유를 수신해 사진을 최적화(리사이즈·얼굴 중심 크롭)</li>\n<li>Wearable Data Layer로 워치에 이미지 전송</li>\n<li>워치의 <code>:watchface</code> 모듈은 사진을 배경으로 시계 텍스트를 오버레이 렌더링</li>\n<li>타일 서비스와 컴플리케이션 제공자가 같은 앨범 풀을 공유</li>\n</ul>\n<h2>비교: 같은 브랜드의 다른 사진 워치페이스</h2>\n<table>\n<thead>\n<tr>\n<th>앱</th>\n<th>관리번호</th>\n<th>포맷</th>\n<th>특징</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>My Photo Watch Face: Album (본 앱)</td>\n<td>100</td>\n<td>전통적 Canvas</td>\n<td>초기 출시, 풍부한 커스터마이징</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Clean</td>\n<td>102</td>\n<td>WFF</td>\n<td>미니멀 레이아웃</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Thin</td>\n<td>102</td>\n<td>WFF</td>\n<td>얇고 세련된 라인</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Cute</td>\n<td>102</td>\n<td>WFF</td>\n<td>귀엽고 사랑스러운 감성</td>\n</tr>\n<tr>\n<td>My Photo Watch Frame</td>\n<td>202</td>\n<td>WFF</td>\n<td>모바일 위젯 + 프레임 강조</td>\n</tr>\n<tr>\n<td>My Photo Circle Watch Face</td>\n<td>104</td>\n<td>WFF</td>\n<td>원형 프레임</td>\n</tr>\n<tr>\n<td>My Photo Quote</td>\n<td>105</td>\n<td>WFF</td>\n<td>사진 + 명언</td>\n</tr>\n</tbody></table>\n",
+      "updates": [
+        {
+          "version": "v5.0.0",
+          "date": null,
+          "label": "현재 빌드",
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음 (build.gradle 기준 현재 버전)</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.0.0",
+          "date": "2024-11-12",
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.9.1",
+          "date": "2024-10-20",
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.9.0",
+          "date": "2024-10-20",
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.2.0",
+          "date": "2024-05-25",
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.1.0",
+          "date": "2024-05-16",
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v5.0.0",
+      "latest_update_date": null,
+      "latest_update_label": "현재 빌드",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+    },
+    {
+      "id": 102,
+      "variant": "clean",
+      "name": "My Photo Watch Face: Clean",
+      "identity": "깔끔한 레이아웃으로 내 사진을 담은 미니멀 워치페이스",
+      "package": "com.watch_go.new_my_photo_watch_face",
+      "landing": "https://watch-go.com/102",
+      "repo": "msaltnet/wff-watch-face",
+      "docs_subdir": "clean",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 102,
+      "variant": "thin",
+      "name": "My Photo Watch Face: Thin",
+      "identity": "얇고 세련된 라인으로 완성하는 내 사진 워치페이스",
+      "package": "com.watch_go.new_my_photo_watch_face_thin",
+      "landing": "https://watch-go.com/102",
+      "repo": "msaltnet/wff-watch-face",
+      "docs_subdir": "thin",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 102,
+      "variant": "cute",
+      "name": "My Photo Watch Face: Cute",
+      "identity": "귀엽고 사랑스러운 감성의 내 사진 워치페이스",
+      "package": "com.watch_go.new_my_photo_watch_face_cute",
+      "landing": "https://watch-go.com/102",
+      "repo": "msaltnet/wff-watch-face",
+      "docs_subdir": "cute",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 103,
+      "name": "Quote Moment Watch Face",
+      "identity": "매 순간 영감을 주는 명언이 흐르는 워치페이스",
+      "package": "com.watch_go.quote_moment_watch_face",
+      "landing": "https://watch-go.com/103",
+      "repo": "msaltnet/wff-watch-face",
+      "docs_subdir": "quote-moment",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 104,
+      "name": "My Photo Circle Watch Face",
+      "identity": "원형 프레임 속 내 사진으로 꾸미는 워치페이스",
+      "package": "com.watch_go.my_photo_circle_wff",
+      "landing": "https://watch-go.com/104",
+      "repo": "msaltnet/wff-watch-face",
+      "docs_subdir": "photo-circle",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 105,
+      "name": "My Photo Quote: Daily Inspire",
+      "identity": "내 사진과 오늘의 명언이 함께하는 워치페이스",
+      "package": "com.watch_go.photo_quote_wff",
+      "landing": "https://watch-go.com/105",
+      "repo": "msaltnet/wff-watch-face",
+      "docs_subdir": "photo-quote",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 106,
+      "name": "LED Board Watch Face",
+      "identity": "Watch LED Scroller와 연동되는 LED 전광판 컴플리케이션 워치페이스",
+      "package": "com.watch_go.led_board_watch_face",
+      "landing": "https://watch-go.com/106",
+      "repo": "msaltnet/wff-watch-face",
+      "docs_subdir": "led-board",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 200,
+      "name": "Double Check: To-Do & List",
+      "identity": "손목에서 바로 체크하는 심플한 투두 & 리스트 앱",
+      "package": "com.watch_go.doublecheck",
+      "landing": "https://watch-go.com/200",
+      "repo": "msaltnet/double-check-pro",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 201,
+      "name": "Watch LED Scroller & Banner",
+      "identity": "손목 위에서 빛나는 LED 전광판 텍스트 스크롤러",
+      "package": "com.watch_go.watchledscroller",
+      "landing": "https://watch-go.com/201",
+      "repo": "msaltnet/watch-led-scroller",
+      "overview_html": "<h1>Watch LED Scroller &amp; Banner — Overview</h1>\n<p>Wear OS 워치를 작은 LED 전광판으로 바꾸는 엔터테인먼트 앱입니다. 글자를 스크롤·깜빡임으로 표시해 콘서트 응원봉, 파티, 시끄러운 장소에서의 무언 소통, 야간 달리기 시인성 용도로 사용할 수 있습니다. 모바일 앱에서 메시지를 작성해 워치로 즉시 전송하고, 워치페이스 컴플리케이션에도 표시할 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>LED 텍스트 스크롤러</strong> — 가로/세로, 좌/우/상/하 스크롤 방향, 3단계 속도 조정</li>\n<li><strong>풍부한 스타일 커스터마이징</strong> — 14종 글자 색상 (그라디언트 포함), 10종 배경색, 14종 폰트, 3단계 글자 크기</li>\n<li><strong>깜빡임 효과</strong> — 독립적 깜빡임 속도(3단계), 도트 효과</li>\n<li><strong>화면 회전</strong> — 0° / 90° / 180° / 270° 4방향</li>\n<li><strong>모바일-워치 동기화</strong> — 모바일 앱에서 입력한 설정을 워치로 즉시 전달</li>\n<li><strong>워치페이스 컴플리케이션(Photo Complication)</strong> — 나만의 LED 배너를 워치페이스에 컴플리케이션으로 표시 (관련 앱: LED Board Watch Face)</li>\n<li><strong>URL 공유</strong> — 설정을 <code>Apple-025</code> 같은 키로 업로드해 링크로 공유</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>공유 백엔드:</strong> AWS API Gateway + Lambda (<code>POST /share-led</code>, <code>GET /share-led?k=…</code>), <code>X-API-Key</code> 헤더 인증</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n</ul>\n<h2>설정 직렬화 포맷</h2>\n<p>설정은 12필드 쉼표 구분 문자열로 직렬화됩니다 (<code>SettingSerializer.settingsToString</code>):</p>\n<pre><code>text,font,size,color,speed,reverse,blink,blinkSpeed,dot,rotation,scrollMode,bgColor\n</code></pre>\n<p>예: <code>Hello World,0,1,0,1,false,false,1,false,0,true,0</code></p>\n<p>text에 쉼표 포함 불가. 세부 인덱스 맵(폰트 14종, 글자색 14종, 배경색 10종)은 <code>README.md</code>의 테이블 참고.</p>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일에서 편집한 설정이 Wearable Data Layer를 통해 워치로 동기화</li>\n<li>공유 기능은 모바일에서 AWS 공유 API에 config 문자열을 업로드하고 단축 키(<code>{과일명}-{번호}</code>)를 응답으로 받음</li>\n<li>컴플리케이션은 워치 LED 미리보기를 이미지로 생성해 Photo Complication 슬롯에 공급</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v10.0.0",
+          "date": null,
+          "label": "준비 중",
+          "items_html": "<ul>\n<li>모바일 위젯 — 홈 화면에 LED Scroller를 추가해보세요</li>\n<li>네온 사인 디자인 — 화려한 네온 사인 모드가 추가되었습니다</li>\n</ul>\n"
+        },
+        {
+          "version": "v9.0.0",
+          "date": "2026-04-11",
+          "label": null,
+          "items_html": "<ul>\n<li>디자인 개선 — 세련된 색으로 아름다우면서도 더욱 편리한 사용성을 제공합니다</li>\n<li>모드 전환 개선 — 모드 전환시 부드럽게 전환 되도록 수정</li>\n</ul>\n"
+        },
+        {
+          "version": "v8.1.0",
+          "date": "2026-03-22",
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v8.0.0",
+          "date": "2026-03-15",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 LED Scroller — 이제 모바일에서도 동시에 LED 스크롤러를 사용할 수 있습니다</li>\n<li>Photo Complication — 설정에 따른 정지 모드 텍스트를 이미지 Complication으로 지원합니다. 워치페이스를 내가 원하는 문구로 꾸며보세요</li>\n</ul>\n"
+        },
+        {
+          "version": "v7.0.0",
+          "date": "2026-02-21",
+          "label": null,
+          "items_html": "<ul>\n<li>공유 링크</li>\n<li>배경색 설정</li>\n<li>설정 미리보기</li>\n</ul>\n"
+        },
+        {
+          "version": "v6.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>링크 공유 기능</li>\n<li>영상 가이드 추가</li>\n</ul>\n"
+        },
+        {
+          "version": "v5.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>프리셋 설정</li>\n</ul>\n"
+        },
+        {
+          "version": "v4.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>전체 화면 모드 추가</li>\n</ul>\n"
+        },
+        {
+          "version": "v3.2.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>기본 메세지 다국어 지원</li>\n<li>이전 설정 복원 문제 수정</li>\n</ul>\n"
+        },
+        {
+          "version": "v3.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>폰트 추가 및 미리보기</li>\n<li>Watch 앱 설치 버튼 추가</li>\n<li>앱 안정성 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.3.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>깜빡임 속도 설정</li>\n<li>광고 위치 조정</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.2.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>Watch App 설치 버튼 추가</li>\n<li>Watch 설정 자동 저장</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.1.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>Text 공유 수신 지원</li>\n<li>Banner Image 변경</li>\n<li>광고 추가</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>watch에 setting 저장</li>\n<li>watch-go.com 정보 수정</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.6.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>요청에 따른 한글 폰트 추가</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.5.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>콤마 표시 오류 수정</li>\n<li>철자 오류 수정</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.4.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>Dot Background 설정 추가</li>\n<li>In-App Review 추가</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.3.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>피드백 채널 추가</li>\n<li>앱 사용성 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.2.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>다국어 지원</li>\n<li>폰트 5개 추가</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v10.0.0",
+      "latest_update_date": null,
+      "latest_update_label": "준비 중",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+    },
+    {
+      "id": 202,
+      "name": "My Photo Watch Frame: watch-go",
+      "identity": "내 사진을 멋진 프레임으로 감싸는 워치 앱",
+      "package": "com.watch_go.myphotowatchframe",
+      "landing": "https://watch-go.com/202",
+      "repo": "msaltnet/my-photo-watch-frame",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 203,
+      "name": "Crypto Watch: Bitcoin & Tile",
+      "identity": "손목에서 실시간으로 확인하는 암호화폐 시세 위젯",
+      "package": "com.watch_go.cryptowatch",
+      "landing": "https://watch-go.com/203",
+      "repo": "msaltnet/crypto-watch",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 204,
+      "name": "Multi Counter: Tally & Click",
+      "identity": "탭 한 번으로 여러 항목을 동시에 세는 멀티 카운터",
+      "package": "com.watch_go.multicounter",
+      "landing": "https://watch-go.com/204",
+      "repo": "msaltnet/watch-go-multi-counter",
+      "overview_html": "<h1>Multi Counter — Overview</h1>\n<p>Wear OS 워치와 Android 모바일에서 작동하는 다용도 카운터 앱입니다. 화면을 탭해 숫자를 세는 싱글 카운터부터 2~4인 보드게임 스코어 카운터까지 한 앱에서 해결하며, 디지털 시계/스톱워치, 세션 히스토리, 이미지 공유 기능을 함께 제공합니다. 모바일에서 이름·색상·목표·루프 등을 설정하면 워치로 실시간 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>유연한 카운터 모드</strong> — 싱글 / 듀얼 / 트리플 / 쿼드(4분할) 즉시 전환</li>\n<li><strong>타일 빠른 실행</strong> — 앱을 열지 않고 타일에서 바로 카운트</li>\n<li><strong>카운터 상세 설정</strong> — 각 카운터별 이름(최대 10자)·색상·목표치·루프 모드·직접 값 수정(0~999)</li>\n<li><strong>히스토리 로그 &amp; 이미지 공유</strong> — 세션 기록을 모바일에서 관리하고 이미지로 공유</li>\n<li><strong>홈 화면 위젯 &amp; 볼륨 키 카운터</strong> — 화면을 보지 않고도 볼륨 키로 카운트</li>\n<li><strong>진동·사운드 피드백</strong> — 탭할 때마다 햅틱으로 확신 있는 카운팅</li>\n<li><strong>시계·스톱워치 내장</strong> — 운동 세트 사이 시간 측정 등에 활용</li>\n<li><strong>모바일-워치 실시간 동기화</strong> — 5초 주기 pull 방식 세션 동기화</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템, MVVM (<code>MainViewModel</code>), Jetpack DataStore</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Tiles</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MessageClient</code>)</li>\n<li><strong>데이터 저장:</strong> DataStore 기반 <code>CounterRecordDataStore</code> (모바일) / <code>HistoryManager</code> (워치, 최대 50개 유지)</li>\n</ul>\n<h2>동기화 아키텍처</h2>\n<p>모바일이 <strong>5초 간격</strong>으로 워치에 <code>/sync-records-request</code>를 보내 pull:</p>\n<pre><code>Mobile                                        Wear\n  │ ── /sync-records-request ───────────────▶ │ (5초마다)\n  │ ◀── /sync-records-response ───────────── │ (wear 기록 JSON)\n  │ handleCounterRecordsResponse()            │\n  │ counterRecordDataStore.addCounterRecords()│\n  │ ── /sync-records-response ───────────────▶│ (동기화 완료된 sessionId 회신)\n  │                                           │ historyManager.removeRecordsFromHistory()\n</code></pre>\n<h3>메시지 경로</h3>\n<table>\n<thead>\n<tr>\n<th>경로</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/sync-records-request</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 요청</td>\n</tr>\n<tr>\n<td><code>/sync-records-response</code></td>\n<td>양방향</td>\n<td>기록 데이터 전송 / ACK</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n<tr>\n<td><code>/watch-version</code></td>\n<td>Wear → Mobile</td>\n<td>버전 정보</td>\n</tr>\n</tbody></table>\n<h3>중복 제거</h3>\n<ul>\n<li><strong>Mobile:</strong> sessionId 기준, 5초 미만 + 모든 카운터 0인 기록 제거, <code>isActive=true</code> 중 최신만 유지, 기존 title 보존</li>\n<li><strong>Wear:</strong> 모바일이 회신한 sessionId 중 <code>isActive=false</code>만 삭제 (활성 세션은 유지)</li>\n</ul>\n<h2>CounterRecord 데이터 구조</h2>\n<pre><code class=\"language-kotlin\">data class CounterRecord(\n  val sessionId: String,          // timestamp 기반 고유 ID\n  val startTime: String,          // ISO 시작 시간\n  val endTime: String?,           // ISO 종료 시간\n  val counter1Count..counter4Count: Int,\n  val counter1Color..counter4Color: Int,\n  val counter1Name..counter4Name: String, // 최대 10자\n  val mode: Int,                   // 싱글/듀얼/트리플/쿼드\n  val isActive: Boolean,\n  val activeDuration: Long,        // ms\n  val title: String? = null        // Mobile 전용\n)\n</code></pre>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code>가 주기적 동기화 트리거, <code>MainViewModel</code>이 <code>MessageClient.OnMessageReceivedListener</code> 구현</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 메시지 수신·처리, <code>HistoryManager</code>가 DataStore에 기록 관리</li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v11.2.0",
+          "date": null,
+          "label": "개발 중",
+          "items_html": "<ul>\n<li>카운터별 &quot;1부터 시작&quot; 설정 추가. 0이 아니라 1부터 세어야 하는 카운터에 사용하세요. (카운터 설정 → &quot;1부터 시작&quot;)</li>\n</ul>\n"
+        },
+        {
+          "version": "v11.1.0",
+          "date": "2026-04-23",
+          "label": null,
+          "items_html": "<ul>\n<li>카운터 최대값이 99999로 확장되었습니다. 자릿수가 늘어날수록 숫자가 자동으로 축소 표시됩니다.</li>\n</ul>\n"
+        },
+        {
+          "version": "v11.0.1",
+          "date": "2026-04-18",
+          "label": null,
+          "items_html": "<ul>\n<li>워치 앱 안정성 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v11.0.0",
+          "date": "2026-04-15",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 위젯 — 이제 위젯으로 손쉽게 카운터를 사용하세요</li>\n<li>볼륨 키 카운터 — 모바일에서 볼륨 키로 카운터를 증가시키는 기능이 추가되었습니다</li>\n<li>카운터 리셋 — 모드를 전환하지 않고도 카운터 리셋이 가능합니다</li>\n<li>디자인 개선 — 세련된 색으로 아름다우면서도 더욱 편리한 사용성을 제공합니다</li>\n</ul>\n"
+        },
+        {
+          "version": "v10.0.2",
+          "date": "2026-03-19",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 앱 안정성 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v10.0.1",
+          "date": "2026-02-28",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 앱 안정성 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v10.0.0",
+          "date": "2026-02-21",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 카운터 — 이제 모바일 앱에서도 카운터를 사용할 수 있습니다. 동일한 설정, 동일한 기록!</li>\n<li>카운터 값 수정 기능 — 카운터 오류로 값을 수정해야 할 때, 모바일 앱에서 카운터 값을 수정하세요</li>\n</ul>\n"
+        },
+        {
+          "version": "v9.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>타일 지원</li>\n<li>카운터 개별 설정</li>\n<li>설정 레이아웃 오류 수정</li>\n<li>동기화 오류 수정</li>\n<li>온보딩 추가</li>\n</ul>\n"
+        },
+        {
+          "version": "v8.5.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>화면 켜짐 설정으로 배터리 절약</li>\n</ul>\n"
+        },
+        {
+          "version": "v8.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>타이머 지원</li>\n<li>Goal Auto Reset</li>\n<li>가이드 영상 안내</li>\n<li>온보딩 페이지 스크롤러</li>\n</ul>\n"
+        },
+        {
+          "version": "v7.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>가이드 영상 추가</li>\n<li>기록 공유 기능</li>\n</ul>\n"
+        },
+        {
+          "version": "v6.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>자동 리셋 기능</li>\n<li>GUI 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v5.7.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세션 이름 설정</li>\n<li>검은색 버튼 추가</li>\n<li>롱탭 오류 수정</li>\n</ul>\n"
+        },
+        {
+          "version": "v5.5.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세션 이름 설정</li>\n<li>첫 실행 가이드</li>\n</ul>\n"
+        },
+        {
+          "version": "v5.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>히스토리</li>\n<li>첫 실행 가이드</li>\n</ul>\n"
+        },
+        {
+          "version": "v4.2.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>감소 설정</li>\n<li>목표 설정</li>\n</ul>\n"
+        },
+        {
+          "version": "v4.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>감소 설정</li>\n<li>목표 설정</li>\n</ul>\n"
+        },
+        {
+          "version": "v3.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>Full Screen 모드</li>\n<li>광고 추가</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>색상 설정</li>\n<li>타이머 숫자 크기 조절</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.6.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>효과음 개선</li>\n<li>화면 세로로 고정</li>\n<li>안내 문구 수정</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.5.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>백그라운드 동작 지원</li>\n<li>종료시 카운터 정보 저장 및 복원</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.1.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>다국어 지원</li>\n<li>아이콘 수정</li>\n<li>와치 앱 설치 버튼 추가</li>\n<li>앱 안정화</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v11.2.0",
+      "latest_update_date": null,
+      "latest_update_label": "개발 중",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+    },
+    {
+      "id": 205,
+      "name": "Pomodoro Timer: Focus & Study",
+      "identity": "손목 위에서 집중력을 키우는 뽀모도로 타이머",
+      "package": "com.watch_go.pomodoro",
+      "landing": "https://watch-go.com/205",
+      "repo": "msaltnet/watch-pomodoro-timer",
+      "overview_html": "<h1>Watch Pomodoro Timer — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 포모도로 타이머입니다. 모바일과 워치 어느 쪽에서도 독립적으로 타이머를 실행할 수 있고, 기록은 두 기기에서 공유됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>포모도로 타이머</strong> — 작업/휴식/긴 휴식 3단계 루프. 세션 수와 각 단계 길이를 사용자 지정</li>\n<li><strong>모바일 타이머</strong> — 포그라운드 서비스 + <code>AlarmManager</code>로 Doze Mode 및 백그라운드 상태에서도 정확한 만료 보장 (v6.0.0+)</li>\n<li><strong>워치 독립 타이머</strong> — 모바일 없이 워치 단독 사용 가능</li>\n<li><strong>홈 화면 위젯</strong> — 2x2 / 4x4 크기로 타이머 상태 확인 및 제어 (v7.0.0+)</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 오늘의 완료 세션 수를 워치페이스에 표시</li>\n<li><strong>통계 대시보드</strong> — 일간/주간 집중 시간, 시간대별 패턴, 연속 기록, 월별 잔디 차트</li>\n<li><strong>동기 부여 인용구</strong> — 타이머 시작 시 짧은 인용구 (v5.0.0+)</li>\n<li><strong>온보딩</strong> — 첫 실행 시 가이드</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment, ViewBinding + DataBinding, ViewModel, LiveData, DataStore (Preferences), Gson, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Horologist, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wear Data Layer (<code>MessageClient</code>, <code>DataClient</code>)</li>\n<li><strong>백그라운드 실행:</strong> Foreground Service (<code>specialUse</code>), <code>AlarmManager.setExact()</code> + <code>USE_EXACT_ALARM</code></li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 30 (워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 단일 <code>MainActivity</code> 하위에 <code>MainFragment</code> / <code>SettingsFragment</code> / <code>TimerRecordsFragment</code> 구조</li>\n<li>공유 ViewModel(<code>MainViewModel</code>)이 설정과 타이머 기록 LiveData를 관리</li>\n<li>타이머 기록은 <code>DataStore(\"timer_records\")</code>에 Gson JSON으로 저장</li>\n<li>설정은 <code>SharedPreferences(\"MySettings\")</code>에 저장</li>\n<li>모바일/워치 기록 충돌은 타임스탬프 ±5분 + 동일 타이머 타입 기준으로 모바일 우선 병합</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v7.0.0",
+          "date": null,
+          "label": "개발 중",
+          "items_html": "<ul>\n<li>홈 화면 위젯 추가 — 2x2 / 4x4 크기로 타이머 상태를 확인하고 제어할 수 있습니다</li>\n<li>디자인 개선 — 세련된 색상으로 더욱 편안한 사용 경험을 제공합니다</li>\n<li>모바일 타이머 알림 강화 — 소리와 진동이 반복 재생되어 집중 중에도 놓치지 않도록 개선됐습니다 (30초 자동 종료)</li>\n</ul>\n"
+        },
+        {
+          "version": "v6.0.1",
+          "date": "2026-03-19",
+          "label": null,
+          "items_html": "<ul>\n<li>워치 앱 안정성 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v6.0.0",
+          "date": "2026-03-07",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 타이머 추가 — 이제 모바일 앱 단독으로도 포모도로 타이머를 사용할 수 있습니다</li>\n<li>워치페이스 컴플리케이션 — 오늘의 포모도로 횟수를 워치페이스에서 바로 확인하세요</li>\n<li>워치 알림 개선 — 더 확실한 알림으로 타이머 종료를 놓치지 않습니다</li>\n<li>워치 배터리 최적화 — 배터리 사용량을 줄였습니다</li>\n</ul>\n"
+        },
+        {
+          "version": "v5.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>동기 부여 인용구 — 타이머 시작 시 짧은 인용구로 집중을 돕습니다</li>\n<li>통계 기능 — 일간/주간 집중 시간, 연속 기록, 시간대별 패턴을 확인할 수 있습니다</li>\n<li>온보딩 페이지 — 처음 사용하는 분도 쉽게 시작할 수 있도록 안내를 추가했습니다</li>\n</ul>\n"
+        },
+        {
+          "version": "v4.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v3.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.7.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.5.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.2.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.5.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.1.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>첫 릴리스</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v7.0.0",
+      "latest_update_date": null,
+      "latest_update_label": "개발 중",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+    },
+    {
+      "id": 206,
+      "name": "2048 Watch Game: Rank & Logic",
+      "identity": "워치에서 즐기는 두뇌 자극 2048 퍼즐 게임",
+      "package": "com.watch_go.watch2048",
+      "landing": "https://watch-go.com/206",
+      "repo": "msaltnet/2048-watch",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 207,
+      "name": "Quote Moment: Daily Inspire",
+      "identity": "매일 새로운 명언으로 하루를 시작하는 인스파이어 앱",
+      "package": "com.watch_go.quotemoment",
+      "landing": "https://watch-go.com/207",
+      "repo": "msaltnet/quote-moment",
+      "overview_html": null,
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "fetch_status": "no_docs",
+      "last_successful_fetch": null
+    },
+    {
+      "id": 208,
+      "name": "Remote Camera: Watch Control",
+      "identity": "워치로 스마트폰 카메라를 원격 제어하는 셔터 앱",
+      "package": "com.watch_go.remotecamwatch",
+      "landing": "https://watch-go.com/208",
+      "repo": "msaltnet/remote-cam-watch",
+      "overview_html": "<h1>Remote Camera Watch — Overview</h1>\n<p>Wear OS 워치를 Android 폰 카메라의 저지연 리모컨으로 사용하는 앱입니다. 폰이 보는 화면을 워치에서 실시간으로 미리 보며 원격으로 촬영 · 모드 전환 · 타이머 · 플래시 · 카메라 전환 등을 제어할 수 있습니다. 삼각대 위 셀프 샷, 단체 사진, 브이로그 모니터링, 자연스러운 캔디드 샷에 특화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>실시간 라이브 프리뷰 (Low Latency)</strong> — 폰 카메라 프레임을 JPEG로 압축해 <code>ChannelClient</code>로 워치에 저지연 스트리밍</li>\n<li><strong>원격 셔터</strong> — 사진 · 동영상 모드 전환, 탭 한 번으로 촬영</li>\n<li><strong>타이머</strong> — 즉시 / 3초 / 5초 / 10초 (카운트다운마다 워치 진동)</li>\n<li><strong>카메라 전환</strong> — 전면(셀카) ↔ 후면(고화질)</li>\n<li><strong>플래시</strong> — 켜기 / 끄기 / 자동</li>\n<li><strong>화면 비율</strong> — 4:3 / 16:9 / 1:1</li>\n<li><strong>미러 모드</strong> — 셀카 좌우 반전</li>\n<li><strong>촬영 후 리뷰</strong> — 찍은 사진을 워치에 자동 표시 (시간 설정 가능)</li>\n<li><strong>자동 연결</strong> — <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능을 가진 워치 탐색 후 자동 연결</li>\n<li><strong>진동 피드백</strong> — 셔터·타이머 카운트다운에 손목 진동</li>\n</ul>\n<h2>기술 스택</h2>\n<h3>Mobile App (<code>:app</code>)</h3>\n<ul>\n<li><strong>CameraX</strong> — <code>ImageAnalysis</code> 유스케이스로 프레임 캡처</li>\n<li><strong>YUV → JPEG 변환</strong> — <code>YuvImage</code>로 NV21 포맷을 JPEG 압축 (전송 크기 최적화)</li>\n<li><strong>Wearable ChannelClient</strong> — <code>/camera_preview</code> 채널로 저지연 전송</li>\n<li><strong>Kotlin Coroutines</strong> — 비동기 스트리밍, <code>Channel.CONFLATED</code>로 백프레셔 관리</li>\n<li><strong>권한:</strong> <code>CAMERA</code> 필수. Android 12(API 31)+에서 <code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH_SCAN</code> 필수</li>\n</ul>\n<h3>Wear OS App (<code>:wear</code>)</h3>\n<ul>\n<li><strong>Jetpack Compose</strong> — 프리뷰 UI</li>\n<li><strong>Bitmap Decoding</strong> — <code>BitmapFactory</code>로 수신 바이트 디코딩</li>\n<li><strong>Keep Screen On</strong> — 프리뷰 동안 화면 유지 (<code>WAKE_LOCK</code> 권한)</li>\n</ul>\n<h2>연결 및 스트리밍 아키텍처</h2>\n<h3>1. 탐색 및 연결</h3>\n<ul>\n<li>Mobile <code>MainActivity</code>가 <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능 노드 주기 탐색 (<code>checkConnectedDevices</code>)</li>\n<li>노드 발견 시 <code>syncState</code>가 <code>STATE_CONNECTED</code>로 전환</li>\n<li>Wear 앱 실행 시 <code>ChannelClient</code> / <code>MessageClient</code> 리스너 등록 후 \"Waiting for connection...\"</li>\n</ul>\n<h3>2. 초기화 &amp; 핸드셰이크</h3>\n<ul>\n<li>Mobile → <code>/ping</code> 메시지 → Wear가 \"Ping Received\"</li>\n<li>Mobile → <code>ChannelClient.openChannel(\"/camera_preview\")</code> → Wear가 \"Waiting for video...\"</li>\n</ul>\n<h3>3. 스트리밍 루프</h3>\n<ul>\n<li><strong>Mobile:</strong> CameraX <code>ImageAnalysis</code> 프레임 → <code>YuvImage.compressToJpeg</code> → 패킷 <code>[프레임 크기(4B)][JPEG 데이터]</code> 전송</li>\n<li><strong>Wear:</strong> <code>InputStream</code>에서 <code>Int</code> 크기 읽고, 해당 크기만큼 바이트 → <code>BitmapFactory</code> → <code>Bitmap</code> 상태 업데이트 → Compose 렌더링</li>\n</ul>\n<h3>4. 종료</h3>\n<ul>\n<li>Mobile: <code>CameraManager</code> 해제 + 채널 close</li>\n<li>Wear: <code>onChannelClosed</code> → 리소스 정리, 대기 상태 복귀</li>\n</ul>\n<h2>상태 정의</h2>\n<table>\n<thead>\n<tr>\n<th>기기</th>\n<th>상태</th>\n<th>설명</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Mobile</td>\n<td>DISCONNECTED</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>READY</td>\n<td>워치 노드 탐색 완료, 채널 미개설</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTING</td>\n<td>채널 열기 중 (프리뷰 활성, 메인 프래그먼트 한정)</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTED</td>\n<td>프리뷰 전송 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>WAITING</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTING</td>\n<td>채널 열기 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTED</td>\n<td>프리뷰 수신 중</td>\n</tr>\n</tbody></table>\n<h2>성능 · 제약</h2>\n<ul>\n<li><strong>해상도:</strong> 블루투스 대역폭 한계로 프리뷰 <strong>320×240</strong></li>\n<li><strong>전송 품질:</strong> JPEG 압축 품질 조절로 속도/화질 균형</li>\n<li><strong>배터리:</strong> 실시간 스트리밍 + 화면 유지로 양쪽 기기 배터리 소모 빠름</li>\n<li><strong>연결:</strong> 블루투스 기본, Wi-Fi도 지원하나 지연이 길어질 수 있음</li>\n<li><strong>범위:</strong> 블루투스 범위 이탈 시 스트리밍 중단</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v3.5.0",
+          "date": "2026-04-20",
+          "label": null,
+          "items_html": "<ul>\n<li>디자인 전면 개편 — Amber Shutter 팔레트 적용으로 모바일과 워치 색상 일관성 통일</li>\n<li>워치 컨트롤 패널 개선 — 사용성과 디자인 개선</li>\n<li>버그 수정 — 일부 오동작 및 안정성 개선</li>\n</ul>\n"
+        },
+        {
+          "version": "v3.0.0",
+          "date": "2026-03-15",
+          "label": null,
+          "items_html": "<ul>\n<li>카메라 줌 — 줌 인/아웃 기능 추가, 워치에서도 줌 컨트롤 가능</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.3.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>AoD Screen 기능 추가</li>\n<li>Cover Screen 설정을 off/cover/aod 로 변경하여 서로 다른 형태로 커버 가능</li>\n<li>cover 모드: 커버 이미지로 화면 전체를 덮고, 취소키로 설정 복귀</li>\n<li>aod 모드: AoD가 활성화 된 것처럼 어두운 화면에 시계 표시</li>\n</ul>\n"
+        },
+        {
+          "version": "v2.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>Control Panel</li>\n<li>회전 정보 추가</li>\n<li>Cover Screen 기능</li>\n<li>촬영중 (타이머 포함) 화면 이탈시 종료</li>\n<li>촬영중 (타이머 포함) 카메라, 모드 전환 및 설정 변경시 촬영 취소</li>\n<li>Cover Screen 기능 — 프리뷰 대신 사전에 설정한 이미지를 표시</li>\n<li>모바일의 방향에 맞게 프리뷰 회전 표시</li>\n<li>웨어에 컨트롤 패널 추가</li>\n<li>영상 녹화시 녹화 시간이 프리뷰 위에 표시</li>\n</ul>\n"
+        },
+        {
+          "version": "v1.0.0",
+          "date": null,
+          "label": null,
+          "items_html": "<ul>\n<li>첫 버전</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v3.5.0",
+      "latest_update_date": "2026-04-20",
+      "latest_update_label": null,
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-04-25T10:29:38.660+09:00"
+    }
+  ]
 }

@@ -87,8 +87,8 @@ test('uses docs_subdir when provided', async () => {
     token: 'fake',
     fetchFn,
   });
-  assert.ok(calls.some(u => u.includes('/contents/docs/app/clean/overview.md')));
-  assert.ok(calls.some(u => u.includes('/contents/docs/app/clean/updates.md')));
+  assert.ok(calls.some(u => u.includes('/contents/clean/docs/app/overview.md')));
+  assert.ok(calls.some(u => u.includes('/contents/clean/docs/app/updates.md')));
 });
 
 test('sends ?ref=branch when app specifies a custom branch', async () => {

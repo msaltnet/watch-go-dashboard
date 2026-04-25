@@ -45,7 +45,7 @@ test('respects docs_subdir when rewriting image paths', () => {
   const html = parseOverview('![x](images/x.png)', REPO, BRANCH, 'clean');
   assert.match(
     html,
-    /msaltnet\/sample-app\/main\/docs\/app\/clean\/images\/x\.png/
+    /msaltnet\/sample-app\/main\/clean\/docs\/app\/images\/x\.png/
   );
 });
 

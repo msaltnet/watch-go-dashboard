@@ -66,9 +66,9 @@ apps:
 
 **경로 규약:**
 - 기본: `docs/app/overview.md`, `docs/app/updates.md` — documentation-guide.md가 6종 앱 문서를 `docs/app/`에 모으도록 규정한다.
-- `docs_subdir: "clean"` 지정 시: `docs/app/clean/overview.md`, `docs/app/clean/updates.md`
+- `docs_subdir: "clean"` 지정 시: `clean/docs/app/overview.md`, `clean/docs/app/updates.md`
 
-`wff-watch-face`처럼 여러 앱이 한 repo를 공유하는 경우 `docs_subdir`로 구분한다 (해당 repo의 `docs/app/` 하위에 변형별 폴더를 둔다).
+`wff-watch-face`처럼 여러 앱이 한 repo를 공유하는 모노레포의 경우, repo 루트 아래에 앱별 디렉토리를 두고 그 안에 `docs/app/`를 배치한다. `docs_subdir`는 그 앱별 디렉토리 이름이다.
 
 ### 4.2 `data/apps.json` (자동 생성, 커밋됨)
 

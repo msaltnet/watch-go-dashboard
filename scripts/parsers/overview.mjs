@@ -2,7 +2,7 @@ import { marked } from 'marked';
 import DOMPurify from 'isomorphic-dompurify';
 
 export function parseOverview(markdown, repo, branch = 'main', subdir = null) {
-  const docsBase = subdir ? `docs/app/${subdir}` : 'docs/app';
+  const docsBase = subdir ? `${subdir}/docs/app` : 'docs/app';
   const rawBase = `https://raw.githubusercontent.com/${repo}/${branch}/${docsBase}`;
 
   const renderer = new marked.Renderer();

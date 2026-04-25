@@ -37,7 +37,7 @@ function renderUpdatesBlock(app) {
 </li>`;
   }).join('');
   const branch = app.branch ?? 'main';
-  const subdirPath = app.docs_subdir ? `docs/app/${app.docs_subdir}` : 'docs/app';
+  const subdirPath = app.docs_subdir ? `${app.docs_subdir}/docs/app` : 'docs/app';
   const moreHref = `https://github.com/${app.repo}/blob/${branch}/${subdirPath}/updates.md`;
   const more = app.updates.length > 5
     ? `<p class="empty-state"><a href="${escapeHtml(moreHref)}">전체 업데이트 이력 보기 ↗</a></p>`

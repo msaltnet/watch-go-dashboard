@@ -14,7 +14,8 @@ apps:
     package: "com.watch_go.new_my_photo_watch_face"
     landing: "https://watch-go.com/102"
     repo: "msaltnet/wff-watch-face"
-    docs_subdir: "clean"
+    branch: "master"
+    docs_subdir: "new-my-photo-watch-face"
 
   - id: 102
     variant: "thin"
@@ -22,8 +23,8 @@ apps:
     identity: "얇고 세련된 라인으로 완성하는 내 사진 워치페이스"
     package: "com.watch_go.new_my_photo_watch_face_thin"
     landing: "https://watch-go.com/102"
-    repo: "msaltnet/wff-watch-face"
-    docs_subdir: "thin"
+    repo: "msaltnet/new-my-photo-watch-face-thin"
+    branch: "master"
 
   - id: 102
     variant: "cute"
@@ -31,8 +32,8 @@ apps:
     identity: "귀엽고 사랑스러운 감성의 내 사진 워치페이스"
     package: "com.watch_go.new_my_photo_watch_face_cute"
     landing: "https://watch-go.com/102"
-    repo: "msaltnet/wff-watch-face"
-    docs_subdir: "cute"
+    repo: "msaltnet/new-my-photo-watch-face-acme"
+    branch: "master"
 
   - id: 103
     name: "Quote Moment Watch Face"
@@ -40,7 +41,8 @@ apps:
     package: "com.watch_go.quote_moment_watch_face"
     landing: "https://watch-go.com/103"
     repo: "msaltnet/wff-watch-face"
-    docs_subdir: "quote-moment"
+    branch: "master"
+    docs_subdir: "quote-moment-watch-face"
 
   - id: 104
     name: "My Photo Circle Watch Face"
@@ -48,7 +50,8 @@ apps:
     package: "com.watch_go.my_photo_circle_wff"
     landing: "https://watch-go.com/104"
     repo: "msaltnet/wff-watch-face"
-    docs_subdir: "photo-circle"
+    branch: "master"
+    docs_subdir: "my-photo-circle-watch-face"
 
   - id: 105
     name: "My Photo Quote: Daily Inspire"
@@ -56,7 +59,8 @@ apps:
     package: "com.watch_go.photo_quote_wff"
     landing: "https://watch-go.com/105"
     repo: "msaltnet/wff-watch-face"
-    docs_subdir: "photo-quote"
+    branch: "master"
+    docs_subdir: "photo-quote-watch-face"
 
   - id: 106
     name: "LED Board Watch Face"
@@ -64,7 +68,8 @@ apps:
     package: "com.watch_go.led_board_watch_face"
     landing: "https://watch-go.com/106"
     repo: "msaltnet/wff-watch-face"
-    docs_subdir: "led-board"
+    branch: "master"
+    docs_subdir: "led-board-watch-face"
 
   - id: 200
     name: "Double Check: To-Do & List"
