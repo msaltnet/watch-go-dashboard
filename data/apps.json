@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-04-26T03:23:22.894+09:00",
+  "built_at": "2026-04-27T03:24:23.438+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 102,
@@ -97,7 +97,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 102,
@@ -128,7 +128,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 102,
@@ -159,7 +159,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 103,
@@ -184,7 +184,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 104,
@@ -215,7 +215,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 105,
@@ -246,7 +246,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 106,
@@ -271,7 +271,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 200,
@@ -307,7 +307,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 201,
@@ -438,7 +438,7 @@
       "latest_update_label": "준비 중",
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 202,
@@ -468,7 +468,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 203,
@@ -498,7 +498,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 204,
@@ -511,15 +511,9 @@
       "updates": [
         {
           "version": "v11.2.0",
-          "date": null,
-          "label": "개발 중",
-          "items_html": "<ul>\n<li>카운터별 &quot;1부터 시작&quot; 설정 추가. 0이 아니라 1부터 세어야 하는 카운터에 사용하세요. (카운터 설정 → &quot;1부터 시작&quot;)</li>\n</ul>\n"
-        },
-        {
-          "version": "v11.1.0",
-          "date": "2026-04-23",
+          "date": "2026-04-26",
           "label": null,
-          "items_html": "<ul>\n<li>카운터 최대값이 99999로 확장되었습니다. 자릿수가 늘어날수록 숫자가 자동으로 축소 표시됩니다.</li>\n</ul>\n"
+          "items_html": "<ul>\n<li>카운터별 &quot;1부터 시작&quot; 설정 추가. 0이 아니라 1부터 세어야 하는 카운터에 사용하세요. (카운터 설정 → &quot;1부터 시작&quot;)</li>\n<li>카운터 최대값이 99999로 확장되었습니다. 자릿수가 늘어날수록 숫자가 자동으로 축소 표시됩니다.</li>\n<li>기록 공유 이미지 개선 — 24시간을 넘는 세션의 Duration이 &quot;N Day HH:MM:SS&quot; 형식으로 표시되고, 카운터 값의 자릿수가 많아도 원 안에서 적절히 축소되어 보입니다.</li>\n</ul>\n"
         },
         {
           "version": "v11.0.1",
@@ -643,11 +637,11 @@
         }
       ],
       "latest_version": "v11.2.0",
-      "latest_update_date": null,
-      "latest_update_label": "개발 중",
+      "latest_update_date": "2026-04-26",
+      "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 205,
@@ -742,7 +736,7 @@
       "latest_update_label": "개발 중",
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 206,
@@ -772,7 +766,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 207,
@@ -832,7 +826,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     },
     {
       "id": 208,
@@ -879,7 +873,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-26T03:23:22.894+09:00"
+      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
     }
   ]
 }
