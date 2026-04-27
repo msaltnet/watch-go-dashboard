@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-04-27T03:24:23.438+09:00",
+  "built_at": "2026-04-28T03:39:01.063+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 102,
@@ -97,7 +97,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 102,
@@ -128,7 +128,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 102,
@@ -159,7 +159,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 103,
@@ -184,7 +184,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 104,
@@ -215,7 +215,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 105,
@@ -246,7 +246,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 106,
@@ -271,7 +271,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 200,
@@ -307,7 +307,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 201,
@@ -438,7 +438,7 @@
       "latest_update_label": "준비 중",
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 202,
@@ -468,7 +468,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 203,
@@ -498,7 +498,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 204,
@@ -641,7 +641,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 205,
@@ -654,9 +654,9 @@
       "updates": [
         {
           "version": "v7.0.0",
-          "date": null,
-          "label": "개발 중",
-          "items_html": "<ul>\n<li>홈 화면 위젯 추가 — 2x2 / 4x4 크기로 타이머 상태를 확인하고 제어할 수 있습니다</li>\n<li>디자인 개선 — 세련된 색상으로 더욱 편안한 사용 경험을 제공합니다</li>\n<li>모바일 타이머 알림 강화 — 소리와 진동이 반복 재생되어 집중 중에도 놓치지 않도록 개선됐습니다 (30초 자동 종료)</li>\n</ul>\n"
+          "date": "2026-04-27",
+          "label": null,
+          "items_html": "<ul>\n<li>홈 화면 위젯 추가 — 2x2 / 4x4 크기로 타이머 상태를 확인하고 제어할 수 있습니다</li>\n<li>디자인 개선 — 세련된 색상으로 더욱 편안한 사용 경험을 제공합니다</li>\n<li>모바일 타이머 알림 강화 — 소리와 진동이 반복 재생되어 집중 중에도 놓치지 않도록 개선됐습니다 (30초 자동 종료)</li>\n<li>모바일 자동 재시작 동작 개선 — 자동 재시작이 켜져 있을 때 만료 알림이 깜빡이거나 알람이 잠깐 울리지 않고 짧은 알림 한 번으로 다음 타이머가 끊김 없이 시작됩니다</li>\n<li>워치 진행 중 알림 아이콘 변경 — 걷는 사람 아이콘에서 모래시계 아이콘으로 바뀌어 타이머 의미를 더 직관적으로 전달합니다</li>\n<li>짧은 세션 기록 무시 — 시작 직후 10초 이내에 중단된 세션은 기록에 남기지 않아 의미 있는 집중 기록만 유지됩니다</li>\n<li>결제한 사용자에게 광고가 노출되던 현상 수정 — 앱 재설치나 데이터 초기화 직후에도 결제 상태를 확인한 뒤 광고가 결정되도록 개선했습니다</li>\n</ul>\n"
         },
         {
           "version": "v6.0.1",
@@ -732,11 +732,11 @@
         }
       ],
       "latest_version": "v7.0.0",
-      "latest_update_date": null,
-      "latest_update_label": "개발 중",
+      "latest_update_date": "2026-04-27",
+      "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 206,
@@ -766,7 +766,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 207,
@@ -826,7 +826,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     },
     {
       "id": 208,
@@ -873,7 +873,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-04-27T03:24:23.438+09:00"
+      "last_successful_fetch": "2026-04-28T03:39:01.063+09:00"
     }
   ]
 }
