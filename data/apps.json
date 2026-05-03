@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-05-03T03:27:42.281+09:00",
+  "built_at": "2026-05-04T03:27:47.340+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 102,
@@ -97,7 +97,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 102,
@@ -128,7 +128,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 102,
@@ -159,7 +159,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 103,
@@ -184,7 +184,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 104,
@@ -215,7 +215,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 105,
@@ -246,7 +246,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 106,
@@ -271,7 +271,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 200,
@@ -307,7 +307,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 201,
@@ -322,7 +322,7 @@
           "version": "v10.0.0",
           "date": null,
           "label": "준비 중",
-          "items_html": "<ul>\n<li>모바일 위젯 — 홈 화면에 LED Scroller를 추가해보세요</li>\n<li>네온 사인 디자인 — 화려한 네온 사인 모드가 추가되었습니다</li>\n</ul>\n"
+          "items_html": "<ul>\n<li>모바일 위젯 — 홈 화면에 LED Scroller를 추가해보세요<ul>\n<li>빠른 실행 위젯(2x2): 좌우 화살표로 프리셋 1~5를 미리보고, 재생 버튼 한 번이면 풀스크린이 바로 켜집니다. 미리보기를 누르면 앱이 열려요.</li>\n<li>LED 디스플레이 위젯(크기 조절 가능): 현재 LED 설정을 멋진 정지 화면으로 홈에 박아 둡니다. 앱에서 설정을 바꾸면 위젯이 즉시 따라옵니다.</li>\n</ul>\n</li>\n<li>네온 사인 디자인 — 화려한 네온 사인 모드가 추가되었습니다</li>\n</ul>\n"
         },
         {
           "version": "v9.0.0",
@@ -438,7 +438,7 @@
       "latest_update_label": "준비 중",
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 202,
@@ -468,7 +468,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 203,
@@ -498,7 +498,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 204,
@@ -641,7 +641,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 205,
@@ -736,7 +736,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 206,
@@ -766,7 +766,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 207,
@@ -826,7 +826,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     },
     {
       "id": 208,
@@ -873,7 +873,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-03T03:27:42.281+09:00"
+      "last_successful_fetch": "2026-05-04T03:27:47.340+09:00"
     }
   ]
 }
