@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-05-05T03:44:40.882+09:00",
+  "built_at": "2026-05-06T03:43:14.950+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 102,
@@ -97,7 +97,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 102,
@@ -128,7 +128,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 102,
@@ -159,7 +159,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 103,
@@ -184,7 +184,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 104,
@@ -215,7 +215,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 105,
@@ -246,7 +246,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 106,
@@ -271,7 +271,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 200,
@@ -307,7 +307,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 201,
@@ -438,7 +438,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 202,
@@ -450,6 +450,12 @@
       "branch": "master",
       "overview_html": "<h1>My Photo Watch Frame — Overview</h1>\n<p>Wear OS 워치를 개인 사진 액자로 바꾸는 앱입니다. 모바일 갤러리에서 선택한 사진을 워치로 전송해 전용 워치페이스의 배경으로 띄우거나, 다른 워치페이스의 사진 컴플리케이션으로 사용할 수 있습니다. 홈 화면 위젯으로 같은 사진을 폰에도 표시할 수 있어 폰과 워치의 룩을 한 번에 맞출 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>사진 워치페이스</strong> — Watch Face Format (WFF) 기반의 전용 풀스크린 사진 워치페이스</li>\n<li><strong>포토 컴플리케이션</strong> — 다른 호환 워치페이스 위에 미니 사진 앨범 표시</li>\n<li><strong>무제한 사진 전송</strong> — 갤러리 다중 선택 또는 다른 앱에서 공유해 워치로 전송, 개수 제한 없음</li>\n<li><strong>ML Kit 얼굴 중심 크롭</strong> — 얼굴을 인식해 인물이 중앙에 오도록 자동 크롭</li>\n<li><strong>2x2 / 4x4 홈 화면 위젯</strong> — 폰 홈에도 같은 사진 액자</li>\n<li><strong>Wear OS 타일</strong> — 타일에서 사진을 빠르게 넘겨보기</li>\n<li><strong>스타일 커스터마이징</strong> — 폰트, 색상, 시간 위치, 가독성용 그라디언트 오버레이</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin 2.1.0, Java 17 (app/wear), Java 11 (라이브러리)</li>\n<li><strong>모바일 앱:</strong> XML Layouts, MVVM (ViewModel + LiveData + Coroutines), Navigation</li>\n<li><strong>워치 앱:</strong> Jetpack Compose (Wear), Canvas 렌더링 (<code>MyCanvasView</code>), Wear Tiles 1.5.0-beta01</li>\n<li><strong>사진 최적화:</strong> ML Kit Face Detection, BitmapFactory (최대 3840px 디코딩)</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>/image</code>, <code>/start-sync</code>, <code>/update-settings</code>, <code>/sync-response</code> / <code>/sync-reply</code>, <code>/watch-version</code>)</li>\n<li><strong>위젯:</strong> AppWidgetProvider + AlarmManager 기반 갱신 스케줄러</li>\n<li><strong>빌드:</strong> AGP 8.6.0, Gradle 8.7 (루트 Groovy, 서브모듈 Kotlin DSL 혼용)</li>\n<li><strong>CI/CD:</strong> GitHub Actions (<code>android-release.yml</code>) — <code>v*</code>, <code>mobile-v*</code>, <code>wear-v*</code> 태그로 AAB 자동 서명·업로드</li>\n</ul>\n<h2>이미지 처리 파이프라인</h2>\n<ol>\n<li>갤러리 선택 또는 외부 앱 공유</li>\n<li>BitmapFactory로 최대 3840px까지 디코딩</li>\n<li>ML Kit Face Detection 기반 얼굴 중심 크롭</li>\n<li>워치용 <strong>450×450</strong>, 위젯용 <strong>900px</strong> 리사이즈</li>\n<li>JPEG <strong>90%</strong> 품질 압축</li>\n<li>Wearable Data Layer로 워치 전송</li>\n</ol>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code> + <code>MainViewModel</code>, <code>WearClient</code>로 워치와 통신</li>\n<li>워치 (<code>:wear</code>) — <code>MyPhotoFrameActivity</code>, <code>MyCanvasView</code> (Canvas 렌더), <code>DataLayerListenerService</code>, <code>MyPhotoComplicationService</code>, <code>MyPhotoTileService</code></li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code> (ViewPager2)</li>\n<li>빌드 스크립트 혼용: 루트는 <code>.gradle</code>(Groovy), 하위 모듈은 <code>.gradle.kts</code>(Kotlin DSL)</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v6.0.0",
+          "date": "2026-05-05",
+          "label": null,
+          "items_html": "<ul>\n<li>사진 슬라이드쇼 추가 — 메인 화면의 재생 버튼으로 전체화면 슬라이드쇼를 시작할 수 있습니다.</li>\n<li>충전 중 자동 재생 — 설정에서 켜면 충전을 시작할 때 자동으로 슬라이드쇼가 시작됩니다 (앱이 열려 있을 때).</li>\n<li>워치 원격 실행 버튼 제거 — 슬라이드쇼 재생 버튼으로 교체되었습니다. 워치에서 직접 앱을 실행해 주세요.</li>\n<li>슬라이드쇼 시간 표시 — 설정에서 &quot;시간 표시&quot; 를 켜면 슬라이드쇼 사진 위에 워치와 같은 스타일로 시간이 표시됩니다.</li>\n<li>폰트 2종 추가 — Montserrat, Share Tech Mono 폰트가 시계/날짜 폰트 선택지에 추가되었습니다 (모바일·워치 공통).</li>\n<li>&quot;Connect your watch and mobile&quot; 알림 개선 — 워치가 연결되어 있지 않을 때 알림이 계속 떠 있던 문제를 수정했습니다. 이제 동기화·설정 변경 등 워치와 통신이 필요한 동작을 했을 때만 알려드립니다.</li>\n</ul>\n"
+        },
         {
           "version": "v5.5.0",
           "date": "2026-03-27",
@@ -463,12 +469,12 @@
           "items_html": "<ul>\n<li>2x2 / 4x4 모바일 홈 위젯</li>\n<li>Wear OS 타일 제공자</li>\n<li>포토 컴플리케이션</li>\n<li>ML Kit 얼굴 중심 자동 크롭</li>\n<li>Watch Face Format (WFF) 기반 워치페이스</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v5.5.0",
-      "latest_update_date": "2026-03-27",
+      "latest_version": "v6.0.0",
+      "latest_update_date": "2026-05-05",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 203,
@@ -498,7 +504,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 204,
@@ -641,7 +647,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 205,
@@ -736,7 +742,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 206,
@@ -766,7 +772,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 207,
@@ -826,7 +832,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     },
     {
       "id": 208,
@@ -873,7 +879,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-05T03:44:40.882+09:00"
+      "last_successful_fetch": "2026-05-06T03:43:14.950+09:00"
     }
   ]
 }
