@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-05-08T03:45:38.002+09:00",
+  "built_at": "2026-05-09T03:41:59.774+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 102,
@@ -97,7 +97,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 102,
@@ -128,7 +128,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 102,
@@ -159,7 +159,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 103,
@@ -184,7 +184,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 104,
@@ -215,7 +215,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 105,
@@ -246,7 +246,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 106,
@@ -271,7 +271,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 200,
@@ -307,7 +307,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 201,
@@ -438,7 +438,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 202,
@@ -474,7 +474,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 203,
@@ -504,7 +504,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 204,
@@ -647,7 +647,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 205,
@@ -742,7 +742,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 206,
@@ -772,7 +772,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 207,
@@ -784,6 +784,12 @@
       "branch": "master",
       "overview_html": "<h1>Quote Moment — Overview</h1>\n<p>Android 모바일과 Wear OS 워치에서 매일 새로운 명언과 긍정 확언을 보여주는 앱입니다. 워치페이스 컴플리케이션, 타일, 전용 액자 앱, 모바일 홈 화면 위젯, 알림 등 다양한 표면에서 같은 명언 풀을 공유합니다. 온라인 <strong>Explore 탭</strong>에서 다른 사용자가 공유한 명언 리스트를 탐색·다운로드할 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>명언 리스트 관리</strong> — Room DB 기반, 리스트당 최대 <strong>20개</strong>의 명언 보관, 추가·삭제·편집</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 워치페이스에 명언 표시, 탭 시 다음 명언으로 전환(설정 On/Off)</li>\n<li><strong>Wear OS 타일</strong> — 스와이프로 오늘의 명언 확인</li>\n<li><strong>워치 액자 앱</strong> — 앰비언트 모드 지원 전체 화면 명언</li>\n<li><strong>모바일 홈 위젯</strong> — 2x2 / 4x2 등 다양한 크기, 자동 갱신</li>\n<li><strong>알림</strong> — 설정한 시간에 명언 푸시</li>\n<li><strong>커스터마이징</strong> — 폰트 / 글자 크기 / 색상 / 문구 교체 간격 / 셔플 / 시간 표시</li>\n<li><strong>Explore 온라인 탐색</strong> — 카테고리(motivation / relationships / life / success / healing / etc)별 리스트 다운로드, 좋아요, 업로드(Google 로그인)</li>\n<li><strong>모바일 ↔ 워치 리스트 단위 동기화</strong> — Message API 기반</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin, Gradle Kotlin DSL</li>\n<li><strong>모바일:</strong> MVVM (ViewModel + LiveData + Flow), Room, ViewBinding, Navigation Component, Material Design</li>\n<li><strong>워치:</strong> Jetpack Compose for Wear OS, Wear Complications API, Horologist Tiles</li>\n<li><strong>모바일 ↔ 워치 통신:</strong> Wearable Data Layer — <strong>Message API</strong> 기반 (Data API 미사용)</li>\n<li><strong>백엔드(Explore):</strong> AWS API Gateway + Lambda + DynamoDB, Google OAuth (업로드/좋아요)</li>\n<li><strong>Firebase:</strong> Analytics, Crashlytics</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n</ul>\n<h2>동기화 프로토콜</h2>\n<table>\n<thead>\n<tr>\n<th>Path</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/quote-sync-start</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 시작 알림</td>\n</tr>\n<tr>\n<td><code>/quote-sync-request</code></td>\n<td>Wear → Mobile</td>\n<td>타임스탬프 기반 동기화 요청</td>\n</tr>\n<tr>\n<td><code>/quote-sync-response</code></td>\n<td>Mobile → Wear</td>\n<td><code>QuoteList</code> JSON 전송</td>\n</tr>\n<tr>\n<td><code>/quote-resync</code></td>\n<td>Mobile → Wear</td>\n<td>전체 재동기화</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n</tbody></table>\n<h2>데이터 스키마</h2>\n<ul>\n<li><strong>QuoteList</strong> — <code>listId</code>, <code>title</code>, <code>category</code>, <code>language</code>, <code>updatedAt</code>, <code>isDeleted</code></li>\n<li><strong>Quote</strong> — <code>id</code>, <code>listId</code>(FK), <code>text</code>, <code>author</code></li>\n<li>리스트당 최대 20개 명언</li>\n</ul>\n<h2>Explore API 요약</h2>\n<table>\n<thead>\n<tr>\n<th>엔드포인트</th>\n<th>용도</th>\n<th>인증</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST /quotes</code></td>\n<td>명언 리스트 업로드</td>\n<td>Google OAuth 또는 <code>X-Admin-Secret-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /quotes</code></td>\n<td>리스트 조회 (카테고리·언어·정렬·페이지네이션)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /quotes/{id}</code></td>\n<td>리스트 상세</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/download</code></td>\n<td>다운로드 카운트 증가 + 데이터 반환</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/like</code></td>\n<td>좋아요 토글</td>\n<td>Google OAuth</td>\n</tr>\n<tr>\n<td><code>GET /quotes/{id}/like</code></td>\n<td>본인 좋아요 여부</td>\n<td>Google OAuth</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/report</code></td>\n<td>신고 (10회 누적 시 자동 블라인드)</td>\n<td>없음</td>\n</tr>\n</tbody></table>\n<p>카테고리: <code>motivation</code>, <code>relationships</code>, <code>life</code>, <code>success</code>, <code>healing</code>, <code>etc</code> (대소문자 구분 없음). 언어 필터 지정 시 <strong>영어(en)는 항상 포함</strong>. 업로드 Rate Limiting: 10분 10개.</p>\n<h2>프로젝트 구조</h2>\n<pre><code>quote-moment/\n├── app/                    # 모바일 앱\n│   └── src/main/java/com/watch_go/quotemoment/\n│       ├── MainActivity.kt, MainViewModel.kt, WearClient.kt\n│       ├── data/           # Room DB (Quote, QuoteList, DAO)\n│       ├── main/           # MainFragment, QuoteAdapter\n│       └── settings/       # 설정 화면\n├── wear/                   # Wear OS 앱\n│   └── src/main/java/com/watch_go/quotemoment/\n│       ├── QuoteMomentActivity.kt       # 액자 앱\n│       ├── QuoteComplicationProvider.kt # 컴플리케이션\n│       ├── QuoteTileService.kt          # 타일\n│       └── DataLayerListenerService.kt\n├── onboarding/             # git submodule\n└── watch-go-info-fragment/ # git submodule\n</code></pre>\n",
       "updates": [
+        {
+          "version": "v5.5.1",
+          "date": "2026-05-09",
+          "label": null,
+          "items_html": "<ul>\n<li>디자인 개선 — 세련된 색으로 아름다우면서도 더욱 편리한 사용성을 제공합니다</li>\n</ul>\n"
+        },
         {
           "version": "v5.5.0",
           "date": "2026-04-20",
@@ -827,12 +833,12 @@
           "items_html": "<ul>\n<li>첫 버전</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v5.5.0",
-      "latest_update_date": "2026-04-20",
+      "latest_version": "v5.5.1",
+      "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     },
     {
       "id": 208,
@@ -879,7 +885,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-08T03:45:38.002+09:00"
+      "last_successful_fetch": "2026-05-09T03:41:59.774+09:00"
     }
   ]
 }
