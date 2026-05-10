@@ -5,6 +5,13 @@ import { marked } from 'marked';
 //   ` (label)` (status like "개발 중", "준비 중")
 // Captures: 1=version, 2=date|undefined, 3=label|undefined
 const HEADER_RE = /^##\s+(v\S+)(?:\s*[—–-]+\s*(\d{4}-\d{2}-\d{2})|\s*\(([^)]+)\))?\s*$/;
+const UNRELEASED_LABEL_RE = /^(개발 중|준비 중|미출시|unreleased|in progress|coming soon)$/i;
+
+function sortGroup(update) {
+  if (update.label && UNRELEASED_LABEL_RE.test(update.label.trim())) return 0;
+  if (update.date) return 1;
+  return 2;
+}
 
 export function parseUpdates(markdown) {
   const lines = markdown.split(/\r?\n/);
@@ -39,10 +46,11 @@ export function parseUpdates(markdown) {
     items_html: marked.parse(s.body.join('\n').trim()),
   }));
 
-  // Sort: labeled (unreleased) first, then dated desc, then undated by version desc.
+  // Sort: unreleased status labels first, then dated desc, then undated by version desc.
+  // Historical labels such as "초기 출시" are descriptive, not release freshness.
   parsed.sort((a, b) => {
-    const aGroup = a.label ? 0 : a.date ? 1 : 2;
-    const bGroup = b.label ? 0 : b.date ? 1 : 2;
+    const aGroup = sortGroup(a);
+    const bGroup = sortGroup(b);
     if (aGroup !== bGroup) return aGroup - bGroup;
     if (aGroup === 1) {
       const cmp = b.date.localeCompare(a.date);

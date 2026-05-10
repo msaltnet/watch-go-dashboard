@@ -21,6 +21,7 @@ apps:
     identity: "얇고 세련된 라인으로 완성하는 내 사진 워치페이스"
     package: "com.watch_go.new_my_photo_watch_face_thin"
     landing: "https://watch-go.com/107"
+    icon_url: "/app-icons/107.png"
     repo: "msaltnet/new-my-photo-watch-face-thin"
     branch: "master"
 
@@ -29,6 +30,7 @@ apps:
     identity: "귀엽고 사랑스러운 감성의 내 사진 워치페이스"
     package: "com.watch_go.new_my_photo_watch_face_cute"
     landing: "https://watch-go.com/108"
+    icon_url: "/app-icons/108.png"
     repo: "msaltnet/new-my-photo-watch-face-acme"
     branch: "master"
 

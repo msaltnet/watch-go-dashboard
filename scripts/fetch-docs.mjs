@@ -27,10 +27,14 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
     const updatesPath = `${basePath}/updates.md`;
     const branch = meta.branch ?? 'main';
 
+    const iconPromise = meta.icon_url
+      ? Promise.resolve(meta.icon_url)
+      : fetchIconUrl({ landing: meta.landing, id: meta.id, fetchFn });
+
     const [overview, updates, icon_url] = await Promise.all([
       fetchDocFile({ repo: meta.repo, path: overviewPath, token, ref: branch, fetchFn }),
       fetchDocFile({ repo: meta.repo, path: updatesPath, token, ref: branch, fetchFn }),
-      fetchIconUrl({ landing: meta.landing, id: meta.id, fetchFn }),
+      iconPromise,
     ]);
 
     const probe = `[${meta.id}${meta.variant ? '-' + meta.variant : ''} ${meta.repo}@${branch}] overview=${describeFetch(overview)} updates=${describeFetch(updates)}`;

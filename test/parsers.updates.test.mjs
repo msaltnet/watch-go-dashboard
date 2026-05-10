@@ -107,6 +107,21 @@ test('orders unreleased (label) above dated above undated', () => {
   assert.equal(result[2].date, null);
 });
 
+test('does not treat historical labels as newer than dated releases', () => {
+  const md = `## v1.x (초기 출시)
+- first line
+
+## v2.0.0 — 2026-05-09
+- current build
+`;
+  const result = parseUpdates(md);
+  assert.equal(result.length, 2);
+  assert.equal(result[0].version, 'v2.0.0');
+  assert.equal(result[0].date, '2026-05-09');
+  assert.equal(result[1].version, 'v1.x');
+  assert.equal(result[1].label, '초기 출시');
+});
+
 test('handles different em-dash variants (— vs --)', () => {
   const md = `## v1.0.0 -- 2026-01-01\n- test`;
   const result = parseUpdates(md);

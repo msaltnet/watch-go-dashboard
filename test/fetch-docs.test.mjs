@@ -91,6 +91,26 @@ test('uses docs_subdir when provided', async () => {
   assert.ok(calls.some(u => u.includes('/contents/clean/docs/app/updates.md')));
 });
 
+test('uses configured icon_url without probing landing page', async () => {
+  const calls = [];
+  const fetchFn = async (url) => {
+    calls.push(url);
+    if (url.includes('/overview.md')) return jsonResponse('# A overview');
+    if (url.includes('/updates.md')) return jsonResponse('## v1.0.0\n- first');
+    return { status: 404, ok: false, json: async () => ({}) };
+  };
+
+  const results = await collectAppDocs({
+    appsYml: `apps:\n  - id: 107\n    name: A\n    identity: a\n    package: p\n    landing: https://landing.test/107\n    icon_url: /app-icons/107.png\n    repo: owner/a\n`,
+    token: 'fake',
+    fetchFn,
+  });
+
+  assert.equal(results[0].status, 'ok');
+  assert.equal(results[0].icon_url, '/app-icons/107.png');
+  assert.ok(!calls.includes('https://landing.test/107'));
+});
+
 test('sends ?ref=branch when app specifies a custom branch', async () => {
   const calls = [];
   const fetchFn = async (url) => {
