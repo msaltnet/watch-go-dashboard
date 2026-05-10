@@ -48,8 +48,8 @@ aws amplify + serverless-api 로 서빙되는 static web site
 |---|---|---|---|---|---|---|
 | 100 | My Photo Watch Face: watch-go | https://watch-go.com/100 | com.watch_go.myphotowatchface | [MyPhotoWatchFace](https://github.com/msaltnet/MyPhotoWatchFace) | watchface | `docs/app/` |
 | 102 | My Photo Watch Face: Clean | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `new-my-photo-watch-face/docs/app/` |
-| 102 | My Photo Watch Face: Thin | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face_thin | [new-my-photo-watch-face-thin](https://github.com/msaltnet/new-my-photo-watch-face-thin) | master | `docs/app/` |
-| 102 | My Photo Watch Face: Cute | https://watch-go.com/102 | com.watch_go.new_my_photo_watch_face_cute | [new-my-photo-watch-face-acme](https://github.com/msaltnet/new-my-photo-watch-face-acme) | master | `docs/app/` |
+| 107 | My Photo Watch Face: Thin | https://watch-go.com/107 | com.watch_go.new_my_photo_watch_face_thin | [new-my-photo-watch-face-thin](https://github.com/msaltnet/new-my-photo-watch-face-thin) | master | `docs/app/` |
+| 108 | My Photo Watch Face: Cute | https://watch-go.com/108 | com.watch_go.new_my_photo_watch_face_cute | [new-my-photo-watch-face-acme](https://github.com/msaltnet/new-my-photo-watch-face-acme) | master | `docs/app/` |
 | 103 | Quote Moment Watch Face | https://watch-go.com/103 | com.watch_go.quote_moment_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `quote-moment-watch-face/docs/app/` |
 | 104 | My Photo Circle Watch Face | https://watch-go.com/104 | com.watch_go.my_photo_circle_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `my-photo-circle-watch-face/docs/app/` |
 | 105 | My Photo Quote: Daily Inspire | https://watch-go.com/105 | com.watch_go.photo_quote_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `photo-quote-watch-face/docs/app/` |

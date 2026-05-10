@@ -8,7 +8,6 @@ apps:
     branch: "watchface"
 
   - id: 102
-    variant: "clean"
     name: "My Photo Watch Face: Clean"
     identity: "깔끔한 레이아웃으로 내 사진을 담은 미니멀 워치페이스"
     package: "com.watch_go.new_my_photo_watch_face"
@@ -17,21 +16,19 @@ apps:
     branch: "master"
     docs_subdir: "new-my-photo-watch-face"
 
-  - id: 102
-    variant: "thin"
+  - id: 107
     name: "My Photo Watch Face: Thin"
     identity: "얇고 세련된 라인으로 완성하는 내 사진 워치페이스"
     package: "com.watch_go.new_my_photo_watch_face_thin"
-    landing: "https://watch-go.com/102"
+    landing: "https://watch-go.com/107"
     repo: "msaltnet/new-my-photo-watch-face-thin"
     branch: "master"
 
-  - id: 102
-    variant: "cute"
+  - id: 108
     name: "My Photo Watch Face: Cute"
     identity: "귀엽고 사랑스러운 감성의 내 사진 워치페이스"
     package: "com.watch_go.new_my_photo_watch_face_cute"
-    landing: "https://watch-go.com/102"
+    landing: "https://watch-go.com/108"
     repo: "msaltnet/new-my-photo-watch-face-acme"
     branch: "master"
 
