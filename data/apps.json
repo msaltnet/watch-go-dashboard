@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-05-23T03:47:42.205+09:00",
+  "built_at": "2026-05-24T03:30:24.148+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 102,
@@ -96,7 +96,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 107,
@@ -126,7 +126,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 108,
@@ -156,7 +156,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 103,
@@ -181,7 +181,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 104,
@@ -212,7 +212,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 105,
@@ -243,7 +243,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 106,
@@ -268,7 +268,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 200,
@@ -304,7 +304,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 201,
@@ -435,7 +435,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 202,
@@ -471,7 +471,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 203,
@@ -501,7 +501,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 204,
@@ -512,6 +512,12 @@
       "repo": "msaltnet/watch-go-multi-counter",
       "overview_html": "<h1>Multi Counter — Overview</h1>\n<p>Wear OS 워치와 Android 모바일에서 작동하는 다용도 카운터 앱입니다. 화면을 탭해 숫자를 세는 싱글 카운터부터 2~4인 보드게임 스코어 카운터까지 한 앱에서 해결하며, 디지털 시계/스톱워치, 세션 히스토리, 이미지 공유 기능을 함께 제공합니다. 모바일에서 이름·색상·목표·루프 등을 설정하면 워치로 실시간 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>유연한 카운터 모드</strong> — 싱글 / 듀얼 / 트리플 / 쿼드(4분할) 즉시 전환</li>\n<li><strong>타일 빠른 실행</strong> — 앱을 열지 않고 타일에서 바로 카운트</li>\n<li><strong>카운터 상세 설정</strong> — 각 카운터별 이름(최대 10자)·색상·목표치·루프 모드·직접 값 수정(0~999)</li>\n<li><strong>히스토리 로그 &amp; 이미지 공유</strong> — 세션 기록을 모바일에서 관리하고 이미지로 공유</li>\n<li><strong>홈 화면 위젯 &amp; 볼륨 키 카운터</strong> — 화면을 보지 않고도 볼륨 키로 카운트</li>\n<li><strong>진동·사운드 피드백</strong> — 탭할 때마다 햅틱으로 확신 있는 카운팅</li>\n<li><strong>시계·스톱워치 내장</strong> — 운동 세트 사이 시간 측정 등에 활용</li>\n<li><strong>모바일-워치 실시간 동기화</strong> — 5초 주기 pull 방식 세션 동기화</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템, MVVM (<code>MainViewModel</code>), Jetpack DataStore</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Tiles</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MessageClient</code>)</li>\n<li><strong>데이터 저장:</strong> DataStore 기반 <code>CounterRecordDataStore</code> (모바일) / <code>HistoryManager</code> (워치, 최대 50개 유지)</li>\n</ul>\n<h2>동기화 아키텍처</h2>\n<p>모바일이 <strong>5초 간격</strong>으로 워치에 <code>/sync-records-request</code>를 보내 pull:</p>\n<pre><code>Mobile                                        Wear\n  │ ── /sync-records-request ───────────────▶ │ (5초마다)\n  │ ◀── /sync-records-response ───────────── │ (wear 기록 JSON)\n  │ handleCounterRecordsResponse()            │\n  │ counterRecordDataStore.addCounterRecords()│\n  │ ── /sync-records-response ───────────────▶│ (동기화 완료된 sessionId 회신)\n  │                                           │ historyManager.removeRecordsFromHistory()\n</code></pre>\n<h3>메시지 경로</h3>\n<table>\n<thead>\n<tr>\n<th>경로</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/sync-records-request</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 요청</td>\n</tr>\n<tr>\n<td><code>/sync-records-response</code></td>\n<td>양방향</td>\n<td>기록 데이터 전송 / ACK</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n<tr>\n<td><code>/watch-version</code></td>\n<td>Wear → Mobile</td>\n<td>버전 정보</td>\n</tr>\n</tbody></table>\n<h3>중복 제거</h3>\n<ul>\n<li><strong>Mobile:</strong> sessionId 기준, 5초 미만 + 모든 카운터 0인 기록 제거, <code>isActive=true</code> 중 최신만 유지, 기존 title 보존</li>\n<li><strong>Wear:</strong> 모바일이 회신한 sessionId 중 <code>isActive=false</code>만 삭제 (활성 세션은 유지)</li>\n</ul>\n<h2>CounterRecord 데이터 구조</h2>\n<pre><code class=\"language-kotlin\">data class CounterRecord(\n  val sessionId: String,          // timestamp 기반 고유 ID\n  val startTime: String,          // ISO 시작 시간\n  val endTime: String?,           // ISO 종료 시간\n  val counter1Count..counter4Count: Int,\n  val counter1Color..counter4Color: Int,\n  val counter1Name..counter4Name: String, // 최대 10자\n  val mode: Int,                   // 싱글/듀얼/트리플/쿼드\n  val isActive: Boolean,\n  val activeDuration: Long,        // ms\n  val title: String? = null        // Mobile 전용\n)\n</code></pre>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code>가 주기적 동기화 트리거, <code>MainViewModel</code>이 <code>MessageClient.OnMessageReceivedListener</code> 구현</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 메시지 수신·처리, <code>HistoryManager</code>가 DataStore에 기록 관리</li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v12.0.0",
+          "date": "2026-05-24",
+          "label": null,
+          "items_html": "<ul>\n<li>Android 11 이하 기기에서 홈 화면 위젯 갱신 중 앱이 종료될 수 있던 문제를 수정했습니다.</li>\n<li>모바일 홈 화면 위젯에 4x1 크기를 추가하고, 기존 가로형 위젯 표기를 4x2로 정리했습니다.</li>\n<li>Wear OS 워치페이스 컴플리케이션을 추가했습니다. 여러 슬롯에 추가하면 카운터가 순서대로 배정되며, 각 슬롯에서 표시할 카운터를 선택할 수 있습니다.</li>\n<li>기록 카드의 액션을 점세개 메뉴로 정리하고, 상세 보기 바텀시트에서 기록 요약과 카운트 이벤트 타임라인을 확인할 수 있게 했습니다.</li>\n<li>기록 상세 보기에서 카운터별 색상을 반영한 카운트 추이 그래프를 볼 수 있게 했습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v11.2.0",
           "date": "2026-04-26",
@@ -639,12 +645,12 @@
           "items_html": "<ul>\n<li>다국어 지원</li>\n<li>아이콘 수정</li>\n<li>와치 앱 설치 버튼 추가</li>\n<li>앱 안정화</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v11.2.0",
-      "latest_update_date": "2026-04-26",
+      "latest_version": "v12.0.0",
+      "latest_update_date": "2026-05-24",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 205,
@@ -739,7 +745,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 206,
@@ -781,7 +787,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 207,
@@ -847,7 +853,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     },
     {
       "id": 208,
@@ -900,7 +906,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-23T03:47:42.205+09:00"
+      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
     }
   ]
 }
