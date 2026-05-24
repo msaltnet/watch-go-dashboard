@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-05-24T03:30:24.148+09:00",
+  "built_at": "2026-05-25T03:32:23.733+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 102,
@@ -96,7 +96,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 107,
@@ -126,7 +126,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 108,
@@ -156,7 +156,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 103,
@@ -181,7 +181,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 104,
@@ -212,7 +212,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 105,
@@ -243,7 +243,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 106,
@@ -268,7 +268,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 200,
@@ -304,7 +304,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 201,
@@ -435,7 +435,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 202,
@@ -471,7 +471,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 203,
@@ -501,7 +501,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 204,
@@ -650,7 +650,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 205,
@@ -745,7 +745,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 206,
@@ -787,7 +787,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 207,
@@ -853,7 +853,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     },
     {
       "id": 208,
@@ -862,8 +862,14 @@
       "package": "com.watch_go.remotecamwatch",
       "landing": "https://watch-go.com/208",
       "repo": "msaltnet/remote-cam-watch",
-      "overview_html": "<h1>Remote Camera Watch — Overview</h1>\n<p>Wear OS 워치를 Android 폰 카메라의 저지연 리모컨으로 사용하는 앱입니다. 폰이 보는 화면을 워치에서 실시간으로 미리 보며 원격으로 촬영 · 모드 전환 · 타이머 · 플래시 · 카메라 전환 등을 제어할 수 있습니다. 삼각대 위 셀프 샷, 단체 사진, 브이로그 모니터링, 자연스러운 캔디드 샷에 특화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>실시간 라이브 프리뷰 (Low Latency)</strong> — 폰 카메라 프레임을 JPEG로 압축해 <code>ChannelClient</code>로 워치에 저지연 스트리밍</li>\n<li><strong>원격 셔터</strong> — 사진 · 동영상 모드 전환, 탭 한 번으로 촬영</li>\n<li><strong>타이머</strong> — 즉시 / 3초 / 5초 / 10초 (카운트다운마다 워치 진동)</li>\n<li><strong>카메라 전환</strong> — 전면(셀카) ↔ 후면(고화질)</li>\n<li><strong>플래시</strong> — 켜기 / 끄기 / 자동</li>\n<li><strong>화면 비율</strong> — 4:3 / 16:9 / 1:1</li>\n<li><strong>미러 모드</strong> — 셀카 좌우 반전</li>\n<li><strong>촬영 후 리뷰</strong> — 찍은 사진을 워치에 자동 표시 (시간 설정 가능)</li>\n<li><strong>자동 연결</strong> — <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능을 가진 워치 탐색 후 자동 연결</li>\n<li><strong>진동 피드백</strong> — 셔터·타이머 카운트다운에 손목 진동</li>\n</ul>\n<h2>기술 스택</h2>\n<h3>Mobile App (<code>:app</code>)</h3>\n<ul>\n<li><strong>CameraX</strong> — <code>ImageAnalysis</code> 유스케이스로 프레임 캡처</li>\n<li><strong>YUV → JPEG 변환</strong> — <code>YuvImage</code>로 NV21 포맷을 JPEG 압축 (전송 크기 최적화)</li>\n<li><strong>Wearable ChannelClient</strong> — <code>/camera_preview</code> 채널로 저지연 전송</li>\n<li><strong>Kotlin Coroutines</strong> — 비동기 스트리밍, <code>Channel.CONFLATED</code>로 백프레셔 관리</li>\n<li><strong>권한:</strong> <code>CAMERA</code> 필수. Android 12(API 31)+에서 <code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH_SCAN</code> 필수</li>\n</ul>\n<h3>Wear OS App (<code>:wear</code>)</h3>\n<ul>\n<li><strong>Jetpack Compose</strong> — 프리뷰 UI</li>\n<li><strong>Bitmap Decoding</strong> — <code>BitmapFactory</code>로 수신 바이트 디코딩</li>\n<li><strong>Keep Screen On</strong> — 프리뷰 동안 화면 유지 (<code>WAKE_LOCK</code> 권한)</li>\n</ul>\n<h2>연결 및 스트리밍 아키텍처</h2>\n<h3>1. 탐색 및 연결</h3>\n<ul>\n<li>Mobile <code>MainActivity</code>가 <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능 노드 주기 탐색 (<code>checkConnectedDevices</code>)</li>\n<li>노드 발견 시 <code>syncState</code>가 <code>STATE_CONNECTED</code>로 전환</li>\n<li>Wear 앱 실행 시 <code>ChannelClient</code> / <code>MessageClient</code> 리스너 등록 후 \"Waiting for connection...\"</li>\n</ul>\n<h3>2. 초기화 &amp; 핸드셰이크</h3>\n<ul>\n<li>Mobile → <code>/ping</code> 메시지 → Wear가 \"Ping Received\"</li>\n<li>Mobile → <code>ChannelClient.openChannel(\"/camera_preview\")</code> → Wear가 \"Waiting for video...\"</li>\n</ul>\n<h3>3. 스트리밍 루프</h3>\n<ul>\n<li><strong>Mobile:</strong> CameraX <code>ImageAnalysis</code> 프레임 → <code>YuvImage.compressToJpeg</code> → 패킷 <code>[프레임 크기(4B)][JPEG 데이터]</code> 전송</li>\n<li><strong>Wear:</strong> <code>InputStream</code>에서 <code>Int</code> 크기 읽고, 해당 크기만큼 바이트 → <code>BitmapFactory</code> → <code>Bitmap</code> 상태 업데이트 → Compose 렌더링</li>\n</ul>\n<h3>4. 종료</h3>\n<ul>\n<li>Mobile: <code>CameraManager</code> 해제 + 채널 close</li>\n<li>Wear: <code>onChannelClosed</code> → 리소스 정리, 대기 상태 복귀</li>\n</ul>\n<h2>상태 정의</h2>\n<table>\n<thead>\n<tr>\n<th>기기</th>\n<th>상태</th>\n<th>설명</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Mobile</td>\n<td>DISCONNECTED</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>READY</td>\n<td>워치 노드 탐색 완료, 채널 미개설</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTING</td>\n<td>채널 열기 중 (프리뷰 활성, 메인 프래그먼트 한정)</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTED</td>\n<td>프리뷰 전송 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>WAITING</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTING</td>\n<td>채널 열기 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTED</td>\n<td>프리뷰 수신 중</td>\n</tr>\n</tbody></table>\n<h2>성능 · 제약</h2>\n<ul>\n<li><strong>해상도:</strong> 블루투스 대역폭 한계로 프리뷰 <strong>320×240</strong></li>\n<li><strong>전송 품질:</strong> JPEG 압축 품질 조절로 속도/화질 균형</li>\n<li><strong>배터리:</strong> 실시간 스트리밍 + 화면 유지로 양쪽 기기 배터리 소모 빠름</li>\n<li><strong>연결:</strong> 블루투스 기본, Wi-Fi도 지원하나 지연이 길어질 수 있음</li>\n<li><strong>범위:</strong> 블루투스 범위 이탈 시 스트리밍 중단</li>\n</ul>\n",
+      "overview_html": "<h1>Remote Camera Watch — Overview</h1>\n<p>Wear OS 워치를 Android 폰 카메라의 저지연 리모컨으로 사용하는 앱입니다. 폰이 보는 화면을 워치에서 실시간으로 미리 보며 원격으로 촬영 · 모드 전환 · 타이머 · 플래시 · 카메라 전환 등을 제어할 수 있습니다. 삼각대 위 셀프 샷, 단체 사진, 브이로그 모니터링, 자연스러운 캔디드 샷에 특화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>실시간 라이브 프리뷰 (Low Latency)</strong> — 폰 카메라 프레임을 JPEG로 압축해 <code>ChannelClient</code>로 워치에 저지연 스트리밍</li>\n<li><strong>원격 셔터</strong> — 사진 · 동영상 모드 전환, 탭 한 번으로 촬영</li>\n<li><strong>타이머</strong> — 즉시 / 3초 / 5초 / 10초 (카운트다운마다 워치 진동)</li>\n<li><strong>카메라 전환</strong> — 전면(셀카) ↔ 후면(고화질)</li>\n<li><strong>플래시</strong> — 켜기 / 끄기 / 자동</li>\n<li><strong>화면 비율</strong> — 4:3 / 16:9 / 1:1</li>\n<li><strong>미러 모드</strong> — 셀카 좌우 반전</li>\n<li><strong>수평계</strong> — 폰의 roll/pitch 기울기를 모바일과 워치 프리뷰에 표시하고, 기준 각도에 가까울 때만 자동 표시</li>\n<li><strong>인터벌 촬영</strong> — 셔터 한 번으로 1장 / 3장 / 5장 연속 촬영</li>\n<li><strong>촬영 후 리뷰</strong> — 찍은 사진을 워치에 자동 표시 (시간 설정 가능)</li>\n<li><strong>Cover / AoD / Black 화면</strong> — 폰 화면을 이미지, 시계형 어두운 화면, 또는 검은 화면으로 덮기</li>\n<li><strong>자동 연결</strong> — <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능을 가진 워치 탐색 후 자동 연결</li>\n<li><strong>진동 피드백</strong> — 셔터·타이머 카운트다운에 손목 진동</li>\n</ul>\n<h2>기술 스택</h2>\n<h3>Mobile App (<code>:app</code>)</h3>\n<ul>\n<li><strong>CameraX</strong> — <code>ImageAnalysis</code> 유스케이스로 프레임 캡처</li>\n<li><strong>YUV → JPEG 변환</strong> — <code>YuvImage</code>로 NV21 포맷을 JPEG 압축 (전송 크기 최적화)</li>\n<li><strong>Wearable ChannelClient</strong> — <code>/camera_preview</code> 채널로 저지연 전송</li>\n<li><strong>Kotlin Coroutines</strong> — 비동기 스트리밍, <code>Channel.CONFLATED</code>로 백프레셔 관리</li>\n<li><strong>권한:</strong> <code>CAMERA</code> 필수. Android 12(API 31)+에서 <code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH_SCAN</code> 필수</li>\n</ul>\n<h3>Wear OS App (<code>:wear</code>)</h3>\n<ul>\n<li><strong>Jetpack Compose</strong> — 프리뷰 UI</li>\n<li><strong>Bitmap Decoding</strong> — <code>BitmapFactory</code>로 수신 바이트 디코딩</li>\n<li><strong>Keep Screen On</strong> — 프리뷰 동안 화면 유지 (<code>WAKE_LOCK</code> 권한)</li>\n</ul>\n<h2>연결 및 스트리밍 아키텍처</h2>\n<h3>1. 탐색 및 연결</h3>\n<ul>\n<li>Mobile <code>MainActivity</code>가 <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능 노드 주기 탐색 (<code>checkConnectedDevices</code>)</li>\n<li>노드 발견 시 <code>syncState</code>가 <code>STATE_CONNECTED</code>로 전환</li>\n<li>Wear 앱 실행 시 <code>ChannelClient</code> / <code>MessageClient</code> 리스너 등록 후 \"Waiting for connection...\"</li>\n</ul>\n<h3>2. 초기화 &amp; 핸드셰이크</h3>\n<ul>\n<li>Mobile → <code>/ping</code> 메시지 → Wear가 \"Ping Received\"</li>\n<li>Mobile → <code>ChannelClient.openChannel(\"/camera_preview\")</code> → Wear가 \"Waiting for video...\"</li>\n</ul>\n<h3>3. 스트리밍 루프</h3>\n<ul>\n<li><strong>Mobile:</strong> CameraX <code>ImageAnalysis</code> 프레임 → <code>YuvImage.compressToJpeg</code> → 패킷 <code>[프레임 크기(4B)][JPEG 데이터]</code> 전송</li>\n<li><strong>Wear:</strong> <code>InputStream</code>에서 <code>Int</code> 크기 읽고, 해당 크기만큼 바이트 → <code>BitmapFactory</code> → <code>Bitmap</code> 상태 업데이트 → Compose 렌더링</li>\n</ul>\n<h3>4. 종료</h3>\n<ul>\n<li>Mobile: <code>CameraManager</code> 해제 + 채널 close</li>\n<li>Wear: <code>onChannelClosed</code> → 리소스 정리, 대기 상태 복귀</li>\n</ul>\n<h2>상태 정의</h2>\n<table>\n<thead>\n<tr>\n<th>기기</th>\n<th>상태</th>\n<th>설명</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Mobile</td>\n<td>DISCONNECTED</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>READY</td>\n<td>워치 노드 탐색 완료, 채널 미개설</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTING</td>\n<td>채널 열기 중 (프리뷰 활성, 메인 프래그먼트 한정)</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTED</td>\n<td>프리뷰 전송 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>WAITING</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTING</td>\n<td>채널 열기 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTED</td>\n<td>프리뷰 수신 중</td>\n</tr>\n</tbody></table>\n<h2>성능 · 제약</h2>\n<ul>\n<li><strong>해상도:</strong> 블루투스 대역폭 한계로 프리뷰 <strong>320×240</strong></li>\n<li><strong>전송 품질:</strong> JPEG 압축 품질 조절로 속도/화질 균형</li>\n<li><strong>배터리:</strong> 실시간 스트리밍 + 화면 유지로 양쪽 기기 배터리 소모 빠름</li>\n<li><strong>연결:</strong> 블루투스 기본, Wi-Fi도 지원하나 지연이 길어질 수 있음</li>\n<li><strong>범위:</strong> 블루투스 범위 이탈 시 스트리밍 중단</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v3.8.0",
+          "date": "2026-05-24",
+          "label": null,
+          "items_html": "<ul>\n<li>비디오 모드 사용 후 앱으로 돌아올 때 일부 기기에서 앱이 종료될 수 있는 문제를 수정했습니다.</li>\n<li>수평계 추가 — 모바일과 워치 프리뷰에서 roll/pitch 기울기를 확인하고, 기준 각도에 가까울 때만 잠시 표시됩니다.</li>\n<li>인터벌 촬영 추가 — 셔터 한 번으로 1장 / 3장 / 5장 촬영을 선택할 수 있습니다.</li>\n<li>Black 화면 모드 추가 — 워치 프리뷰는 유지하면서 폰 화면을 낮은 밝기의 검은 화면으로 덮을 수 있습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v3.6.0",
           "date": "2026-05-18",
@@ -901,12 +907,12 @@
           "items_html": "<ul>\n<li>첫 버전</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v3.6.0",
-      "latest_update_date": "2026-05-18",
+      "latest_version": "v3.8.0",
+      "latest_update_date": "2026-05-24",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-05-24T03:30:24.148+09:00"
+      "last_successful_fetch": "2026-05-25T03:32:23.733+09:00"
     }
   ]
 }
