@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-06-06T03:49:50.698+09:00",
+  "built_at": "2026-06-07T03:37:34.845+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 102,
@@ -96,7 +96,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 107,
@@ -126,7 +126,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 108,
@@ -156,7 +156,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 103,
@@ -181,7 +181,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 104,
@@ -212,7 +212,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 105,
@@ -243,7 +243,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 106,
@@ -268,7 +268,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 200,
@@ -304,7 +304,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 201,
@@ -435,7 +435,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 202,
@@ -471,7 +471,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 203,
@@ -483,6 +483,12 @@
       "branch": "master",
       "overview_html": "<h1>Crypto Watch — Overview</h1>\n<p>Android 모바일과 Wear OS 워치에서 암호화폐 실시간 시세를 확인할 수 있는 앱입니다. 홈 화면 위젯, 워치페이스 컴플리케이션, Wear OS 타일을 통해 <strong>앱을 열지 않고도</strong> BTC/ETH/알트코인 가격과 24시간 등락률, 공포탐욕지수를 확인할 수 있습니다. 모바일에서 선택한 거래소·코인 조합이 워치로 즉시 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>가격 타일 위젯</strong> — 최대 6개 코인(거래소 + 심볼 조합) 실시간 가격 및 24시간 등락률</li>\n<li><strong>차트 위젯</strong> — MA5 / MA10 / MA20 이동평균선이 그려진 실시간 차트</li>\n<li><strong>공포탐욕지수</strong> — 시장 심리를 컬러 링으로 시각화</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 시계 화면에서 바로 시세 확인</li>\n<li><strong>Wear OS 타일</strong> — 스와이프로 여러 코인 확인 + 인터랙티브 캔들스틱/라인 차트</li>\n<li><strong>다중 거래소 지원</strong> — Binance, Upbit, Bybit, OKX, Bitget</li>\n<li><strong>자동 갱신</strong> — 백그라운드에서 주기적으로 가격 갱신</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, ViewBinding, Navigation Component, MVVM (<code>MainViewModel</code>)</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS</li>\n<li><strong>공유 모듈:</strong> <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API — 경로 <code>/update-settings</code>, <code>/watch-version</code></li>\n<li><strong>거래소 API (<code>ExchangeDataFetcher</code>):</strong> Binance, Upbit, Bybit, OKX, Bitget (가격 + K-line 캔들)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n<li><strong>설정 저장:</strong> SharedPreferences (<code>configExchange1</code>~`configExchange6<code>, legacy </code>configExchange` 호환)</li>\n</ul>\n<h2>설정 직렬화 포맷</h2>\n<p>폰 → 워치로 전송되는 설정 문자열 포맷:</p>\n<pre><code>%EXCHANGE:SYMBOL%,%...%,#INTERVAL#,!FG:0or1!\n</code></pre>\n<p>예: <code>%EX_BINANCE:BTCUSDT%,%%,%%,%%,%%,%%,#1h#,!FG:1!</code></p>\n<ul>\n<li>빈 슬롯은 <code>%%</code>로 표시</li>\n<li><code>#INTERVAL#</code> — 차트 인터벌 (예: <code>1h</code>)</li>\n<li><code>!FG:0or1!</code> — 공포탐욕지수 표시 여부</li>\n</ul>\n<h2>거래소 지원 매트릭스</h2>\n<table>\n<thead>\n<tr>\n<th>거래소</th>\n<th>심볼 예시</th>\n<th>등락률 API</th>\n<th>비고</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Binance</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td></td>\n</tr>\n<tr>\n<td>Upbit</td>\n<td><code>KRW-BTC</code></td>\n<td>지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bybit</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td><code>price24hPcnt</code>가 소수 → ×100 필요</td>\n</tr>\n<tr>\n<td>OKX</td>\n<td><code>BTC-USDT</code></td>\n<td>미지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bitget</td>\n<td><code>BTCUSDT</code></td>\n<td>미지원</td>\n<td>API 불안정</td>\n</tr>\n</tbody></table>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainViewModel</code>이 설정을 <code>getConfigString()</code>으로 직렬화해 <code>WearClient</code>로 워치에 전송</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 설정 수신, <code>ExchangeDataFetcher</code>가 거래소별 API 호출</li>\n<li>위젯/컴플리케이션/타일은 같은 <code>ExchangeDataFetcher</code>를 공유하여 폰/워치 양측에서 일관된 데이터 사용</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v9.5.0",
+          "date": "2026-06-07",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 홈 위젯을 사각형 디자인으로 새롭게 다듬고, 업데이트 시간을 눌러 바로 새로고침할 수 있도록 개선했습니다</li>\n<li>모바일 앱에 Wear OS 앱·타일·워치페이스 기능과 사용 방법을 안내하고 워치 설치로 바로 이동할 수 있는 화면을 추가했습니다</li>\n<li>Wear OS 워치페이스에 시세와 가격 차트를 보여주는 Photo complication을 추가했습니다</li>\n<li>Wear OS 워치페이스 complication이 설정 변경이나 앱 실행 후 더 빠르게 최신 내용으로 갱신되도록 개선했습니다</li>\n</ul>\n"
+        },
         {
           "version": "v9.0.0",
           "date": "2026-04-05",
@@ -496,12 +502,12 @@
           "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v9.0.0",
-      "latest_update_date": "2026-04-05",
+      "latest_version": "v9.5.0",
+      "latest_update_date": "2026-06-07",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 204,
@@ -650,7 +656,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 205,
@@ -751,7 +757,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 206,
@@ -793,7 +799,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 207,
@@ -859,7 +865,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     },
     {
       "id": 208,
@@ -924,7 +930,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-06T03:49:50.698+09:00"
+      "last_successful_fetch": "2026-06-07T03:37:34.845+09:00"
     }
   ]
 }
