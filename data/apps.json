@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-06-11T04:06:07.503+09:00",
+  "built_at": "2026-06-12T04:10:48.483+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 102,
@@ -96,7 +96,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 107,
@@ -126,7 +126,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 108,
@@ -156,7 +156,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 103,
@@ -181,7 +181,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 104,
@@ -212,7 +212,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 105,
@@ -243,7 +243,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 106,
@@ -268,7 +268,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 200,
@@ -304,7 +304,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 201,
@@ -315,6 +315,12 @@
       "repo": "msaltnet/watch-led-scroller",
       "overview_html": "<h1>Watch LED Scroller &amp; Banner — Overview</h1>\n<p>Wear OS 워치를 작은 LED 전광판으로 바꾸는 엔터테인먼트 앱입니다. 글자를 스크롤·깜빡임으로 표시해 콘서트 응원봉, 파티, 시끄러운 장소에서의 무언 소통, 야간 달리기 시인성 용도로 사용할 수 있습니다. 모바일 앱에서 메시지를 작성해 워치로 즉시 전송하고, 워치페이스 컴플리케이션에도 표시할 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>LED 텍스트 스크롤러</strong> — 가로/세로, 좌/우/상/하 스크롤 방향, 3단계 속도 조정</li>\n<li><strong>풍부한 스타일 커스터마이징</strong> — 14종 글자 색상 (그라디언트 포함), 10종 배경색, 14종 폰트, 3단계 글자 크기</li>\n<li><strong>깜빡임 효과</strong> — 독립적 깜빡임 속도(3단계), 도트 효과</li>\n<li><strong>화면 회전</strong> — 0° / 90° / 180° / 270° 4방향</li>\n<li><strong>모바일-워치 동기화</strong> — 모바일 앱에서 입력한 설정을 워치로 즉시 전달</li>\n<li><strong>워치페이스 컴플리케이션(Photo Complication)</strong> — 나만의 LED 배너를 워치페이스에 컴플리케이션으로 표시 (관련 앱: LED Board Watch Face)</li>\n<li><strong>URL 공유</strong> — 설정을 <code>Apple-025</code> 같은 키로 업로드해 링크로 공유</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>공유 백엔드:</strong> AWS API Gateway + Lambda (<code>POST /share-led</code>, <code>GET /share-led?k=…</code>), <code>X-API-Key</code> 헤더 인증</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n</ul>\n<h2>설정 직렬화 포맷</h2>\n<p>설정은 12필드 쉼표 구분 문자열로 직렬화됩니다 (<code>SettingSerializer.settingsToString</code>):</p>\n<pre><code>text,font,size,color,speed,reverse,blink,blinkSpeed,dot,rotation,scrollMode,bgColor\n</code></pre>\n<p>예: <code>Hello World,0,1,0,1,false,false,1,false,0,true,0</code></p>\n<p>text에 쉼표 포함 불가. 세부 인덱스 맵(폰트 14종, 글자색 14종, 배경색 10종)은 <code>README.md</code>의 테이블 참고.</p>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일에서 편집한 설정이 Wearable Data Layer를 통해 워치로 동기화</li>\n<li>공유 기능은 모바일에서 AWS 공유 API에 config 문자열을 업로드하고 단축 키(<code>{과일명}-{번호}</code>)를 응답으로 받음</li>\n<li>컴플리케이션은 워치 LED 미리보기를 이미지로 생성해 Photo Complication 슬롯에 공급</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v10.1.0",
+          "date": "2026-06-12",
+          "label": null,
+          "items_html": "<ul>\n<li>메인 화면 기능 소개 — 메인 화면에 &quot;이런 기능도 있어요&quot; 카드가 추가되어 LED Board 워치페이스, 모바일 LED 스크롤러, 모바일 위젯을 한눈에 살펴보고 워치페이스 설치로 바로 이동할 수 있습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v10.0.0",
           "date": "2026-05-04",
@@ -430,12 +436,12 @@
           "items_html": "<ul>\n<li>다국어 지원</li>\n<li>폰트 5개 추가</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v10.0.0",
-      "latest_update_date": "2026-05-04",
+      "latest_version": "v10.1.0",
+      "latest_update_date": "2026-06-12",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 202,
@@ -477,7 +483,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 203,
@@ -513,7 +519,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 204,
@@ -662,7 +668,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 205,
@@ -763,7 +769,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 206,
@@ -805,7 +811,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 207,
@@ -871,7 +877,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     },
     {
       "id": 208,
@@ -936,7 +942,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-11T04:06:07.503+09:00"
+      "last_successful_fetch": "2026-06-12T04:10:48.483+09:00"
     }
   ]
 }
