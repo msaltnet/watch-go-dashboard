@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-06-19T03:59:37.172+09:00",
+  "built_at": "2026-06-20T03:48:03.456+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 102,
@@ -96,7 +96,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 107,
@@ -126,7 +126,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 108,
@@ -156,7 +156,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 103,
@@ -181,7 +181,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 104,
@@ -212,7 +212,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 105,
@@ -243,7 +243,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 106,
@@ -268,7 +268,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 200,
@@ -310,7 +310,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 201,
@@ -321,6 +321,12 @@
       "repo": "msaltnet/watch-led-scroller",
       "overview_html": "<h1>Watch LED Scroller &amp; Banner — Overview</h1>\n<p>Wear OS 워치를 작은 LED 전광판으로 바꾸는 엔터테인먼트 앱입니다. 글자를 스크롤·깜빡임으로 표시해 콘서트 응원봉, 파티, 시끄러운 장소에서의 무언 소통, 야간 달리기 시인성 용도로 사용할 수 있습니다. 모바일 앱에서 메시지를 작성해 워치로 즉시 전송하고, 워치페이스 컴플리케이션에도 표시할 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>LED 텍스트 스크롤러</strong> — 가로/세로, 좌/우/상/하 스크롤 방향, 3단계 속도 조정</li>\n<li><strong>풍부한 스타일 커스터마이징</strong> — 14종 글자 색상 (그라디언트 포함), 10종 배경색, 14종 폰트, 3단계 글자 크기</li>\n<li><strong>깜빡임 효과</strong> — 독립적 깜빡임 속도(3단계), 도트 효과</li>\n<li><strong>화면 회전</strong> — 0° / 90° / 180° / 270° 4방향</li>\n<li><strong>모바일-워치 동기화</strong> — 모바일 앱에서 입력한 설정을 워치로 즉시 전달</li>\n<li><strong>워치페이스 컴플리케이션(Photo Complication)</strong> — 나만의 LED 배너를 워치페이스에 컴플리케이션으로 표시 (관련 앱: LED Board Watch Face)</li>\n<li><strong>URL 공유</strong> — 설정을 <code>Apple-025</code> 같은 키로 업로드해 링크로 공유</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>공유 백엔드:</strong> AWS API Gateway + Lambda (<code>POST /share-led</code>, <code>GET /share-led?k=…</code>), <code>X-API-Key</code> 헤더 인증</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n</ul>\n<h2>설정 직렬화 포맷</h2>\n<p>설정은 12필드 쉼표 구분 문자열로 직렬화됩니다 (<code>SettingSerializer.settingsToString</code>):</p>\n<pre><code>text,font,size,color,speed,reverse,blink,blinkSpeed,dot,rotation,scrollMode,bgColor\n</code></pre>\n<p>예: <code>Hello World,0,1,0,1,false,false,1,false,0,true,0</code></p>\n<p>text에 쉼표 포함 불가. 세부 인덱스 맵(폰트 14종, 글자색 14종, 배경색 10종)은 <code>README.md</code>의 테이블 참고.</p>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일에서 편집한 설정이 Wearable Data Layer를 통해 워치로 동기화</li>\n<li>공유 기능은 모바일에서 AWS 공유 API에 config 문자열을 업로드하고 단축 키(<code>{과일명}-{번호}</code>)를 응답으로 받음</li>\n<li>컴플리케이션은 워치 LED 미리보기를 이미지로 생성해 Photo Complication 슬롯에 공급</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v11.0.0",
+          "date": "2026-06-20",
+          "label": null,
+          "items_html": "<ul>\n<li>친구들과 연결 — 여러 기기를 한 방에 모아 같은 LED를 동시에 스크롤할 수 있어요. 폰을 나란히 놓으면 하나의 긴 전광판처럼 글자가 이어지고(연속 모드), 모두 똑같이 보여주는 미러 모드도 있습니다. 방을 만들고 친구에게 방 키를 알려주면, 각자 원할 때 &quot;재생&quot;을 눌러도 자동으로 싱크가 맞춰집니다. 방은 나가기 전까지 유지되어, 재생을 끝내거나 다른 화면에 갔다 와도 그대로 방에 머물러요. 화면 크기가 다른 폰끼리도 글자 흐름이 정확히 이어지고 깜빡임까지 함께 맞춰집니다. 방에서는 방장과 참여자가 구분되어, 순서·모드는 방장이 정합니다.</li>\n</ul>\n"
+        },
         {
           "version": "v10.1.0",
           "date": "2026-06-12",
@@ -442,12 +448,12 @@
           "items_html": "<ul>\n<li>다국어 지원</li>\n<li>폰트 5개 추가</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v10.1.0",
-      "latest_update_date": "2026-06-12",
+      "latest_version": "v11.0.0",
+      "latest_update_date": "2026-06-20",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 202,
@@ -489,7 +495,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 203,
@@ -525,7 +531,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 204,
@@ -536,6 +542,12 @@
       "repo": "msaltnet/watch-go-multi-counter",
       "overview_html": "<h1>Multi Counter — Overview</h1>\n<p>Wear OS 워치와 Android 모바일에서 작동하는 다용도 카운터 앱입니다. 화면을 탭해 숫자를 세는 싱글 카운터부터 2~4인 보드게임 스코어 카운터까지 한 앱에서 해결하며, 디지털 시계/스톱워치, 세션 히스토리, 이미지 공유 기능을 함께 제공합니다. 모바일에서 이름·색상·목표·루프 등을 설정하면 워치로 실시간 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>유연한 카운터 모드</strong> — 싱글 / 듀얼 / 트리플 / 쿼드(4분할) 즉시 전환</li>\n<li><strong>타일 빠른 실행</strong> — 앱을 열지 않고 타일에서 바로 카운트</li>\n<li><strong>카운터 상세 설정</strong> — 각 카운터별 이름(최대 10자)·색상·목표치·루프 모드·직접 값 수정(0~999)</li>\n<li><strong>히스토리 로그 &amp; 이미지 공유</strong> — 세션 기록을 모바일에서 관리하고 이미지로 공유</li>\n<li><strong>홈 화면 위젯 &amp; 볼륨 키 카운터</strong> — 화면을 보지 않고도 볼륨 키로 카운트</li>\n<li><strong>진동·사운드 피드백</strong> — 탭할 때마다 햅틱으로 확신 있는 카운팅</li>\n<li><strong>시계·스톱워치 내장</strong> — 운동 세트 사이 시간 측정 등에 활용</li>\n<li><strong>모바일-워치 실시간 동기화</strong> — 5초 주기 pull 방식 세션 동기화</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템, MVVM (<code>MainViewModel</code>), Jetpack DataStore</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Tiles</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MessageClient</code>)</li>\n<li><strong>데이터 저장:</strong> DataStore 기반 <code>CounterRecordDataStore</code> (모바일) / <code>HistoryManager</code> (워치, 최대 50개 유지)</li>\n</ul>\n<h2>동기화 아키텍처</h2>\n<p>모바일이 <strong>5초 간격</strong>으로 워치에 <code>/sync-records-request</code>를 보내 pull:</p>\n<pre><code>Mobile                                        Wear\n  │ ── /sync-records-request ───────────────▶ │ (5초마다)\n  │ ◀── /sync-records-response ───────────── │ (wear 기록 JSON)\n  │ handleCounterRecordsResponse()            │\n  │ counterRecordDataStore.addCounterRecords()│\n  │ ── /sync-records-response ───────────────▶│ (동기화 완료된 sessionId 회신)\n  │                                           │ historyManager.removeRecordsFromHistory()\n</code></pre>\n<h3>메시지 경로</h3>\n<table>\n<thead>\n<tr>\n<th>경로</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/sync-records-request</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 요청</td>\n</tr>\n<tr>\n<td><code>/sync-records-response</code></td>\n<td>양방향</td>\n<td>기록 데이터 전송 / ACK</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n<tr>\n<td><code>/watch-version</code></td>\n<td>Wear → Mobile</td>\n<td>버전 정보</td>\n</tr>\n</tbody></table>\n<h3>중복 제거</h3>\n<ul>\n<li><strong>Mobile:</strong> sessionId 기준, 5초 미만 + 모든 카운터 0인 기록 제거, <code>isActive=true</code> 중 최신만 유지, 기존 title 보존</li>\n<li><strong>Wear:</strong> 모바일이 회신한 sessionId 중 <code>isActive=false</code>만 삭제 (활성 세션은 유지)</li>\n</ul>\n<h2>CounterRecord 데이터 구조</h2>\n<pre><code class=\"language-kotlin\">data class CounterRecord(\n  val sessionId: String,          // timestamp 기반 고유 ID\n  val startTime: String,          // ISO 시작 시간\n  val endTime: String?,           // ISO 종료 시간\n  val counter1Count..counter4Count: Int,\n  val counter1Color..counter4Color: Int,\n  val counter1Name..counter4Name: String, // 최대 10자\n  val mode: Int,                   // 싱글/듀얼/트리플/쿼드\n  val isActive: Boolean,\n  val activeDuration: Long,        // ms\n  val title: String? = null        // Mobile 전용\n)\n</code></pre>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code>가 주기적 동기화 트리거, <code>MainViewModel</code>이 <code>MessageClient.OnMessageReceivedListener</code> 구현</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 메시지 수신·처리, <code>HistoryManager</code>가 DataStore에 기록 관리</li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v13.0.0",
+          "date": "2026-06-19",
+          "label": null,
+          "items_html": "<ul>\n<li>기록을 웹 링크로 공유하는 기능을 추가했습니다. 앱이 없는 친구에게도 링크 하나로 기록을 보여줄 수 있습니다. (기록 카드 ⋮ 메뉴 → &quot;링크로 공유&quot;)</li>\n</ul>\n"
+        },
         {
           "version": "v12.0.0",
           "date": "2026-05-24",
@@ -669,12 +681,12 @@
           "items_html": "<ul>\n<li>다국어 지원</li>\n<li>아이콘 수정</li>\n<li>와치 앱 설치 버튼 추가</li>\n<li>앱 안정화</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v12.0.0",
-      "latest_update_date": "2026-05-24",
+      "latest_version": "v13.0.0",
+      "latest_update_date": "2026-06-19",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 205,
@@ -775,7 +787,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 206,
@@ -817,7 +829,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 207,
@@ -883,7 +895,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     },
     {
       "id": 208,
@@ -948,7 +960,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-06-19T03:59:37.172+09:00"
+      "last_successful_fetch": "2026-06-20T03:48:03.456+09:00"
     }
   ]
 }
