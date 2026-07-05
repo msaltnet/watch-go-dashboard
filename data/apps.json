@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-07-05T04:25:27.550+09:00",
+  "built_at": "2026-07-06T04:36:51.109+09:00",
   "stats": {
     "total": 17,
     "succeeded": 17,
@@ -59,7 +59,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 102,
@@ -96,7 +96,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 107,
@@ -126,7 +126,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 108,
@@ -156,7 +156,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 103,
@@ -181,7 +181,7 @@
       "latest_update_label": "현재 빌드, 초기 출시",
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 104,
@@ -212,7 +212,7 @@
       "latest_update_label": "현재 빌드",
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 105,
@@ -243,7 +243,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 106,
@@ -268,7 +268,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 200,
@@ -280,6 +280,12 @@
       "branch": "master",
       "overview_html": "<h1>Double Check — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 재사용 가능한 체크리스트 앱입니다. 완료 후 항목이 사라지는 일반 투두와 달리, \"리셋\" 한 번으로 같은 리스트를 반복해서 쓸 수 있도록 설계했습니다. 장보기, 여행 짐, 일상 루틴처럼 주기적으로 반복되는 체크 작업에 최적화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>재사용 체크리스트</strong> — \"리셋\" 버튼으로 모든 항목을 한 번에 미체크 상태로 되돌려 리스트 전체를 반복 사용</li>\n<li><strong>Wear OS 동기화</strong> — 워치에서 항목 체크. 모바일-워치 간 <code>lastModified</code> 타임스탬프 기반 차분 동기화</li>\n<li><strong>홈 화면 위젯</strong> — 앱을 열지 않고 위젯에서 바로 항목 체크</li>\n<li><strong>URL 공유</strong> — 리스트를 <code>https://watch-go.com/double-check?k=…</code> 링크로 만들어 지인에게 전달, 링크 열면 바로 가져오기</li>\n<li><strong>Explore 게시판</strong> — 다른 사용자가 공유한 리스트(장보기/여행/운동 등)를 카테고리별로 탐색하고 다운로드</li>\n<li><strong>Google 로그인 업로드</strong> — 내 리스트를 공개 게시판에 공유 (조회·다운로드는 로그인 불필요)</li>\n<li><strong>휴지통</strong> — 삭제한 리스트 복원</li>\n<li><strong>오프라인 우선</strong> — 로컬 Room DB에 저장, 계정·동기화 서버 의존 없음</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment + Navigation Component (SafeArgs), ViewBinding + DataBinding, ViewModel, Room 2.7, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS (Compose BOM 2024.11), Wear Compose Material/Foundation</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MobileSyncService</code>, <code>WearSyncService</code>, <code>DataLayerListenerService</code>)</li>\n<li><strong>백엔드(공유 기능):</strong> AWS API Gateway + Lambda (serverless), DynamoDB, Google OAuth (Credential Manager)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 34 (워치) / compileSdk 35, Kotlin 2.0.21, AGP 8.6.0, Java 17(앱)/11(워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 <code>:app</code> 모듈의 Navigation Component로 <code>bunchlist</code> / <code>bunchdetail</code> / <code>editbunch</code> / <code>explore</code> / <code>trash</code> 화면을 묶음</li>\n<li>공유 라이브러리: <code>:watch-go-info-fragment</code> (브랜드 공용 인포 화면), <code>:onboarding</code> (<code>net.msalt.onboarding</code> 패키지)</li>\n<li>로컬 저장소: <code>DoubleCheckDatabase</code> (Room) — 엔티티 <code>Bunch</code>, <code>CheckItem</code>, Repository 패턴</li>\n<li>워치는 <code>bunchlist</code> / <code>detail</code> 2화면만 제공하며, 항목의 checked/pin 상태는 워치 내부에 독자 저장 (모바일과 병합하지 않음)</li>\n<li>공유 API는 별도 API Gateway(<code>serverless-for-dc-board</code>)를 통해 DynamoDB <code>DoubleCheckBoardTable</code>에 업로드, UGC 정책 준수를 위해 Soft Delete + 신고 누적 시 자동 블라인드</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v8.0.0",
+          "date": "2026-07-05",
+          "label": null,
+          "items_html": "<ul>\n<li>체크리스트 항목을 최신순·오래된순·이름순·이름 역순으로 정렬할 수 있습니다. 정렬한 순서는 저장되어 위젯과 워치에서도 동일하게 표시됩니다.</li>\n<li>편집 화면에서 항목 왼쪽의 핸들을 끌어(드래그) 순서를 직접 바꿀 수 있습니다.</li>\n<li>앱 메뉴에서 워치 앱을 바로 실행하거나, 설치돼 있지 않으면 워치에 설치할 수 있습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v7.5.1",
           "date": "2026-06-21",
@@ -311,12 +317,12 @@
           "items_html": "<ul>\n<li>첫 릴리스</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v7.5.1",
-      "latest_update_date": "2026-06-21",
+      "latest_version": "v8.0.0",
+      "latest_update_date": "2026-07-05",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 201,
@@ -465,7 +471,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 202,
@@ -519,7 +525,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 203,
@@ -555,7 +561,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 204,
@@ -710,7 +716,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 205,
@@ -811,7 +817,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 206,
@@ -859,7 +865,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 207,
@@ -925,7 +931,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     },
     {
       "id": 208,
@@ -990,7 +996,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-07-05T04:25:27.550+09:00"
+      "last_successful_fetch": "2026-07-06T04:36:51.109+09:00"
     }
   ]
 }
