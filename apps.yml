@@ -137,3 +137,10 @@ apps:
     package: "com.watch_go.remotecamwatch"
     landing: "https://watch-go.com/208"
     repo: "msaltnet/remote-cam-watch"
+
+  - id: 209
+    name: "MapLog: Route & Trip Logger"
+    identity: "워치에서 원터치로 이동을 기록하고 폰 지도로 돌아보는 이동 기록 앱"
+    package: "com.watch_go.maplog"
+    landing: "https://watch-go.com/209"
+    repo: "msaltnet/map-log"
