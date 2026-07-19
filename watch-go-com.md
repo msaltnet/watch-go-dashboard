@@ -54,6 +54,7 @@ aws amplify + serverless-api 로 서빙되는 static web site
 | 104 | My Photo Circle Watch Face | https://watch-go.com/104 | com.watch_go.my_photo_circle_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `my-photo-circle-watch-face/docs/app/` |
 | 105 | My Photo Quote: Daily Inspire | https://watch-go.com/105 | com.watch_go.photo_quote_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `photo-quote-watch-face/docs/app/` |
 | 106 | LED Board Watch Face | https://watch-go.com/106 | com.watch_go.led_board_watch_face | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `led-board-watch-face/docs/app/` |
+| 111 | My Photo Watch Face: Dial | https://watch-go.com/111 | com.watch_go.my_photo_dial_wff | [wff-watch-face](https://github.com/msaltnet/wff-watch-face) | master | `my-photo-dial-watch-face/docs/app/` |
 | 200 | Double Check: To-Do & List | https://watch-go.com/200 | com.watch_go.doublecheck | [double-check-pro](https://github.com/msaltnet/double-check-pro) | master | `docs/app/` |
 | 201 | Watch LED Scroller & Banner | https://watch-go.com/201 | com.watch_go.watchledscroller | [watch-led-scroller](https://github.com/msaltnet/watch-led-scroller) | main | `docs/app/` |
 | 202 | My Photo Watch Frame: watch-go | https://watch-go.com/202 | com.watch_go.myphotowatchframe | [my-photo-watch-frame](https://github.com/msaltnet/my-photo-watch-frame) | master | `docs/app/` |
@@ -76,6 +77,7 @@ aws amplify + serverless-api 로 서빙되는 static web site
 | My Photo Circle Watch Face | 원형 프레임 속 내 사진으로 꾸미는 워치페이스 |
 | My Photo Quote: Daily Inspire | 내 사진과 오늘의 명언이 함께하는 워치페이스 |
 | LED Board Watch Face | Watch LED Scroller와 연동되는 LED 전광판 컴플리케이션 워치페이스 |
+| My Photo Watch Face: Dial | 원형 사진 액자와 소형 아날로그 시계를 함께 담은 워치페이스 |
 | Double Check: To-Do & List | 손목에서 바로 체크하는 심플한 투두 & 리스트 앱 |
 | Watch LED Scroller & Banner | 손목 위에서 빛나는 LED 전광판 텍스트 스크롤러 |
 | My Photo Watch Frame: watch-go | 내 사진을 멋진 프레임으로 감싸는 워치 앱 |

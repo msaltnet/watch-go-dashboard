@@ -70,6 +70,15 @@ apps:
     branch: "master"
     docs_subdir: "led-board-watch-face"
 
+  - id: 111
+    name: "My Photo Watch Face: Dial"
+    identity: "원형 사진 액자와 소형 아날로그 시계를 함께 담은 워치페이스"
+    package: "com.watch_go.my_photo_dial_wff"
+    landing: "https://watch-go.com/111"
+    repo: "msaltnet/wff-watch-face"
+    branch: "master"
+    docs_subdir: "my-photo-dial-watch-face"
+
   - id: 200
     name: "Double Check: To-Do & List"
     identity: "손목에서 바로 체크하는 심플한 투두 & 리스트 앱"
