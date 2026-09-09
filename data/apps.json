@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-09T06:02:04.201+09:00",
+  "built_at": "2026-09-10T05:50:42.678+09:00",
   "stats": {
     "total": 19,
     "succeeded": 17,
@@ -65,7 +65,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 107,
@@ -95,7 +95,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 108,
@@ -125,7 +125,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 103,
@@ -156,7 +156,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 104,
@@ -193,7 +193,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 105,
@@ -230,7 +230,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 106,
@@ -261,7 +261,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 111,
@@ -286,7 +286,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/111/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 200,
@@ -352,7 +352,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 201,
@@ -519,7 +519,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 202,
@@ -585,7 +585,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 203,
@@ -633,7 +633,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 204,
@@ -644,6 +644,12 @@
       "repo": "msaltnet/watch-go-multi-counter",
       "overview_html": "<h1>Multi Counter — Overview</h1>\n<p>Wear OS 워치와 Android 모바일에서 작동하는 다용도 카운터 앱입니다. 화면을 탭해 숫자를 세는 싱글 카운터부터 2~4인 보드게임 스코어 카운터까지 한 앱에서 해결하며, 디지털 시계/스톱워치, 세션 히스토리, 이미지 공유 기능을 함께 제공합니다. 모바일에서 이름·색상·목표·루프 등을 설정하면 워치로 실시간 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>유연한 카운터 모드</strong> — 싱글 / 듀얼 / 트리플 / 쿼드(4분할) 즉시 전환</li>\n<li><strong>타일 빠른 실행</strong> — 앱을 열지 않고 타일에서 바로 카운트</li>\n<li><strong>카운터 상세 설정</strong> — 각 카운터별 이름(최대 10자)·색상·목표치·루프 모드·직접 값 수정(0~999)</li>\n<li><strong>히스토리 로그 &amp; 이미지 공유</strong> — 세션 기록을 모바일에서 관리하고 이미지로 공유</li>\n<li><strong>홈 화면 위젯 &amp; 볼륨 키 카운터</strong> — 화면을 보지 않고도 볼륨 키로 카운트</li>\n<li><strong>진동·사운드 피드백</strong> — 탭할 때마다 햅틱으로 확신 있는 카운팅</li>\n<li><strong>시계·스톱워치 내장</strong> — 운동 세트 사이 시간 측정 등에 활용</li>\n<li><strong>모바일-워치 실시간 동기화</strong> — 5초 주기 pull 방식 세션 동기화</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템, MVVM (<code>MainViewModel</code>), Jetpack DataStore</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Tiles</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MessageClient</code>)</li>\n<li><strong>데이터 저장:</strong> DataStore 기반 <code>CounterRecordDataStore</code> (모바일) / <code>HistoryManager</code> (워치, 최대 50개 유지)</li>\n</ul>\n<h2>동기화 아키텍처</h2>\n<p>모바일이 <strong>5초 간격</strong>으로 워치에 <code>/sync-records-request</code>를 보내 pull:</p>\n<pre><code>Mobile                                        Wear\n  │ ── /sync-records-request ───────────────▶ │ (5초마다)\n  │ ◀── /sync-records-response ───────────── │ (wear 기록 JSON)\n  │ handleCounterRecordsResponse()            │\n  │ counterRecordDataStore.addCounterRecords()│\n  │ ── /sync-records-response ───────────────▶│ (동기화 완료된 sessionId 회신)\n  │                                           │ historyManager.removeRecordsFromHistory()\n</code></pre>\n<h3>메시지 경로</h3>\n<table>\n<thead>\n<tr>\n<th>경로</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/sync-records-request</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 요청</td>\n</tr>\n<tr>\n<td><code>/sync-records-response</code></td>\n<td>양방향</td>\n<td>기록 데이터 전송 / ACK</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n<tr>\n<td><code>/watch-version</code></td>\n<td>Wear → Mobile</td>\n<td>버전 정보</td>\n</tr>\n</tbody></table>\n<h3>중복 제거</h3>\n<ul>\n<li><strong>Mobile:</strong> sessionId 기준, 5초 미만 + 모든 카운터 0인 기록 제거, <code>isActive=true</code> 중 최신만 유지, 기존 title 보존</li>\n<li><strong>Wear:</strong> 모바일이 회신한 sessionId 중 <code>isActive=false</code>만 삭제 (활성 세션은 유지)</li>\n</ul>\n<h2>CounterRecord 데이터 구조</h2>\n<pre><code class=\"language-kotlin\">data class CounterRecord(\n  val sessionId: String,          // timestamp 기반 고유 ID\n  val startTime: String,          // ISO 시작 시간\n  val endTime: String?,           // ISO 종료 시간\n  val counter1Count..counter4Count: Int,\n  val counter1Color..counter4Color: Int,\n  val counter1Name..counter4Name: String, // 최대 10자\n  val mode: Int,                   // 싱글/듀얼/트리플/쿼드\n  val isActive: Boolean,\n  val activeDuration: Long,        // ms\n  val title: String? = null        // Mobile 전용\n)\n</code></pre>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code>가 주기적 동기화 트리거, <code>MainViewModel</code>이 <code>MessageClient.OnMessageReceivedListener</code> 구현</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 메시지 수신·처리, <code>HistoryManager</code>가 DataStore에 기록 관리</li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v13.5.1",
+          "date": "2026-09-10",
+          "label": null,
+          "items_html": "<ul>\n<li>Wear OS 5(API 34)에서 타일을 누를 때 앱이 종료될 수 있던 호환성 문제를 수정했습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v13.5.0",
           "date": "2026-09-03",
@@ -801,12 +807,12 @@
           "items_html": "<ul>\n<li>다국어 지원</li>\n<li>아이콘 수정</li>\n<li>와치 앱 설치 버튼 추가</li>\n<li>앱 안정화</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v13.5.0",
-      "latest_update_date": "2026-09-03",
+      "latest_version": "v13.5.1",
+      "latest_update_date": "2026-09-10",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 205,
@@ -925,7 +931,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 206,
@@ -937,6 +943,12 @@
       "branch": "master",
       "overview_html": "<h1>2048 Watch Game — Overview</h1>\n<p>Wear OS 워치에서 즐기는 2048 퍼즐 게임입니다. 클래식 숫자 합치기 퍼즐을 원형/사각형 작은 화면에 맞게 최적화했으며, 주간/월간 글로벌 랭킹 서버와 연결되어 전 세계 플레이어와 경쟁할 수 있습니다. 모바일 앱은 랭킹 확인, 이름 등록, 설정 관리 용도로 사용됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>2048 퍼즐</strong> — 스와이프로 타일을 합쳐 2048 타일을 만들거나 최고 점수 도전</li>\n<li><strong>햅틱 피드백</strong> — 타일 합칠 때 진동</li>\n<li><strong>자동 저장</strong> — 앱을 나갔다가 돌아와도 이어하기</li>\n<li><strong>플레이 타임 표시</strong> — 설정에 따라 워치 화면에 HH:MM 형식으로 표시 (1분 주기 갱신, 실제 플레이 시간만 측정)</li>\n<li><strong>글로벌 랭킹</strong> — 주간·월간 랭킹 서버 등록·조회</li>\n<li><strong>유니크 이름 시스템</strong> — 한 번 등록된 이름은 글로벌 유니크, 본인만 변경 가능</li>\n<li><strong>애니메이션 On/Off</strong> — 워치 게임 전환 애니메이션 조정</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>백엔드(랭킹):</strong> AWS API Gateway + Lambda + DynamoDB (<code>Ranking2048Table</code>)</li>\n<li><strong>인증:</strong><ul>\n<li><code>POST /ranking</code> (v1) — 쿼리 파라미터 <code>c</code>에 CRC 체크섬</li>\n<li><code>POST /ranking/v2</code>, <code>POST /ranking/name</code> — <code>X-Api-Key</code> 헤더</li>\n<li><code>DELETE /ranking</code> — <code>X-Admin-Secret-Key</code> (관리자)</li>\n</ul>\n</li>\n</ul>\n<h2>랭킹 API 요약</h2>\n<table>\n<thead>\n<tr>\n<th>엔드포인트</th>\n<th>용도</th>\n<th>인증</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST /ranking</code> (v1)</td>\n<td>점수 등록 (레거시)</td>\n<td>CRC 쿼리</td>\n</tr>\n<tr>\n<td><code>POST /ranking/v2</code></td>\n<td>점수 등록 (play_time, user_id, account_type 포함)</td>\n<td><code>X-Api-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /ranking/name/check</code></td>\n<td>이름 중복 확인 (소유자 체크 포함)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /ranking/name</code></td>\n<td>이름 등록/변경 (글로벌 유니크)</td>\n<td><code>X-Api-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /ranking/week</code></td>\n<td>주간 랭킹 (top N, 상세 포함 옵션)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /ranking/month</code></td>\n<td>월간 랭킹</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /ranking/month/stat</code></td>\n<td>월별 일간 통계</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>DELETE /ranking</code></td>\n<td>관리자 기록 삭제</td>\n<td><code>X-Admin-Secret-Key</code></td>\n</tr>\n</tbody></table>\n<h3>CRC 계산 (v1 호환)</h3>\n<pre><code class=\"language-python\">def get_crc(point):\n  res = point % 10 + point % 100 + point % 1000\n  res += 31\n  return res * res\n</code></pre>\n<h3>DynamoDB 스키마 (<code>Ranking2048Table</code>)</h3>\n<ul>\n<li><strong>PK:</strong> <code>period</code> (ISO 주차, 예: <code>2025-W05</code>)</li>\n<li><strong>SK:</strong> <code>sortKey</code> (역순 점수 + 타임스탬프, 예: <code>999997952#2025-02-03T12:34:56</code>)</li>\n<li><strong>GSI:</strong> <code>UniqueCheckIndex</code> (period + uniqueKey, 중복 체크)</li>\n<li>속성: name, country, code, point, play_time, user_id, account_type, ip, timestamp, uniqueKey(<code>name#code#point</code>)</li>\n</ul>\n<h3>프라이버시</h3>\n<p><code>GET</code> 응답의 <code>user_id</code>는 앞 3글자만 노출되고 나머지는 <code>*</code> 마스킹. <code>account_type</code>은 GET 응답에 포함되지 않음.</p>\n<h2>아키텍처 요약</h2>\n<ul>\n<li><strong>Play Time 측정:</strong> 워치 화면이 켜져 있을 때만 카운트, <code>SharedPreferences</code> 저장, 1분 주기 UI 갱신 (게임 성능 방해 방지)</li>\n<li><strong>주간 랭킹:</strong> ISO 8601 주차 계산 (월요일 시작), <code>period</code>로 쿼리, <code>sortKey</code>로 자동 정렬 (점수 내림차순, 시간 오름차순)</li>\n<li><strong>월간 랭킹:</strong> 해당 월의 모든 주차 수집 → <code>timestamp</code> 기준 월 1일~말일 필터 → 점수 내림차순 정렬</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v5.8.1",
+          "date": "2026-09-10",
+          "label": null,
+          "items_html": "<ul>\n<li>Android 16(API 36)에 맞춰 앱과 Wear OS 앱의 최신 플랫폼 대응을 강화했습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v5.8.0",
           "date": "2026-08-22",
@@ -980,12 +992,12 @@
           "items_html": "<ul>\n<li>랭킹 2.0 — 유니크 이름으로 랭킹 기록을 등록할 수 있습니다</li>\n<li>애니메이션 설정 — 워치에서 게임 전환 애니메이션을 On/Off 할 수 있습니다</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v5.8.0",
-      "latest_update_date": "2026-08-22",
+      "latest_version": "v5.8.1",
+      "latest_update_date": "2026-09-10",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 207,
@@ -1063,7 +1075,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 208,
@@ -1146,7 +1158,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-09T06:02:04.201+09:00"
+      "last_successful_fetch": "2026-09-10T05:50:42.678+09:00"
     },
     {
       "id": 209,
