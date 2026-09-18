@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import { collectAppDocs } from '../scripts/fetch-docs.mjs';
 
 const appsYml = `
@@ -125,6 +126,32 @@ test('sends ?ref=branch when app specifies a custom branch', async () => {
   const apiCalls = calls.filter(u => u.startsWith('https://api.github.com/'));
   assert.ok(apiCalls.length > 0);
   assert.ok(apiCalls.every(u => u.includes('?ref=master')));
+});
+
+test('collects app 100 docs from the current MyPhotoWatchFace main branch', async () => {
+  const configuredApps = await readFile(new URL('../apps.yml', import.meta.url), 'utf8');
+  const calls = [];
+  const fetchFn = async (url) => {
+    calls.push(url);
+    if (url === 'https://api.github.com/repos/msaltnet/MyPhotoWatchFace/contents/docs/app/overview.md?ref=main') {
+      return jsonResponse('# My Photo Watch Face');
+    }
+    if (url === 'https://api.github.com/repos/msaltnet/MyPhotoWatchFace/contents/docs/app/updates.md?ref=main') {
+      return jsonResponse('## v5.0.0 — 2026-05-09\n- latest release');
+    }
+    return { status: 404, ok: false, json: async () => ({}) };
+  };
+
+  const results = await collectAppDocs({
+    appsYml: configuredApps,
+    token: 'fake',
+    fetchFn,
+  });
+  const app = results.find(result => result.meta.id === 100);
+
+  assert.equal(app.status, 'ok');
+  assert.equal(app.updates[0].version, 'v5.0.0');
+  assert.ok(calls.includes('https://api.github.com/repos/msaltnet/MyPhotoWatchFace/contents/docs/app/overview.md?ref=main'));
 });
 
 test('throws when token missing', async () => {
