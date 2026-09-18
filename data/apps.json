@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-19T00:29:13.784+09:00",
+  "built_at": "2026-09-19T05:48:11.076+09:00",
   "stats": {
     "total": 19,
     "succeeded": 18,
@@ -17,6 +17,12 @@
       "branch": "main",
       "overview_html": "<h1>My Photo Watch Face: Album — Overview</h1>\n<p>My Photo Watch Face: Album(이하 My Photo)은 휴대폰에서 고른 사진을 Wear OS로 보내고, 타일과 사진 컴플리케이션으로 제공하는 컴패니언 제품입니다. 호환 WFF(Watch Face Format)는 별도 패키지로 설치하며, My Photo가 제공한 사진을 해당 WFF의 사진 슬롯에 지정해 사용합니다.</p>\n<h2>핵심 사용자 흐름</h2>\n<pre><code class=\"language-text\">휴대폰에서 사진 선택\n→ Wear 컴패니언으로 동기화\n→ My Photo 사진 컴플리케이션 제공\n→ 카탈로그에서 설치한 호환 WFF의 사진 슬롯에 My Photo 지정\n</code></pre>\n<h2>구성 요소와 책임</h2>\n<table>\n<thead>\n<tr>\n<th>구성 요소</th>\n<th>책임</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>모바일 앱</td>\n<td>사진 선택·외부 공유 수신·앨범 관리·새 사진 얼굴 중심 크롭·호환 WFF 카탈로그</td>\n</tr>\n<tr>\n<td>Wear 컴패니언</td>\n<td>Data Layer 사진 동기화, 사진 타일, <code>My Photo</code> 사진 컴플리케이션(<code>PHOTO_IMAGE</code>/<code>LARGE_IMAGE</code>)</td>\n</tr>\n<tr>\n<td>외부 WFF 패키지</td>\n<td>시계 레이아웃, AoD, 폰트, 색상, 컴플리케이션 슬롯의 크기와 위치</td>\n</tr>\n</tbody></table>\n<p>My Photo 설정의 D-Day와 날짜, 셔플, 위치는 Wear 타일 표시에 적용됩니다. 컴플리케이션 간격은 호환 WFF 사진 슬롯의 자동 사진 순환에 적용되고, 얼굴 중심 크롭은 설정을 바꾼 뒤 새로 가져오는 사진부터 적용됩니다.</p>\n<h2>WFF 카탈로그</h2>\n<ul>\n<li>서버 목록을 사용하되, 이 앱의 패키지(<code>com.watch_go.myphotowatchface</code>)는 설치 후보에서 제외합니다.</li>\n<li>네트워크 갱신에 실패하면 유효한 캐시를 사용하고, 캐시도 없으면 앱에 포함된 영어/한국어 목록을 사용합니다.</li>\n<li>카탈로그의 첫 추천은 <strong>My Photo Watch Face: Thin</strong>입니다.</li>\n<li>설치 버튼은 연결된 워치의 Google Play를 먼저 엽니다. 워치로 전달할 수 없으면 휴대폰 Google Play로 연결합니다.</li>\n<li>설치 후 워치에서 해당 WFF를 길게 눌러 <strong>Customize → 사진 슬롯 → My Photo</strong>를 선택합니다.</li>\n</ul>\n<h2>기술 스택과 호환 계약</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin</li>\n<li><strong>모듈:</strong> <code>:app</code>, <code>:watchface</code>, <code>:onboarding</code>, <code>:watch-go-info-fragment</code></li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>사진 처리:</strong> ML Kit 얼굴 감지 기반 크롭</li>\n<li><strong>빌드:</strong> Gradle, Firebase, Google AdMob, Google Play Billing</li>\n<li><strong>안정 계약:</strong> 앱/Wear 패키지 ID, Data Layer 경로, <code>watch_go_wear</code> capability, <code>My Photo</code> 컴플리케이션 제공자</li>\n</ul>\n<h2>같은 브랜드의 호환 WFF 예시</h2>\n<table>\n<thead>\n<tr>\n<th>앱</th>\n<th>관리번호</th>\n<th>특징</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>My Photo Watch Face: Thin</strong></td>\n<td>107</td>\n<td>첫 추천, 얇은 시계 타이포그래피와 유연한 레이아웃</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Clean</td>\n<td>102</td>\n<td>가독성 높은 미니멀 레이아웃</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Cute</td>\n<td>108</td>\n<td>둥근 폰트와 부드러운 파스텔 스타일</td>\n</tr>\n<tr>\n<td>My Photo Circle Watch Face</td>\n<td>104</td>\n<td>큰 원형 사진 영역</td>\n</tr>\n<tr>\n<td>My Photo Quote: Daily Inspire</td>\n<td>105</td>\n<td>사진과 Long Text 명언 조합</td>\n</tr>\n</tbody></table>\n<p>호환 여부는 WFF가 <code>PHOTO_IMAGE</code> 또는 <code>LARGE_IMAGE</code> 사진 슬롯을 제공하는지에 따라 결정됩니다.</p>\n",
       "updates": [
+        {
+          "version": "v8.0.7",
+          "date": "2026-09-19",
+          "label": null,
+          "items_html": "<ul>\n<li>Wear 온보딩 화면에서 앱 아이콘을 불러오지 못해 시작이 중단되던 문제를 수정했습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v8.0.0",
           "date": "2026-09-08",
@@ -66,12 +72,12 @@
           "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v8.0.0",
-      "latest_update_date": "2026-09-08",
+      "latest_version": "v8.0.7",
+      "latest_update_date": "2026-09-19",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 102,
@@ -114,7 +120,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 107,
@@ -144,7 +150,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 108,
@@ -174,7 +180,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 103,
@@ -205,7 +211,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 104,
@@ -242,7 +248,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 105,
@@ -279,7 +285,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 106,
@@ -310,7 +316,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 111,
@@ -335,7 +341,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/111/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 200,
@@ -401,7 +407,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 201,
@@ -568,7 +574,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 202,
@@ -634,7 +640,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 203,
@@ -688,7 +694,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 204,
@@ -873,7 +879,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 205,
@@ -992,7 +998,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 206,
@@ -1058,7 +1064,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 207,
@@ -1136,7 +1142,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 208,
@@ -1225,7 +1231,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-19T00:29:13.784+09:00"
+      "last_successful_fetch": "2026-09-19T05:48:11.076+09:00"
     },
     {
       "id": 209,
