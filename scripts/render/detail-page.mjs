@@ -1,4 +1,5 @@
 import { fillTemplate } from './layout.mjs';
+import { detailSeo } from './seo.mjs';
 import { escapeHtml, formatBuiltAt, daysSince } from './util.mjs';
 
 function renderStatusBadge(app, builtAt) {
@@ -60,6 +61,7 @@ function renderPlayStoreLink(app) {
 
 export function renderDetailPage(app, data, template) {
   return fillTemplate(template, {
+    ...detailSeo(app, data),
     id: escapeHtml(app.id),
     name: escapeHtml(app.name),
     identity: escapeHtml(app.identity),

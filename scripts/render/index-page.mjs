@@ -1,4 +1,5 @@
 import { fillTemplate } from './layout.mjs';
+import { indexSeo } from './seo.mjs';
 import { escapeHtml, formatBuiltAt, daysSince, categoryFromId, detailPath } from './util.mjs';
 
 function renderBadge(app, builtAt) {
@@ -60,6 +61,7 @@ function renderCard(app, builtAt) {
 export function renderIndexPage(data, template) {
   const cards = data.apps.map(a => renderCard(a, data.built_at)).join('\n');
   return fillTemplate(template, {
+    ...indexSeo(data),
     total: escapeHtml(data.stats.total),
     succeeded: escapeHtml(data.stats.succeeded),
     no_docs: escapeHtml(data.stats.no_docs),

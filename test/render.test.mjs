@@ -161,3 +161,17 @@ test('renderDetailPage shows detail icon when icon_url is present', async () => 
   const html = renderDetailPage(app, fixture, detail);
   assert.match(html, /<img class="detail-icon"/);
 });
+
+test('renders canonical, social, and structured metadata on index and detail pages', async () => {
+  const { index, detail } = await loadTemplates();
+  const indexHtml = renderIndexPage(fixture, index);
+  const detailHtml = renderDetailPage(fixture.apps[0], fixture, detail);
+
+  assert.match(indexHtml, /<link rel="canonical" href="https:\/\/now\.watch-go\.com\/">/);
+  assert.match(indexHtml, /property="og:image" content="https:\/\/now\.watch-go\.com\/social-card\.png"/);
+  assert.match(indexHtml, /"ItemList"/);
+  assert.match(detailHtml, /<link rel="canonical" href="https:\/\/now\.watch-go\.com\/app\/205\.html">/);
+  assert.match(detailHtml, /property="og:url" content="https:\/\/now\.watch-go\.com\/app\/205\.html"/);
+  assert.match(detailHtml, /"SoftwareApplication"/);
+  assert.match(detailHtml, /"BreadcrumbList"/);
+});

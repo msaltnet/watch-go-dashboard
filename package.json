@@ -10,7 +10,7 @@
     "fetch": "node scripts/fetch-docs.mjs",
     "render": "node scripts/render-site.mjs",
     "build": "node scripts/render-site.mjs",
-    "test": "node --test test/"
+    "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
     "isomorphic-dompurify": "^1.13.0",

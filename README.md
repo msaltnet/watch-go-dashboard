@@ -40,6 +40,16 @@ docs/app/updates.md      │
 
 3. **배포** — `actions/upload-pages-artifact` + `actions/deploy-pages`로 GitHub Pages에 게시. 두 워크플로우(`daily-update`, `deploy`)로 분리되어, 데이터만 갱신될 때와 템플릿/스크립트가 바뀔 때 모두 자동 재배포.
 
+## 검색·AI 에이전트·SNS 노출
+
+공개 기준 주소는 **[https://now.watch-go.com/](https://now.watch-go.com/)** 입니다. 빌드 시 모든 카탈로그와 앱 상세 페이지에 고유 canonical URL, 설명, Open Graph/Twitter Card 메타데이터, JSON-LD를 생성합니다.
+
+- 크롤러 정책: [https://now.watch-go.com/robots.txt](https://now.watch-go.com/robots.txt)
+- 사이트맵: [https://now.watch-go.com/sitemap.xml](https://now.watch-go.com/sitemap.xml)
+- SNS 기본 공유 이미지: `social-card.png` (1200×630)
+
+소셜 플랫폼은 공유 미리보기를 캐시할 수 있습니다. 배포 후 기존 링크의 이미지·제목이 바로 바뀌지 않으면 플랫폼별 공유 디버거에서 다시 수집하거나 캐시 만료를 기다리세요.
+
 데이터 모델과 실패 처리 정책은 [`docs/superpowers/specs/2026-04-23-watch-go-dashboard-design.md`](docs/superpowers/specs/2026-04-23-watch-go-dashboard-design.md)에 자세히 적혀 있습니다.
 
 ## 구성

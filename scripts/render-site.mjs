@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
 import { renderIndexPage } from './render/index-page.mjs';
 import { renderDetailPage } from './render/detail-page.mjs';
 import { detailPath } from './render/util.mjs';
+import { renderRobotsTxt, renderSitemapXml } from './render/seo.mjs';
 
 async function main() {
   const dataRaw = await readFile('data/apps.json', 'utf8');
@@ -15,6 +16,8 @@ async function main() {
 
   const indexHtml = renderIndexPage(data, indexTpl);
   await writeFile('dist/index.html', indexHtml, 'utf8');
+  await writeFile('dist/robots.txt', renderRobotsTxt(), 'utf8');
+  await writeFile('dist/sitemap.xml', renderSitemapXml(data), 'utf8');
 
   for (const app of data.apps) {
     const html = renderDetailPage(app, data, detailTpl);
