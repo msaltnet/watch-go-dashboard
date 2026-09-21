@@ -53,6 +53,11 @@ function renderIcon(app) {
     : `<div class="detail-icon detail-icon-placeholder" aria-hidden="true">📱</div>`;
 }
 
+function renderPlayStoreLink(app) {
+  const playStoreUrl = `https://play.google.com/store/apps/details?id=${encodeURIComponent(app.package)}`;
+  return `<a class="play-store-button" href="${playStoreUrl}" target="_blank" rel="noopener noreferrer">Google Play에서 보기 <span aria-hidden="true">↗</span></a>`;
+}
+
 export function renderDetailPage(app, data, template) {
   return fillTemplate(template, {
     id: escapeHtml(app.id),
@@ -62,6 +67,7 @@ export function renderDetailPage(app, data, template) {
     landing: escapeHtml(app.landing),
     repo: escapeHtml(app.repo),
     icon: renderIcon(app),
+    play_store_link: renderPlayStoreLink(app),
     status_badge: renderStatusBadge(app, data.built_at),
     overview_block: renderOverviewBlock(app),
     updates_block: renderUpdatesBlock(app),

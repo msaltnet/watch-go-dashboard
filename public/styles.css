@@ -559,6 +559,27 @@ a:hover { color: var(--brass); }
   font-weight: 300;
   font-size: 1.05rem;
 }
+.play-store-button {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .85rem;
+  padding: .55rem .85rem;
+  border: 1px solid var(--brass-dim);
+  border-radius: 2px;
+  color: var(--brass);
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+.play-store-button:hover {
+  background: var(--brass);
+  border-color: var(--brass);
+  color: var(--ink);
+}
+.play-store-button span { font-size: 1rem; line-height: 1; }
 
 .app-links {
   list-style: none;

@@ -83,6 +83,15 @@ test('renderDetailPage renders overview and updates', async () => {
   assert.match(html, /위젯 추가/);
 });
 
+test('renderDetailPage includes a Google Play link for the app package', async () => {
+  const { detail } = await loadTemplates();
+  const html = renderDetailPage(fixture.apps[0], fixture, detail);
+  assert.match(html, /class="play-store-button"/);
+  assert.match(html, /href="https:\/\/play\.google\.com\/store\/apps\/details\?id=com\.watch_go\.pomodoro"/);
+  assert.match(html, /target="_blank"/);
+  assert.match(html, /rel="noopener noreferrer"/);
+});
+
 test('renderDetailPage shows empty state when no overview', async () => {
   const { detail } = await loadTemplates();
   const app = { ...fixture.apps[1], overview_html: null };
