@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-29T08:10:17.179+09:00",
+  "built_at": "2026-09-30T07:08:51.589+09:00",
   "stats": {
     "total": 19,
     "succeeded": 18,
@@ -77,7 +77,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 102,
@@ -120,7 +120,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 107,
@@ -150,7 +150,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 108,
@@ -180,7 +180,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 103,
@@ -211,7 +211,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 104,
@@ -248,7 +248,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 105,
@@ -285,7 +285,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 106,
@@ -316,7 +316,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 111,
@@ -341,7 +341,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/111/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 200,
@@ -407,7 +407,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 201,
@@ -574,7 +574,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 202,
@@ -646,7 +646,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 203,
@@ -700,7 +700,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 204,
@@ -715,7 +715,7 @@
           "version": "v14.0.0",
           "date": "2026-09-26",
           "label": null,
-          "items_html": "<ul>\n<li>자주 쓰는 카운터 구성을 모바일 프로필로 저장하고 카드형 목록과 상태 아이콘으로 관리할 수 있습니다. 새 프로필을 저장하면 바로 해당 프로필로 전환됩니다. 운동·뜨개질·보드게임·일반 기본 프로필도 제공하며, 선택한 설정은 Wear에 자동 반영됩니다.</li>\n<li>기록에 당시 사용한 프로필 이름과 유형별 색상·아이콘을 함께 표시해 나중에도 어떤 구성으로 센 기록인지 확인할 수 있습니다.</li>\n<li>카운터마다 한 번에 더하거나 뺄 카운트 단위를 1~100으로 설정할 수 있습니다. 모바일·위젯·Wear 앱·타일·컴플리케이션에 같은 단위가 적용됩니다.</li>\n<li>모바일과 Wear OS 앱의 메뉴, 설정, 기록, 위젯, 타일, 컴플리케이션을 일본어로 사용할 수 있습니다.</li>\n</ul>\n"
+          "items_html": "<ul>\n<li>프로필을 바꿀 때 카운트하지 않은 빈 기록이 남거나 진행 중 표시가 중복되던 문제를 수정했습니다.</li>\n<li>자주 쓰는 카운터 구성을 모바일 프로필로 저장하고 카드형 목록과 상태 아이콘으로 관리할 수 있습니다. 새 프로필을 저장하면 바로 해당 프로필로 전환됩니다. 운동·뜨개질·보드게임·일반 기본 프로필도 제공하며, 선택한 설정은 Wear에 자동 반영됩니다.</li>\n<li>기록에 당시 사용한 프로필 이름과 유형별 색상·아이콘을 함께 표시해 나중에도 어떤 구성으로 센 기록인지 확인할 수 있습니다.</li>\n<li>카운터마다 한 번에 더하거나 뺄 카운트 단위를 1~100으로 설정할 수 있습니다. 모바일·위젯·Wear 앱·타일·컴플리케이션에 같은 단위가 적용됩니다.</li>\n<li>모바일과 Wear OS 앱의 메뉴, 설정, 기록, 위젯, 타일, 컴플리케이션을 일본어로 사용할 수 있습니다.</li>\n</ul>\n"
         },
         {
           "version": "v13.7.0",
@@ -891,7 +891,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 205,
@@ -1022,7 +1022,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 206,
@@ -1088,7 +1088,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 207,
@@ -1166,7 +1166,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 208,
@@ -1261,7 +1261,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-09-29T08:10:17.179+09:00"
+      "last_successful_fetch": "2026-09-30T07:08:51.589+09:00"
     },
     {
       "id": 209,
