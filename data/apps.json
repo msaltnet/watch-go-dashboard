@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-04T05:56:54.170+09:00",
+  "built_at": "2026-10-05T06:12:38.586+09:00",
   "stats": {
     "total": 19,
     "succeeded": 18,
@@ -77,7 +77,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 102,
@@ -120,7 +120,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 107,
@@ -150,7 +150,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 108,
@@ -180,7 +180,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 103,
@@ -211,7 +211,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 104,
@@ -248,7 +248,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 105,
@@ -285,7 +285,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 106,
@@ -316,7 +316,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 111,
@@ -341,7 +341,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/111/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 200,
@@ -407,7 +407,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 201,
@@ -574,7 +574,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 202,
@@ -646,7 +646,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 203,
@@ -656,8 +656,14 @@
       "landing": "https://watch-go.com/203",
       "repo": "msaltnet/crypto-watch",
       "branch": "master",
-      "overview_html": "<h1>Crypto Watch — Overview</h1>\n<p>Android 모바일과 Wear OS 워치에서 암호화폐 실시간 시세를 확인할 수 있는 앱입니다. 홈 화면 위젯, 워치페이스 컴플리케이션, Wear OS 타일을 통해 <strong>앱을 열지 않고도</strong> BTC/ETH/알트코인 가격과 24시간 등락률, 공포탐욕지수를 확인할 수 있습니다. 모바일에서 선택한 거래소·코인 조합이 워치로 즉시 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>가격 타일 위젯</strong> — 코인 3개씩 최대 10개 목록을 넘겨보며 실시간 가격과 24시간 등락률 확인</li>\n<li><strong>차트 위젯</strong> — MA5 / MA10 / MA20 이동평균선이 그려진 실시간 차트</li>\n<li><strong>공포탐욕지수</strong> — 시장 심리를 컬러 링으로 시각화</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 시계 화면에서 바로 시세 확인</li>\n<li><strong>Wear OS 타일</strong> — 스와이프로 여러 코인 확인 + 인터랙티브 캔들스틱/라인 차트</li>\n<li><strong>다중 거래소 지원</strong> — Binance, Upbit, Bybit, OKX, Bitget</li>\n<li><strong>자동 갱신</strong> — 백그라운드에서 주기적으로 가격 갱신</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, ViewBinding, Navigation Component, MVVM (<code>MainViewModel</code>)</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS</li>\n<li><strong>공유 모듈:</strong> <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API — 경로 <code>/update-settings</code>, <code>/watch-version</code></li>\n<li><strong>거래소 API (<code>ExchangeDataFetcher</code>):</strong> Binance, Upbit, Bybit, OKX, Bitget (가격 + K-line 캔들)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n<li><strong>설정 저장:</strong> SharedPreferences (<code>configExchange1</code>~`configExchange6<code>, legacy </code>configExchange` 호환)</li>\n</ul>\n<h2>설정 직렬화 포맷</h2>\n<p>폰 → 워치로 전송되는 설정 문자열 포맷:</p>\n<pre><code>%EXCHANGE:SYMBOL%,%...%,#INTERVAL#,!FG:0or1!\n</code></pre>\n<p>예: <code>%EX_BINANCE:BTCUSDT%,%%,%%,%%,%%,%%,#1h#,!FG:1!</code></p>\n<ul>\n<li>빈 슬롯은 <code>%%</code>로 표시</li>\n<li><code>#INTERVAL#</code> — 차트 인터벌 (예: <code>1h</code>)</li>\n<li><code>!FG:0or1!</code> — 공포탐욕지수 표시 여부</li>\n</ul>\n<h2>거래소 지원 매트릭스</h2>\n<table>\n<thead>\n<tr>\n<th>거래소</th>\n<th>심볼 예시</th>\n<th>등락률 API</th>\n<th>비고</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Binance</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td></td>\n</tr>\n<tr>\n<td>Upbit</td>\n<td><code>KRW-BTC</code></td>\n<td>지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bybit</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td><code>price24hPcnt</code>가 소수 → ×100 필요</td>\n</tr>\n<tr>\n<td>OKX</td>\n<td><code>BTC-USDT</code></td>\n<td>미지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bitget</td>\n<td><code>BTCUSDT</code></td>\n<td>미지원</td>\n<td>API 불안정</td>\n</tr>\n</tbody></table>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainViewModel</code>이 설정을 <code>getConfigString()</code>으로 직렬화해 <code>WearClient</code>로 워치에 전송</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 설정 수신, <code>ExchangeDataFetcher</code>가 거래소별 API 호출</li>\n<li>위젯/컴플리케이션/타일은 같은 <code>ExchangeDataFetcher</code>를 공유하여 폰/워치 양측에서 일관된 데이터 사용</li>\n</ul>\n",
+      "overview_html": "<h1>Crypto Watch — Overview</h1>\n<p>Android 모바일과 Wear OS 워치에서 암호화폐 실시간 시세를 확인할 수 있는 앱입니다. 홈 화면 위젯, 워치페이스 컴플리케이션, Wear OS 타일을 통해 <strong>앱을 열지 않고도</strong> BTC/ETH/알트코인 가격과 24시간 등락률, 공포탐욕지수를 확인할 수 있습니다. 모바일에서 선택한 거래소·코인 조합을 보존하고 워치로 동기화하며 적용 상태를 확인할 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>가격 타일 위젯</strong> — 코인 3개씩 최대 10개 목록을 넘겨보며 실시간 가격과 24시간 등락률 확인</li>\n<li><strong>차트 위젯</strong> — MA5 / MA10 / MA20 이동평균선이 그려진 실시간 차트</li>\n<li><strong>공포탐욕지수</strong> — 시장 심리를 컬러 링으로 시각화</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 시계 화면에서 바로 시세 확인</li>\n<li><strong>Wear OS 타일</strong> — 스와이프로 여러 코인 확인 + 인터랙티브 캔들스틱/라인 차트</li>\n<li><strong>다중 거래소 지원</strong> — Binance, Upbit, Bybit, OKX, Bitget</li>\n<li><strong>자동 갱신</strong> — 백그라운드에서 주기적으로 가격 갱신</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, ViewBinding, Navigation Component, MVVM (<code>MainViewModel</code>)</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS</li>\n<li><strong>공유 모듈:</strong> <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API — 최신 설정 <code>/settings-v1</code>, 기기별 적용 확인 <code>/settings-ack-v1/{phoneId}</code>, 구버전 설정 <code>/update-settings</code>, 버전 정보 <code>/watch-version</code></li>\n<li><strong>거래소 API (<code>ExchangeDataFetcher</code>):</strong> Binance, Upbit, Bybit, OKX, Bitget (가격 + K-line 캔들)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n<li><strong>설정 저장:</strong> SharedPreferences (최대 <code>configExchange1</code>~`configExchange30<code>, legacy </code>configExchange` 호환), 최신 설정 스냅샷·기기별 확인과 마지막 정상 시세 캐시</li>\n</ul>\n<h2>설정 직렬화 포맷</h2>\n<p>폰 → 워치로 전송되는 설정 문자열 포맷:</p>\n<pre><code>%EXCHANGE:SYMBOL%,%...%,#INTERVAL#,!FG:0or1!\n</code></pre>\n<p>예: <code>%EX_BINANCE:BTCUSDT%,%%,%%,%%,%%,%%,#1h#,!FG:1!</code></p>\n<ul>\n<li>빈 슬롯은 <code>%%</code>로 표시</li>\n<li><code>#INTERVAL#</code> — 차트 인터벌 (예: <code>1h</code>)</li>\n<li><code>!FG:0or1!</code> — 공포탐욕지수 표시 여부</li>\n</ul>\n<h2>거래소 지원 매트릭스</h2>\n<table>\n<thead>\n<tr>\n<th>거래소</th>\n<th>심볼 예시</th>\n<th>등락률 API</th>\n<th>비고</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Binance</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td></td>\n</tr>\n<tr>\n<td>Upbit</td>\n<td><code>KRW-BTC</code></td>\n<td>지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bybit</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td><code>price24hPcnt</code>가 소수 → ×100 필요</td>\n</tr>\n<tr>\n<td>OKX</td>\n<td><code>BTC-USDT</code></td>\n<td>미지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bitget</td>\n<td><code>BTCUSDT</code></td>\n<td>미지원</td>\n<td>API 불안정</td>\n</tr>\n</tbody></table>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainViewModel</code>이 설정을 직렬화하고 Application의 동기화 coordinator가 최신 스냅샷과 기기별 적용 상태를 보존합니다. 새 워치는 지속되는 DataItem으로, 구 워치는 기존 메시지로 전달합니다.</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 설정 식별자·순서를 검증하고 저장 성공 후 적용 확인을 보냅니다. <code>ExchangeDataFetcher</code>는 시세를 조회하고 마지막 정상 데이터를 보존합니다.</li>\n<li>폰 프리뷰·위젯과 워치 차트·Tile·Complication은 각 모듈의 거래소 조회와 영구 캐시를 사용합니다. 가격은 거래소·심볼, 차트는 거래소·심볼·인터벌로 구분하며 실패가 정상 데이터를 덮어쓰지 않습니다.</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v10.0.1",
+          "date": "2026-10-04",
+          "label": null,
+          "items_html": "<ul>\n<li><p>각 목록에 코인을 1개 이상 설정해야 새 목록을 추가할 수 있으며, 빈 목록이나 최대 10개 제한으로 추가할 수 없으면 토스트로 안내합니다.</p>\n</li>\n<li><p>코인 선택에서 로딩·검색 결과 없음·조회 오류를 구분하고 재시도와 거래소 변경을 제공합니다.</p>\n</li>\n<li><p>폰에서 워치 설정의 전송·적용 상태를 확인하고, 연결 복구 후 최신 설정을 다시 전송할 수 있습니다.</p>\n</li>\n<li><p>시세 조회가 실패하면 해당 코인의 마지막 정상 가격·차트를 유지하고 실패 상태를 표시합니다.</p>\n</li>\n<li><p>네트워크가 느릴 때 홈 화면 위젯을 새로고침하면서 앱이 응답하지 않던 문제를 개선했습니다.</p>\n</li>\n<li><p>모바일 버튼과 설정 화면을 다듬고 코인 목록 접기·펼치기를 부드럽게 개선했습니다.</p>\n</li>\n</ul>\n"
+        },
         {
           "version": "v10.0.0",
           "date": "2026-09-13",
@@ -695,12 +701,12 @@
           "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v10.0.0",
-      "latest_update_date": "2026-09-13",
+      "latest_version": "v10.0.1",
+      "latest_update_date": "2026-10-04",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 204,
@@ -891,7 +897,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 205,
@@ -900,7 +906,7 @@
       "package": "com.watch_go.pomodoro",
       "landing": "https://watch-go.com/205",
       "repo": "msaltnet/watch-pomodoro-timer",
-      "overview_html": "<h1>Watch Pomodoro Timer — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 포모도로 타이머입니다. 모바일과 워치 어느 쪽에서도 독립적으로 타이머를 실행할 수 있고, 기록은 두 기기에서 공유됩니다.</p>\n<p>현재 제품 지원·배포 범위는 Android phone과 Wear OS입니다. 저장소의 <code>ios/</code> 디렉터리는 현재 사용·빌드·배포하지 않는 iOS/watchOS 보관용 프로젝트이며 제품 범위에 포함되지 않습니다.</p>\n<h2>워치 타이머 만료 구조</h2>\n<ul>\n<li>Wear OS는 실행 중 <code>elapsedRealtime</code> deadline을 ticker와 exact <code>AlarmManager</code>가 함께 감시합니다. 세션 generation을 저장해 먼저 도착한 유효 경로만 완료하며, 재부팅 뒤에는 별도 wall-clock deadline으로 미래 알람만 복원합니다.</li>\n<li>Wear foreground service는 정확 알람 기반 타이머·햅틱 용도의 <code>systemExempted</code> 타입을 사용합니다. Play Console 정책 선언은 배포 전에 별도로 확인해야 합니다.</li>\n</ul>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>포모도로 타이머</strong> — 작업/휴식/긴 휴식 3단계 루프. 세션 수와 각 단계 길이를 사용자 지정</li>\n<li><strong>모바일 타이머</strong> — monotonic deadline을 포그라운드 ticker와 elapsed-realtime <code>AlarmManager</code>가 함께 감시하며, generation으로 중복 만료를 방지. Doze·프로세스 재생성·재부팅 복구 지원</li>\n<li><strong>워치 독립 타이머</strong> — 모바일 없이 워치 단독 사용 가능</li>\n<li><strong>홈 화면 위젯</strong> — 2x2 / 4x4 크기로 타이머 상태 확인 및 제어 (v7.0.0+)</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 오늘의 완료 세션 수를 워치페이스에 표시</li>\n<li><strong>통계 대시보드</strong> — 일간/주간 집중 시간, 시간대별 패턴, 연속 기록, 월별 잔디 차트</li>\n<li><strong>집중 라벨</strong> — 작업 세션을 업무·공부·프로젝트 등 하나의 라벨로 기록하고 기록 카드에 표시</li>\n<li><strong>동기 부여 인용구</strong> — 타이머 시작 시 짧은 인용구 (v5.0.0+)</li>\n<li><strong>온보딩</strong> — 첫 실행 시 가이드</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment, ViewBinding + DataBinding, ViewModel, LiveData, DataStore (Preferences), Gson, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Horologist, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wear Data Layer (<code>MessageClient</code>, <code>DataClient</code>)</li>\n<li><strong>백그라운드 실행:</strong> Foreground Service (<code>specialUse</code>), <code>AlarmManager.setExact()</code> + <code>USE_EXACT_ALARM</code></li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 30 (워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 단일 <code>MainActivity</code> 하위에 <code>MainFragment</code> / <code>SettingsFragment</code> / <code>TimerRecordsFragment</code> 구조</li>\n<li>공유 ViewModel(<code>MainViewModel</code>)이 설정과 타이머 기록 LiveData를 관리</li>\n<li>타이머 기록은 모바일·Wear OS의 Room <code>timer_records</code> 테이블에 저장하며 nullable 라벨 스냅샷을 포함</li>\n<li>설정은 <code>SharedPreferences(\"MySettings\")</code>에 저장</li>\n<li>라벨 목록은 모바일에서 JSON으로 관리하고 별도 버전 Data Layer 메시지로 Wear OS에 전달</li>\n<li>모바일/워치 기록 충돌은 타임스탬프 ±5분 + 동일 타이머 타입 기준으로 모바일 우선 병합</li>\n</ul>\n",
+      "overview_html": "<h1>Watch Pomodoro Timer — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 포모도로 타이머입니다. 모바일과 워치 어느 쪽에서도 독립적으로 타이머를 실행할 수 있고, 기록은 두 기기에서 공유됩니다.</p>\n<p>현재 제품 지원·배포 범위는 Android phone과 Wear OS입니다. 저장소의 <code>ios/</code> 디렉터리는 현재 사용·빌드·배포하지 않는 iOS/watchOS 보관용 프로젝트이며 제품 범위에 포함되지 않습니다.</p>\n<h2>워치 타이머 만료 구조</h2>\n<ul>\n<li>Wear OS는 실행 중 <code>elapsedRealtime</code> deadline을 ticker와 exact <code>AlarmManager</code>가 함께 감시합니다. 세션 generation을 저장해 먼저 도착한 유효 경로만 완료하며, 재부팅 뒤에는 별도 wall-clock deadline으로 미래 알람만 복원합니다.</li>\n<li>Wear foreground service는 정확 알람 기반 타이머·햅틱 용도의 <code>systemExempted</code> 타입을 사용합니다. Play Console 정책 선언은 배포 전에 별도로 확인해야 합니다.</li>\n</ul>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>루틴</strong> — 기존 사용자 설정을 유지하며 이름과 작업·휴식·긴 휴식·세션 수를 최대 5개 저장합니다. 설정의 마이 루틴에서 추가·수정하면 유효한 변경을 입력 중단 1초 후 자동 저장하고, 모바일/Wear OS에서 선택하면 작업 1세션을 바로 시작합니다. 워치는 마지막 동기화 목록을 오프라인에서도 사용합니다.</p>\n</li>\n<li><p><strong>포모도로 타이머</strong> — 작업/휴식/긴 휴식 3단계 루프. 세션 수와 각 단계 길이를 사용자 지정</p>\n</li>\n<li><p><strong>모바일 타이머</strong> — monotonic deadline을 포그라운드 ticker와 elapsed-realtime <code>AlarmManager</code>가 함께 감시하며, generation으로 중복 만료를 방지. Doze·프로세스 재생성·재부팅 복구 지원</p>\n</li>\n<li><p><strong>워치 독립 타이머</strong> — 모바일 없이 워치 단독 사용 가능</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 2x2 / 4x4 크기로 타이머 상태 확인 및 제어 (v7.0.0+)</p>\n</li>\n<li><p><strong>워치페이스 컴플리케이션</strong> — 오늘의 완료 세션 수를 워치페이스에 표시</p>\n</li>\n<li><p><strong>통계 대시보드</strong> — 일간/주간 집중 시간, 시간대별 패턴, 연속 기록, 월별 잔디 차트</p>\n</li>\n<li><p><strong>집중 라벨</strong> — 작업 세션을 업무·공부·프로젝트 등 하나의 라벨로 기록하고 기록 카드에 표시</p>\n</li>\n<li><p><strong>동기 부여 인용구</strong> — 타이머 시작 시 짧은 인용구 (v5.0.0+)</p>\n</li>\n<li><p><strong>온보딩</strong> — 첫 실행 시 가이드</p>\n</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment, ViewBinding + DataBinding, ViewModel, LiveData, DataStore (Preferences), Gson, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Horologist, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wear Data Layer (<code>MessageClient</code>, <code>DataClient</code>)</li>\n<li><strong>백그라운드 실행:</strong> Foreground Service (<code>specialUse</code>), <code>AlarmManager.setExact()</code> + <code>USE_EXACT_ALARM</code></li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 30 (워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 단일 <code>MainActivity</code> 하위에 <code>MainFragment</code> / <code>SettingsFragment</code> / <code>TimerRecordsFragment</code> 구조</li>\n<li>공유 ViewModel(<code>MainViewModel</code>)이 설정과 타이머 기록 LiveData를 관리</li>\n<li>타이머 기록은 모바일·Wear OS의 Room <code>timer_records</code> 테이블에 저장하며 nullable 라벨 스냅샷을 포함</li>\n<li>설정은 <code>SharedPreferences(\"MySettings\")</code>에 저장</li>\n<li>라벨 목록은 모바일에서 JSON으로 관리하고 별도 버전 Data Layer 메시지로 Wear OS에 전달</li>\n<li>모바일/워치 기록 충돌은 타임스탬프 ±5분 + 동일 타이머 타입 기준으로 모바일 우선 병합</li>\n</ul>\n",
       "updates": [
         {
           "version": "v9.5.1",
@@ -1022,7 +1028,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 206,
@@ -1088,7 +1094,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 207,
@@ -1166,7 +1172,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 208,
@@ -1261,7 +1267,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-04T05:56:54.170+09:00"
+      "last_successful_fetch": "2026-10-05T06:12:38.586+09:00"
     },
     {
       "id": 209,
