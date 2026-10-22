@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-22T06:31:18.079+09:00",
+  "built_at": "2026-10-23T06:26:26.553+09:00",
   "stats": {
     "total": 19,
     "succeeded": 18,
@@ -83,7 +83,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 102,
@@ -126,7 +126,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 107,
@@ -156,7 +156,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 108,
@@ -186,7 +186,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 103,
@@ -217,7 +217,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 104,
@@ -254,7 +254,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 105,
@@ -291,7 +291,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 106,
@@ -322,7 +322,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 111,
@@ -347,7 +347,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/111/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 200,
@@ -357,7 +357,7 @@
       "landing": "https://watch-go.com/200",
       "repo": "msaltnet/double-check-pro",
       "branch": "master",
-      "overview_html": "<h1>Double Check — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 재사용 가능한 체크리스트 앱입니다. 완료 후 항목이 사라지는 일반 투두와 달리, \"리셋\" 한 번으로 같은 리스트를 반복해서 쓸 수 있도록 설계했습니다. 장보기, 여행 짐, 일상 루틴처럼 주기적으로 반복되는 체크 작업에 최적화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>반복 자동 리셋 (미출시 #16)</strong> — 매일·평일·선택 요일, 30분 단위 시각 설정. 폰·Wear 각각 다음 일정 하나를 비정확 예약하며 폰·위젯·Wear·Tile 접근 시 누락 일정을 보정. Room v9. 공유 모드의 동일 일정은 공통 회차로 수렴.</p>\n</li>\n<li><p><strong>재사용 체크리스트</strong> — \"리셋\" 버튼으로 모든 항목을 한 번에 미체크 상태로 되돌려 리스트 전체를 반복 사용</p>\n</li>\n<li><p><strong>선택적 체크 공유 (미출시 #14)</strong> — 기본 꺼짐, 앱 전체 설정, 오프라인 인과 병합·리셋 회차·기기별 저장 확인. 공통 Kotlin 모델과 DataClient Asset, Room v8 및 Wear 원자적 저장.</p>\n</li>\n<li><p><strong>Wear OS 동기화</strong> — 워치에서 항목 체크. 모바일 → 워치 내용 공유, 저장 완료 응답에 기반한 기기별 상태와 재시도(구버전은 타임스탬프 기반 차분 전송 유지)</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 앱을 열지 않고 위젯에서 바로 항목 체크</p>\n</li>\n<li><p><strong>URL 공유</strong> — 리스트를 <code>https://watch-go.com/double-check?k=…</code> 링크로 만들어 지인에게 전달, 링크 열면 바로 가져오기</p>\n</li>\n<li><p><strong>Explore 게시판</strong> — 다른 사용자가 공유한 리스트(장보기/여행/운동 등)를 카테고리별로 탐색하고 다운로드</p>\n</li>\n<li><p><strong>Google 로그인 업로드</strong> — 내 리스트를 공개 게시판에 공유 (조회·다운로드는 로그인 불필요)</p>\n</li>\n<li><p><strong>휴지통</strong> — 삭제한 리스트 복원</p>\n</li>\n<li><p><strong>오프라인 우선</strong> — 로컬 Room DB에 저장, 계정·동기화 서버 의존 없음</p>\n</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment + Navigation Component (SafeArgs), ViewBinding + DataBinding, ViewModel, Room 2.7, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS (Compose BOM 2024.11), Wear Compose Material/Foundation</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MobileSyncService</code>, <code>WearSyncService</code>, <code>DataLayerListenerService</code>)</li>\n<li><strong>백엔드(공유 기능):</strong> AWS API Gateway + Lambda (serverless), DynamoDB, Google OAuth (Credential Manager)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 34 (워치) / compileSdk 35, Kotlin 2.0.21, AGP 8.6.0, Java 17(앱)/11(워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 <code>:app</code> 모듈의 Navigation Component로 <code>bunchlist</code> / <code>bunchdetail</code> / <code>editbunch</code> / <code>explore</code> / <code>trash</code> 화면을 묶음</li>\n<li>공유 라이브러리: <code>:watch-go-info-fragment</code> (브랜드 공용 인포 화면), <code>:onboarding</code> (<code>net.msalt.onboarding</code> 패키지)</li>\n<li>로컬 저장소: <code>DoubleCheckDatabase</code> (Room) — 엔티티 <code>Bunch</code>, <code>CheckItem</code>, Repository 패턴</li>\n<li>워치는 <code>bunchlist</code> / <code>detail</code> 2화면만 제공하며, 항목의 checked/pin 상태는 워치 내부에 독자 저장 (모바일과 병합하지 않음). 기존 항목의 체크·핀은 보존하고 새 항목만 최초 수신 시 모바일 체크로 초기화한다</li>\n<li>공유 API는 별도 API Gateway(<code>serverless-for-dc-board</code>)를 통해 DynamoDB <code>DoubleCheckBoardTable</code>에 업로드, UGC 정책 준수를 위해 Soft Delete + 신고 누적 시 자동 블라인드</li>\n</ul>\n",
+      "overview_html": "<h1>Double Check — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 재사용 가능한 체크리스트 앱입니다. 완료 후 항목이 사라지는 일반 투두와 달리, \"리셋\" 한 번으로 같은 리스트를 반복해서 쓸 수 있도록 설계했습니다. 장보기, 여행 짐, 일상 루틴처럼 주기적으로 반복되는 체크 작업에 최적화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>진행 상태 Tile (미출시 #25)</strong> — Tile마다 워치 리스트를 선택하고 완료 수/전체 수·남은 수를 확인. 워치의 유효 체크·자동 리셋 상태 사용, 오프라인 지원, 상세 바로가기와 대상 변경. 기존 최근 목록 Tile 유지.</p>\n</li>\n<li><p><strong>반복 자동 리셋 (미출시 #16)</strong> — 매일·평일·선택 요일, 30분 단위 시각 설정. 폰·Wear 각각 다음 일정 하나를 비정확 예약하며 폰·위젯·Wear·Tile 접근 시 누락 일정을 보정. Room v9. 공유 모드의 동일 일정은 공통 회차로 수렴.</p>\n</li>\n<li><p><strong>재사용 체크리스트</strong> — \"리셋\" 버튼으로 모든 항목을 한 번에 미체크 상태로 되돌려 리스트 전체를 반복 사용</p>\n</li>\n<li><p><strong>선택적 체크 공유 (미출시 #14)</strong> — 기본 꺼짐, 앱 전체 설정, 오프라인 인과 병합·리셋 회차·기기별 저장 확인. 공통 Kotlin 모델과 DataClient Asset, Room v8 및 Wear 원자적 저장.</p>\n</li>\n<li><p><strong>Wear OS 동기화</strong> — 워치에서 항목 체크. 모바일 → 워치 내용 공유, 저장 완료 응답에 기반한 기기별 상태와 재시도(구버전은 타임스탬프 기반 차분 전송 유지)</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 앱을 열지 않고 위젯에서 바로 항목 체크</p>\n</li>\n<li><p><strong>URL 공유</strong> — 리스트를 <code>https://watch-go.com/double-check?k=…</code> 링크로 만들어 지인에게 전달, 링크 열면 바로 가져오기</p>\n</li>\n<li><p><strong>Explore 게시판</strong> — 다른 사용자가 공유한 리스트(장보기/여행/운동 등)를 카테고리별로 탐색하고 다운로드</p>\n</li>\n<li><p><strong>Google 로그인 업로드</strong> — 내 리스트를 공개 게시판에 공유 (조회·다운로드는 로그인 불필요)</p>\n</li>\n<li><p><strong>휴지통</strong> — 삭제한 리스트 복원</p>\n</li>\n<li><p><strong>오프라인 우선</strong> — 로컬 Room DB에 저장, 계정·동기화 서버 의존 없음</p>\n</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment + Navigation Component (SafeArgs), ViewBinding + DataBinding, ViewModel, Room 2.7, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS (Compose BOM 2024.11), Wear Compose Material/Foundation</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MobileSyncService</code>, <code>WearSyncService</code>, <code>DataLayerListenerService</code>)</li>\n<li><strong>백엔드(공유 기능):</strong> AWS API Gateway + Lambda (serverless), DynamoDB, Google OAuth (Credential Manager)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 34 (워치) / compileSdk 35, Kotlin 2.0.21, AGP 8.6.0, Java 17(앱)/11(워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 <code>:app</code> 모듈의 Navigation Component로 <code>bunchlist</code> / <code>bunchdetail</code> / <code>editbunch</code> / <code>explore</code> / <code>trash</code> 화면을 묶음</li>\n<li>공유 라이브러리: <code>:watch-go-info-fragment</code> (브랜드 공용 인포 화면), <code>:onboarding</code> (<code>net.msalt.onboarding</code> 패키지)</li>\n<li>로컬 저장소: <code>DoubleCheckDatabase</code> (Room) — 엔티티 <code>Bunch</code>, <code>CheckItem</code>, Repository 패턴</li>\n<li>워치는 <code>bunchlist</code> / <code>detail</code> 2화면만 제공하며, 항목의 checked/pin 상태는 워치 내부에 독자 저장 (모바일과 병합하지 않음). 기존 항목의 체크·핀은 보존하고 새 항목만 최초 수신 시 모바일 체크로 초기화한다</li>\n<li>공유 API는 별도 API Gateway(<code>serverless-for-dc-board</code>)를 통해 DynamoDB <code>DoubleCheckBoardTable</code>에 업로드, UGC 정책 준수를 위해 Soft Delete + 신고 누적 시 자동 블라인드</li>\n</ul>\n",
       "updates": [
         {
           "version": "v9.0.1",
@@ -425,7 +425,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 201,
@@ -592,7 +592,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 202,
@@ -664,7 +664,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 203,
@@ -724,7 +724,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 204,
@@ -927,7 +927,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 205,
@@ -1064,7 +1064,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 206,
@@ -1130,7 +1130,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 207,
@@ -1208,7 +1208,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 208,
@@ -1315,7 +1315,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-22T06:31:18.079+09:00"
+      "last_successful_fetch": "2026-10-23T06:26:26.553+09:00"
     },
     {
       "id": 209,
