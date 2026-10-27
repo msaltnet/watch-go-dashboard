@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-27T07:33:44.281+09:00",
+  "built_at": "2026-10-28T07:04:29.028+09:00",
   "stats": {
     "total": 19,
     "succeeded": 18,
@@ -83,7 +83,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 102,
@@ -126,7 +126,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 107,
@@ -156,7 +156,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 108,
@@ -186,7 +186,7 @@
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 103,
@@ -217,7 +217,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/103/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 104,
@@ -254,7 +254,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/104/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 105,
@@ -291,7 +291,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 106,
@@ -322,7 +322,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 111,
@@ -347,7 +347,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/111/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 200,
@@ -425,7 +425,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 201,
@@ -592,7 +592,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 202,
@@ -664,7 +664,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 203,
@@ -724,7 +724,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 204,
@@ -933,7 +933,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 205,
@@ -944,6 +944,12 @@
       "repo": "msaltnet/watch-pomodoro-timer",
       "overview_html": "<h1>Watch Pomodoro Timer — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 포모도로 타이머입니다. 모바일과 워치 어느 쪽에서도 독립적으로 타이머를 실행할 수 있고, 기록은 두 기기에서 공유됩니다.</p>\n<p>현재 제품 지원·배포 범위는 Android phone과 Wear OS입니다. 저장소의 <code>ios/</code> 디렉터리는 현재 사용·빌드·배포하지 않는 iOS/watchOS 보관용 프로젝트이며 제품 범위에 포함되지 않습니다.</p>\n<h2>워치 타이머 만료 구조</h2>\n<ul>\n<li>Wear OS는 실행 중 <code>elapsedRealtime</code> deadline을 ticker와 exact <code>AlarmManager</code>가 함께 감시합니다. 세션 generation을 저장해 먼저 도착한 유효 경로만 완료하며, 재부팅 뒤에는 별도 wall-clock deadline으로 미래 알람만 복원합니다.</li>\n<li>Wear foreground service는 정확 알람 기반 타이머·햅틱 용도의 <code>systemExempted</code> 타입을 사용합니다. Play Console 정책 선언은 배포 전에 별도로 확인해야 합니다.</li>\n</ul>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>루틴</strong> — 기존 사용자 설정을 보존한 편집 가능한 기본 루틴과 이름을 붙인 루틴 최대 5개를 제공합니다. 첫 화면과 설정 상단의 선택기는 하나의 목록에서 선택·추가·이름 변경·삭제를 제공합니다. 추가는 현재 선택값을 복사하고 이름만 입력한 뒤 저장을 누르면 새 루틴을 선택합니다. 이름 변경도 저장 버튼으로 확정하며 취소하면 변경을 버립니다. 편집 아이콘으로는 이름만 바꾸고 시간·세션 수는 설정 화면에서만 변경합니다. 선택 자체로 타이머를 시작하지 않습니다. 설정의 네 값은 선택 루틴에 자동 저장되고 선택은 중지 후에도 유지됩니다. 선택 이름과 네 값을 함께 Wear OS에 전달해 양쪽의 새 타이머 시작에 사용하며, 실행·일시정지한 타이머는 시작 당시 값을 유지합니다. Wear OS에는 선택 화면이 없습니다.</p>\n</li>\n<li><p><strong>포모도로 타이머</strong> — 작업/휴식/긴 휴식 3단계 루프. 세션 수와 각 단계 길이를 사용자 지정</p>\n</li>\n<li><p><strong>모바일 타이머</strong> — monotonic deadline을 포그라운드 ticker와 elapsed-realtime <code>AlarmManager</code>가 함께 감시하며, generation으로 중복 만료를 방지. Doze·프로세스 재생성·재부팅 복구 지원</p>\n</li>\n<li><p><strong>워치 독립 타이머</strong> — 모바일 없이 워치 단독 사용 가능</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 2x2 / 4x4 크기로 타이머 상태 확인 및 제어 (v7.0.0+)</p>\n</li>\n<li><p><strong>워치페이스 컴플리케이션</strong> — 오늘의 완료 세션 수를 워치페이스에 표시</p>\n</li>\n<li><p><strong>통계 대시보드</strong> — 일간/주간 집중 시간, 시간대별 패턴, 연속 기록, 월별 잔디 차트</p>\n</li>\n<li><p><strong>집중 라벨</strong> — 작업 세션을 업무·공부·프로젝트 등 하나의 라벨로 기록하고 기록 카드에 표시</p>\n</li>\n<li><p><strong>동기 부여 인용구</strong> — 타이머 시작 시 짧은 인용구 (v5.0.0+)</p>\n</li>\n<li><p><strong>온보딩</strong> — 첫 실행 시 가이드</p>\n</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment, ViewBinding + DataBinding, ViewModel, LiveData, DataStore (Preferences), Gson, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Horologist, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wear Data Layer (<code>MessageClient</code>, <code>DataClient</code>)</li>\n<li><strong>백그라운드 실행:</strong> Foreground Service (<code>specialUse</code>), <code>AlarmManager.setExact()</code> + <code>USE_EXACT_ALARM</code></li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 30 (워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 단일 <code>MainActivity</code> 하위에 <code>MainFragment</code> / <code>SettingsFragment</code> / <code>TimerRecordsFragment</code> 구조</li>\n<li>공유 ViewModel(<code>MainViewModel</code>)이 설정과 타이머 기록 LiveData를 관리</li>\n<li>타이머 기록은 모바일·Wear OS의 Room <code>timer_records</code> 테이블에 저장하며 nullable 라벨 스냅샷을 포함</li>\n<li>설정은 <code>SharedPreferences(\"MySettings\")</code>에 저장</li>\n<li>라벨 목록은 모바일에서 JSON으로 관리하고 별도 버전 Data Layer 메시지로 Wear OS에 전달</li>\n<li>모바일·워치 실행은 독립적이며, 새 실행에 시계와 무관한 UUID 기록 ID를 부여합니다. 같은 시각·유형·라벨이라도 ID가 다르면 모두 보존합니다.</li>\n<li>종료 기록의 ID·유형·시각·기간·세션 번호·라벨과 Stop/Next/만료 전환을 먼저 영속화합니다. 저장 실패·프로세스 재생성 뒤에는 같은 불변 기록을 재시도합니다. 일시정지/재개는 같은 ID를, 새 시작/다음 단계/자동 재시작은 새 ID를 사용합니다.</li>\n<li>Room v2 트랜잭션이 신규 저장 또는 같은 ID·같은 내용임을 확인한 기록만 ACK합니다. ID 충돌·잘못된 입력·미초기화·DB 실패는 ACK하지 않습니다. 워치는 전송 대상 노드·전송 내용·현재 DB 내용이 모두 같은 기록만 삭제합니다.</li>\n<li>ACK 전송 장부는 확인된 기록의 삭제와 보존 상한에 맞춰 모든 노드에서 정리하며, 빈 동기화에서도 오래된 사본을 제거합니다.</li>\n<li>기존 ID·라벨·기록과 모바일 2,000건/워치 1,000건 보존 상한은 유지합니다. 삭제·상한 밖 기록을 영구 복구하지 않으며, 과거 유실 기록을 추정하지 않습니다.</li>\n<li>기존 JSON 배열/경로는 유지하지만 구버전 폰의 시간 필터와 ACK는 바꿀 수 없으므로 완전한 보장은 양쪽 업데이트 이후입니다.</li>\n</ul>\n<h2>작업 세션과 방해 금지</h2>\n<p>Android 휴대폰 설정의 <strong>작업 세션 중 방해 금지</strong>는 기본 OFF입니다. 접근 권한을 허용하면 휴대폰 또는 Wear OS의 실행 중 작업 세션이 휴대폰의 앱 전용 자동 규칙을 요청합니다. 양쪽 타이머·기록은 독립적이며 종료 알림은 실행 기기에서만 제공합니다. 워치 시스템 방해 금지는 자동으로 변경하지 않습니다.</p>\n",
       "updates": [
+        {
+          "version": "v10.2.0",
+          "date": "2026-10-28",
+          "label": null,
+          "items_html": "<ul>\n<li>모바일 방해 금지 설정에 아이콘을 추가하고 설명과 권한 안내의 정렬을 개선했습니다.</li>\n<li>Wear OS 타이머 버튼 간격을 넓히고 시작/재개 버튼을 아래에 배치했습니다. 루틴 이름의 Phone 접두어를 제거했습니다.</li>\n<li>Wear OS 타이머가 화면 크기와 글꼴에 맞춰 제어를 배치합니다. 큰 글꼴에서는 스크롤로 모든 버튼에 접근하며, 긴 루틴 이름도 접근성으로 전체를 읽을 수 있습니다.</li>\n<li>타이머 홈을 간결하게 정리하고 소개·워치 사용법을 도움말로 옮겼습니다. 타이머 상태의 가독성을 높이고, 기록 전체 삭제는 더보기 메뉴에서 확인 후 진행하도록 바꿨습니다.</li>\n<li>상단 타이틀 이미지와 아이콘 전용 하단 메뉴를 적용하고, 도움말에 고정 제목과 닫기 버튼을 추가했습니다. 기록 메뉴 버튼의 터치 효과가 잘리던 문제를 수정했습니다.</li>\n<li>홈·설정의 루틴 버튼 여백을 맞추고, 탭 전환 시 도움말이 닫히도록 개선했습니다. 원형 타이머 버튼의 터치 효과와 설정 카드, 다크 모드 팝업·루틴 목록의 구분을 개선했습니다.</li>\n<li>설정을 관련 항목별로 묶고 이름 옆에 현재 값과 스위치를 표시하도록 정리했습니다. 홈과 설정의 루틴 버튼 높이를 통일했습니다.</li>\n<li>홈에서 <strong>시간 설정</strong>을 눌러 선택한 루틴의 시간과 세션 수 설정으로 바로 이동할 수 있습니다.</li>\n<li>모바일 화면을 중립적인 밝은 배경과 차콜 다크 모드로 정리하고 글자·버튼 대비를 개선했습니다. 타이머 링과 재생 버튼 색상을 통일하고, 화면 높이에 맞춰 타이머와 제어 버튼을 중앙 아래에서 편하게 사용할 수 있도록 배치했습니다. 도움말 아이콘과 버튼 색상도 정리했습니다.</li>\n<li>휴대폰·워치 작업 세션의 휴대폰 방해 금지 연동과 권한 안내를 추가하고, 실행 기기의 종료 알림 설정 경로를 보강했습니다.</li>\n<li>휴대폰과 워치에서 비슷한 시각에 완료한 독립 세션의 기록 누락과 재전송 중복을 수정했습니다. 종료 중 앱이 다시 시작되어도 같은 기록으로 저장을 재시도합니다. 양쪽 앱을 모두 업데이트해 주세요. 집중 시간은 중단 기록을 포함하고 완료 횟수는 완료 세션만 집계합니다.</li>\n<li>Android 휴대폰과 Wear OS에서 실행 중인 집중을 5분씩 연장할 수 있습니다. 자동 재시작이 꺼져 있으면 집중 완료 후 5분 연장·휴식 시작·다음 집중을 선택할 수 있습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v10.0.0",
           "date": "2026-10-05",
@@ -1065,12 +1071,12 @@
           "items_html": "<ul>\n<li>첫 릴리스</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v10.0.0",
-      "latest_update_date": "2026-10-05",
+      "latest_version": "v10.2.0",
+      "latest_update_date": "2026-10-28",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 206,
@@ -1136,7 +1142,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 207,
@@ -1214,7 +1220,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 208,
@@ -1321,7 +1327,7 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-10-27T07:33:44.281+09:00"
+      "last_successful_fetch": "2026-10-28T07:04:29.028+09:00"
     },
     {
       "id": 209,
