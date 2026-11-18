@@ -6,6 +6,7 @@ import { parseUpdates } from './parsers/updates.mjs';
 import { parseOverview } from './parsers/overview.mjs';
 import { mergeFetchResults } from './merge.mjs';
 import { fetchIconUrl } from './landing.mjs';
+import { fetchPlayVersion } from './play.mjs';
 
 function describeFetch(r) {
   const detail = [r.http && `http=${r.http}`, r.reason && `reason=${r.reason}`].filter(Boolean).join(' ');
@@ -31,27 +32,32 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
       ? Promise.resolve(meta.icon_url)
       : fetchIconUrl({ landing: meta.landing, id: meta.id, fetchFn });
 
-    const [overview, updates, icon_url] = await Promise.all([
+    const [overview, updates, icon_url, play] = await Promise.all([
       fetchDocFile({ repo: meta.repo, path: overviewPath, token, ref: branch, fetchFn }),
       fetchDocFile({ repo: meta.repo, path: updatesPath, token, ref: branch, fetchFn }),
       iconPromise,
+      fetchPlayVersion({ pkg: meta.package, fetchFn }),
     ]);
+
+    if (play.status === 'parse_failed' || play.status === 'error') {
+      console.warn(`::warning title=Play 버전 수집 실패 (${play.status})::#${meta.id}${meta.variant ? '-' + meta.variant : ''} ${meta.package} — 페이지 형식 변경 여부를 확인하세요 (scripts/play.mjs)`);
+    }
 
     const probe = `[${meta.id}${meta.variant ? '-' + meta.variant : ''} ${meta.repo}@${branch}] overview=${describeFetch(overview)} updates=${describeFetch(updates)}`;
 
     if (overview.status === 'auth_failed' || updates.status === 'auth_failed') {
       console.warn(`fetch_failed (auth) ${probe}`);
-      results.push({ meta, status: 'fetch_failed', icon_url });
+      results.push({ meta, status: 'fetch_failed', icon_url, play });
       continue;
     }
     if (overview.status === 'error' || updates.status === 'error') {
       console.warn(`fetch_failed (error) ${probe}`);
-      results.push({ meta, status: 'fetch_failed', icon_url });
+      results.push({ meta, status: 'fetch_failed', icon_url, play });
       continue;
     }
     if (overview.status === 'not_found' && updates.status === 'not_found') {
       console.warn(`no_docs ${probe}`);
-      results.push({ meta, status: 'no_docs', icon_url });
+      results.push({ meta, status: 'no_docs', icon_url, play });
       continue;
     }
 
@@ -66,6 +72,7 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
       overview_html,
       updates: updatesArr,
       icon_url,
+      play,
     });
   }
 
@@ -98,9 +105,12 @@ async function main() {
     for (const a of apps) {
       const slug = a.variant ? `${a.id}-${a.variant}` : a.id;
       const sub = a.docs_subdir ? ` [docs/app/${a.docs_subdir}/]` : '';
+      const play = a.play_version
+        ? `  [Play ${a.play_version}${a.play_status && a.play_status !== 'ok' ? ` (${a.play_status})` : ''}]`
+        : `  [Play - ${a.play_status ?? ''}]`;
       const version = status === 'ok'
-        ? `  ${a.latest_version ?? '(버전 정보 없음)'}${a.latest_update_label ? ` (${a.latest_update_label})` : ''}${a.latest_update_date ? ` · ${a.latest_update_date}` : ''}`
-        : '';
+        ? `  ${a.latest_version ?? '(버전 정보 없음)'}${a.latest_update_label ? ` (${a.latest_update_label})` : ''}${a.latest_update_date ? ` · ${a.latest_update_date}` : ''}${play}`
+        : play;
       console.log(`  #${slug}  ${a.name}  →  ${a.repo}${sub}${version}`);
     }
   }

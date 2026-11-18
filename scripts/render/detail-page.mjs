@@ -1,6 +1,6 @@
 import { fillTemplate } from './layout.mjs';
 import { detailSeo } from './seo.mjs';
-import { escapeHtml, formatBuiltAt, daysSince } from './util.mjs';
+import { escapeHtml, formatBuiltAt, daysSince, renderPlayBadge } from './util.mjs';
 
 function renderStatusBadge(app, builtAt) {
   if (app.fetch_status === 'ok') return '';
@@ -70,7 +70,7 @@ export function renderDetailPage(app, data, template) {
     repo: escapeHtml(app.repo),
     icon: renderIcon(app),
     play_store_link: renderPlayStoreLink(app),
-    status_badge: renderStatusBadge(app, data.built_at),
+    status_badge: renderStatusBadge(app, data.built_at) + (renderPlayBadge(app) ? `<p>${renderPlayBadge(app)}</p>` : ''),
     overview_block: renderOverviewBlock(app),
     updates_block: renderUpdatesBlock(app),
     built_at_display: escapeHtml(formatBuiltAt(data.built_at)),

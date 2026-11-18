@@ -6,6 +6,24 @@ function findPrevious(previous, meta) {
   return previous.apps.find(a => appKey(a) === appKey(meta));
 }
 
+// Play Store version: ok -> new value, not_found -> cleared (not published),
+// parse_failed/error/missing -> keep the previously stored value but record the
+// failure in play_status so the dashboard can show it.
+function playFields(result, prev, builtAt) {
+  const play = result.play;
+  if (play?.status === 'ok') {
+    return { play_version: play.version, play_status: 'ok', play_checked_at: builtAt };
+  }
+  if (play?.status === 'not_found') {
+    return { play_version: null, play_status: 'not_found', play_checked_at: builtAt };
+  }
+  return {
+    play_version: prev?.play_version ?? null,
+    play_status: play?.status ?? 'error',
+    play_checked_at: prev?.play_checked_at ?? null,
+  };
+}
+
 export function mergeFetchResults({ previous, fresh, builtAt }) {
   const total = fresh.length;
   const succeededCount = fresh.filter(r => r.status === 'ok').length;
@@ -17,6 +35,7 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
     const { meta, status } = result;
     const prev = findPrevious(previous, meta);
     const icon_url = result.icon_url ?? prev?.icon_url ?? null;
+    const play = playFields(result, prev, builtAt);
     if (status === 'ok') {
       const first = result.updates[0];
       return {
@@ -27,6 +46,7 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
         latest_update_date: first?.date ?? null,
         latest_update_label: first?.label ?? null,
         icon_url,
+        ...play,
         fetch_status: 'ok',
         last_successful_fetch: builtAt,
       };
@@ -40,13 +60,14 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
         latest_update_date: null,
         latest_update_label: null,
         icon_url,
+        ...play,
         fetch_status: 'no_docs',
         last_successful_fetch: null,
       };
     }
     // fetch_failed: preserve previous entry if exists
     if (prev) {
-      return { ...prev, icon_url, fetch_status: 'fetch_failed' };
+      return { ...prev, icon_url, ...play, fetch_status: 'fetch_failed' };
     }
     return {
       ...meta,
@@ -56,6 +77,7 @@ export function mergeFetchResults({ previous, fresh, builtAt }) {
       latest_update_date: null,
       latest_update_label: null,
       icon_url,
+      ...play,
       fetch_status: 'fetch_failed',
       last_successful_fetch: null,
     };

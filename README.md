@@ -40,6 +40,13 @@ docs/app/updates.md      │
 
 3. **배포** — `actions/upload-pages-artifact` + `actions/deploy-pages`로 GitHub Pages에 게시. 두 워크플로우(`daily-update`, `deploy`)로 분리되어, 데이터만 갱신될 때와 템플릿/스크립트가 바뀔 때 모두 자동 재배포.
 
+## Play 스토어 버전
+
+수집 단계에서 각 앱의 공개 Google Play 목록 페이지(`scripts/play.mjs`)를 읽어 실제 게시 버전을 `play_version`으로 저장합니다. 인증·시크릿이 필요 없습니다.
+
+- 카드에는 `Play vX.Y.Z`를 우선 표시하고, repo 문서(`updates.md`) 버전과 다르면 `문서 vA.B.C`를 함께 표시합니다(미배포·문서 지연 확인용).
+- 페이지 형식은 비공식이라 파싱 실패(`error`)는 이전 값을 유지하고, 목록이 없으면(404) 값을 비웁니다. 버전을 노출하지 않는 목록(예: 206)은 문서 버전으로 표시됩니다.
+
 ## 검색·AI 에이전트·SNS 노출
 
 공개 기준 주소는 **[https://now.watch-go.com/](https://now.watch-go.com/)** 입니다. 빌드 시 모든 카탈로그와 앱 상세 페이지에 고유 canonical URL, 설명, Open Graph/Twitter Card 메타데이터, JSON-LD를 생성합니다.

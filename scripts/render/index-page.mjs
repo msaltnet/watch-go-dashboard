@@ -1,6 +1,6 @@
 import { fillTemplate } from './layout.mjs';
 import { indexSeo } from './seo.mjs';
-import { escapeHtml, formatBuiltAt, daysSince, categoryFromId, detailPath } from './util.mjs';
+import { escapeHtml, formatBuiltAt, daysSince, categoryFromId, detailPath, renderPlayBadge } from './util.mjs';
 
 function renderBadge(app, builtAt) {
   if (app.fetch_status === 'ok') return '';
@@ -15,21 +15,32 @@ function renderBadge(app, builtAt) {
   return `<span class="badge badge-stale">⚠ ${days}일 전 데이터</span>`;
 }
 
-function renderCard(app, builtAt) {
-  let versionLine;
-  if (app.latest_version) {
-    const versionLabel = app.latest_update_label
-      ? `${app.latest_version} (${app.latest_update_label})`
-      : app.latest_version;
-    const trailing = app.latest_update_date
-      ? ` · ${escapeHtml(app.latest_update_date)}`
-      : '';
-    versionLine = `<div class="card-version">${escapeHtml(versionLabel)}${trailing}</div>`;
-  } else {
-    versionLine = `<div class="card-version empty">버전 정보 없음</div>`;
+const normVersion = v => String(v ?? '').trim().replace(/^v/i, '');
+
+function renderVersionLine(app) {
+  const docsLabel = app.latest_version
+    ? (app.latest_update_label ? `${app.latest_version} (${app.latest_update_label})` : app.latest_version)
+    : null;
+
+  if (app.play_version) {
+    const playLabel = `Play v${normVersion(app.play_version)}`;
+    if (!app.latest_version || normVersion(app.latest_version) === normVersion(app.play_version)) {
+      const trailing = app.latest_update_date ? ` · ${escapeHtml(app.latest_update_date)}` : '';
+      return `<div class="card-version">${escapeHtml(playLabel)}${trailing}</div>`;
+    }
+    return `<div class="card-version">${escapeHtml(playLabel)} <span class="card-version-note">문서 ${escapeHtml(docsLabel)}</span></div>`;
   }
 
-  const landing = (app.landing || '').replace(/^https?:\/\//, '');
+  if (docsLabel) {
+    const trailing = app.latest_update_date ? ` · ${escapeHtml(app.latest_update_date)}` : '';
+    return `<div class="card-version">${escapeHtml(docsLabel)}${trailing}</div>`;
+  }
+  return `<div class="card-version empty">버전 정보 없음</div>`;
+}
+
+function renderCard(app, builtAt) {
+  const versionLine = renderVersionLine(app);
+
   const icon = app.icon_url
     ? `<img class="card-icon" src="${escapeHtml(app.icon_url)}" alt="" loading="lazy" width="64" height="64">`
     : `<div class="card-icon card-icon-placeholder" aria-hidden="true">⌚</div>`;
@@ -37,22 +48,17 @@ function renderCard(app, builtAt) {
   const variantTag = app.variant ? `<span class="card-variant">${escapeHtml(app.variant)}</span>` : '';
   return `
 <a class="card" href="${escapeHtml(detailPath(app))}" data-category="${escapeHtml(categoryFromId(app.id))}">
-  <span class="card-no" aria-hidden="true">${escapeHtml(app.id)}</span>
   <div class="card-head">
     ${icon}
     <div class="card-head-text">
-      <span class="card-kicker"><span class="card-cat">${escapeHtml(categoryLabel)}</span>${variantTag}</span>
+      <span class="card-kicker"><span class="card-no">#${escapeHtml(app.id)}</span><span class="card-cat">${escapeHtml(categoryLabel)}</span>${variantTag}</span>
       <h2 class="card-name">${escapeHtml(app.name)}</h2>
     </div>
   </div>
   <p class="card-identity">${escapeHtml(app.identity)}</p>
   <div class="card-foot">
     ${versionLine}
-    ${renderBadge(app, builtAt)}
-  </div>
-  <div class="card-links">
-    <span class="card-link"><span class="card-link-key">link</span> ${escapeHtml(landing)}</span>
-    <span class="card-link"><span class="card-link-key">repo</span> ${escapeHtml(app.repo)}</span>
+    <span class="card-badges">${renderPlayBadge(app)}${renderBadge(app, builtAt)}</span>
   </div>
   <span class="card-arrow" aria-hidden="true">→</span>
 </a>`.trim();
