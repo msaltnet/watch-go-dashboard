@@ -1,14 +1,18 @@
-// Read the live version of an app from its public Google Play listing.
+// Read live store info (version, install bucket, rating) of an app from its
+// public Google Play listing. No credentials needed, but the markup is
+// undocumented, so every failure is reported and callers fall back to
+// previously stored data.
 //
-// The listing page embeds the version in its AF_initDataCallback payload as
-//   ...,[[["8.2.0"]],[[[36]],...      (also as `"141":[[["8.2.0"]],...`)
-// (the trailing `[[[<number>]]` is the required-Android-API marker).
-// Some listings (e.g. com.watch_go.watch2048) expose no version at all; those
-// return `parse_failed` and keep the previously stored value. No
-// credentials are needed, but the markup is undocumented, so every failure is
-// reported as `null` and callers fall back to previously stored data.
+// Version:  ...,[[["8.2.0"]],[[[36]],...      (also as `"141":[[["8.2.0"]],...`)
+//           (the trailing `[[[<number>]]` is the required-Android-API marker)
+//           Some listings (e.g. com.watch_go.watch2048) expose none at all.
+// Installs: ["10,000+",10000,17210,"10K+"]   -> Play's own bucket label "10K+"
+// Rating:   JSON-LD aggregateRating {ratingValue, ratingCount}; absent when the
+//           app has no ratings yet (legit, not a failure).
 
 const VERSION_RE = /\[\[\["(\d[^"\]]{0,39})"\]\],\[\[\[\d+\]\]/;
+const INSTALLS_RE = /\["[\d,.]+[KMB]?\+",\d+,\d+,"([\d,.]+[KMB]?\+)"\]/;
+const RATING_RE = /"aggregateRating":\{[^}]*?"ratingValue":"([\d.]+)"[^}]*?"ratingCount":"(\d+)"/;
 
 export function extractPlayVersion(html) {
   if (!html) return null;
@@ -16,16 +20,34 @@ export function extractPlayVersion(html) {
   return m ? m[1] : null;
 }
 
+export function extractPlayInstalls(html) {
+  if (!html) return null;
+  const m = INSTALLS_RE.exec(html);
+  return m ? m[1] : null;
+}
+
+export function extractPlayRating(html) {
+  if (!html) return { rating: null, rating_count: null };
+  const m = RATING_RE.exec(html);
+  if (!m) return { rating: null, rating_count: null };
+  return { rating: Math.round(parseFloat(m[1]) * 10) / 10, rating_count: parseInt(m[2], 10) };
+}
+
 export function playListingUrl(pkg) {
   return `https://play.google.com/store/apps/details?id=${encodeURIComponent(pkg)}&hl=en&gl=US`;
 }
 
-// Returns { status: 'ok' | 'not_found' | 'parse_failed' | 'error', version }.
-//  - not_found: the listing does not exist (app not published / removed)
-//  - parse_failed: page loaded but no version marker found (markup changed?)
-//  - error: network/HTTP failure
+const EMPTY = { version: null, installs: null, rating: null, rating_count: null };
+
+// Returns { status, version, installs, rating, rating_count }.
+//  status:
+//   - ok: version and install bucket found
+//   - partial: version found but install bucket missing (markup changed?)
+//   - not_found: the listing does not exist (app not published / removed)
+//   - parse_failed: page loaded but no version marker found (markup changed?)
+//   - error: network/HTTP failure
 export async function fetchPlayVersion({ pkg, fetchFn = fetch }) {
-  if (!pkg) return { status: 'error', version: null };
+  if (!pkg) return { status: 'error', ...EMPTY };
   let res;
   try {
     res = await fetchFn(playListingUrl(pkg), {
@@ -33,10 +55,18 @@ export async function fetchPlayVersion({ pkg, fetchFn = fetch }) {
       headers: { 'User-Agent': 'Mozilla/5.0 (compatible; watch-go-now-dashboard)', 'Accept-Language': 'en-US,en;q=0.9' },
     });
   } catch {
-    return { status: 'error', version: null };
+    return { status: 'error', ...EMPTY };
   }
-  if (res.status === 404) return { status: 'not_found', version: null };
-  if (!res.ok || typeof res.text !== 'function') return { status: 'error', version: null };
-  const version = extractPlayVersion(await res.text());
-  return version ? { status: 'ok', version } : { status: 'parse_failed', version: null };
+  if (res.status === 404) return { status: 'not_found', ...EMPTY };
+  if (!res.ok || typeof res.text !== 'function') return { status: 'error', ...EMPTY };
+  const html = await res.text();
+  const version = extractPlayVersion(html);
+  if (!version) return { status: 'parse_failed', ...EMPTY };
+  const installs = extractPlayInstalls(html);
+  return {
+    status: installs ? 'ok' : 'partial',
+    version,
+    installs,
+    ...extractPlayRating(html),
+  };
 }

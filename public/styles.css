@@ -387,6 +387,20 @@ a:hover { color: var(--brass); }
   font-variation-settings: "opsz" 14;
 }
 
+.card-stats {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  font-size: .8rem;
+  color: var(--ivory);
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+}
+.stat-star { color: var(--brass); }
+.stat-sub, .stat-key { color: var(--ash); }
+
 .card-foot {
   position: relative;
   z-index: 1;

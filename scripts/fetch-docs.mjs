@@ -39,7 +39,7 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
       fetchPlayVersion({ pkg: meta.package, fetchFn }),
     ]);
 
-    if (play.status === 'parse_failed' || play.status === 'error') {
+    if (['parse_failed', 'partial', 'error'].includes(play.status)) {
       console.warn(`::warning title=Play 버전 수집 실패 (${play.status})::#${meta.id}${meta.variant ? '-' + meta.variant : ''} ${meta.package} — 페이지 형식 변경 여부를 확인하세요 (scripts/play.mjs)`);
     }
 

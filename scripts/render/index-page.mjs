@@ -1,6 +1,6 @@
 import { fillTemplate } from './layout.mjs';
 import { indexSeo } from './seo.mjs';
-import { escapeHtml, formatBuiltAt, daysSince, categoryFromId, detailPath, renderPlayBadge } from './util.mjs';
+import { escapeHtml, formatBuiltAt, daysSince, categoryFromId, detailPath, renderPlayBadge, renderPlayStats } from './util.mjs';
 
 function renderBadge(app, builtAt) {
   if (app.fetch_status === 'ok') return '';
@@ -56,6 +56,7 @@ function renderCard(app, builtAt) {
     </div>
   </div>
   <p class="card-identity">${escapeHtml(app.identity)}</p>
+  ${renderPlayStats(app)}
   <div class="card-foot">
     ${versionLine}
     <span class="card-badges">${renderPlayBadge(app)}${renderBadge(app, builtAt)}</span>

@@ -40,8 +40,24 @@ export function renderPlayBadge(app, tag = 'span') {
     const note = app.play_version ? ` title="마지막 성공 값(${escapeHtml(app.play_version)})을 표시 중"` : '';
     return `<${tag} class="badge badge-failed"${note}>⚠ ${label}</${tag}>`;
   }
+  if (st === 'partial') {
+    return `<${tag} class="badge badge-stale" title="버전은 읽었지만 설치 수를 못 읽었습니다">⚠ Play 일부 파싱 실패</${tag}>`;
+  }
   if (st === 'not_found') {
     return `<${tag} class="badge badge-no-docs">Play 미등록</${tag}>`;
   }
   return '';
+}
+
+// "★ 4.3 (79) · 설치 10K+" ; '' when nothing to show.
+export function renderPlayStats(app) {
+  const parts = [];
+  if (app.play_rating != null) {
+    const count = app.play_rating_count != null ? ` <span class="stat-sub">(${escapeHtml(app.play_rating_count.toLocaleString('en-US'))})</span>` : '';
+    parts.push(`<span class="stat"><span class="stat-star" aria-hidden="true">★</span> ${escapeHtml(app.play_rating.toFixed(1))}${count}</span>`);
+  }
+  if (app.play_installs) {
+    parts.push(`<span class="stat"><span class="stat-key">설치</span> ${escapeHtml(app.play_installs)}</span>`);
+  }
+  return parts.length ? `<div class="card-stats">${parts.join('')}</div>` : '';
 }
