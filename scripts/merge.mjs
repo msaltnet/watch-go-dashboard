@@ -15,6 +15,7 @@ function playFields(result, prev, builtAt) {
     return {
       play_version: play.version,
       play_installs: play.installs ?? null,
+      play_updated: play.updated ?? null,
       play_rating: play.rating ?? null,
       play_rating_count: play.rating_count ?? null,
       play_status: play.status,
@@ -23,13 +24,14 @@ function playFields(result, prev, builtAt) {
   }
   if (play?.status === 'not_found') {
     return {
-      play_version: null, play_installs: null, play_rating: null, play_rating_count: null,
+      play_version: null, play_installs: null, play_updated: null, play_rating: null, play_rating_count: null,
       play_status: 'not_found', play_checked_at: builtAt,
     };
   }
   return {
     play_version: prev?.play_version ?? null,
     play_installs: prev?.play_installs ?? null,
+    play_updated: prev?.play_updated ?? null,
     play_rating: prev?.play_rating ?? null,
     play_rating_count: prev?.play_rating_count ?? null,
     play_status: play?.status ?? 'error',

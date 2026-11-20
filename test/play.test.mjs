@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { extractPlayVersion, extractPlayInstalls, extractPlayRating, fetchPlayVersion } from '../scripts/play.mjs';
+import { extractPlayUpdated, extractPlayVersion, extractPlayInstalls, extractPlayRating, fetchPlayVersion } from '../scripts/play.mjs';
 import { mergeFetchResults } from '../scripts/merge.mjs';
 import { renderIndexPage } from '../scripts/render/index-page.mjs';
 
@@ -12,7 +12,7 @@ test('extractPlayVersion reads the version marker and ignores other version-like
   assert.equal(extractPlayVersion(null), null);
 });
 
-const full = html + ' ["10,000+",10000,17210,"10K+"] "aggregateRating":{"@type":"AggregateRating","ratingValue":"3.7142856121063232","ratingCount":"79"},"offers"';
+const full = html + ' <div>Updated on</div><div class="x">Nov 8, 2026</div> ["10,000+",10000,17210,"10K+"] "aggregateRating":{"@type":"AggregateRating","ratingValue":"3.7142856121063232","ratingCount":"79"},"offers"';
 
 test('extracts install bucket and rating; rating absent is not a failure', () => {
   assert.equal(extractPlayInstalls(full), '10K+');
@@ -23,7 +23,7 @@ test('extracts install bucket and rating; rating absent is not a failure', () =>
 
 test('fetchPlayVersion maps ok / partial / 404 / failures', async () => {
   const ok = await fetchPlayVersion({ pkg: 'com.a', fetchFn: async () => ({ status: 200, ok: true, text: async () => full }) });
-  assert.deepEqual(ok, { status: 'ok', version: '8.2.0', installs: '10K+', rating: 3.7, rating_count: 79 });
+  assert.deepEqual(ok, { status: 'ok', version: '8.2.0', installs: '10K+', updated: '2026-11-08', rating: 3.7, rating_count: 79 });
   const partial = await fetchPlayVersion({ pkg: 'com.a', fetchFn: async () => ({ status: 200, ok: true, text: async () => html }) });
   assert.equal(partial.status, 'partial');
   assert.equal(partial.version, '8.2.0');
@@ -100,7 +100,7 @@ test('merge stores installs/rating and keeps them on failure', () => {
 });
 
 test('play_no_version listings: missing version is ok when installs are found', async () => {
-  const onlyInstalls = 'x ["10,000+",10000,17496,"10K+"] y';
+  const onlyInstalls = 'x <div>Updated on</div><div>Nov 1, 2026</div> ["10,000+",10000,17496,"10K+"] y';
   const mk = text => async () => ({ status: 200, ok: true, text: async () => text });
   const ok = await fetchPlayVersion({ pkg: 'com.a', fetchFn: mk(onlyInstalls), expectVersion: false });
   assert.equal(ok.status, 'ok');
@@ -108,4 +108,38 @@ test('play_no_version listings: missing version is ok when installs are found', 
   assert.equal(ok.installs, '10K+');
   assert.equal((await fetchPlayVersion({ pkg: 'com.a', fetchFn: mk(onlyInstalls) })).status, 'parse_failed');
   assert.equal((await fetchPlayVersion({ pkg: 'com.a', fetchFn: mk('<html/>'), expectVersion: false })).status, 'parse_failed');
+});
+
+test('cards carry sort data and installs labels parse to numbers', async () => {
+  const { parseInstalls } = await import('../scripts/render/util.mjs');
+  assert.equal(parseInstalls('10K+'), 10000);
+  assert.equal(parseInstalls('500+'), 500);
+  assert.equal(parseInstalls('1.5M+'), 1500000);
+  assert.equal(parseInstalls(null), null);
+  const data = { built_at: '2026-11-17T00:00:00+09:00', stats: { total: 1, succeeded: 1, no_docs: 0, failed: 0 },
+    apps: [{ ...meta, fetch_status: 'ok', latest_version: 'v1', latest_update_date: '2026-10-08', play_installs: '10K+', play_rating: 3.7, play_rating_count: 79 }] };
+  const out = renderIndexPage(data, '{{cards}}');
+  assert.match(out, /data-sort-installs="10000"/);
+  assert.match(out, /data-sort-rating="3\.7"/);
+  assert.match(out, /data-sort-updated="2026-10-08"/);
+  data.apps[0].play_installs = null;
+  assert.doesNotMatch(renderIndexPage(data, '{{cards}}'), /data-sort-installs/);
+});
+
+test('extractPlayUpdated parses "Updated on" into an ISO date', () => {
+  assert.equal(extractPlayUpdated('<div>Updated on</div><div class="a">Nov 8, 2026</div>'), '2026-11-08');
+  assert.equal(extractPlayUpdated('<div>Updated on</div><div class="a">Jan 3, 2027</div>'), '2027-01-03');
+  assert.equal(extractPlayUpdated('<div>Released on</div>'), null);
+});
+
+test('card prefers Play update date; sort uses it too; stale docs date is not shown with a newer Play version', () => {
+  const mk = extra => ({ built_at: '2026-11-17T00:00:00+09:00', stats: { total: 1, succeeded: 1, no_docs: 0, failed: 0 },
+    apps: [{ ...meta, fetch_status: 'ok', latest_version: 'v8.1.0', latest_update_date: '2026-10-08', play_status: 'ok', ...extra }] });
+  const same = renderIndexPage(mk({ play_version: '8.1.0', play_updated: '2026-11-08' }), '{{cards}}');
+  assert.match(same, /Play v8\.1\.0 · 2026-11-08/);
+  assert.match(same, /data-sort-updated="2026-11-08"/);
+  const differ = renderIndexPage(mk({ play_version: '8.2.0', play_updated: '2026-11-08' }), '{{cards}}');
+  assert.match(differ, /Play v8\.2\.0 · 2026-11-08/);
+  const noPlayDate = renderIndexPage(mk({ play_version: '8.2.0' }), '{{cards}}');
+  assert.doesNotMatch(noPlayDate, /card-version">[^<]*2026-10-08/);
 });

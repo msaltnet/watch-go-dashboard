@@ -1,6 +1,6 @@
 import { fillTemplate } from './layout.mjs';
 import { indexSeo } from './seo.mjs';
-import { escapeHtml, formatBuiltAt, daysSince, categoryFromId, detailPath, renderPlayBadge, renderPlayStats } from './util.mjs';
+import { escapeHtml, formatBuiltAt, daysSince, categoryFromId, detailPath, renderPlayBadge, renderPlayStats, sortAttrs } from './util.mjs';
 
 function renderBadge(app, builtAt) {
   if (app.fetch_status === 'ok') return '';
@@ -21,19 +21,23 @@ function renderVersionLine(app) {
   const docsLabel = app.latest_version
     ? (app.latest_update_label ? `${app.latest_version} (${app.latest_update_label})` : app.latest_version)
     : null;
+  const sameAsDocs = !app.latest_version || !app.play_version
+    || normVersion(app.latest_version) === normVersion(app.play_version);
+  // Prefer the Play "Updated on" date; fall back to the docs date only when the
+  // docs describe the same version.
+  const date = app.play_updated ?? (sameAsDocs ? app.latest_update_date : null);
+  const trailing = date ? ` · ${escapeHtml(date)}` : '';
 
   if (app.play_version) {
     const playLabel = `Play v${normVersion(app.play_version)}`;
-    if (!app.latest_version || normVersion(app.latest_version) === normVersion(app.play_version)) {
-      const trailing = app.latest_update_date ? ` · ${escapeHtml(app.latest_update_date)}` : '';
+    if (sameAsDocs) {
       return `<div class="card-version">${escapeHtml(playLabel)}${trailing}</div>`;
     }
-    return `<div class="card-version">${escapeHtml(playLabel)} <span class="card-version-note">문서 ${escapeHtml(docsLabel)}</span></div>`;
+    return `<div class="card-version">${escapeHtml(playLabel)}${trailing} <span class="card-version-note">문서 ${escapeHtml(docsLabel)}</span></div>`;
   }
 
   if (docsLabel) {
-    const trailing = app.latest_update_date ? ` · ${escapeHtml(app.latest_update_date)}` : '';
-    return `<div class="card-version">${escapeHtml(docsLabel)}${trailing}</div>`;
+    return `<div class="card-version">${escapeHtml(docsLabel)}${trailing || (app.latest_update_date ? ` · ${escapeHtml(app.latest_update_date)}` : '')}</div>`;
   }
   return `<div class="card-version empty">버전 정보 없음</div>`;
 }
@@ -47,7 +51,7 @@ function renderCard(app, builtAt) {
   const categoryLabel = categoryFromId(app.id) === 'watchface' ? 'Watch Face' : 'App';
   const variantTag = app.variant ? `<span class="card-variant">${escapeHtml(app.variant)}</span>` : '';
   return `
-<a class="card" href="${escapeHtml(detailPath(app))}" data-category="${escapeHtml(categoryFromId(app.id))}">
+<a class="card" href="${escapeHtml(detailPath(app))}" data-category="${escapeHtml(categoryFromId(app.id))}" ${sortAttrs(app)}>
   <div class="card-head">
     ${icon}
     <div class="card-head-text">

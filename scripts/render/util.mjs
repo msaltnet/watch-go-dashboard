@@ -41,7 +41,7 @@ export function renderPlayBadge(app, tag = 'span') {
     return `<${tag} class="badge badge-failed"${note}>⚠ ${label}</${tag}>`;
   }
   if (st === 'partial') {
-    return `<${tag} class="badge badge-stale" title="버전은 읽었지만 설치 수를 못 읽었습니다">⚠ Play 일부 파싱 실패</${tag}>`;
+    return `<${tag} class="badge badge-stale" title="버전은 읽었지만 설치 수 또는 업데이트 날짜를 못 읽었습니다">⚠ Play 일부 파싱 실패</${tag}>`;
   }
   if (st === 'not_found') {
     return `<${tag} class="badge badge-no-docs">Play 미등록</${tag}>`;
@@ -60,4 +60,28 @@ export function renderPlayStats(app) {
     parts.push(`<span class="stat"><span class="stat-key">설치</span> ${escapeHtml(app.play_installs)}</span>`);
   }
   return parts.length ? `<div class="card-stats">${parts.join('')}</div>` : '';
+}
+
+// "10K+" -> 10000, "1.5M+" -> 1500000, "500+" -> 500; null when unknown.
+export function parseInstalls(label) {
+  const m = /^([\d,.]+)\s*([KMB]?)\+?$/i.exec(String(label ?? '').trim());
+  if (!m) return null;
+  const mult = { '': 1, K: 1e3, M: 1e6, B: 1e9 }[m[2].toUpperCase()];
+  const n = parseFloat(m[1].replace(/,/g, ''));
+  return Number.isFinite(n) ? Math.round(n * mult) : null;
+}
+
+// data-* attributes the client-side sort reads. Missing values are omitted.
+export function sortAttrs(app) {
+  const pairs = {
+    'data-sort-id': app.id,
+    'data-sort-installs': parseInstalls(app.play_installs),
+    'data-sort-rating': app.play_rating,
+    'data-sort-reviews': app.play_rating_count,
+    'data-sort-updated': app.play_updated ?? app.latest_update_date,
+  };
+  return Object.entries(pairs)
+    .filter(([, v]) => v != null && v !== '')
+    .map(([k, v]) => `${k}="${escapeHtml(v)}"`)
+    .join(' ');
 }

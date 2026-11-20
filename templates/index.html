@@ -83,6 +83,16 @@
   <button class="filter" data-filter="app">
     <span class="filter-key">P</span><span class="filter-label">App</span>
   </button>
+  <label class="sort">
+    <span class="sort-label">정렬</span>
+    <select class="sort-select" data-sort aria-label="정렬 기준">
+      <option value="id">번호순</option>
+      <option value="installs">설치 수 많은 순</option>
+      <option value="rating">평점 높은 순</option>
+      <option value="reviews">평점 수 많은 순</option>
+      <option value="updated">최근 업데이트 순</option>
+    </select>
+  </label>
 </nav>
 
 <main class="grid">
@@ -108,6 +118,30 @@
       });
     });
   });
+  (function () {
+    const grid = document.querySelector('main.grid');
+    const select = document.querySelector('[data-sort]');
+    if (!grid || !select) return;
+    const num = (el, key) => {
+      const v = el.dataset['sort' + key[0].toUpperCase() + key.slice(1)];
+      return v == null || v === '' ? null : v;
+    };
+    select.addEventListener('change', () => {
+      const key = select.value;
+      const cards = [...grid.querySelectorAll('.card')];
+      cards.sort((a, b) => {
+        const byId = Number(num(a, 'id')) - Number(num(b, 'id'));
+        if (key === 'id') return byId;
+        const x = num(a, key), y = num(b, key);
+        if (x == null && y == null) return byId;
+        if (x == null) return 1;   // missing values go last
+        if (y == null) return -1;
+        const d = key === 'updated' ? (x < y ? 1 : x > y ? -1 : 0) : Number(y) - Number(x);
+        return d || byId;
+      });
+      cards.forEach(c => grid.appendChild(c));
+    });
+  })();
 </script>
 </body>
 </html>
