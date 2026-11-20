@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-07T07:58:07.602+09:00",
+  "built_at": "2026-11-20T10:52:46.393+09:00",
   "stats": {
     "total": 19,
     "succeeded": 18,
@@ -17,6 +17,12 @@
       "branch": "main",
       "overview_html": "<h1>My Photo Watch Face: Album — Overview</h1>\n<p>My Photo Watch Face: Album(이하 My Photo)은 휴대폰에서 고른 사진을 Wear OS로 보내고, 타일과 사진 컴플리케이션으로 제공하는 컴패니언 제품입니다. 호환 WFF(Watch Face Format)는 별도 패키지로 설치하며, My Photo가 제공한 사진을 해당 WFF의 사진 슬롯에 지정해 사용합니다.</p>\n<h2>핵심 사용자 흐름</h2>\n<pre><code class=\"language-text\">휴대폰에서 사진 선택\n→ Wear 컴패니언으로 동기화\n→ My Photo 사진 컴플리케이션 제공\n→ 카탈로그에서 설치한 호환 WFF의 사진 슬롯에 My Photo 지정\n</code></pre>\n<h2>구성 요소와 책임</h2>\n<table>\n<thead>\n<tr>\n<th>구성 요소</th>\n<th>책임</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>모바일 앱</td>\n<td>사진 선택·외부 공유 수신·앨범 관리·새 사진 얼굴 중심 크롭·호환 WFF 카탈로그</td>\n</tr>\n<tr>\n<td>Wear 컴패니언</td>\n<td>Data Layer 사진 동기화, 사진 타일, <code>My Photo</code> 사진 컴플리케이션(<code>PHOTO_IMAGE</code>/<code>LARGE_IMAGE</code>), D-Day 긴 텍스트 컴플리케이션(<code>LONG_TEXT</code>)</td>\n</tr>\n<tr>\n<td>외부 WFF 패키지</td>\n<td>시계 레이아웃, AoD, 폰트, 색상, 컴플리케이션 슬롯의 크기와 위치</td>\n</tr>\n</tbody></table>\n<p>My Photo 설정의 D-Day는 Wear 타일과 호환 WFF의 긴 텍스트 슬롯에 적용됩니다. 날짜, 셔플, 위치는 Wear 타일 표시에 적용됩니다. 컴플리케이션 간격은 호환 WFF 사진 슬롯의 자동 사진 순환에 적용되고, 얼굴 중심 크롭은 설정을 바꾼 뒤 새로 가져오는 사진부터 적용됩니다.</p>\n<h2>WFF 카탈로그</h2>\n<ul>\n<li>서버 목록을 사용하되, 이 앱의 패키지(<code>com.watch_go.myphotowatchface</code>)는 설치 후보에서 제외합니다.</li>\n<li>네트워크 갱신에 실패하면 유효한 캐시를 사용하고, 캐시도 없으면 앱에 포함된 영어/한국어 목록을 사용합니다.</li>\n<li>카탈로그의 첫 추천은 <strong>My Photo Watch Face: Thin</strong>입니다.</li>\n<li>설치 버튼은 연결된 워치의 Google Play를 먼저 엽니다. 워치로 전달할 수 없으면 휴대폰 Google Play로 연결합니다.</li>\n<li>설치 후 워치에서 해당 WFF를 길게 눌러 <strong>Customize → 사진 슬롯 → My Photo</strong>를 선택합니다.</li>\n</ul>\n<h2>기술 스택과 호환 계약</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin</li>\n<li><strong>모듈:</strong> <code>:app</code>, <code>:watchface</code>, <code>:onboarding</code>, <code>:watch-go-info-fragment</code></li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>사진 처리:</strong> ML Kit 얼굴 감지 기반 크롭</li>\n<li><strong>빌드:</strong> Gradle, Firebase, Google AdMob, Google Play Billing</li>\n<li><strong>안정 계약:</strong> 앱/Wear 패키지 ID, Data Layer 경로, <code>watch_go_wear</code> capability, <code>My Photo</code> 컴플리케이션 제공자</li>\n</ul>\n<h2>같은 브랜드의 호환 WFF 예시</h2>\n<table>\n<thead>\n<tr>\n<th>앱</th>\n<th>관리번호</th>\n<th>특징</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>My Photo Watch Face: Thin</strong></td>\n<td>107</td>\n<td>첫 추천, 얇은 시계 타이포그래피와 유연한 레이아웃</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Clean</td>\n<td>102</td>\n<td>가독성 높은 미니멀 레이아웃</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Cute</td>\n<td>108</td>\n<td>둥근 폰트와 부드러운 파스텔 스타일</td>\n</tr>\n<tr>\n<td>My Photo Circle Watch Face</td>\n<td>104</td>\n<td>큰 원형 사진 영역</td>\n</tr>\n<tr>\n<td>My Photo Quote: Daily Inspire</td>\n<td>105</td>\n<td>사진과 Long Text 명언 조합</td>\n</tr>\n</tbody></table>\n<p>호환 여부는 WFF가 <code>PHOTO_IMAGE</code> 또는 <code>LARGE_IMAGE</code> 사진 슬롯을 제공하는지에 따라 결정됩니다.</p>\n",
       "updates": [
+        {
+          "version": "v8.2.0",
+          "date": "2026-11-08",
+          "label": null,
+          "items_html": "<ul>\n<li>워치페이스에 D-Day 카운트다운을 표시하는 텍스트 컴플리케이션을 추가했습니다.</li>\n<li>설정 항목을 그룹으로 정리하고 미리보기와 접근성을 개선했습니다.</li>\n<li>일부 Wear OS 환경에서 워치 앱의 초기 안내나 화면을 열 때 종료될 수 있는 문제를 수정했습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v8.1.0",
           "date": "2026-10-08",
@@ -78,12 +84,18 @@
           "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v8.1.0",
-      "latest_update_date": "2026-10-08",
+      "latest_version": "v8.2.0",
+      "latest_update_date": "2026-11-08",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
+      "play_version": "8.2.0",
+      "play_installs": "10K+",
+      "play_rating": 3.7,
+      "play_rating_count": 79,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 102,
@@ -125,8 +137,14 @@
       "latest_update_date": "2026-08-31",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/102/icon.png",
+      "play_version": "2.1.1",
+      "play_installs": "1K+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 107,
@@ -155,8 +173,14 @@
       "latest_version": "v2.0.0",
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
+      "play_version": "2.0.1",
+      "play_installs": "1K+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 108,
@@ -185,8 +209,14 @@
       "latest_version": "v2.0.0",
       "latest_update_date": "2026-05-09",
       "latest_update_label": null,
+      "play_version": "2.0.1",
+      "play_installs": "1K+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 103,
@@ -216,8 +246,14 @@
       "latest_update_date": "2026-08-31",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/103/icon.png",
+      "play_version": "1.0.1",
+      "play_installs": "100+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 104,
@@ -253,8 +289,14 @@
       "latest_update_date": "2026-08-31",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/104/icon.png",
+      "play_version": "2.0.1",
+      "play_installs": "500+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 105,
@@ -290,8 +332,14 @@
       "latest_update_date": "2026-08-31",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/105/icon.png",
+      "play_version": "2.0.1",
+      "play_installs": "100+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 106,
@@ -321,8 +369,14 @@
       "latest_update_date": "2026-08-31",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/106/icon.png",
+      "play_version": "1.0.1",
+      "play_installs": "100+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 111,
@@ -346,8 +400,14 @@
       "latest_update_date": "2026-08-31",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/111/icon.png",
+      "play_version": "1.0.1",
+      "play_installs": "50+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 200,
@@ -357,8 +417,14 @@
       "landing": "https://watch-go.com/200",
       "repo": "msaltnet/double-check-pro",
       "branch": "master",
-      "overview_html": "<h1>Double Check — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 재사용 가능한 체크리스트 앱입니다. 완료 후 항목이 사라지는 일반 투두와 달리, \"리셋\" 한 번으로 같은 리스트를 반복해서 쓸 수 있도록 설계했습니다. 장보기, 여행 짐, 일상 루틴처럼 주기적으로 반복되는 체크 작업에 최적화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>진행 상태 Tile (미출시 #25)</strong> — Tile마다 워치 리스트를 선택하고 완료 수/전체 수·남은 수를 확인. 워치의 유효 체크·자동 리셋 상태 사용, 오프라인 지원, 상세 바로가기와 대상 변경. 기존 최근 목록 Tile 유지.</p>\n</li>\n<li><p><strong>반복 자동 리셋 (미출시 #16)</strong> — 매일·평일·선택 요일, 30분 단위 시각 설정. 폰·Wear 각각 다음 일정 하나를 비정확 예약하며 폰·위젯·Wear·Tile 접근 시 누락 일정을 보정. 공유 모드의 동일 일정은 공통 회차로 수렴.</p>\n</li>\n<li><p><strong>체크 알림 (미출시 #27)</strong> — 휴대폰 목록당 반복 일정 하나, 10분 단위 시각·직접 요일·미완료 조건. 비정확 예약, 차단 안내, 상세 진입과 개인 백업 설정 보존. Wear는 시스템 미러링만 사용.</p>\n</li>\n<li><p><strong>재사용 체크리스트</strong> — \"리셋\" 버튼으로 모든 항목을 한 번에 미체크 상태로 되돌려 리스트 전체를 반복 사용</p>\n</li>\n<li><p><strong>선택적 체크 공유 (미출시 #14)</strong> — 기본 꺼짐, 앱 전체 설정, 오프라인 인과 병합·리셋 회차·기기별 저장 확인. 공통 Kotlin 모델과 DataClient Asset, Room 및 Wear 원자적 저장.</p>\n</li>\n<li><p><strong>Wear OS 동기화</strong> — 워치에서 항목 체크. 모바일 → 워치 내용 공유, 저장 완료 응답에 기반한 기기별 상태와 재시도(구버전은 타임스탬프 기반 차분 전송 유지)</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 앱을 열지 않고 위젯에서 바로 항목 체크</p>\n</li>\n<li><p><strong>URL 공유</strong> — 리스트를 <code>https://watch-go.com/double-check?k=…</code> 링크로 만들어 지인에게 전달, 링크 열면 바로 가져오기</p>\n</li>\n<li><p><strong>Explore 게시판</strong> — 다른 사용자가 공유한 리스트(장보기/여행/운동 등)를 카테고리별로 탐색하고 다운로드</p>\n</li>\n<li><p><strong>Google 로그인 업로드</strong> — 내 리스트를 공개 게시판에 공유 (조회·다운로드는 로그인 불필요)</p>\n</li>\n<li><p><strong>휴지통</strong> — 삭제한 리스트 복원</p>\n</li>\n<li><p><strong>오프라인 우선</strong> — 로컬 Room DB에 저장, 계정·동기화 서버 의존 없음</p>\n</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment + Navigation Component (SafeArgs), ViewBinding + DataBinding, ViewModel, Room 2.7, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS (Compose BOM 2024.11), Wear Compose Material/Foundation</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MobileSyncService</code>, <code>WearSyncService</code>, <code>DataLayerListenerService</code>)</li>\n<li><strong>백엔드(공유 기능):</strong> AWS API Gateway + Lambda (serverless), DynamoDB, Google OAuth (Credential Manager)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 34 (워치) / compileSdk 35, Kotlin 2.0.21, AGP 8.6.0, Java 17(앱)/11(워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 <code>:app</code> 모듈의 Navigation Component로 <code>bunchlist</code> / <code>bunchdetail</code> / <code>editbunch</code> / <code>explore</code> / <code>trash</code> 화면을 묶음</li>\n<li>공유 라이브러리: <code>:watch-go-info-fragment</code> (브랜드 공용 인포 화면), <code>:onboarding</code> (<code>net.msalt.onboarding</code> 패키지)</li>\n<li>로컬 저장소: <code>DoubleCheckDatabase</code> (Room v11) — 엔티티 <code>Bunch</code>, <code>CheckItem</code>, <code>SharingEntity</code>, <code>ReminderHistory</code>, Repository 패턴. 알림 처리 이력은 목록·설정 버전·현지 날짜별로 저장해 시계 역행 후 미처리 일정과 이미 처리한 일정을 구분합니다.</li>\n<li>워치는 <code>bunchlist</code> / <code>detail</code> 2화면만 제공하며, 항목의 checked/pin 상태는 워치 내부에 독자 저장 (모바일과 병합하지 않음). 기존 항목의 체크·핀은 보존하고 새 항목만 최초 수신 시 모바일 체크로 초기화한다</li>\n<li>공유 API는 별도 API Gateway(<code>serverless-for-dc-board</code>)를 통해 DynamoDB <code>DoubleCheckBoardTable</code>에 업로드, UGC 정책 준수를 위해 Soft Delete + 신고 누적 시 자동 블라인드</li>\n</ul>\n",
+      "overview_html": "<h1>Double Check — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 재사용 가능한 체크리스트 앱입니다. 완료 후 항목이 사라지는 일반 투두와 달리, \"리셋\" 한 번으로 같은 리스트를 반복해서 쓸 수 있도록 설계했습니다. 장보기, 여행 짐, 일상 루틴처럼 주기적으로 반복되는 체크 작업에 최적화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>진행 상태 Tile (미출시 #25)</strong> — Tile마다 워치 리스트를 선택하고 완료 수/전체 수·남은 수를 확인. 워치의 유효 체크·자동 리셋 상태 사용, 오프라인 지원, 상세 바로가기와 대상 변경. 기존 최근 목록 Tile 유지.</p>\n</li>\n<li><p><strong>반복 자동 리셋 (미출시 #16)</strong> — 매일·평일·선택 요일, 30분 단위 시각 설정. 폰·Wear 각각 다음 일정 하나를 비정확 예약하며 폰·위젯·Wear·Tile 접근 시 누락 일정을 보정. 공유 모드의 동일 일정은 공통 회차로 수렴.</p>\n</li>\n<li><p><strong>체크 알림 (미출시 #27)</strong> — 휴대폰 목록당 반복 일정 하나, 10분 단위 시각·직접 요일·미완료 조건. 비정확 예약, 차단 안내, 상세 진입과 개인 백업 설정 보존. Wear는 시스템 미러링만 사용.</p>\n</li>\n<li><p><strong>실행 기록 (미출시 #26)</strong> — 수동·자동 리셋 직전 회차의 종료 일시와 완료 수/전체 수를 리스트당 최근 100개까지 보관하고 상세에서 최신순으로 조회. 체크·해제가 한 번이라도 있었던 회차만 기록하며(체크 후 모두 해제한 0/N 포함) 공유 중 오프라인 폰·워치가 남긴 같은 회차는 하나로 수렴. JSON 백업(schemaVersion 2)과 휴지통·영구 삭제 수명주기에 포함, 공개 링크·게시판에는 포함하지 않음.</p>\n</li>\n<li><p><strong>재사용 체크리스트</strong> — \"리셋\" 버튼으로 모든 항목을 한 번에 미체크 상태로 되돌려 리스트 전체를 반복 사용</p>\n</li>\n<li><p><strong>선택적 체크 공유 (미출시 #14)</strong> — 기본 꺼짐, 앱 전체 설정, 오프라인 인과 병합·리셋 회차·기기별 저장 확인. 공통 Kotlin 모델과 DataClient Asset, Room 및 Wear 원자적 저장.</p>\n</li>\n<li><p><strong>Wear OS 동기화</strong> — 워치에서 항목 체크. 모바일 → 워치 내용 공유, 저장 완료 응답에 기반한 기기별 상태와 재시도(구버전은 타임스탬프 기반 차분 전송 유지)</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 앱을 열지 않고 위젯에서 바로 항목 체크</p>\n</li>\n<li><p><strong>URL 공유</strong> — 리스트를 <code>https://watch-go.com/double-check?k=…</code> 링크로 만들어 지인에게 전달, 링크 열면 바로 가져오기</p>\n</li>\n<li><p><strong>Explore 게시판</strong> — 다른 사용자가 공유한 리스트(장보기/여행/운동 등)를 카테고리별로 탐색하고 다운로드</p>\n</li>\n<li><p><strong>Google 로그인 업로드</strong> — 내 리스트를 공개 게시판에 공유 (조회·다운로드는 로그인 불필요)</p>\n</li>\n<li><p><strong>휴지통</strong> — 삭제한 리스트 복원</p>\n</li>\n<li><p><strong>오프라인 우선</strong> — 로컬 Room DB에 저장, 계정·동기화 서버 의존 없음</p>\n</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment + Navigation Component (SafeArgs), ViewBinding + DataBinding, ViewModel, Room 2.7, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS (Compose BOM 2024.11), Wear Compose Material/Foundation</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MobileSyncService</code>, <code>WearSyncService</code>, <code>DataLayerListenerService</code>)</li>\n<li><strong>백엔드(공유 기능):</strong> AWS API Gateway + Lambda (serverless), DynamoDB, Google OAuth (Credential Manager)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 34 (워치) / compileSdk 35, Kotlin 2.0.21, AGP 8.6.0, Java 17(앱)/11(워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 <code>:app</code> 모듈의 Navigation Component로 <code>bunchlist</code> / <code>bunchdetail</code> / <code>editbunch</code> / <code>explore</code> / <code>trash</code> 화면을 묶음</li>\n<li>공유 라이브러리: <code>:watch-go-info-fragment</code> (브랜드 공용 인포 화면), <code>:onboarding</code> (<code>net.msalt.onboarding</code> 패키지)</li>\n<li>로컬 저장소: <code>DoubleCheckDatabase</code> (Room v12) — 엔티티 <code>Bunch</code>, <code>CheckItem</code>, <code>SharingEntity</code>, <code>ReminderHistory</code>, <code>RunHistoryEntity</code>, <code>RunMetaEntity</code>, Repository 패턴. 실행 기록은 알림 처리 이력(<code>ReminderHistory</code>)과 별개 테이블이며 리스트 삭제 시 함께 삭제됩니다. 알림 처리 이력은 목록·설정 버전·현지 날짜별로 저장해 시계 역행 후 미처리 일정과 이미 처리한 일정을 구분합니다.</li>\n<li>워치는 <code>bunchlist</code> / <code>detail</code> 2화면만 제공하며, 항목의 pin 상태는 워치 내부에 독자 저장한다. 체크 공유가 꺼져 있으면(기본값) 체크도 기기별로 독립 저장하며 기존 항목의 체크·핀은 보존하고 새 항목만 최초 수신 시 모바일 체크로 초기화한다. 체크 공유를 켜면 체크만 오프라인 인과 병합으로 폰·워치가 함께 관리한다. 실행 기록은 공유 중일 때 공유 회차 단위로, 꺼져 있으면 기기별로 보관한다</li>\n<li>공유 API는 별도 API Gateway(<code>serverless-for-dc-board</code>)를 통해 DynamoDB <code>DoubleCheckBoardTable</code>에 업로드, UGC 정책 준수를 위해 Soft Delete + 신고 누적 시 자동 블라인드</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v10.0.0",
+          "date": "2026-11-15",
+          "label": null,
+          "items_html": "<ul>\n<li><strong>체크 동작 개선</strong> — 같은 항목을 빠르게 여러 번 눌러도 체크가 깜빡이며 반복되지 않습니다. 체크할 때 색과 취소선이 부드럽게 바뀌고, 완료한 항목이 아래로 자연스럽게 이동합니다. 화면 전환과 워치의 체크·화면 전환도 더 간결하고 자연스러워졌습니다. 시스템의 &quot;애니메이션 제거&quot; 설정을 따릅니다.</li>\n<li><strong>리셋 기록 이름 변경</strong> — 리스트 상세의 &quot;최근 실행 기록&quot;을 &quot;리셋 기록&quot;으로 바꿨습니다. 리셋할 때마다 남는 기록임을 제목만 보고 알 수 있습니다.</li>\n<li><strong>실행 기록</strong> — 리셋할 때마다 직전 회차의 종료 일시와 완료 수가 남고, 리스트 상세에서 최근 기록을 확인할 수 있습니다. 리스트마다 최근 100개를 보관하며 데이터 백업에도 함께 저장됩니다. 폰과 워치가 오프라인에서 같은 회차를 다르게 마무리하면 마지막 체크 변경 시각이 늦은 결과 하나를 남깁니다. 기록은 리스트 화면과 어울리는 카드 형태로, 체크 항목과 같은 크기의 글자로 표시됩니다.</li>\n</ul>\n"
+        },
         {
           "version": "v9.0.1",
           "date": "2026-10-16",
@@ -420,12 +486,18 @@
           "items_html": "<ul>\n<li>첫 릴리스</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v9.0.1",
-      "latest_update_date": "2026-10-16",
+      "latest_version": "v10.0.0",
+      "latest_update_date": "2026-11-15",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/200/icon.png",
+      "play_version": "10.0.0",
+      "play_installs": "500+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 201,
@@ -597,8 +669,14 @@
       "latest_update_date": "2026-11-01",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/201/icon.png",
+      "play_version": "13.1.0",
+      "play_installs": "10K+",
+      "play_rating": 3.8,
+      "play_rating_count": 112,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 202,
@@ -610,6 +688,12 @@
       "branch": "master",
       "overview_html": "<h1>My Photo Watch Frame — Overview</h1>\n<p>Wear OS 워치를 개인 사진 액자로 바꾸는 앱입니다. 모바일 갤러리에서 선택한 사진을 워치로 전송해 전용 워치페이스의 배경으로 띄우거나, 다른 워치페이스의 사진 컴플리케이션으로 사용할 수 있습니다. 홈 화면 위젯으로 같은 사진을 폰에도 표시할 수 있어 폰과 워치의 룩을 한 번에 맞출 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>사진 워치페이스</strong> — Watch Face Format (WFF) 기반의 전용 풀스크린 사진 워치페이스</li>\n<li><strong>포토 컴플리케이션</strong> — 다른 호환 워치페이스 위에 미니 사진 앨범 표시</li>\n<li><strong>D-Day 컴플리케이션 (Next Version)</strong> — 기존 D-Day 제목과 남은/지난 일수를 호환 워치페이스의 긴 텍스트 슬롯에 표시. 워치 현지 날짜 기준으로 자정에 전환하며 저장된 이벤트는 오프라인에서도 계산.</li>\n<li><strong>무제한 사진 전송</strong> — 갤러리 다중 선택 또는 다른 앱에서 공유해 워치로 전송, 개수 제한 없음</li>\n<li><strong>ML Kit 얼굴 중심 크롭</strong> — 얼굴을 인식해 인물이 중앙에 오도록 자동 크롭</li>\n<li><strong>2x2 / 4x4 홈 화면 위젯</strong> — 폰 홈에도 같은 사진 액자</li>\n<li><strong>Wear OS 타일</strong> — 타일에서 사진을 빠르게 넘겨보기</li>\n<li><strong>스타일 커스터마이징</strong> — 폰트, 색상, 시간 위치, 가독성용 그라디언트 오버레이</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin 2.1.0, Java 17 (app/wear), Java 11 (라이브러리)</li>\n<li><strong>모바일 앱:</strong> XML Layouts, MVVM (ViewModel + LiveData + Coroutines), Navigation</li>\n<li><strong>워치 앱:</strong> Jetpack Compose (Wear), Canvas 렌더링 (<code>MyCanvasView</code>), Wear Tiles 1.5.0-beta01</li>\n<li><strong>사진 최적화:</strong> ML Kit Face Detection, BitmapFactory (최대 3840px 디코딩)</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>/image</code>, <code>/start-sync</code>, <code>/update-settings</code>, <code>/sync-response</code> / <code>/sync-reply</code>, <code>/watch-version</code>)</li>\n<li><strong>위젯:</strong> AppWidgetProvider + AlarmManager 기반 갱신 스케줄러</li>\n<li><strong>빌드:</strong> AGP 8.6.0, Gradle 8.7 (루트 Groovy, 서브모듈 Kotlin DSL 혼용)</li>\n<li><strong>CI/CD:</strong> GitHub Actions (<code>android-release.yml</code>) — <code>v*</code>, <code>mobile-v*</code>, <code>wear-v*</code> 태그로 AAB 자동 서명·업로드</li>\n</ul>\n<h2>이미지 처리 파이프라인</h2>\n<ol>\n<li>갤러리 선택 또는 외부 앱 공유</li>\n<li>BitmapFactory로 최대 3840px까지 디코딩</li>\n<li>ML Kit Face Detection 기반 얼굴 중심 크롭</li>\n<li>워치용 <strong>450×450</strong>, 위젯용 <strong>900px</strong> 리사이즈</li>\n<li>JPEG <strong>90%</strong> 품질 압축</li>\n<li>Wearable Data Layer로 워치 전송</li>\n</ol>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code> + <code>MainViewModel</code>, <code>WearClient</code>로 워치와 통신</li>\n<li>워치 (<code>:wear</code>) — <code>MyPhotoFrameActivity</code>, <code>MyCanvasView</code> (Canvas 렌더), <code>DataLayerListenerService</code>, <code>MyPhotoComplicationService</code>, <code>DdayComplicationService</code> (LONG_TEXT), <code>MyPhotoTileService</code></li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code> (ViewPager2)</li>\n<li>빌드 스크립트 혼용: 루트는 <code>.gradle</code>(Groovy), 하위 모듈은 <code>.gradle.kts</code>(Kotlin DSL)</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v9.2.0",
+          "date": "2026-11-08",
+          "label": null,
+          "items_html": "<ul>\n<li>설정 화면 개선 — 관련 옵션을 여섯 그룹으로 정리했습니다. 사진 설정 바로 다음에 텍스트 스타일이 표시되며, 상단 미리보기에서 변경 결과를 확인할 수 있습니다.</li>\n<li>D-Day 컴플리케이션 추가 — 지원하는 워치페이스에서 이벤트 제목과 D-Day를 확인할 수 있습니다. 폰과 연결이 끊겨도 워치의 현지 날짜를 기준으로 갱신됩니다.</li>\n<li>워치 앱 및 워치페이스 설치 개선 — 일부 Wear OS에서 앱을 열 때 종료되던 문제를 수정했습니다. 워치페이스 목록에서 Thin을 먼저 표시하며, 워치에서 설치 화면을 열 수 없으면 폰의 Google Play로 안내합니다.</li>\n</ul>\n"
+        },
         {
           "version": "v9.0.0",
           "date": "2026-09-26",
@@ -665,12 +749,18 @@
           "items_html": "<ul>\n<li>2x2 / 4x4 모바일 홈 위젯</li>\n<li>Wear OS 타일 제공자</li>\n<li>포토 컴플리케이션</li>\n<li>ML Kit 얼굴 중심 자동 크롭</li>\n<li>Watch Face Format (WFF) 기반 워치페이스</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v9.0.0",
-      "latest_update_date": "2026-09-26",
+      "latest_version": "v9.2.0",
+      "latest_update_date": "2026-11-08",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
+      "play_version": "9.2.0",
+      "play_installs": "10K+",
+      "play_rating": 4.2,
+      "play_rating_count": 82,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 203,
@@ -682,6 +772,12 @@
       "branch": "master",
       "overview_html": "<h1>Crypto Watch — Overview</h1>\n<p>Android 모바일과 Wear OS 워치에서 암호화폐 실시간 시세를 확인할 수 있는 앱입니다. 홈 화면 위젯, 워치페이스 컴플리케이션, Wear OS 타일을 통해 <strong>앱을 열지 않고도</strong> BTC/ETH/알트코인 가격과 24시간 등락률, 공포탐욕지수를 확인할 수 있습니다. 모바일에서 선택한 거래소·코인 조합을 보존하고 워치로 동기화하며 적용 상태를 확인할 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>가격 타일 위젯</strong> — 코인 3개씩 최대 10개 목록을 넘겨보며 실시간 가격과 24시간 등락률 확인</li>\n<li><strong>차트 위젯</strong> — MA5 / MA10 / MA20 이동평균선이 그려진 실시간 차트</li>\n<li><strong>공포탐욕지수</strong> — 시장 심리를 컬러 링으로 시각화</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 시계 화면에서 바로 시세 확인</li>\n<li><strong>Wear OS 타일</strong> — 스와이프로 여러 코인 확인 + 인터랙티브 캔들스틱/라인 차트</li>\n<li><strong>다중 거래소 지원</strong> — Binance, Upbit, Bybit, OKX, Bitget</li>\n<li><strong>자동 갱신</strong> — 백그라운드에서 주기적으로 가격 갱신</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, ViewBinding, Navigation Component, MVVM (<code>MainViewModel</code>)</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS</li>\n<li><strong>공유 모듈:</strong> <code>:watch-go-info-fragment</code>, <code>:onboarding</code></li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API — 최신 설정 <code>/settings-v1</code>, 기기별 적용 확인 <code>/settings-ack-v1/{phoneId}</code>, 구버전 설정 <code>/update-settings</code>, 버전 정보 <code>/watch-version</code></li>\n<li><strong>거래소 API (<code>ExchangeDataFetcher</code>):</strong> Binance, Upbit, Bybit, OKX, Bitget (가격 + K-line 캔들)</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n<li><strong>설정 저장:</strong> SharedPreferences (최대 <code>configExchange1</code>~`configExchange30<code>, legacy </code>configExchange` 호환), 최신 설정 스냅샷·기기별 확인과 마지막 정상 시세 캐시</li>\n</ul>\n<h2>설정 직렬화 포맷</h2>\n<p>폰 → 워치로 전송되는 설정 문자열 포맷:</p>\n<pre><code>%EXCHANGE:SYMBOL%,%...%,#INTERVAL#,!FG:0or1!\n</code></pre>\n<p>예: <code>%EX_BINANCE:BTCUSDT%,%%,%%,%%,%%,%%,#1h#,!FG:1!</code></p>\n<ul>\n<li>빈 슬롯은 <code>%%</code>로 표시</li>\n<li><code>#INTERVAL#</code> — 차트 인터벌 (예: <code>1h</code>)</li>\n<li><code>!FG:0or1!</code> — 공포탐욕지수 표시 여부</li>\n</ul>\n<h2>거래소 지원 매트릭스</h2>\n<table>\n<thead>\n<tr>\n<th>거래소</th>\n<th>심볼 예시</th>\n<th>등락률 API</th>\n<th>비고</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Binance</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td></td>\n</tr>\n<tr>\n<td>Upbit</td>\n<td><code>KRW-BTC</code></td>\n<td>지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bybit</td>\n<td><code>BTCUSDT</code></td>\n<td>지원</td>\n<td><code>price24hPcnt</code>가 소수 → ×100 필요</td>\n</tr>\n<tr>\n<td>OKX</td>\n<td><code>BTC-USDT</code></td>\n<td>미지원</td>\n<td>klines 결과 역순 → <code>.reversed()</code></td>\n</tr>\n<tr>\n<td>Bitget</td>\n<td><code>BTCUSDT</code></td>\n<td>미지원</td>\n<td>API 불안정</td>\n</tr>\n</tbody></table>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainViewModel</code>이 설정을 직렬화하고 Application의 동기화 coordinator가 최신 스냅샷과 기기별 적용 상태를 보존합니다. 새 워치는 지속되는 DataItem으로, 구 워치는 기존 메시지로 전달합니다.</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 설정 식별자·순서를 검증하고 저장 성공 후 적용 확인을 보냅니다. <code>ExchangeDataFetcher</code>는 시세를 조회하고 마지막 정상 데이터를 보존합니다.</li>\n<li>폰 프리뷰·위젯과 워치 차트·Tile·Complication은 각 모듈의 거래소 조회와 영구 캐시를 사용합니다. 가격은 거래소·심볼, 차트는 거래소·심볼·인터벌로 구분하며 실패가 정상 데이터를 덮어쓰지 않습니다.</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v10.5.0",
+          "date": "2026-11-12",
+          "label": null,
+          "items_html": "<ul>\n<li><p>차트에 내 진입가를 표시하고, 진입가 대비 수익률을 함께 볼 수 있습니다.</p>\n</li>\n<li><p>캔들 간격을 고르지 않은 상태에서 폰 차트 위젯에 차트가 표시되지 않던 문제를 수정했습니다.</p>\n</li>\n<li><p>Wear OS 시세·차트 컴플리케이션 이름과 온보딩 웹사이트 안내에서 번역이 누락되던 문구를 보완했습니다.</p>\n</li>\n</ul>\n"
+        },
         {
           "version": "v10.1.0",
           "date": "2026-11-01",
@@ -731,12 +827,18 @@
           "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v10.1.0",
-      "latest_update_date": "2026-11-01",
+      "latest_version": "v10.5.0",
+      "latest_update_date": "2026-11-12",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/203/icon.jpg",
+      "play_version": "10.5.0",
+      "play_installs": "5K+",
+      "play_rating": 2.9,
+      "play_rating_count": 58,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 204,
@@ -950,8 +1052,14 @@
       "latest_update_date": "2026-11-01",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/204/icon.jpg",
+      "play_version": "16.0.0",
+      "play_installs": "10K+",
+      "play_rating": 4.2,
+      "play_rating_count": 97,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 205,
@@ -960,7 +1068,7 @@
       "package": "com.watch_go.pomodoro",
       "landing": "https://watch-go.com/205",
       "repo": "msaltnet/watch-pomodoro-timer",
-      "overview_html": "<h1>Watch Pomodoro Timer — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 포모도로 타이머입니다. 모바일과 워치 어느 쪽에서도 독립적으로 타이머를 실행할 수 있고, 기록은 두 기기에서 공유됩니다.</p>\n<p>현재 제품 지원·배포 범위는 Android phone과 Wear OS입니다. 저장소의 <code>ios/</code> 디렉터리는 현재 사용·빌드·배포하지 않는 iOS/watchOS 보관용 프로젝트이며 제품 범위에 포함되지 않습니다.</p>\n<h2>워치 타이머 만료 구조</h2>\n<ul>\n<li>Wear OS는 실행 중 <code>elapsedRealtime</code> deadline을 ticker와 exact <code>AlarmManager</code>가 함께 감시합니다. 세션 generation을 저장해 먼저 도착한 유효 경로만 완료하며, 재부팅 뒤에는 별도 wall-clock deadline으로 미래 알람만 복원합니다.</li>\n<li>Wear foreground service는 정확 알람 기반 타이머·햅틱 용도의 <code>systemExempted</code> 타입을 사용합니다. Play Console 정책 선언은 배포 전에 별도로 확인해야 합니다.</li>\n</ul>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>루틴</strong> — 기존 사용자 설정을 보존한 편집 가능한 기본 루틴과 이름을 붙인 루틴 최대 5개를 제공합니다. 첫 화면과 설정 상단의 선택기는 하나의 목록에서 선택·추가·이름 변경·삭제를 제공합니다. 추가는 현재 선택값을 복사하고 이름만 입력한 뒤 저장을 누르면 새 루틴을 선택합니다. 이름 변경도 저장 버튼으로 확정하며 취소하면 변경을 버립니다. 편집 아이콘으로는 이름만 바꾸고 시간·세션 수는 설정 화면에서만 변경합니다. 선택 자체로 타이머를 시작하지 않습니다. 설정의 네 값은 선택 루틴에 자동 저장되고 선택은 중지 후에도 유지됩니다. 선택 이름과 네 값을 함께 Wear OS에 전달해 양쪽의 새 타이머 시작에 사용하며, 실행·일시정지한 타이머는 시작 당시 값을 유지합니다. Wear OS에는 선택 화면이 없습니다.</p>\n</li>\n<li><p><strong>포모도로 타이머</strong> — 작업/휴식/긴 휴식 3단계 루프. 세션 수와 각 단계 길이를 사용자 지정</p>\n</li>\n<li><p><strong>모바일 타이머</strong> — monotonic deadline을 포그라운드 ticker와 elapsed-realtime <code>AlarmManager</code>가 함께 감시하며, generation으로 중복 만료를 방지. Doze·프로세스 재생성·재부팅 복구 지원</p>\n</li>\n<li><p><strong>워치 독립 타이머</strong> — 모바일 없이 워치 단독 사용 가능</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 2x2 / 4x4 크기로 타이머 상태 확인 및 제어 (v7.0.0+)</p>\n</li>\n<li><p><strong>워치페이스 컴플리케이션</strong> — 오늘의 완료 세션 수를 워치페이스에 표시</p>\n</li>\n<li><p><strong>통계 대시보드</strong> — 일간/주간 집중 시간, 시간대별 패턴, 연속 기록, 월별 잔디 차트</p>\n</li>\n<li><p><strong>집중 라벨</strong> — 작업 세션을 업무·공부·프로젝트 등 하나의 라벨로 기록하고 기록 카드에 표시</p>\n</li>\n<li><p><strong>동기 부여 인용구</strong> — 타이머 시작 시 짧은 인용구 (v5.0.0+)</p>\n</li>\n<li><p><strong>온보딩</strong> — 첫 실행 시 가이드</p>\n</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment, ViewBinding + DataBinding, ViewModel, LiveData, DataStore (Preferences), Gson, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Horologist, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wear Data Layer (<code>MessageClient</code>, <code>DataClient</code>)</li>\n<li><strong>백그라운드 실행:</strong> Foreground Service (<code>specialUse</code>), <code>AlarmManager.setExact()</code> + <code>USE_EXACT_ALARM</code></li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 30 (워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 단일 <code>MainActivity</code> 하위에 <code>MainFragment</code> / <code>SettingsFragment</code> / <code>TimerRecordsFragment</code> 구조</li>\n<li>공유 ViewModel(<code>MainViewModel</code>)이 설정과 타이머 기록 LiveData를 관리</li>\n<li>타이머 기록은 모바일·Wear OS의 Room <code>timer_records</code> 테이블에 저장하며 nullable 라벨 스냅샷을 포함</li>\n<li>설정은 <code>SharedPreferences(\"MySettings\")</code>에 저장</li>\n<li>라벨 목록은 모바일에서 JSON으로 관리하고 별도 버전 Data Layer 메시지로 Wear OS에 전달</li>\n<li>모바일·워치 실행은 독립적이며, 새 실행에 시계와 무관한 UUID 기록 ID를 부여합니다. 같은 시각·유형·라벨이라도 ID가 다르면 모두 보존합니다.</li>\n<li>종료 기록의 ID·유형·시각·기간·세션 번호·라벨과 Stop/Next/만료 전환을 먼저 영속화합니다. 저장 실패·프로세스 재생성 뒤에는 같은 불변 기록을 재시도합니다. 일시정지/재개는 같은 ID를, 새 시작/다음 단계/자동 재시작은 새 ID를 사용합니다.</li>\n<li>Room v2 트랜잭션이 신규 저장 또는 같은 ID·같은 내용임을 확인한 기록만 ACK합니다. ID 충돌·잘못된 입력·미초기화·DB 실패는 ACK하지 않습니다. 워치는 전송 대상 노드·전송 내용·현재 DB 내용이 모두 같은 기록만 삭제합니다.</li>\n<li>ACK 전송 장부는 확인된 기록의 삭제와 보존 상한에 맞춰 모든 노드에서 정리하며, 빈 동기화에서도 오래된 사본을 제거합니다.</li>\n<li>기존 ID·라벨·기록과 모바일 2,000건/워치 1,000건 보존 상한은 유지합니다. 삭제·상한 밖 기록을 영구 복구하지 않으며, 과거 유실 기록을 추정하지 않습니다.</li>\n<li>기존 JSON 배열/경로는 유지하지만 구버전 폰의 시간 필터와 ACK는 바꿀 수 없으므로 완전한 보장은 양쪽 업데이트 이후입니다.</li>\n</ul>\n<h2>작업 세션과 방해 금지</h2>\n<p>Android 휴대폰 설정의 <strong>작업 세션 중 방해 금지</strong>는 기본 OFF입니다. 접근 권한을 허용하면 휴대폰 또는 Wear OS의 실행 중 작업 세션이 휴대폰의 앱 전용 자동 규칙을 요청합니다. 양쪽 타이머·기록은 독립적이며 종료 알림은 실행 기기에서만 제공합니다. 워치 시스템 방해 금지는 자동으로 변경하지 않습니다.</p>\n",
+      "overview_html": "<h1>Watch Pomodoro Timer — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 포모도로 타이머입니다. 모바일과 워치 어느 쪽에서도 독립적으로 타이머를 실행할 수 있고, 기록은 두 기기에서 공유됩니다.</p>\n<p>현재 제품 지원·배포 범위는 Android phone과 Wear OS입니다. 저장소의 <code>ios/</code> 디렉터리는 현재 사용·빌드·배포하지 않는 iOS/watchOS 보관용 프로젝트이며 제품 범위에 포함되지 않습니다.</p>\n<h2>워치 타이머 만료 구조</h2>\n<ul>\n<li>Wear OS는 실행 중 <code>elapsedRealtime</code> deadline을 ticker와 exact <code>AlarmManager</code>가 함께 감시합니다. 세션 generation을 저장해 먼저 도착한 유효 경로만 완료하며, 재부팅 뒤에는 별도 wall-clock deadline으로 미래 알람만 복원합니다. 워치가 꺼진 동안 만료 시각이 지난 실행 중 타이머는 완료 기록·알림 없이 같은 단계·같은 세션의 전체 시간 준비 상태로 돌아갑니다(실행 기록 ID·실행 설정 초기화, #65).</li>\n<li>Wear foreground service는 정확 알람 기반 타이머·햅틱 용도의 <code>systemExempted</code> 타입을 사용합니다. Play Console 정책 선언은 배포 전에 별도로 확인해야 합니다.</li>\n</ul>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>루틴</strong> — 기존 사용자 설정을 보존한 편집 가능한 기본 루틴과 이름을 붙인 루틴 최대 5개를 제공합니다. 첫 화면과 설정 상단의 선택기는 하나의 목록에서 선택·추가·이름 변경·삭제를 제공합니다. 추가는 현재 선택값을 복사하고 이름만 입력한 뒤 저장을 누르면 새 루틴을 선택합니다. 이름 변경도 저장 버튼으로 확정하며 취소하면 변경을 버립니다. 편집 아이콘으로는 이름만 바꾸고 시간·세션 수는 설정 화면에서만 변경합니다. 선택 자체로 타이머를 시작하지 않습니다. 설정의 네 값은 선택 루틴에 자동 저장되고 선택은 중지 후에도 유지됩니다. 선택 이름과 네 값을 함께 Wear OS에 전달해 양쪽의 새 타이머 시작에 사용하며, 실행·일시정지한 타이머는 시작 당시 값을 유지합니다. Wear OS에는 선택 화면이 없습니다.</p>\n</li>\n<li><p><strong>포모도로 타이머</strong> — 작업/휴식/긴 휴식 3단계 루프. 세션 수와 각 단계 길이를 사용자 지정</p>\n</li>\n<li><p><strong>모바일 타이머</strong> — monotonic deadline을 포그라운드 ticker와 elapsed-realtime <code>AlarmManager</code>가 함께 감시하며, generation으로 중복 만료를 방지. Doze·프로세스 재생성·재부팅 복구 지원</p>\n</li>\n<li><p><strong>워치 독립 타이머</strong> — 모바일 없이 워치 단독 사용 가능</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 2x2 / 4x4 크기로 타이머 상태 확인 및 제어 (v7.0.0+)</p>\n</li>\n<li><p><strong>워치페이스 컴플리케이션</strong> — 오늘의 완료 세션 수를 워치페이스에 표시</p>\n</li>\n<li><p><strong>통계 대시보드</strong> — 일간/주간 집중 시간, 시간대별 패턴, 연속 기록, 월별 잔디 차트</p>\n</li>\n<li><p><strong>집중 라벨</strong> — 작업 세션을 업무·공부·프로젝트 등 하나의 라벨로 기록하고 기록 카드에 표시</p>\n</li>\n<li><p><strong>동기 부여 인용구</strong> — 타이머 시작 시 짧은 인용구 (v5.0.0+)</p>\n</li>\n<li><p><strong>온보딩</strong> — 첫 실행 시 가이드</p>\n</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Fragment, ViewBinding + DataBinding, ViewModel, LiveData, DataStore (Preferences), Gson, Material Components</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Horologist, Wear Complications API</li>\n<li><strong>기기 간 통신:</strong> Wear Data Layer (<code>MessageClient</code>, <code>DataClient</code>)</li>\n<li><strong>백그라운드 실행:</strong> Foreground Service (<code>specialUse</code>), <code>AlarmManager.setExact()</code> + <code>USE_EXACT_ALARM</code></li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing, User Messaging Platform (GDPR)</li>\n<li><strong>최소 SDK:</strong> 26 (앱), 30 (워치)</li>\n</ul>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 앱은 단일 <code>MainActivity</code> 하위에 <code>MainFragment</code> / <code>SettingsFragment</code> / <code>TimerRecordsFragment</code> 구조</li>\n<li>공유 ViewModel(<code>MainViewModel</code>)이 설정과 타이머 기록 LiveData를 관리</li>\n<li>타이머 기록은 모바일·Wear OS의 Room <code>timer_records</code> 테이블에 저장하며 nullable 라벨 스냅샷을 포함</li>\n<li>설정은 <code>SharedPreferences(\"MySettings\")</code>에 저장</li>\n<li>라벨 목록은 모바일에서 JSON으로 관리하고 별도 버전 Data Layer 메시지로 Wear OS에 전달</li>\n<li>모바일·워치 실행은 독립적이며, 새 실행에 시계와 무관한 UUID 기록 ID를 부여합니다. 같은 시각·유형·라벨이라도 ID가 다르면 모두 보존합니다.</li>\n<li>종료 기록의 ID·유형·시각·기간·세션 번호·라벨과 Stop/Next/만료 전환을 먼저 영속화합니다. 저장 실패·프로세스 재생성 뒤에는 같은 불변 기록을 재시도합니다. 일시정지/재개는 같은 ID를, 새 시작/다음 단계/자동 재시작은 새 ID를 사용합니다.</li>\n<li>Room v2 트랜잭션이 신규 저장 또는 같은 ID·같은 내용임을 확인한 기록만 ACK합니다. ID 충돌·잘못된 입력·미초기화·DB 실패는 ACK하지 않습니다. 워치는 전송 대상 노드·전송 내용·현재 DB 내용이 모두 같은 기록만 삭제합니다.</li>\n<li>ACK 전송 장부는 확인된 기록의 삭제와 보존 상한에 맞춰 모든 노드에서 정리하며, 빈 동기화에서도 오래된 사본을 제거합니다.</li>\n<li>기존 ID·라벨·기록과 모바일 2,000건/워치 1,000건 보존 상한은 유지합니다. 삭제·상한 밖 기록을 영구 복구하지 않으며, 과거 유실 기록을 추정하지 않습니다.</li>\n<li>기존 JSON 배열/경로는 유지하지만 구버전 폰의 시간 필터와 ACK는 바꿀 수 없으므로 완전한 보장은 양쪽 업데이트 이후입니다.</li>\n</ul>\n<h2>작업 세션과 방해 금지</h2>\n<p>Android 휴대폰 설정의 <strong>작업 세션 중 방해 금지</strong>는 기본 OFF입니다. 접근 권한을 허용하면 휴대폰 또는 Wear OS의 실행 중 작업 세션이 휴대폰의 앱 전용 자동 규칙을 요청합니다. 양쪽 타이머·기록은 독립적이며 종료 알림은 실행 기기에서만 제공합니다. 워치 시스템 방해 금지는 자동으로 변경하지 않습니다.</p>\n",
       "updates": [
         {
           "version": "v10.6.0",
@@ -1111,8 +1219,14 @@
       "latest_update_date": "2026-11-06",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
+      "play_version": "10.6.0",
+      "play_installs": "5K+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 206,
@@ -1122,6 +1236,7 @@
       "landing": "https://watch-go.com/206",
       "repo": "msaltnet/2048-watch",
       "branch": "master",
+      "play_no_version": true,
       "overview_html": "<h1>2048 Watch Game — Overview</h1>\n<p>Wear OS 워치에서 즐기는 2048 퍼즐 게임입니다. 클래식 숫자 합치기 퍼즐을 원형/사각형 작은 화면에 맞게 최적화했으며, 주간/월간 글로벌 랭킹 서버와 연결되어 전 세계 플레이어와 경쟁할 수 있습니다. 모바일 앱은 랭킹 확인, 이름 등록, 설정 관리 용도로 사용됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>2048 퍼즐</strong> — 스와이프로 타일을 합쳐 2048 타일을 만들거나 최고 점수 도전</li>\n<li><strong>햅틱 피드백</strong> — 타일 합칠 때 진동</li>\n<li><strong>자동 저장</strong> — 앱을 나갔다가 돌아와도 이어하기</li>\n<li><strong>플레이 타임 표시</strong> — 설정에 따라 워치 화면에 HH:MM 형식으로 표시 (1분 주기 갱신, 실제 플레이 시간만 측정)</li>\n<li><strong>글로벌 랭킹</strong> — 주간·월간 랭킹 서버 등록·조회</li>\n<li><strong>유니크 이름 시스템</strong> — 한 번 등록된 이름은 글로벌 유니크, 본인만 변경 가능</li>\n<li><strong>애니메이션 On/Off</strong> — 워치 게임 전환 애니메이션 조정</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>백엔드(랭킹):</strong> AWS API Gateway + Lambda + DynamoDB (<code>Ranking2048Table</code>)</li>\n<li><strong>인증:</strong><ul>\n<li><code>POST /ranking</code> (v1) — 쿼리 파라미터 <code>c</code>에 CRC 체크섬</li>\n<li><code>POST /ranking/v2</code>, <code>POST /ranking/name</code> — <code>X-Api-Key</code> 헤더</li>\n<li><code>DELETE /ranking</code> — <code>X-Admin-Secret-Key</code> (관리자)</li>\n</ul>\n</li>\n</ul>\n<h2>랭킹 API 요약</h2>\n<table>\n<thead>\n<tr>\n<th>엔드포인트</th>\n<th>용도</th>\n<th>인증</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST /ranking</code> (v1)</td>\n<td>점수 등록 (레거시)</td>\n<td>CRC 쿼리</td>\n</tr>\n<tr>\n<td><code>POST /ranking/v2</code></td>\n<td>점수 등록 (play_time, user_id, account_type 포함)</td>\n<td><code>X-Api-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /ranking/name/check</code></td>\n<td>이름 중복 확인 (소유자 체크 포함)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /ranking/name</code></td>\n<td>이름 등록/변경 (글로벌 유니크)</td>\n<td><code>X-Api-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /ranking/week</code></td>\n<td>주간 랭킹 (top N, 상세 포함 옵션)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /ranking/month</code></td>\n<td>월간 랭킹</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /ranking/month/stat</code></td>\n<td>월별 일간 통계</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>DELETE /ranking</code></td>\n<td>관리자 기록 삭제</td>\n<td><code>X-Admin-Secret-Key</code></td>\n</tr>\n</tbody></table>\n<h3>CRC 계산 (v1 호환)</h3>\n<pre><code class=\"language-python\">def get_crc(point):\n  res = point % 10 + point % 100 + point % 1000\n  res += 31\n  return res * res\n</code></pre>\n<h3>DynamoDB 스키마 (<code>Ranking2048Table</code>)</h3>\n<ul>\n<li><strong>PK:</strong> <code>period</code> (ISO 주차, 예: <code>2025-W05</code>)</li>\n<li><strong>SK:</strong> <code>sortKey</code> (역순 점수 + 타임스탬프, 예: <code>999997952#2025-02-03T12:34:56</code>)</li>\n<li><strong>GSI:</strong> <code>UniqueCheckIndex</code> (period + uniqueKey, 중복 체크)</li>\n<li>속성: name, country, code, point, play_time, user_id, account_type, ip, timestamp, uniqueKey(<code>name#code#point</code>)</li>\n</ul>\n<h3>프라이버시</h3>\n<p><code>GET</code> 응답의 <code>user_id</code>는 앞 3글자만 노출되고 나머지는 <code>*</code> 마스킹. <code>account_type</code>은 GET 응답에 포함되지 않음.</p>\n<h2>아키텍처 요약</h2>\n<ul>\n<li><strong>Play Time 측정:</strong> 워치 화면이 켜져 있을 때만 카운트, <code>SharedPreferences</code> 저장, 1분 주기 UI 갱신 (게임 성능 방해 방지)</li>\n<li><strong>주간 랭킹:</strong> ISO 8601 주차 계산 (월요일 시작), <code>period</code>로 쿼리, <code>sortKey</code>로 자동 정렬 (점수 내림차순, 시간 오름차순)</li>\n<li><strong>월간 랭킹:</strong> 해당 월의 모든 주차 수집 → <code>timestamp</code> 기준 월 1일~말일 필터 → 점수 내림차순 정렬</li>\n</ul>\n",
       "updates": [
         {
@@ -1189,8 +1304,14 @@
       "latest_update_date": "2026-11-01",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/206/icon.png",
+      "play_version": null,
+      "play_installs": "10K+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 207,
@@ -1202,6 +1323,12 @@
       "branch": "master",
       "overview_html": "<h1>Quote Moment — Overview</h1>\n<p>Android 모바일과 Wear OS 워치에서 매일 새로운 명언과 긍정 확언을 보여주는 앱입니다. 워치페이스 컴플리케이션, 타일, 전용 액자 앱, 모바일 홈 화면 위젯, 알림 등 다양한 표면에서 같은 명언 풀을 공유합니다. 온라인 <strong>Explore 탭</strong>에서 다른 사용자가 공유한 명언 리스트를 탐색·다운로드할 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>명언 리스트 관리</strong> — Room DB 기반, 리스트당 최대 <strong>20개</strong>의 명언 보관, 추가·삭제·편집</li>\n<li><strong>워치페이스 컴플리케이션</strong> — 워치페이스에 명언 표시, 탭 시 다음 명언으로 전환(설정 On/Off)</li>\n<li><strong>Wear OS 타일</strong> — 스와이프로 오늘의 명언 확인</li>\n<li><strong>워치 액자 앱</strong> — 앰비언트 모드 지원 전체 화면 명언</li>\n<li><strong>모바일 홈 위젯</strong> — 2x2 / 4x2 등 다양한 크기, 자동 갱신</li>\n<li><strong>알림</strong> — 설정한 시간에 명언 푸시</li>\n<li><strong>커스터마이징</strong> — 폰트 / 글자 크기 / 색상 / 문구 교체 간격 / 셔플 / 시간 표시</li>\n<li><strong>Explore 온라인 탐색</strong> — 카테고리(motivation / relationships / life / success / healing / etc)별 리스트 다운로드, 좋아요, 업로드(Google 로그인)</li>\n<li><strong>모바일 ↔ 워치 리스트 단위 동기화</strong> — Message API 기반</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin, Gradle Kotlin DSL</li>\n<li><strong>모바일:</strong> MVVM (ViewModel + LiveData + Flow), Room, ViewBinding, Navigation Component, Material Design</li>\n<li><strong>워치:</strong> Jetpack Compose for Wear OS, Wear Complications API, Horologist Tiles</li>\n<li><strong>모바일 ↔ 워치 통신:</strong> Wearable Data Layer — <strong>Message API</strong> 기반 (Data API 미사용)</li>\n<li><strong>백엔드(Explore):</strong> AWS API Gateway + Lambda + DynamoDB, Google OAuth (업로드/좋아요)</li>\n<li><strong>Firebase:</strong> Analytics, Crashlytics</li>\n<li><strong>수익화:</strong> Google AdMob, Google Play Billing</li>\n</ul>\n<h2>동기화 프로토콜</h2>\n<table>\n<thead>\n<tr>\n<th>Path</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/quote-sync-start</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 시작 알림</td>\n</tr>\n<tr>\n<td><code>/quote-sync-request</code></td>\n<td>Wear → Mobile</td>\n<td>타임스탬프 기반 동기화 요청</td>\n</tr>\n<tr>\n<td><code>/quote-sync-response</code></td>\n<td>Mobile → Wear</td>\n<td><code>QuoteList</code> JSON 전송</td>\n</tr>\n<tr>\n<td><code>/quote-resync</code></td>\n<td>Mobile → Wear</td>\n<td>전체 재동기화</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n</tbody></table>\n<h2>데이터 스키마</h2>\n<ul>\n<li><strong>QuoteList</strong> — <code>listId</code>, <code>title</code>, <code>category</code>, <code>language</code>, <code>updatedAt</code>, <code>isDeleted</code></li>\n<li><strong>Quote</strong> — <code>id</code>, <code>listId</code>(FK), <code>text</code>, <code>author</code></li>\n<li>리스트당 최대 20개 명언</li>\n</ul>\n<h2>Explore API 요약</h2>\n<table>\n<thead>\n<tr>\n<th>엔드포인트</th>\n<th>용도</th>\n<th>인증</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST /quotes</code></td>\n<td>명언 리스트 업로드</td>\n<td>Google OAuth 또는 <code>X-Admin-Secret-Key</code></td>\n</tr>\n<tr>\n<td><code>GET /quotes</code></td>\n<td>리스트 조회 (카테고리·언어·정렬·페이지네이션)</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>GET /quotes/{id}</code></td>\n<td>리스트 상세</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/download</code></td>\n<td>다운로드 카운트 증가 + 데이터 반환</td>\n<td>없음</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/like</code></td>\n<td>좋아요 토글</td>\n<td>Google OAuth</td>\n</tr>\n<tr>\n<td><code>GET /quotes/{id}/like</code></td>\n<td>본인 좋아요 여부</td>\n<td>Google OAuth</td>\n</tr>\n<tr>\n<td><code>POST /quotes/{id}/report</code></td>\n<td>신고 (10회 누적 시 자동 블라인드)</td>\n<td>없음</td>\n</tr>\n</tbody></table>\n<p>카테고리: <code>motivation</code>, <code>relationships</code>, <code>life</code>, <code>success</code>, <code>healing</code>, <code>etc</code> (대소문자 구분 없음). 언어 필터 지정 시 <strong>영어(en)는 항상 포함</strong>. 업로드 Rate Limiting: 10분 10개.</p>\n<h2>프로젝트 구조</h2>\n<pre><code>quote-moment/\n├── app/                    # 모바일 앱\n│   └── src/main/java/com/watch_go/quotemoment/\n│       ├── MainActivity.kt, MainViewModel.kt, WearClient.kt\n│       ├── data/           # Room DB (Quote, QuoteList, DAO)\n│       ├── main/           # MainFragment, QuoteAdapter\n│       └── settings/       # 설정 화면\n├── wear/                   # Wear OS 앱\n│   └── src/main/java/com/watch_go/quotemoment/\n│       ├── QuoteMomentActivity.kt       # 액자 앱\n│       ├── QuoteComplicationProvider.kt # 컴플리케이션\n│       ├── QuoteTileService.kt          # 타일\n│       └── DataLayerListenerService.kt\n├── onboarding/             # git submodule\n└── watch-go-info-fragment/ # git submodule\n</code></pre>\n",
       "updates": [
+        {
+          "version": "v5.8.0",
+          "date": "2026-11-08",
+          "label": null,
+          "items_html": "<ul>\n<li><p>일부 Wear OS 환경에서 워치 앱의 초기 안내나 화면을 열 때 종료될 수 있는 문제를 수정했습니다.</p>\n</li>\n<li><p>설정을 관련 항목별로 묶고 행 전체를 눌러 조작할 수 있도록 개선했습니다. 큰 글꼴에서도 이름과 현재 값을 읽기 쉽게 표시합니다.</p>\n</li>\n<li><p>글꼴·색상·크기 설정의 반복 미리보기를 정리하고 현재 값을 간결하게 표시합니다.</p>\n</li>\n<li><p>설정에서 CSV 파일을 선택하면 명언을 한 번에 추가합니다. 사용자 명언을 최대 100개까지 보관하고, 앱 언어에 맞는 예시와 오류 안내를 확인할 수 있습니다.</p>\n</li>\n</ul>\n"
+        },
         {
           "version": "v5.7.0",
           "date": "2026-08-22",
@@ -1263,12 +1390,18 @@
           "items_html": "<ul>\n<li>첫 버전</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v5.7.0",
-      "latest_update_date": "2026-08-22",
+      "latest_version": "v5.8.0",
+      "latest_update_date": "2026-11-08",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/207/icon.png",
+      "play_version": "5.7.0",
+      "play_installs": "100+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 208,
@@ -1277,8 +1410,14 @@
       "package": "com.watch_go.remotecamwatch",
       "landing": "https://watch-go.com/208",
       "repo": "msaltnet/remote-cam-watch",
-      "overview_html": "<h1>Remote Camera Watch — Overview</h1>\n<p>Wear OS 워치를 Android 폰 카메라의 저지연 리모컨으로 사용하는 앱입니다. 폰이 보는 화면을 워치에서 실시간으로 미리 보며 원격으로 촬영 · 모드 전환 · 타이머 · 플래시 · 카메라 전환 등을 제어할 수 있습니다. 삼각대 위 셀프 샷, 단체 사진, 브이로그 모니터링, 자연스러운 캔디드 샷에 특화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>실시간 라이브 프리뷰 (Low Latency)</strong> — 폰 카메라 프레임을 JPEG로 압축해 <code>ChannelClient</code>로 워치에 저지연 스트리밍</li>\n<li><strong>원격 셔터</strong> — 사진 · 동영상 모드 전환, 탭 한 번으로 촬영</li>\n<li><strong>타이머</strong> — 즉시 / 3초 / 5초 / 10초 (카운트다운마다 워치 진동)</li>\n<li><strong>타이머 사운드</strong> — 없음·사운드 1·2·3 중 선택하여 휴대폰과 워치 사진 타이머의 각 초에 휴대폰에서 재생</li>\n<li><strong>회전 줌 제어</strong> — 지원 워치의 크라운·회전 버튼·물리/터치 베젤로 연결된 카메라 화면에서 빠르게 줌 조절</li>\n<li><strong>카메라 전환</strong> — 전면(셀카) ↔ 후면(고화질)</li>\n<li><strong>플래시</strong> — 켜기 / 끄기 / 자동</li>\n<li><strong>화면 비율</strong> — 4:3 / 16:9 / 1:1</li>\n<li><strong>미러 모드</strong> — 셀카 좌우 반전</li>\n<li><strong>수평계</strong> — 폰의 roll/pitch 기울기를 모바일과 워치 프리뷰에 표시하고, 기준 각도에 가까울 때만 자동 표시</li>\n<li><strong>인터벌 촬영</strong> — 셔터 한 번으로 1장 / 3장 / 5장 연속 촬영</li>\n<li><strong>최근 촬영 갤러리</strong> — 최근 사진의 저해상도 미리보기를 최대 5장까지 워치에서 좌우 탭·스와이프로 탐색하고 하단 닫기 버튼이나 취소키로 라이브 프리뷰에 복귀</li>\n<li><strong>Cover / AoD 화면</strong> — 폰 화면을 이미지 또는 시계형 어두운 화면으로 덮기; 검은 화면은 Cover의 블랙 샘플로 선택</li>\n<li><strong>자동 연결</strong> — <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능을 가진 워치 탐색 후 자동 연결</li>\n<li><strong>연결·카메라 진단</strong> — 관측된 실패 단계를 구분하고 실행 가능한 다시 확인·앱 열기·재연결·권한·카메라 복구 행동 제공</li>\n<li><strong>진동 피드백</strong> — 셔터·타이머 카운트다운에 손목 진동</li>\n</ul>\n<h2>기술 스택</h2>\n<h3>Mobile App (<code>:app</code>)</h3>\n<ul>\n<li><strong>CameraX</strong> — <code>ImageAnalysis</code> 유스케이스로 프레임 캡처</li>\n<li><strong>RGBA → JPEG 변환</strong> — CameraX RGBA 단일 plane을 네이티브 버퍼 복사로 읽고 정사각 중앙 크롭·회전 후 360px/JPEG 품질 30, 최대 목표 12fps로 전송합니다. 스트리밍 활성·비일시정지·소비자 연결 조건을 만족할 때만 전송 변환과 압축을 수행합니다.</li>\n<li><strong>스마일 분석 분리</strong> — 스마일 셔터만 필요하면 분석 이미지로만 처리합니다. 진행 중 분석 슬롯이 비어 있을 때만 분석 Bitmap을 만들며 스트림과 분석이 모두 필요하면 RGBA 원본 복사는 공유합니다. 실제 CPU·전력 절감량은 기기 측정 전에는 확정하지 않습니다.</li>\n<li><strong>Wearable ChannelClient</strong> — <code>/camera_preview</code> 채널로 저지연 전송</li>\n<li><strong>최근 촬영 갤러리 채널</strong> — <code>/recent_capture_gallery</code>에서 최대 5개의 길이 프레이밍 JPEG 썸네일을 라이브 스트림과 독립적으로 전송</li>\n<li><strong>Kotlin Coroutines</strong> — 비동기 스트리밍, <code>Channel.CONFLATED</code>로 백프레셔 관리</li>\n<li><strong>권한:</strong> <code>CAMERA</code> 필수. Android 12(API 31)+에서 <code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH_SCAN</code> 필수</li>\n</ul>\n<h3>Wear OS App (<code>:wear</code>)</h3>\n<ul>\n<li><strong>Jetpack Compose</strong> — 프리뷰 UI</li>\n<li><strong>Bitmap Decoding</strong> — <code>BitmapFactory</code>로 수신 바이트 디코딩</li>\n<li><strong>Keep Screen On</strong> — 프리뷰 동안 화면 유지 (<code>WAKE_LOCK</code> 권한)</li>\n</ul>\n<h2>연결 및 스트리밍 아키텍처</h2>\n<h3>1. 탐색 및 연결</h3>\n<ul>\n<li>Mobile <code>MainActivity</code>가 <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능 노드 주기 탐색 (<code>checkConnectedDevices</code>)</li>\n<li>노드 발견 시 <code>syncState</code>가 <code>STATE_CONNECTED</code>로 전환</li>\n<li>Wear 앱 실행 시 <code>ChannelClient</code> / <code>MessageClient</code> 리스너 등록 후 \"Waiting for connection...\"</li>\n</ul>\n<h3>2. 초기화 &amp; 핸드셰이크</h3>\n<ul>\n<li>Mobile → <code>/ping</code> 메시지 → Wear가 \"Ping Received\"</li>\n<li>Mobile → <code>ChannelClient.openChannel(\"/camera_preview\")</code> → Wear가 \"Waiting for video...\"</li>\n</ul>\n<h3>3. 스트리밍 루프</h3>\n<ul>\n<li><strong>Mobile:</strong> CameraX <code>ImageAnalysis</code> 프레임 → <code>YuvImage.compressToJpeg</code> → 패킷 <code>[프레임 크기(4B)][JPEG 데이터]</code> 전송</li>\n<li><strong>Wear:</strong> <code>InputStream</code>에서 <code>Int</code> 크기 읽고, 해당 크기만큼 바이트 → <code>BitmapFactory</code> → <code>Bitmap</code> 상태 업데이트 → Compose 렌더링</li>\n</ul>\n<h3>4. 종료</h3>\n<ul>\n<li>Mobile: <code>CameraManager</code> 해제 + 채널 close</li>\n<li>Wear: <code>onChannelClosed</code> → 리소스 정리, 대기 상태 복귀</li>\n</ul>\n<h3>최근 촬영 갤러리</h3>\n<ul>\n<li>사진 저장 성공 시 모바일 메모리 버퍼에 320px JPEG 미리보기만 최대 5장 보관</li>\n<li>리뷰 설정이 Off가 아니면 최신 사진이 선택된 갤러리를 별도 채널로 전송</li>\n<li>Wear는 갤러리를 닫을 때 참조를 해제하며 파일이나 MediaStore에 저장하지 않음</li>\n<li>갤러리 채널 실패·종료는 <code>/camera_preview</code> 연결 상태와 라이브 스트림을 변경하지 않음</li>\n</ul>\n<h2>상태 정의</h2>\n<table>\n<thead>\n<tr>\n<th>기기</th>\n<th>상태</th>\n<th>설명</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Mobile</td>\n<td>DISCONNECTED</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>READY</td>\n<td>워치 노드 탐색 완료, 채널 미개설</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTING</td>\n<td>채널 열기 중 (프리뷰 활성, 메인 프래그먼트 한정)</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTED</td>\n<td>프리뷰 전송 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>WAITING</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTING</td>\n<td>채널 열기 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTED</td>\n<td>프리뷰 수신 중</td>\n</tr>\n</tbody></table>\n<p>모바일은 위 호환 transport 상태와 별도로 다음 진단 상태를 관리합니다.</p>\n<ul>\n<li>Wear: 탐색 중 / 워치 없음 / 앱 확인 필요 / 연결 준비 / 연결 중 / 연결됨 / 응답 없음 / 연결 실패 / 연결 중단</li>\n<li>Camera: 확인 중 / 준비됨 / 권한 필요 / 설정에서 권한 필요 / 사용할 수 없음</li>\n</ul>\n<p>워치 채널이 연결된 뒤 CameraX만 실패하면 Wear 연결은 연결됨으로 유지하고 카메라 복구 행동만 표시합니다.</p>\n<h2>성능 · 제약</h2>\n<ul>\n<li><strong>해상도:</strong> 블루투스 대역폭 한계로 프리뷰 <strong>320×240</strong></li>\n<li><strong>전송 품질:</strong> JPEG 압축 품질 조절로 속도/화질 균형</li>\n<li><strong>배터리:</strong> 실시간 스트리밍 + 화면 유지로 양쪽 기기 배터리 소모 빠름</li>\n<li><strong>연결:</strong> 블루투스 기본, Wi-Fi도 지원하나 지연이 길어질 수 있음</li>\n<li><strong>범위:</strong> 블루투스 범위 이탈 시 스트리밍 중단</li>\n</ul>\n<h3>상태 메시지 전송 (#39)</h3>\n<p>폰은 기존 주기 탐색의 전체 reachable capability 노드 집합을 메모리에서 재사용합니다. 캐시가 없는 요청은 하나의 조회를 공유하며 실패 시 다음 전송에서 다시 탐색합니다. 수평계 문자열만 노드별 성공 전송을 기억하고 연결 세대 변경 시 초기화합니다. 카운트다운·촬영 등 이벤트는 병합하지 않습니다.</p>\n<p>연결 및 정보 화면 진입 시 <code>/request-watch-version</code>을 요청하며 응답은 기존 <code>/watch-version</code>과 BuildConfig 버전을 사용합니다. 구 워치는 기존 설정 동기화로 응답하고, 새 워치는 프로세스 내 노드별 첫 설정과 <code>mode</code> 스냅샷에도 응답합니다. 반복 level/zoom/countdown에는 추가 회신하지 않습니다.</p>\n",
+      "overview_html": "<h1>Remote Camera Watch — Overview</h1>\n<p>Wear OS 워치를 Android 폰 카메라의 저지연 리모컨으로 사용하는 앱입니다. 폰이 보는 화면을 워치에서 실시간으로 미리 보며 원격으로 촬영 · 모드 전환 · 타이머 · 플래시 · 카메라 전환 등을 제어할 수 있습니다. 삼각대 위 셀프 샷, 단체 사진, 브이로그 모니터링, 자연스러운 캔디드 샷에 특화되어 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>실시간 라이브 프리뷰 (Low Latency)</strong> — 폰 카메라 프레임을 JPEG로 압축해 <code>ChannelClient</code>로 워치에 저지연 스트리밍</li>\n<li><strong>원격 셔터</strong> — 사진 · 동영상 모드 전환, 탭 한 번으로 촬영</li>\n<li><strong>타이머</strong> — 즉시 / 3초 / 5초 / 10초 (카운트다운마다 워치 진동)</li>\n<li><strong>타이머 사운드</strong> — 없음·사운드 1·2·3 중 선택하여 휴대폰과 워치 사진 타이머의 각 초에 휴대폰에서 재생</li>\n<li><strong>회전 줌 제어</strong> — 지원 워치의 크라운·회전 버튼·물리/터치 베젤로 연결된 카메라 화면에서 빠르게 줌 조절</li>\n<li><strong>카메라 전환</strong> — 전면(셀카) ↔ 후면(고화질)</li>\n<li><strong>플래시</strong> — 켜기 / 끄기 / 자동</li>\n<li><strong>화면 비율</strong> — 4:3 / 16:9 / 1:1</li>\n<li><strong>미러 모드</strong> — 셀카 좌우 반전</li>\n<li><strong>수평계</strong> — 폰의 roll/pitch 기울기를 모바일과 워치 프리뷰에 표시하고, 기준 각도에 가까울 때만 자동 표시</li>\n<li><strong>인터벌 촬영</strong> — 셔터 한 번으로 1장 / 3장 / 5장 연속 촬영</li>\n<li><strong>최근 촬영 갤러리</strong> — 최근 사진의 저해상도 미리보기를 최대 5장까지 워치에서 좌우 탭·스와이프로 탐색하고 하단 닫기 버튼이나 취소키로 라이브 프리뷰에 복귀</li>\n<li><strong>Cover / AoD 화면</strong> — 폰 화면을 이미지 또는 시계형 어두운 화면으로 덮기; 검은 화면은 Cover의 블랙 샘플로 선택</li>\n<li><strong>자동 연결</strong> — <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능을 가진 워치 탐색 후 자동 연결</li>\n<li><strong>연결·카메라 진단</strong> — 관측된 실패 단계를 구분하고 실행 가능한 다시 확인·앱 열기·재연결·권한·카메라 복구 행동 제공</li>\n<li><strong>진동 피드백</strong> — 셔터·타이머 카운트다운에 손목 진동</li>\n</ul>\n<h2>기술 스택</h2>\n<h3>Mobile App (<code>:app</code>)</h3>\n<ul>\n<li><strong>CameraX</strong> — <code>ImageAnalysis</code> 유스케이스로 프레임 캡처</li>\n<li><strong>RGBA → JPEG 변환</strong> — CameraX RGBA 단일 plane을 네이티브 버퍼 복사로 읽고 정사각 중앙 크롭·회전 후 360px/JPEG 품질 30, 최대 목표 12fps로 전송합니다. 스트리밍 활성·비일시정지·소비자 연결 조건을 만족할 때만 전송 변환과 압축을 수행합니다.</li>\n<li><strong>스마일 분석 분리</strong> — 스마일 셔터만 필요하면 분석 이미지로만 처리합니다. 진행 중 분석 슬롯이 비어 있을 때만 분석 Bitmap을 만들며 스트림과 분석이 모두 필요하면 RGBA 원본 복사는 공유합니다. 실제 CPU·전력 절감량은 기기 측정 전에는 확정하지 않습니다.</li>\n<li><strong>Wearable ChannelClient</strong> — <code>/camera_preview</code> 채널로 저지연 전송</li>\n<li><strong>최근 촬영 갤러리 채널</strong> — <code>/recent_capture_gallery</code>에서 최대 5개의 길이 프레이밍 JPEG 썸네일을 라이브 스트림과 독립적으로 전송</li>\n<li><strong>Kotlin Coroutines</strong> — 비동기 스트리밍, <code>Channel.CONFLATED</code>로 백프레셔 관리</li>\n<li><strong>권한:</strong> <code>CAMERA</code> 필수, 동영상 녹화에 <code>RECORD_AUDIO</code>. Android 9(API 28) 이하에서만 <code>WRITE_EXTERNAL_STORAGE</code>. 블루투스 런타임 권한은 요청하지 않습니다(Wearable Data Layer 사용).</li>\n</ul>\n<h3>Wear OS App (<code>:wear</code>)</h3>\n<ul>\n<li><strong>Jetpack Compose</strong> — 프리뷰 UI</li>\n<li><strong>Bitmap Decoding</strong> — <code>BitmapFactory</code>로 수신 바이트 디코딩</li>\n<li><strong>Keep Screen On</strong> — 프리뷰 동안 화면 유지 (<code>WAKE_LOCK</code> 권한)</li>\n</ul>\n<h2>연결 및 스트리밍 아키텍처</h2>\n<h3>1. 탐색 및 연결</h3>\n<ul>\n<li>Mobile <code>MainActivity</code>가 <code>CapabilityClient</code>로 <code>watch_go_cam</code> 기능 노드 주기 탐색 (<code>checkConnectedDevices</code>)</li>\n<li>노드 발견 시 <code>syncState</code>가 <code>STATE_CONNECTED</code>로 전환</li>\n<li>Wear 앱 실행 시 <code>ChannelClient</code> / <code>MessageClient</code> 리스너 등록 후 \"Open the camera screen in the phone app / Waiting...\"</li>\n</ul>\n<h3>2. 초기화 &amp; 핸드셰이크</h3>\n<ul>\n<li>Mobile → <code>/ping</code> 메시지 → Wear가 \"Ping Received\"</li>\n<li>Mobile → <code>ChannelClient.openChannel(\"/camera_preview\")</code> → Wear가 \"Connecting...\", 첫 프레임 수신 시 연결됨</li>\n</ul>\n<h3>3. 스트리밍 루프</h3>\n<ul>\n<li><strong>Mobile:</strong> CameraX <code>ImageAnalysis</code> RGBA 프레임 → 360px 크롭·축소 → JPEG(품질 30) → 패킷 <code>[프레임 크기(4B)][JPEG 데이터]</code> 전송</li>\n<li><strong>Wear:</strong> <code>InputStream</code>에서 <code>Int</code> 크기 읽고, 해당 크기만큼 바이트 → <code>BitmapFactory</code> → <code>Bitmap</code> 상태 업데이트 → Compose 렌더링</li>\n</ul>\n<h3>4. 종료</h3>\n<ul>\n<li>Mobile: <code>CameraManager</code> 해제 + 채널 close</li>\n<li>Wear: <code>onChannelClosed</code> → 리소스 정리, 대기 상태 복귀</li>\n</ul>\n<h3>최근 촬영 갤러리</h3>\n<ul>\n<li>사진 저장 성공 시 모바일 메모리 버퍼에 320px JPEG 미리보기만 최대 5장 보관</li>\n<li>리뷰 설정이 Off가 아니면 최신 사진이 선택된 갤러리를 별도 채널로 전송</li>\n<li>Wear는 갤러리를 닫을 때 참조를 해제하며 파일이나 MediaStore에 저장하지 않음</li>\n<li>갤러리 채널 실패·종료는 <code>/camera_preview</code> 연결 상태와 라이브 스트림을 변경하지 않음</li>\n</ul>\n<h2>상태 정의</h2>\n<table>\n<thead>\n<tr>\n<th>기기</th>\n<th>상태</th>\n<th>설명</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Mobile</td>\n<td>DISCONNECTED</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>READY</td>\n<td>워치 노드 탐색 완료, 채널 미개설</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTING</td>\n<td>채널 열기 중 (프리뷰 활성, 메인 프래그먼트 한정)</td>\n</tr>\n<tr>\n<td>Mobile</td>\n<td>CONNECTED</td>\n<td>프리뷰 전송 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>WAITING</td>\n<td>연결 없음</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTING</td>\n<td>채널 열기 중</td>\n</tr>\n<tr>\n<td>Wear</td>\n<td>CONNECTED</td>\n<td>프리뷰 수신 중</td>\n</tr>\n</tbody></table>\n<p>모바일은 위 호환 transport 상태와 별도로 다음 진단 상태를 관리합니다.</p>\n<ul>\n<li>Wear: 탐색 중 / 워치 없음 / 앱 확인 필요 / 연결 준비 / 연결 중 / 연결됨 / 응답 없음 / 연결 실패 / 연결 중단</li>\n<li>Camera: 확인 중 / 준비됨 / 권한 필요 / 설정에서 권한 필요 / 사용할 수 없음</li>\n</ul>\n<p>워치 채널이 연결된 뒤 CameraX만 실패하면 Wear 연결은 연결됨으로 유지하고 카메라 복구 행동만 표시합니다.</p>\n<h2>성능 · 제약</h2>\n<ul>\n<li><strong>해상도:</strong> 전송 대역폭을 고려해 프리뷰 <strong>360×360</strong>, JPEG 품질 30, 최대 12fps</li>\n<li><strong>저장 위치:</strong> 사진·동영상 모두 <code>DCIM/Remote Cam Watch</code>(Android 10 이상). Android 9 이하는 <code>RELATIVE_PATH</code>를 지정하지 않아 MediaStore 기본 위치에 저장</li>\n<li><strong>배터리:</strong> 실시간 스트리밍 + 화면 유지로 양쪽 기기 배터리 소모 빠름</li>\n<li><strong>연결:</strong> 블루투스 기본, Wi-Fi도 지원하나 지연이 길어질 수 있음</li>\n<li><strong>범위:</strong> 블루투스 범위 이탈 시 스트리밍 중단</li>\n</ul>\n<h3>상태 메시지 전송 (#39)</h3>\n<p>폰은 기존 주기 탐색의 전체 reachable capability 노드 집합을 메모리에서 재사용합니다. 캐시가 없는 요청은 하나의 조회를 공유하며 실패 시 다음 전송에서 다시 탐색합니다. 수평계 문자열만 노드별 성공 전송을 기억하고 연결 세대 변경 시 초기화합니다. 카운트다운·촬영 등 이벤트는 병합하지 않습니다.</p>\n<p>연결 및 정보 화면 진입 시 <code>/request-watch-version</code>을 요청하며 응답은 기존 <code>/watch-version</code>과 BuildConfig 버전을 사용합니다. 구 워치는 기존 설정 동기화로 응답하고, 새 워치는 프로세스 내 노드별 첫 설정과 <code>mode</code> 스냅샷에도 응답합니다. 반복 level/zoom/countdown에는 추가 회신하지 않습니다.</p>\n",
       "updates": [
+        {
+          "version": "v6.5.0",
+          "date": "2026-11-15",
+          "label": null,
+          "items_html": "<ul>\n<li>더 이상 블루투스(근처 기기) 권한을 요청하지 않습니다. 이 권한을 허용하지 않아 카메라가 열리지 않던 문제가 해결됩니다.</li>\n<li>Android 8·9 기기에서 카메라 화면이 시작되지 않던 문제를 수정했습니다.</li>\n<li>새로 찍은 사진과 동영상은 갤러리의 <strong>Remote Cam Watch</strong> 앨범에 저장됩니다. 이전에 찍은 파일은 기존 앨범에 그대로 있습니다.</li>\n<li>워치 대기 화면이 휴대폰에서 카메라 화면을 열도록 안내합니다.</li>\n<li>갤러리 공유 목록에 이 앱이 잘못 표시되던 문제를 수정했습니다.</li>\n<li>마이크 권한을 카메라 권한과 함께 요청합니다. 동영상은 마이크 권한이 있을 때만 녹화되며, 마이크를 거부해도 사진 촬영은 됩니다.</li>\n<li>워치의 녹화 표시가 휴대폰의 실제 녹화 상태를 따릅니다. 녹화가 시작되지 않았는데 &quot;녹화 중&quot;으로 보이던 문제를 수정했습니다.</li>\n<li>휴대폰에서 촬영이나 녹화에 실패하면 휴대폰과 워치에 짧게 알립니다.</li>\n<li>미소 셔터와 타이머를 함께 쓸 때 카운트다운이 겹쳐 의도하지 않은 사진이 찍히던 문제를 수정했습니다.</li>\n<li>프리미엄 사용자에게 실행할 때마다 구매 완료 알림이 뜨던 문제를 수정했습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v6.3.0",
           "date": "2026-11-01",
@@ -1376,12 +1515,18 @@
           "items_html": "<ul>\n<li>첫 버전</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v6.3.0",
-      "latest_update_date": "2026-11-01",
+      "latest_version": "v6.5.0",
+      "latest_update_date": "2026-11-15",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/208/icon.png",
+      "play_version": "6.5.0",
+      "play_installs": "10K+",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-07T07:58:07.602+09:00"
+      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
     },
     {
       "id": 209,
@@ -1396,6 +1541,12 @@
       "latest_update_date": null,
       "latest_update_label": null,
       "icon_url": null,
+      "play_version": null,
+      "play_installs": null,
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "not_found",
+      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
       "fetch_status": "no_docs",
       "last_successful_fetch": null
     }
