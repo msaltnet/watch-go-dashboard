@@ -214,21 +214,44 @@ a:hover { color: var(--brass); }
   margin-left: auto;
   display: inline-flex;
   align-items: center;
-  gap: .5rem;
-  font-size: .78rem;
+  gap: .6rem;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
   color: var(--ash);
 }
 .sort-select {
-  background: var(--ink-2);
+  appearance: none;
+  -webkit-appearance: none;
+  color-scheme: dark;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none' stroke='%23d4a857' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M1 1l4 4 4-4'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right .9rem center;
   color: var(--ivory-dim);
   border: 1px solid var(--rule);
   border-radius: 999px;
-  padding: .45rem .9rem;
+  padding: .55rem 2.4rem .55rem 1.1rem;
   font-family: var(--font-body);
   font-size: .82rem;
+  letter-spacing: .02em;
+  text-transform: none;
   cursor: pointer;
+  transition: color .2s ease, border-color .2s ease, background-color .2s ease;
 }
-.sort-select:hover, .sort-select:focus-visible { color: var(--ivory); border-color: var(--brass-dim); outline: none; }
+.sort-select:hover { color: var(--ivory); border-color: var(--brass-dim); }
+.sort-select:focus-visible {
+  color: var(--ivory);
+  border-color: var(--brass);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--brass-glow);
+}
+.sort-select option { background: var(--ink-2); color: var(--ivory); }
+
+@media (max-width: 520px) {
+  .sort { margin-left: 0; width: 100%; }
+  .sort-select { flex: 1; }
+}
 
 .filter:hover { color: var(--ivory); border-color: var(--brass-dim); }
 .filter-key {
