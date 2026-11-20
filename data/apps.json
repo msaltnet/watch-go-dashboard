@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-20T10:52:46.393+09:00",
+  "built_at": "2026-11-21T08:54:42.007+09:00",
   "stats": {
     "total": 19,
     "succeeded": 18,
@@ -17,6 +17,12 @@
       "branch": "main",
       "overview_html": "<h1>My Photo Watch Face: Album — Overview</h1>\n<p>My Photo Watch Face: Album(이하 My Photo)은 휴대폰에서 고른 사진을 Wear OS로 보내고, 타일과 사진 컴플리케이션으로 제공하는 컴패니언 제품입니다. 호환 WFF(Watch Face Format)는 별도 패키지로 설치하며, My Photo가 제공한 사진을 해당 WFF의 사진 슬롯에 지정해 사용합니다.</p>\n<h2>핵심 사용자 흐름</h2>\n<pre><code class=\"language-text\">휴대폰에서 사진 선택\n→ Wear 컴패니언으로 동기화\n→ My Photo 사진 컴플리케이션 제공\n→ 카탈로그에서 설치한 호환 WFF의 사진 슬롯에 My Photo 지정\n</code></pre>\n<h2>구성 요소와 책임</h2>\n<table>\n<thead>\n<tr>\n<th>구성 요소</th>\n<th>책임</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>모바일 앱</td>\n<td>사진 선택·외부 공유 수신·앨범 관리·새 사진 얼굴 중심 크롭·호환 WFF 카탈로그</td>\n</tr>\n<tr>\n<td>Wear 컴패니언</td>\n<td>Data Layer 사진 동기화, 사진 타일, <code>My Photo</code> 사진 컴플리케이션(<code>PHOTO_IMAGE</code>/<code>LARGE_IMAGE</code>), D-Day 긴 텍스트 컴플리케이션(<code>LONG_TEXT</code>)</td>\n</tr>\n<tr>\n<td>외부 WFF 패키지</td>\n<td>시계 레이아웃, AoD, 폰트, 색상, 컴플리케이션 슬롯의 크기와 위치</td>\n</tr>\n</tbody></table>\n<p>My Photo 설정의 D-Day는 Wear 타일과 호환 WFF의 긴 텍스트 슬롯에 적용됩니다. 날짜, 셔플, 위치는 Wear 타일 표시에 적용됩니다. 컴플리케이션 간격은 호환 WFF 사진 슬롯의 자동 사진 순환에 적용되고, 얼굴 중심 크롭은 설정을 바꾼 뒤 새로 가져오는 사진부터 적용됩니다.</p>\n<h2>WFF 카탈로그</h2>\n<ul>\n<li>서버 목록을 사용하되, 이 앱의 패키지(<code>com.watch_go.myphotowatchface</code>)는 설치 후보에서 제외합니다.</li>\n<li>네트워크 갱신에 실패하면 유효한 캐시를 사용하고, 캐시도 없으면 앱에 포함된 영어/한국어 목록을 사용합니다.</li>\n<li>카탈로그의 첫 추천은 <strong>My Photo Watch Face: Thin</strong>입니다.</li>\n<li>설치 버튼은 연결된 워치의 Google Play를 먼저 엽니다. 워치로 전달할 수 없으면 휴대폰 Google Play로 연결합니다.</li>\n<li>설치 후 워치에서 해당 WFF를 길게 눌러 <strong>Customize → 사진 슬롯 → My Photo</strong>를 선택합니다.</li>\n</ul>\n<h2>기술 스택과 호환 계약</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin</li>\n<li><strong>모듈:</strong> <code>:app</code>, <code>:watchface</code>, <code>:onboarding</code>, <code>:watch-go-info-fragment</code></li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API</li>\n<li><strong>사진 처리:</strong> ML Kit 얼굴 감지 기반 크롭</li>\n<li><strong>빌드:</strong> Gradle, Firebase, Google AdMob, Google Play Billing</li>\n<li><strong>안정 계약:</strong> 앱/Wear 패키지 ID, Data Layer 경로, <code>watch_go_wear</code> capability, <code>My Photo</code> 컴플리케이션 제공자</li>\n</ul>\n<h2>같은 브랜드의 호환 WFF 예시</h2>\n<table>\n<thead>\n<tr>\n<th>앱</th>\n<th>관리번호</th>\n<th>특징</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>My Photo Watch Face: Thin</strong></td>\n<td>107</td>\n<td>첫 추천, 얇은 시계 타이포그래피와 유연한 레이아웃</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Clean</td>\n<td>102</td>\n<td>가독성 높은 미니멀 레이아웃</td>\n</tr>\n<tr>\n<td>My Photo Watch Face: Cute</td>\n<td>108</td>\n<td>둥근 폰트와 부드러운 파스텔 스타일</td>\n</tr>\n<tr>\n<td>My Photo Circle Watch Face</td>\n<td>104</td>\n<td>큰 원형 사진 영역</td>\n</tr>\n<tr>\n<td>My Photo Quote: Daily Inspire</td>\n<td>105</td>\n<td>사진과 Long Text 명언 조합</td>\n</tr>\n</tbody></table>\n<p>호환 여부는 WFF가 <code>PHOTO_IMAGE</code> 또는 <code>LARGE_IMAGE</code> 사진 슬롯을 제공하는지에 따라 결정됩니다.</p>\n",
       "updates": [
+        {
+          "version": "v8.5.0",
+          "date": "2026-11-20",
+          "label": null,
+          "items_html": "<ul>\n<li>편집한 사진이 워치에도 반영됩니다. 사진 순서는 그대로 유지됩니다.</li>\n<li>폰에서 사진을 모두 지우면 워치의 사진도 모두 지워집니다.</li>\n<li>타일을 &quot;다음 사진&quot; 모드로 쓰면 탭할 때 바로 다음 사진으로 넘어가고, 그 외에는 1분마다 넘어갑니다. 설정을 바꾸거나 동기화할 때는 넘어가지 않습니다.</li>\n<li>앱을 다시 열어도 워치의 전환 효과·컴플리케이션 간격 설정이 유지됩니다.</li>\n<li>설정 화면에서 조작 중에 전면 광고가 뒤늦게 뜨지 않습니다. 프리미엄 사용자는 앱을 열 때마다 구매 완료 안내가 뜨지 않습니다.</li>\n<li>하단 탭에서 사진 탭이 맨 앞에 옵니다.</li>\n<li>친구 공유 초대 코드 표시 수정 — 친구와 연결되거나 연결을 끊은 뒤 쓸 수 없는 이전 초대 코드가 남아 있던 문제를 수정했습니다. 연결을 끊으면 바로 새 코드를 만들 수 있습니다.</li>\n<li>광고 동의를 확인하기 전에는 광고를 요청하지 않도록 수정했습니다.</li>\n<li>상단에 앱 이름 &quot;My Photo Watch Face&quot;가 표시되고, 온보딩과 추천 문구를 현재 기능(사진 동기화, 타일·컴플리케이션)에 맞게 고쳤습니다.</li>\n<li>설정의 텍스트 스타일이 앱 미리보기·위젯·슬라이드쇼에 적용되며, 워치페이스 스타일은 워치의 Customize에서 바꾼다는 안내를 추가했습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v8.2.0",
           "date": "2026-11-08",
@@ -84,18 +90,19 @@
           "items_html": "<ul>\n<li>세부 변경 내용 정보 없음</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v8.2.0",
-      "latest_update_date": "2026-11-08",
+      "latest_version": "v8.5.0",
+      "latest_update_date": "2026-11-20",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
       "play_version": "8.2.0",
       "play_installs": "10K+",
+      "play_updated": "2026-11-08",
       "play_rating": 3.7,
       "play_rating_count": 79,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 102,
@@ -139,12 +146,13 @@
       "icon_url": "https://watch-go.com/102/icon.png",
       "play_version": "2.1.1",
       "play_installs": "1K+",
+      "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 107,
@@ -175,12 +183,13 @@
       "latest_update_label": null,
       "play_version": "2.0.1",
       "play_installs": "1K+",
+      "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 108,
@@ -211,12 +220,13 @@
       "latest_update_label": null,
       "play_version": "2.0.1",
       "play_installs": "1K+",
+      "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 103,
@@ -248,12 +258,13 @@
       "icon_url": "https://watch-go.com/103/icon.png",
       "play_version": "1.0.1",
       "play_installs": "100+",
+      "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 104,
@@ -291,12 +302,13 @@
       "icon_url": "https://watch-go.com/104/icon.png",
       "play_version": "2.0.1",
       "play_installs": "500+",
+      "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 105,
@@ -334,12 +346,13 @@
       "icon_url": "https://watch-go.com/105/icon.png",
       "play_version": "2.0.1",
       "play_installs": "100+",
+      "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 106,
@@ -371,12 +384,13 @@
       "icon_url": "https://watch-go.com/106/icon.png",
       "play_version": "1.0.1",
       "play_installs": "100+",
+      "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 111,
@@ -402,12 +416,13 @@
       "icon_url": "https://watch-go.com/111/icon.png",
       "play_version": "1.0.1",
       "play_installs": "50+",
+      "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 200,
@@ -492,12 +507,13 @@
       "icon_url": "https://watch-go.com/200/icon.png",
       "play_version": "10.0.0",
       "play_installs": "500+",
+      "play_updated": "2026-11-14",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 201,
@@ -671,12 +687,13 @@
       "icon_url": "https://watch-go.com/201/icon.png",
       "play_version": "13.1.0",
       "play_installs": "10K+",
+      "play_updated": "2026-11-02",
       "play_rating": 3.8,
       "play_rating_count": 112,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 202,
@@ -688,6 +705,12 @@
       "branch": "master",
       "overview_html": "<h1>My Photo Watch Frame — Overview</h1>\n<p>Wear OS 워치를 개인 사진 액자로 바꾸는 앱입니다. 모바일 갤러리에서 선택한 사진을 워치로 전송해 전용 워치페이스의 배경으로 띄우거나, 다른 워치페이스의 사진 컴플리케이션으로 사용할 수 있습니다. 홈 화면 위젯으로 같은 사진을 폰에도 표시할 수 있어 폰과 워치의 룩을 한 번에 맞출 수 있습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>사진 워치페이스</strong> — Watch Face Format (WFF) 기반의 전용 풀스크린 사진 워치페이스</li>\n<li><strong>포토 컴플리케이션</strong> — 다른 호환 워치페이스 위에 미니 사진 앨범 표시</li>\n<li><strong>D-Day 컴플리케이션 (Next Version)</strong> — 기존 D-Day 제목과 남은/지난 일수를 호환 워치페이스의 긴 텍스트 슬롯에 표시. 워치 현지 날짜 기준으로 자정에 전환하며 저장된 이벤트는 오프라인에서도 계산.</li>\n<li><strong>무제한 사진 전송</strong> — 갤러리 다중 선택 또는 다른 앱에서 공유해 워치로 전송, 개수 제한 없음</li>\n<li><strong>ML Kit 얼굴 중심 크롭</strong> — 얼굴을 인식해 인물이 중앙에 오도록 자동 크롭</li>\n<li><strong>2x2 / 4x4 홈 화면 위젯</strong> — 폰 홈에도 같은 사진 액자</li>\n<li><strong>Wear OS 타일</strong> — 타일에서 사진을 빠르게 넘겨보기</li>\n<li><strong>스타일 커스터마이징</strong> — 폰트, 색상, 시간 위치, 가독성용 그라디언트 오버레이</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>언어:</strong> Kotlin 2.1.0, Java 17 (app/wear), Java 11 (라이브러리)</li>\n<li><strong>모바일 앱:</strong> XML Layouts, MVVM (ViewModel + LiveData + Coroutines), Navigation</li>\n<li><strong>워치 앱:</strong> Jetpack Compose (Wear), Canvas 렌더링 (<code>MyCanvasView</code>), Wear Tiles 1.5.0-beta01</li>\n<li><strong>사진 최적화:</strong> ML Kit Face Detection, BitmapFactory (최대 3840px 디코딩)</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>/image</code>, <code>/start-sync</code>, <code>/update-settings</code>, <code>/sync-response</code> / <code>/sync-reply</code>, <code>/watch-version</code>)</li>\n<li><strong>위젯:</strong> AppWidgetProvider + AlarmManager 기반 갱신 스케줄러</li>\n<li><strong>빌드:</strong> AGP 8.6.0, Gradle 8.7 (루트 Groovy, 서브모듈 Kotlin DSL 혼용)</li>\n<li><strong>CI/CD:</strong> GitHub Actions (<code>android-release.yml</code>) — <code>v*</code>, <code>mobile-v*</code>, <code>wear-v*</code> 태그로 AAB 자동 서명·업로드</li>\n</ul>\n<h2>이미지 처리 파이프라인</h2>\n<ol>\n<li>갤러리 선택 또는 외부 앱 공유</li>\n<li>BitmapFactory로 최대 3840px까지 디코딩</li>\n<li>ML Kit Face Detection 기반 얼굴 중심 크롭</li>\n<li>워치용 <strong>450×450</strong>, 위젯용 <strong>900px</strong> 리사이즈</li>\n<li>JPEG <strong>90%</strong> 품질 압축</li>\n<li>Wearable Data Layer로 워치 전송</li>\n</ol>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code> + <code>MainViewModel</code>, <code>WearClient</code>로 워치와 통신</li>\n<li>워치 (<code>:wear</code>) — <code>MyPhotoFrameActivity</code>, <code>MyCanvasView</code> (Canvas 렌더), <code>DataLayerListenerService</code>, <code>MyPhotoComplicationService</code>, <code>DdayComplicationService</code> (LONG_TEXT), <code>MyPhotoTileService</code></li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code> (ViewPager2)</li>\n<li>빌드 스크립트 혼용: 루트는 <code>.gradle</code>(Groovy), 하위 모듈은 <code>.gradle.kts</code>(Kotlin DSL)</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v9.5.0",
+          "date": "2026-11-20",
+          "label": null,
+          "items_html": "<ul>\n<li><p>편집한 사진이 워치에도 반영됩니다. 사진 순서는 그대로 유지됩니다.</p>\n</li>\n<li><p>폰에서 사진을 모두 지우면 워치의 사진도 모두 지워집니다.</p>\n</li>\n<li><p>타일을 &quot;다음 사진&quot; 모드로 쓰면 탭할 때 바로 다음 사진으로 넘어가고, 그 외에는 1분마다 넘어갑니다. 설정을 바꾸거나 동기화할 때는 넘어가지 않습니다.</p>\n</li>\n<li><p>앱을 다시 열어도 워치의 전환 효과·컴플리케이션 간격 설정이 유지됩니다.</p>\n</li>\n<li><p>설정 화면에서 조작 중에 전면 광고가 뒤늦게 뜨지 않습니다. 프리미엄 사용자는 앱을 열 때마다 구매 완료 안내가 뜨지 않습니다.</p>\n</li>\n<li><p>하단 탭에서 사진 탭이 맨 앞에 옵니다.</p>\n</li>\n<li><p>친구 공유 초대 코드 표시 수정 — 친구와 연결되거나 연결을 끊은 뒤 쓸 수 없는 이전 초대 코드가 남아 있던 문제를 수정했습니다. 연결을 끊으면 바로 새 코드를 만들 수 있습니다.</p>\n</li>\n</ul>\n"
+        },
         {
           "version": "v9.2.0",
           "date": "2026-11-08",
@@ -749,18 +772,19 @@
           "items_html": "<ul>\n<li>2x2 / 4x4 모바일 홈 위젯</li>\n<li>Wear OS 타일 제공자</li>\n<li>포토 컴플리케이션</li>\n<li>ML Kit 얼굴 중심 자동 크롭</li>\n<li>Watch Face Format (WFF) 기반 워치페이스</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v9.2.0",
-      "latest_update_date": "2026-11-08",
+      "latest_version": "v9.5.0",
+      "latest_update_date": "2026-11-20",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/202/icon.png",
       "play_version": "9.2.0",
       "play_installs": "10K+",
+      "play_updated": "2026-11-08",
       "play_rating": 4.2,
       "play_rating_count": 82,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 203,
@@ -833,12 +857,13 @@
       "icon_url": "https://watch-go.com/203/icon.jpg",
       "play_version": "10.5.0",
       "play_installs": "5K+",
+      "play_updated": "2026-11-12",
       "play_rating": 2.9,
       "play_rating_count": 58,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 204,
@@ -1054,12 +1079,13 @@
       "icon_url": "https://watch-go.com/204/icon.jpg",
       "play_version": "16.0.0",
       "play_installs": "10K+",
+      "play_updated": "2026-11-01",
       "play_rating": 4.2,
       "play_rating_count": 97,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 205,
@@ -1221,12 +1247,13 @@
       "icon_url": "https://watch-go.com/205/icon.png",
       "play_version": "10.6.0",
       "play_installs": "5K+",
+      "play_updated": "2026-11-05",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 206,
@@ -1306,12 +1333,13 @@
       "icon_url": "https://watch-go.com/206/icon.png",
       "play_version": null,
       "play_installs": "10K+",
+      "play_updated": "2026-11-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 207,
@@ -1396,12 +1424,13 @@
       "icon_url": "https://watch-go.com/207/icon.png",
       "play_version": "5.7.0",
       "play_installs": "100+",
+      "play_updated": "2026-08-22",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 208,
@@ -1521,12 +1550,13 @@
       "icon_url": "https://watch-go.com/208/icon.png",
       "play_version": "6.5.0",
       "play_installs": "10K+",
+      "play_updated": "2026-11-15",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-20T10:52:46.393+09:00"
+      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
     },
     {
       "id": 209,
@@ -1543,10 +1573,11 @@
       "icon_url": null,
       "play_version": null,
       "play_installs": null,
+      "play_updated": null,
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "not_found",
-      "play_checked_at": "2026-11-20T10:52:46.393+09:00",
+      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
       "fetch_status": "no_docs",
       "last_successful_fetch": null
     }
