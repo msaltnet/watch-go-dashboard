@@ -36,7 +36,7 @@ export async function collectAppDocs({ appsYml, token, fetchFn }) {
       fetchDocFile({ repo: meta.repo, path: overviewPath, token, ref: branch, fetchFn }),
       fetchDocFile({ repo: meta.repo, path: updatesPath, token, ref: branch, fetchFn }),
       iconPromise,
-      fetchPlayVersion({ pkg: meta.package, fetchFn }),
+      fetchPlayVersion({ pkg: meta.package, fetchFn, expectVersion: !meta.play_no_version }),
     ]);
 
     if (['parse_failed', 'partial', 'error'].includes(play.status)) {

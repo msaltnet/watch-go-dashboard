@@ -131,6 +131,7 @@ apps:
     landing: "https://watch-go.com/206"
     repo: "msaltnet/2048-watch"
     branch: "master"
+    play_no_version: true  # Play 목록이 버전을 노출하지 않음 (설치 수만 수집)
 
   - id: 207
     name: "Quote Moment: Daily Inspire"

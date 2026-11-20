@@ -98,3 +98,14 @@ test('merge stores installs/rating and keeps them on failure', () => {
   assert.equal(kept.play_installs, '1K+');
   assert.equal(kept.play_rating, 4.1);
 });
+
+test('play_no_version listings: missing version is ok when installs are found', async () => {
+  const onlyInstalls = 'x ["10,000+",10000,17496,"10K+"] y';
+  const mk = text => async () => ({ status: 200, ok: true, text: async () => text });
+  const ok = await fetchPlayVersion({ pkg: 'com.a', fetchFn: mk(onlyInstalls), expectVersion: false });
+  assert.equal(ok.status, 'ok');
+  assert.equal(ok.version, null);
+  assert.equal(ok.installs, '10K+');
+  assert.equal((await fetchPlayVersion({ pkg: 'com.a', fetchFn: mk(onlyInstalls) })).status, 'parse_failed');
+  assert.equal((await fetchPlayVersion({ pkg: 'com.a', fetchFn: mk('<html/>'), expectVersion: false })).status, 'parse_failed');
+});

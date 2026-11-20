@@ -46,7 +46,10 @@ const EMPTY = { version: null, installs: null, rating: null, rating_count: null 
 //   - not_found: the listing does not exist (app not published / removed)
 //   - parse_failed: page loaded but no version marker found (markup changed?)
 //   - error: network/HTTP failure
-export async function fetchPlayVersion({ pkg, fetchFn = fetch }) {
+// expectVersion=false: the listing is known not to expose a version (apps.yml
+// `play_no_version: true`); the version is then optional and its absence is
+// not a failure as long as the install bucket is found.
+export async function fetchPlayVersion({ pkg, fetchFn = fetch, expectVersion = true }) {
   if (!pkg) return { status: 'error', ...EMPTY };
   let res;
   try {
@@ -61,8 +64,8 @@ export async function fetchPlayVersion({ pkg, fetchFn = fetch }) {
   if (!res.ok || typeof res.text !== 'function') return { status: 'error', ...EMPTY };
   const html = await res.text();
   const version = extractPlayVersion(html);
-  if (!version) return { status: 'parse_failed', ...EMPTY };
   const installs = extractPlayInstalls(html);
+  if (!version && (expectVersion || !installs)) return { status: 'parse_failed', ...EMPTY };
   return {
     status: installs ? 'ok' : 'partial',
     version,
