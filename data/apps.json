@@ -1,8 +1,8 @@
 {
-  "built_at": "2026-11-21T08:54:42.007+09:00",
+  "built_at": "2026-11-22T08:00:05.590+09:00",
   "stats": {
-    "total": 19,
-    "succeeded": 18,
+    "total": 23,
+    "succeeded": 22,
     "no_docs": 1,
     "failed": 0
   },
@@ -98,11 +98,11 @@
       "play_installs": "10K+",
       "play_updated": "2026-11-08",
       "play_rating": 3.7,
-      "play_rating_count": 79,
+      "play_rating_count": 80,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 102,
@@ -150,9 +150,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 107,
@@ -187,9 +187,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 108,
@@ -224,9 +224,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 103,
@@ -262,9 +262,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 104,
@@ -306,9 +306,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 105,
@@ -350,9 +350,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 106,
@@ -388,9 +388,73 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
+    },
+    {
+      "id": 109,
+      "name": "My Photo Watch Face: Future",
+      "identity": "미래적인 디지털 숫자로 사진 위 시간을 또렷하게 보여주는 워치페이스",
+      "package": "com.watch_go.new_my_photo_watch_face_future",
+      "landing": "https://watch-go.com/109",
+      "repo": "msaltnet/wff-watch-face",
+      "branch": "master",
+      "docs_subdir": "new-my-photo-watch-face-orbitron",
+      "overview_html": "<h1>My Photo Watch Face: Future - Overview</h1>\n<p>Watch Face Format(WFF) 기반의 사진 배경 워치페이스입니다. 미래적인 디지털 타이포그래피를 사용해 사진 위에 선명한 시간 정보를 표시하는 디자인 변형입니다.</p>\n<h2>핵심 기능</h2>\n<ul>\n<li>사진 배경: Wear OS 편집 화면에서 Photo 컴플리케이션으로 원하는 사진을 선택</li>\n<li>Future 스타일 시간 표시: 기하학적 디지털 숫자 이미지 폰트 사용</li>\n<li>색상 프리셋: 여러 그라디언트 텍스트 색상 제공</li>\n<li>크기 설정: Medium, Large 옵션 제공</li>\n<li>위치 설정: Center, Top, Bottom 옵션 제공</li>\n<li>AoD 지원: 저전력 상태에서도 시간 표시 유지</li>\n</ul>\n<h2>앱 정보</h2>\n<ul>\n<li>앱 이름: My Photo Watch Face: Future</li>\n<li>패키지: <code>com.watch_go.new_my_photo_watch_face_future</code></li>\n<li>초기 버전: <code>1.0.0</code></li>\n<li>기준 프로젝트: <code>new-my-photo-watch-face</code></li>\n<li>내부 폰트 구분: Orbitron</li>\n</ul>\n<h2>폰트 리소스</h2>\n<p>준비된 PNG 파일이 <code>2_9_6.png</code>처럼 되어 있으면 <code>font_2_9_6.png</code> 같은 Android drawable-safe 이름으로 정리합니다. 앱 내부에서는 <code>font_2_color_{color}</code> bitmap font family를 사용합니다.</p>\n<pre><code class=\"language-bash\">python import_orbitron_font_images.py C:/path/to/orbitron-images\npython generate_bitmap_fonts_per_image.py --images-dir ./watchface/src/main/res/drawable --fonts 2 --colors 0 4 5 6 7 --out bitmap_fonts.xml\n</code></pre>\n",
+      "updates": [
+        {
+          "version": "v1.0.1",
+          "date": "2026-08-31",
+          "label": null,
+          "items_html": "<ul>\n<li>Android 15(API 수준 35) 타깃 요구사항을 준수하도록 업데이트했습니다.</li>\n<li>미래적인 디지털 폰트 이미지 기반의 사진 배경 WFF 워치페이스 프로젝트를 신규 구성했습니다.</li>\n<li>사진 배경, 시간 색상, 시간 크기, 시간 위치 설정을 제공합니다.</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v1.0.1",
+      "latest_update_date": "2026-08-31",
+      "latest_update_label": null,
+      "icon_url": "https://watch-go.com/109/icon.png",
+      "play_version": "1.0.1",
+      "play_installs": "100+",
+      "play_updated": "2026-09-01",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
+    },
+    {
+      "id": 110,
+      "name": "Crypto Watch Face",
+      "identity": "Crypto Watch의 차트를 배경으로 담는 암호화폐 워치페이스",
+      "package": "com.watch_go.crypto_watch_face",
+      "landing": "https://watch-go.com/110",
+      "repo": "msaltnet/wff-watch-face",
+      "branch": "master",
+      "docs_subdir": "crypto-watch-face",
+      "overview_html": "<h1>Crypto Watch Face - Overview</h1>\n<p>Crypto Watch Face는 Crypto Watch 앱의 Photo 컴플리케이션이 제공하는 암호화폐 차트 이미지를 배경으로 보여주는 Watch Face Format(WFF) 워치페이스입니다. <code>new-my-photo-watch-face-acme</code>와 같은 Gradle/WFF 구조를 사용하되, 시간 레이아웃을 위/아래 배치로 제한하고 시간 뒤에 방향성 그라데이션 오버레이를 추가해 차트 위 가독성을 높입니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li>차트 배경: Crypto Watch 앱이 Photo 컴플리케이션으로 전달하는 차트·가격 이미지를 전체 화면 배경으로 표시 (일반 <code>PHOTO_IMAGE</code> 컴플리케이션이므로 직접 찍은 사진도 사용 가능)</li>\n<li>시간 위치: Top / Bottom 두 가지 배치만 제공</li>\n<li>시간 가독성 오버레이: Top 선택 시 상단에서 아래로, Bottom 선택 시 하단에서 위로 검정 그라데이션 적용</li>\n<li>시간 크기: Medium / Large</li>\n<li>색상 테마: 기존 Acme 숫자 이미지 폰트의 컬러 테마 사용</li>\n<li>AoD 지원: WFF 표준 Variant로 주변 모드 표시</li>\n</ul>\n<h2>기술 구조</h2>\n<ul>\n<li>Android application 모듈: <code>:watchface</code></li>\n<li>패키지: <code>com.watch_go.crypto_watch_face</code></li>\n<li>Watch Face Format XML: <code>watchface/src/main/res/raw/watchface.xml</code></li>\n<li>코드 없음: <code>android:hasCode=\"false\"</code>인 순수 WFF 워치페이스</li>\n<li>생성 스크립트:<ul>\n<li><code>generate_expressions.py</code></li>\n<li><code>generate_digital_clocks.py</code></li>\n<li><code>generate_time_overlays.py</code></li>\n<li><code>generate_bitmap_fonts_per_image.py</code></li>\n</ul>\n</li>\n</ul>\n<h2>구현 차이</h2>\n<p>원본 Cute/Acme 프로젝트와 비교해 다음을 변경했습니다.</p>\n<ul>\n<li><code>position</code> 설정에서 <code>center</code>를 제거하고 <code>top</code>, <code>bottom</code>만 남김</li>\n<li>모든 <code>PositionCenter</code> 표현식과 렌더 블록 제거</li>\n<li>각 시간 렌더 블록 앞에 <code>time_overlay_top</code> 또는 <code>time_overlay_bottom</code> 이미지를 추가</li>\n<li>별도 PNG 생성 스크립트로 450 x 180 RGBA 그라데이션 리소스 생성</li>\n<li>앱 이름, 패키지, 버전을 새 독립 앱 기준으로 변경</li>\n</ul>\n",
+      "updates": [
+        {
+          "version": "v1.0.1",
+          "date": "2026-08-31",
+          "label": null,
+          "items_html": "<ul>\n<li>Android 15(API 수준 35) 타깃 요구사항을 준수하도록 업데이트했습니다.</li>\n<li>Crypto Watch Face 초기 버전을 준비했습니다.</li>\n<li>Crypto Watch 앱의 Photo 컴플리케이션이 제공하는 차트 이미지를 배경으로 표시합니다.</li>\n<li>시간을 위 또는 아래에만 배치하도록 단순화했습니다.</li>\n<li>차트 위에서도 시간이 잘 보이도록 시간 뒤에 그라데이션 오버레이를 추가했습니다.</li>\n<li>시간 크기와 컬러 테마 설정은 유지했습니다.</li>\n<li>시간이 위/아래에 있을 때 배경 사진을 반대 방향으로 살짝 이동시켜 시간과 덜 겹치게 했습니다.</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v1.0.1",
+      "latest_update_date": "2026-08-31",
+      "latest_update_label": null,
+      "icon_url": "https://watch-go.com/110/icon.png",
+      "play_version": "1.0.1",
+      "play_installs": "500+",
+      "play_updated": "2026-09-01",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 111,
@@ -415,14 +479,78 @@
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/111/icon.png",
       "play_version": "1.0.1",
-      "play_installs": "50+",
+      "play_installs": "100+",
       "play_updated": "2026-09-01",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
+    },
+    {
+      "id": 112,
+      "name": "Counter Dashboard Watch Face",
+      "identity": "카운터를 확인하고 탭으로 올리는 스코어보드형 워치페이스",
+      "package": "com.watch_go.counter_dashboard_wff",
+      "landing": "https://watch-go.com/112",
+      "repo": "msaltnet/wff-watch-face",
+      "branch": "master",
+      "docs_subdir": "counter-dashboard-watch-face",
+      "overview_html": "<h1>Counter Dashboard</h1>\n<p>카운터를 확인하고 탭으로 증가시키는 독립 워치페이스입니다. v1.0.0을 2026-11-14 Google Play <code>wear:production</code>에 제출했습니다. 공개·심사 결과와 실기기 AOD 검수는 확인되지 않았습니다.</p>\n<ul>\n<li>고정 4칸에서 필요한 슬롯만 선택합니다. 중앙에 12/24시간과 날짜, 각 슬롯에 짧은 제목과 값을 표시합니다.</li>\n<li>민트·블루·라임·앰버·코랄·라벤더 6개 강조 색상을 제공합니다.</li>\n<li>시간과 카운터 수치는 굵고 좁은 Anton 숫자체로 스코어보드처럼 표시합니다. 카운터 제목은 공급자가 보내는 번호이며 사용자 지정 이름을 지원한다는 뜻은 아닙니다.</li>\n<li>Multi Counter 숫자 공급자는 SHORT_TEXT, 새 목표 공급자는 RANGED_VALUE를 사용합니다. 탭은 공급자의 기존 PendingIntent에 위임하여 앱에 설정된 단위로 증가시킵니다.</li>\n<li>실제 목표가 있을 때만 진행바를 표시합니다. 목표가 없으면 숫자만 표시합니다. 목표 초과/음수에서도 텍스트는 실제 공급 문자열을 유지하고 막대만 범위 안으로 제한합니다.</li>\n<li>AOD는 흰색 시간과 카운터 값만 표시합니다. 사진, 폴링, 감소, 초기화 기능은 없습니다.</li>\n</ul>\n<h2>호환성과 결정</h2>\n<p>WFF v2, minSdk 34, targetSdk 35, 코드 없는 리소스 전용 앱입니다. WFF v2를 지원하는 Wear OS 기기가 필요합니다. 카운터 연동에는 워치에 Multi Counter 설치가 필요하며 목표 공급자는 PR #55가 포함된 앱 버전이 필요합니다.</p>\n<p>2026-10-25 사용자 결정으로 기존 이슈의 1/2/4 레이아웃 전환을 <strong>고정 4칸</strong>으로 변경했습니다. WFF v2에서 슬롯 활성/비활성 전환을 지원하지 않으므로 숨은 터치 영역을 만들지 않습니다. 슬롯 ID 400–403은 고정이며 각 슬롯의 공급자/카운터는 사용자가 선택합니다.</p>\n",
+      "updates": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-14",
+          "label": null,
+          "items_html": "<ul>\n<li>워치페이스에서 Multi Counter의 카운터 4개를 한눈에 확인하고, 슬롯을 탭해 카운트합니다.</li>\n<li>Multi Counter 16.0.0 이상에서 카운터 목표 진행 막대를 표시합니다.</li>\n<li>강조 색상 6가지와, 시계 숫자의 시간 스타일(기본 흰색 또는 귀여운 이미지 숫자 5색)을 고를 수 있습니다.</li>\n<li>워치 언어에 맞춰 날짜의 월 이름과 표시 순서가 바뀝니다.</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v1.0.0",
+      "latest_update_date": "2026-11-14",
+      "latest_update_label": null,
+      "icon_url": null,
+      "play_version": "1.0.0",
+      "play_installs": "0+",
+      "play_updated": "2026-11-14",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
+    },
+    {
+      "id": 113,
+      "name": "Photo D-Day Watch Face",
+      "identity": "사진 한 장과 중요한 날까지의 D-Day를 담은 워치페이스",
+      "package": "com.watch_go.photo_dday_wff",
+      "landing": "https://watch-go.com/113",
+      "repo": "msaltnet/wff-watch-face",
+      "branch": "master",
+      "docs_subdir": "photo-dday-watch-face",
+      "overview_html": "<h1>Photo D-Day Watch Face</h1>\n<p>한 장의 사진과 중요한 날까지 남은 시간, 또는 그날부터 지난 시간을 손목에서 확인합니다. 사진 위에 글자를 겹치지 않고 사진 카드·시간·기념일을 세로로 분리합니다.</p>\n<ul>\n<li>사진: My Photo Watch Frame의 PHOTO_IMAGE 컴플리케이션</li>\n<li>이벤트: Frame의 기존 단일 D-Day 설정을 LONG_TEXT로 표시</li>\n<li>미래 <code>D-N</code>, 당일 <code>D-DAY</code>, 과거 <code>D+N</code></li>\n<li>워치의 12/24시간 설정과 언어·지역 설정을 따르는 시간·날짜 표시</li>\n<li>Ivory·Rose·Mint·Sky 포인트 색상(D-Day 값)</li>\n<li>시간 스타일: My Photo Watch Face: Cute의 이미지 숫자 5색 또는 기본 흰색(날짜·D-Day·이벤트명은 시스템 글꼴)</li>\n<li>AOD: 사진과 이벤트명을 숨기고 시간과 D-Day 숫자만 표시</li>\n<li>공급자 미설치·미선택 상태에서도 현재 시각 유지</li>\n</ul>\n<p>WFF v2 / Wear OS 5(Android 14, API 34) 이상. 리소스 전용 앱이며 사진 저장·전송·이벤트 설정·일수 계산은 Frame이 담당합니다. 인터넷이나 새 서버를 요구하지 않습니다. Frame 설정에 따른 사진 순환·탭 변경 동작은 그대로 유지됩니다.</p>\n<p>v1.0.0을 2026-11-14 Google Play <code>wear:production</code>에 제출했습니다(제품 번호 113). 공개·심사 결과와 실기기 AOD 검수는 확인되지 않았습니다. 여러 이벤트 순환과 사진/정보 상하 전환은 MVP에 포함하지 않습니다.</p>\n",
+      "updates": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-14",
+          "label": null,
+          "items_html": "<ul>\n<li>사진 카드와 큰 D-Day 표시를 한 워치페이스에서 함께 봅니다. 포인트 색상 4가지와 최소 AOD를 제공합니다.</li>\n<li>시간 스타일을 고를 수 있습니다. 귀여운 이미지 숫자 5가지 색상 또는 기본 흰색을 선택합니다.</li>\n<li>워치의 언어·지역에 맞춰 날짜를 표시하고, 시간은 12/24시간 설정을 따릅니다.</li>\n<li>My Photo Watch Frame 9.2.0 이상이 필요합니다.</li>\n</ul>\n"
+        }
+      ],
+      "latest_version": "v1.0.0",
+      "latest_update_date": "2026-11-14",
+      "latest_update_label": null,
+      "icon_url": null,
+      "play_version": "1.0.0",
+      "play_installs": "0+",
+      "play_updated": "2026-11-14",
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "ok",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 200,
@@ -511,9 +639,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 201,
@@ -691,9 +819,9 @@
       "play_rating": 3.8,
       "play_rating_count": 112,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 202,
@@ -782,9 +910,9 @@
       "play_rating": 4.2,
       "play_rating_count": 82,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 203,
@@ -861,9 +989,9 @@
       "play_rating": 2.9,
       "play_rating_count": 58,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 204,
@@ -872,7 +1000,7 @@
       "package": "com.watch_go.multicounter",
       "landing": "https://watch-go.com/204",
       "repo": "msaltnet/watch-go-multi-counter",
-      "overview_html": "<h1>Multi Counter — Overview</h1>\n<p>Wear OS 워치와 Android 모바일에서 작동하는 다용도 카운터 앱입니다. 화면을 탭해 숫자를 세는 싱글 카운터부터 2~4인 보드게임 스코어 카운터까지 한 앱에서 해결하며, 디지털 시계/스톱워치, 세션 히스토리, 이미지 공유 기능을 함께 제공합니다. 모바일에서 이름·색상·목표·루프 등을 설정하면 워치로 실시간 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>유연한 카운터 모드</strong> — 싱글 / 듀얼 / 트리플 / 쿼드(4분할) 즉시 전환</li>\n<li><strong>타일 빠른 실행</strong> — 앱을 열지 않고 타일에서 바로 카운트</li>\n<li><strong>카운터 상세 설정</strong> — 각 카운터별 이름(최대 10자)·색상·카운트 단위(1<del>100)·목표치·루프 모드·직접 값 수정(0</del>99999)</li>\n<li><strong>히스토리 로그 &amp; 이미지 공유</strong> — 세션 기록을 모바일에서 관리하고 이미지로 공유</li>\n<li><strong>홈 화면 위젯 &amp; 볼륨 키 카운터</strong> — 화면을 보지 않고도 볼륨 키로 카운트</li>\n<li><strong>진동·사운드 피드백</strong> — 탭할 때마다 햅틱으로 확신 있는 카운팅</li>\n<li><strong>Wear 시계 상시 표시·스톱워치 내장</strong> — 운동 세트 사이 시간 측정 등에 활용</li>\n<li><strong>모바일-워치 실시간 동기화</strong> — 5초 주기 pull 방식 세션 동기화</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템, MVVM (<code>MainViewModel</code>), Jetpack DataStore</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Tiles</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MessageClient</code>)</li>\n<li><strong>데이터 저장:</strong> DataStore 기반 <code>CounterRecordDataStore</code> (모바일) / <code>HistoryManager</code> (워치, 최대 50개 유지)</li>\n</ul>\n<h2>동기화 아키텍처</h2>\n<p>모바일이 <strong>5초 간격</strong>으로 워치에 <code>/sync-records-request</code>를 보내 pull:</p>\n<pre><code>Mobile                                        Wear\n  │ ── /sync-records-request ───────────────▶ │ (5초마다)\n  │ ◀── /sync-records-response ───────────── │ (wear 기록 JSON)\n  │ handleCounterRecordsResponse()            │\n  │ counterRecordDataStore.addCounterRecords()│\n  │ ── /sync-records-response ───────────────▶│ (동기화 완료된 sessionId 회신)\n  │                                           │ historyManager.removeRecordsFromHistory()\n</code></pre>\n<h3>메시지 경로</h3>\n<table>\n<thead>\n<tr>\n<th>경로</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/sync-records-request</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 요청</td>\n</tr>\n<tr>\n<td><code>/sync-records-response</code></td>\n<td>양방향</td>\n<td>기록 데이터 전송 / ACK</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n<tr>\n<td><code>/watch-version</code></td>\n<td>Wear → Mobile</td>\n<td>버전 정보</td>\n</tr>\n</tbody></table>\n<h3>중복 제거</h3>\n<ul>\n<li><strong>Mobile:</strong> sessionId 기준, 5초 미만 + 모든 카운터 0인 기록 제거, <code>isActive=true</code> 중 최신만 유지, 기존 title 보존</li>\n<li><strong>Wear:</strong> 모바일이 회신한 sessionId 중 <code>isActive=false</code>만 삭제 (활성 세션은 유지)</li>\n</ul>\n<h2>CounterRecord 데이터 구조</h2>\n<pre><code class=\"language-kotlin\">data class CounterRecord(\n  val sessionId: String,          // timestamp 기반 고유 ID\n  val startTime: String,          // ISO 시작 시간\n  val endTime: String?,           // ISO 종료 시간\n  val counter1Count..counter4Count: Int,\n  val counter1Color..counter4Color: Int,\n  val counter1Name..counter4Name: String, // 최대 10자\n  val mode: Int,                   // 싱글/듀얼/트리플/쿼드\n  val isActive: Boolean,\n  val activeDuration: Long,        // ms\n  val title: String? = null        // Mobile 전용\n)\n</code></pre>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code>가 주기적 동기화 트리거, <code>MainViewModel</code>이 <code>MessageClient.OnMessageReceivedListener</code> 구현</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 메시지 수신·처리, <code>HistoryManager</code>가 DataStore에 기록 관리</li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code>, <code>:profile-core</code></li>\n<li>프로필은 네 카운터의 모드·이름·색·목표·루프·시작값만 소유한다. 소리·진동·타이머·화면 유지와 사진은 전역 설정으로 유지된다. 프로필 생성·관리·전환은 휴대폰에서만 제공하며, Wear 앱과 Tile은 휴대폰이 선택한 설정과 기록용 프로필 스냅샷을 내부적으로 동기화한 뒤 카운터 조작에 집중한다.</li>\n</ul>\n<h2>목표 컴플리케이션 (개발 중)</h2>\n<p>기존 <code>CounterComplicationDataSourceService</code>는 <code>SHORT_TEXT</code>를 유지한다. 새 <code>CounterGoalComplicationDataSourceService</code>는 <code>RANGED_VALUE</code>를 제공하며 같은 인스턴스별 카운터 선택과 증가 PendingIntent를 사용한다. 컴포넌트 패키지는 <code>com.watch_go.multicounter.complication</code>이다.</p>\n<p>범위는 최소 0, 최대 실제 <code>GOALn</code>, 값은 현재 저장값을 0..목표로 제한한 값이다. 텍스트/접근성 설명은 실제 카운트를 유지한다. 목표가 없거나 0/음수/잘못된 값이면 <code>min=max=value=0</code>의 빈 범위로 숫자와 탭만 유지한다. Counter Dashboard는 <code>max &gt; min</code>일 때만 진행률을 표시한다. 다른 워치페이스의 빈 범위 렌더링은 기기 검증이 필요하며 호환되지 않으면 기존 숫자 제공자를 선택한다. <code>LOOP_COUNTn</code>을 목표로 해석하지 않으며 루프 이후에는 실제 저장된 시작값(0 또는 1)을 사용한다. 설정 수신과 기존 카운트 변경 경로는 두 제공자를 갱신한다.</p>\n<h3>표시 개수와 설정 전달</h3>\n<p>컴플리케이션 구성 화면과 신규 기본 매핑은 수신한 <code>MODE_0..3</code>에 따라 1..4개 카운터만 제공한다. 아직 설정을 수신하지 않았다면 휴대폰 기본값과 같은 1개를 사용한다. 이미 연결한 카운터가 표시 개수 밖으로 나가면 매핑을 삭제하거나 다른 카운터로 바꾸지 않고 <code>NoData</code>로 표시와 탭을 비활성화한다. 표시 개수를 늘리면 기존 매핑이 다시 동작한다. 캐시된 이전 탭도 수신 시 최신 설정으로 거부한다.</p>\n<p>휴대폰은 기존 연결 확인 주기에 새/재연결된 노드와 변경된 설정을 전송하고 성공한 노드만 캐시한다. 실패는 다음 확인에서 재시도하고 프로필 전환 중 중간 설정은 보내지 않는다. Wear는 설정을 저장한 뒤 UI와 두 제공자에 알린다. 연결·서명이 정상이어도 실제 카운터 목표가 Off이면 진행 막대는 표시하지 않는다.</p>\n",
+      "overview_html": "<h1>Multi Counter — Overview</h1>\n<p>Wear OS 워치와 Android 모바일에서 작동하는 다용도 카운터 앱입니다. 화면을 탭해 숫자를 세는 싱글 카운터부터 2~4인 보드게임 스코어 카운터까지 한 앱에서 해결하며, 디지털 시계/스톱워치, 세션 히스토리, 이미지 공유 기능을 함께 제공합니다. 모바일에서 이름·색상·목표·루프 등을 설정하면 워치로 실시간 동기화됩니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><strong>유연한 카운터 모드</strong> — 싱글 / 듀얼 / 트리플 / 쿼드(4분할) 즉시 전환</li>\n<li><strong>타일 빠른 실행</strong> — 앱을 열지 않고 타일에서 바로 카운트</li>\n<li><strong>카운터 상세 설정</strong> — 각 카운터별 이름(최대 10자)·색상·카운트 단위(1<del>100)·목표치(0</del>99999)·루프 모드·직접 값 수정(0~99999)</li>\n<li><strong>히스토리 로그 &amp; 이미지 공유</strong> — 세션 기록을 모바일에서 관리하고 이미지로 공유</li>\n<li><strong>홈 화면 위젯 &amp; 볼륨 키 카운터</strong> — 화면을 보지 않고도 볼륨 키로 카운트</li>\n<li><strong>진동·사운드 피드백</strong> — 탭할 때마다 햅틱으로 확신 있는 카운팅</li>\n<li><strong>Wear 시계 상시 표시·스톱워치 내장</strong> — 운동 세트 사이 시간 측정 등에 활용</li>\n<li><strong>모바일-워치 실시간 동기화</strong> — 5초 주기 pull 방식 세션 동기화</li>\n</ul>\n<h2>기술 스택</h2>\n<ul>\n<li><strong>모바일 앱:</strong> Kotlin, Android View 시스템, MVVM (<code>MainViewModel</code>), Jetpack DataStore</li>\n<li><strong>워치 앱:</strong> Kotlin, Jetpack Compose for Wear OS, Wear Tiles</li>\n<li><strong>기기 간 통신:</strong> Wearable Data Layer API (<code>MessageClient</code>)</li>\n<li><strong>데이터 저장:</strong> DataStore 기반 <code>CounterRecordDataStore</code> (모바일) / <code>HistoryManager</code> (워치, 최대 50개 유지)</li>\n</ul>\n<h2>동기화 아키텍처</h2>\n<p>모바일이 <strong>5초 간격</strong>으로 워치에 <code>/sync-records-request</code>를 보내 pull:</p>\n<pre><code>Mobile                                        Wear\n  │ ── /sync-records-request ───────────────▶ │ (5초마다)\n  │ ◀── /sync-records-response ───────────── │ (wear 기록 JSON)\n  │ handleCounterRecordsResponse()            │\n  │ counterRecordDataStore.addCounterRecords()│\n  │ ── /sync-records-response ───────────────▶│ (동기화 완료된 sessionId 회신)\n  │                                           │ historyManager.removeRecordsFromHistory()\n</code></pre>\n<h3>메시지 경로</h3>\n<table>\n<thead>\n<tr>\n<th>경로</th>\n<th>방향</th>\n<th>용도</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>/sync-records-request</code></td>\n<td>Mobile → Wear</td>\n<td>동기화 요청</td>\n</tr>\n<tr>\n<td><code>/sync-records-response</code></td>\n<td>양방향</td>\n<td>기록 데이터 전송 / ACK</td>\n</tr>\n<tr>\n<td><code>/update-settings</code></td>\n<td>Mobile → Wear</td>\n<td>설정 동기화</td>\n</tr>\n<tr>\n<td><code>/watch-version</code></td>\n<td>Wear → Mobile</td>\n<td>버전 정보</td>\n</tr>\n</tbody></table>\n<h3>중복 제거</h3>\n<ul>\n<li><strong>Mobile:</strong> sessionId 기준, 5초 미만 + 모든 카운터 0인 기록 제거, <code>isActive=true</code> 중 최신만 유지, 기존 title 보존</li>\n<li><strong>Wear:</strong> 모바일이 회신한 sessionId 중 <code>isActive=false</code>만 삭제 (활성 세션은 유지)</li>\n</ul>\n<h2>CounterRecord 데이터 구조</h2>\n<pre><code class=\"language-kotlin\">data class CounterRecord(\n  val sessionId: String,          // timestamp 기반 고유 ID\n  val startTime: String,          // ISO 시작 시간\n  val endTime: String?,           // ISO 종료 시간\n  val counter1Count..counter4Count: Int,\n  val counter1Color..counter4Color: Int,\n  val counter1Name..counter4Name: String, // 최대 10자\n  val mode: Int,                   // 싱글/듀얼/트리플/쿼드\n  val isActive: Boolean,\n  val activeDuration: Long,        // ms\n  val title: String? = null        // Mobile 전용\n)\n</code></pre>\n<h2>아키텍처 요약</h2>\n<ul>\n<li>모바일 (<code>:app</code>) — <code>MainActivity</code>가 주기적 동기화 트리거, <code>MainViewModel</code>이 <code>MessageClient.OnMessageReceivedListener</code> 구현</li>\n<li>워치 (<code>:wear</code>) — <code>DataLayerListenerService</code>가 메시지 수신·처리, <code>HistoryManager</code>가 DataStore에 기록 관리</li>\n<li>공용 라이브러리: <code>:watch-go-info-fragment</code>, <code>:onboarding</code>, <code>:profile-core</code></li>\n<li>프로필은 네 카운터의 모드·이름·색·목표·루프·시작값만 소유한다. 소리·진동·타이머·화면 유지와 사진은 전역 설정으로 유지된다. 프로필 생성·관리·전환은 휴대폰에서만 제공하며, Wear 앱과 Tile은 휴대폰이 선택한 설정과 기록용 프로필 스냅샷을 내부적으로 동기화한 뒤 카운터 조작에 집중한다.</li>\n</ul>\n<h2>목표 컴플리케이션 (개발 중)</h2>\n<p>기존 <code>CounterComplicationDataSourceService</code>는 <code>SHORT_TEXT</code>를 유지한다. 새 <code>CounterGoalComplicationDataSourceService</code>는 <code>RANGED_VALUE</code>를 제공하며 같은 인스턴스별 카운터 선택과 증가 PendingIntent를 사용한다. 컴포넌트 패키지는 <code>com.watch_go.multicounter.complication</code>이다.</p>\n<p>범위는 최소 0, 최대 실제 <code>GOALn</code>, 값은 현재 저장값을 0..목표로 제한한 값이다. 텍스트/접근성 설명은 실제 카운트를 유지한다. 목표가 없거나 0/음수/잘못된 값이면 <code>min=max=value=0</code>의 빈 범위로 숫자와 탭만 유지한다. Counter Dashboard는 <code>max &gt; min</code>일 때만 진행률을 표시한다. 다른 워치페이스의 빈 범위 렌더링은 기기 검증이 필요하며 호환되지 않으면 기존 숫자 제공자를 선택한다. <code>LOOP_COUNTn</code>을 목표로 해석하지 않으며 루프 이후에는 실제 저장된 시작값(0 또는 1)을 사용한다. 설정 수신과 기존 카운트 변경 경로는 두 제공자를 갱신한다.</p>\n<h3>표시 개수와 설정 전달</h3>\n<p>컴플리케이션 구성 화면과 신규 기본 매핑은 수신한 <code>MODE_0..3</code>에 따라 1..4개 카운터만 제공한다. 아직 설정을 수신하지 않았다면 휴대폰 기본값과 같은 1개를 사용한다. 이미 연결한 카운터가 표시 개수 밖으로 나가면 매핑을 삭제하거나 다른 카운터로 바꾸지 않고 <code>NoData</code>로 표시와 탭을 비활성화한다. 표시 개수를 늘리면 기존 매핑이 다시 동작한다. 캐시된 이전 탭도 수신 시 최신 설정으로 거부한다.</p>\n<p>휴대폰은 기존 연결 확인 주기에 새/재연결된 노드와 변경된 설정을 전송하고 성공한 노드만 캐시한다. 실패는 다음 확인에서 재시도하고 프로필 전환 중 중간 설정은 보내지 않는다. Wear는 설정을 저장한 뒤 UI와 두 제공자에 알린다. 연결·서명이 정상이어도 실제 카운터 목표가 Off이면 진행 막대는 표시하지 않는다.</p>\n",
       "updates": [
         {
           "version": "v16.0.0",
@@ -1083,9 +1211,9 @@
       "play_rating": 4.2,
       "play_rating_count": 97,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 205,
@@ -1251,9 +1379,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 206,
@@ -1337,9 +1465,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 207,
@@ -1428,9 +1556,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 208,
@@ -1554,9 +1682,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-21T08:54:42.007+09:00"
+      "last_successful_fetch": "2026-11-22T08:00:05.590+09:00"
     },
     {
       "id": 209,
@@ -1577,7 +1705,7 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "not_found",
-      "play_checked_at": "2026-11-21T08:54:42.007+09:00",
+      "play_checked_at": "2026-11-22T08:00:05.590+09:00",
       "fetch_status": "no_docs",
       "last_successful_fetch": null
     }
