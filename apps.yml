@@ -70,6 +70,24 @@ apps:
     branch: "master"
     docs_subdir: "led-board-watch-face"
 
+  - id: 109
+    name: "My Photo Watch Face: Future"
+    identity: "미래적인 디지털 숫자로 사진 위 시간을 또렷하게 보여주는 워치페이스"
+    package: "com.watch_go.new_my_photo_watch_face_future"
+    landing: "https://watch-go.com/109"
+    repo: "msaltnet/wff-watch-face"
+    branch: "master"
+    docs_subdir: "new-my-photo-watch-face-orbitron"
+
+  - id: 110
+    name: "Crypto Watch Face"
+    identity: "Crypto Watch의 차트를 배경으로 담는 암호화폐 워치페이스"
+    package: "com.watch_go.crypto_watch_face"
+    landing: "https://watch-go.com/110"
+    repo: "msaltnet/wff-watch-face"
+    branch: "master"
+    docs_subdir: "crypto-watch-face"
+
   - id: 111
     name: "My Photo Watch Face: Dial"
     identity: "원형 사진 액자와 소형 아날로그 시계를 함께 담은 워치페이스"
@@ -78,6 +96,24 @@ apps:
     repo: "msaltnet/wff-watch-face"
     branch: "master"
     docs_subdir: "my-photo-dial-watch-face"
+
+  - id: 112
+    name: "Counter Dashboard Watch Face"
+    identity: "카운터를 확인하고 탭으로 올리는 스코어보드형 워치페이스"
+    package: "com.watch_go.counter_dashboard_wff"
+    landing: "https://watch-go.com/112"
+    repo: "msaltnet/wff-watch-face"
+    branch: "master"
+    docs_subdir: "counter-dashboard-watch-face"
+
+  - id: 113
+    name: "Photo D-Day Watch Face"
+    identity: "사진 한 장과 중요한 날까지의 D-Day를 담은 워치페이스"
+    package: "com.watch_go.photo_dday_wff"
+    landing: "https://watch-go.com/113"
+    repo: "msaltnet/wff-watch-face"
+    branch: "master"
+    docs_subdir: "photo-dday-watch-face"
 
   - id: 200
     name: "Double Check: To-Do & List"

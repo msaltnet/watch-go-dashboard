@@ -32,7 +32,7 @@ docs/app/updates.md      │
 
 **3단계 파이프라인:**
 
-1. **수집 (`scripts/fetch-docs.mjs`)** — `apps.yml` 17개 엔트리를 읽고, 각 repo의 `docs/app/{overview,updates}.md`를 GitHub API로 받아옴. `updates.md`는 버전 헤더(`## v1.2.3 — YYYY-MM-DD` 등)로 파싱해 구조화. 결과는 `data/apps.json`에 누적 저장. 일부 repo가 실패하면 이전 데이터를 유지(부분 실패 허용), 전부 실패하면 Actions가 fail해서 사이트를 보호.
+1. **수집 (`scripts/fetch-docs.mjs`)** — `apps.yml`의 앱 엔트리를 읽고, 각 repo의 `docs/app/{overview,updates}.md`를 GitHub API로 받아옴. `updates.md`는 버전 헤더(`## v1.2.3 — YYYY-MM-DD` 등)로 파싱해 구조화. 결과는 `data/apps.json`에 누적 저장. 일부 repo가 실패하면 이전 데이터를 유지(부분 실패 허용), 전부 실패하면 Actions가 fail해서 사이트를 보호.
 
 2. **렌더링 (`scripts/render-site.mjs`)** — `data/apps.json` + `templates/*.html` + `public/styles.css` 를 합쳐 `dist/`에 정적 HTML 생성. 페이지는 두 종류:
    - `index.html` — 카드 그리드 (앱 번호, 정체성, 최신 버전, 상태 배지)
