@@ -136,6 +136,7 @@ python -m http.server --directory dist 8000
      repo: "msaltnet/new-repo"
      # docs_subdir: "sub"  # 선택: 여러 앱이 한 repo를 공유할 때
      # variant: "clean"    # 선택: 같은 id를 구분해야 할 때
+     # icon_url: "/app-icons/209.png"  # 선택: watch-go.com 랜딩 페이지가 없으면 public/app-icons/에 512px PNG를 두고 지정
      # branch: "master"    # 선택: 기본 브랜치가 main이 아닐 때
    ```
 

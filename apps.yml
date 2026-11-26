@@ -102,6 +102,7 @@ apps:
     identity: "카운터를 확인하고 탭으로 올리는 스코어보드형 워치페이스"
     package: "com.watch_go.counter_dashboard_wff"
     landing: "https://watch-go.com/112"
+    icon_url: "/app-icons/112.png"
     repo: "msaltnet/wff-watch-face"
     branch: "master"
     docs_subdir: "counter-dashboard-watch-face"
@@ -111,9 +112,30 @@ apps:
     identity: "사진 한 장과 중요한 날까지의 D-Day를 담은 워치페이스"
     package: "com.watch_go.photo_dday_wff"
     landing: "https://watch-go.com/113"
+    icon_url: "/app-icons/113.png"
     repo: "msaltnet/wff-watch-face"
     branch: "master"
     docs_subdir: "photo-dday-watch-face"
+
+  - id: 114
+    name: "Ready Check Watch Face"
+    identity: "체크리스트 진행 상태를 화면 가장자리 링으로 보여주는 워치페이스"
+    package: "com.watch_go.ready_check_wff"
+    landing: "https://watch-go.com/114"
+    icon_url: "/app-icons/114.png"
+    repo: "msaltnet/wff-watch-face"
+    branch: "master"
+    docs_subdir: "ready-check-watch-face"
+
+  - id: 115
+    name: "Photo Duo Watch Face"
+    identity: "시간 위아래에 사진을 한 장씩 담는 워치페이스"
+    package: "com.watch_go.photo_duo_wff"
+    landing: "https://watch-go.com/115"
+    icon_url: "/app-icons/115.png"
+    repo: "msaltnet/wff-watch-face"
+    branch: "master"
+    docs_subdir: "photo-duo-watch-face"
 
   - id: 200
     name: "Double Check: To-Do & List"

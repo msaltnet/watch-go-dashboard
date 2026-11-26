@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
+import { parse as parseYaml } from 'yaml';
 import { collectAppDocs } from '../scripts/fetch-docs.mjs';
 
 const appsYml = `
@@ -159,4 +160,15 @@ test('throws when token missing', async () => {
     collectAppDocs({ appsYml, token: null, fetchFn: mockFetch({}) }),
     /DOCS_FETCH_TOKEN/
   );
+});
+
+// 112–115 have no watch-go.com landing page, so their icons ship with this repo.
+test('registers apps 112-115 with a bundled icon', async () => {
+  const configured = parseYaml(await readFile(new URL('../apps.yml', import.meta.url), 'utf8'));
+  for (const id of [112, 113, 114, 115]) {
+    const app = configured.apps.find(entry => entry.id === id);
+    assert.ok(app, `app ${id} is missing from apps.yml`);
+    assert.equal(app.icon_url, `/app-icons/${id}.png`);
+    await access(new URL(`../public${app.icon_url}`, import.meta.url));
+  }
 });
