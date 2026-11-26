@@ -40,6 +40,12 @@ docs/app/updates.md      │
 
 3. **배포** — `actions/upload-pages-artifact` + `actions/deploy-pages`로 GitHub Pages에 게시. 두 워크플로우(`daily-update`, `deploy`)로 분리되어, 데이터만 갱신될 때와 템플릿/스크립트가 바뀔 때 모두 자동 재배포.
 
+## overview.md 공개 범위
+
+제품 저장소는 비공개이고 이 사이트는 공개이므로, `overview.md`는 **소개(첫 `##` 제목 앞부분)** 와 `## 소개`·`## 앱 소개`·`## 주요 기능`·`## 핵심 기능` 섹션만 게시합니다. 그 밖의 섹션(기술 스택, 아키텍처, API, DB 등)은 수집 단계에서 버려 `data/apps.json`에도 남기지 않습니다(`scripts/parsers/overview.mjs`).
+
+게시되는 부분에 적은 내용은 그대로 공개되므로 내부 식별자·미출시 상태·검수 메모는 넣지 마세요. `updates.md`는 걸러내지 않습니다.
+
 ## Play 스토어 버전
 
 수집 단계에서 각 앱의 공개 Google Play 목록 페이지(`scripts/play.mjs`)를 읽어 실제 게시 버전을 `play_version`으로 저장합니다. 인증·시크릿이 필요 없습니다.
