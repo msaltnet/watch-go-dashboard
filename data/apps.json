@@ -1,8 +1,8 @@
 {
-  "built_at": "2026-11-26T10:44:13.867+09:00",
+  "built_at": "2026-11-27T01:03:59.087+09:00",
   "stats": {
-    "total": 23,
-    "succeeded": 22,
+    "total": 25,
+    "succeeded": 24,
     "no_docs": 1,
     "failed": 0
   },
@@ -106,9 +106,9 @@
       "play_rating": 3.7,
       "play_rating_count": 80,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 102,
@@ -156,9 +156,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 107,
@@ -193,9 +193,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 108,
@@ -230,9 +230,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 103,
@@ -268,9 +268,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 104,
@@ -312,9 +312,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 105,
@@ -356,9 +356,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 106,
@@ -394,9 +394,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 109,
@@ -426,9 +426,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 110,
@@ -458,9 +458,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 111,
@@ -490,9 +490,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 112,
@@ -500,6 +500,7 @@
       "identity": "카운터를 확인하고 탭으로 올리는 스코어보드형 워치페이스",
       "package": "com.watch_go.counter_dashboard_wff",
       "landing": "https://watch-go.com/112",
+      "icon_url": "/app-icons/112.png",
       "repo": "msaltnet/wff-watch-face",
       "branch": "master",
       "docs_subdir": "counter-dashboard-watch-face",
@@ -515,16 +516,15 @@
       "latest_version": "v1.0.0",
       "latest_update_date": "2026-11-14",
       "latest_update_label": null,
-      "icon_url": null,
       "play_version": "1.0.0",
       "play_installs": "1+",
       "play_updated": "2026-11-14",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 113,
@@ -532,6 +532,7 @@
       "identity": "사진 한 장과 중요한 날까지의 D-Day를 담은 워치페이스",
       "package": "com.watch_go.photo_dday_wff",
       "landing": "https://watch-go.com/113",
+      "icon_url": "/app-icons/113.png",
       "repo": "msaltnet/wff-watch-face",
       "branch": "master",
       "docs_subdir": "photo-dday-watch-face",
@@ -547,16 +548,65 @@
       "latest_version": "v1.0.0",
       "latest_update_date": "2026-11-14",
       "latest_update_label": null,
-      "icon_url": null,
       "play_version": "1.0.0",
       "play_installs": "0+",
       "play_updated": "2026-11-14",
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
+    },
+    {
+      "id": 114,
+      "name": "Ready Check Watch Face",
+      "identity": "체크리스트 진행 상태를 화면 가장자리 링으로 보여주는 워치페이스",
+      "package": "com.watch_go.ready_check_wff",
+      "landing": "https://watch-go.com/114",
+      "icon_url": "/app-icons/114.png",
+      "repo": "msaltnet/wff-watch-face",
+      "branch": "master",
+      "docs_subdir": "ready-check-watch-face",
+      "overview_html": "<h1>Ready Check</h1>\n<p>Double Check에서 고른 체크리스트 하나의 진행 상태를 화면 가장자리 링으로 보여주는 워치페이스입니다. 개발 중이며 출시되지 않았습니다.</p>\n<ul>\n<li><strong>메인 진행 링(슬롯 1개).</strong> 가장자리를 따라 도는 링이 <code>완료/전체</code> 진행만큼 채워집니다. 시간 아래에 체크 아이콘과 공급자 텍스트(예: <code>5/8</code>)를 표시합니다. 탭하면 공급자가 정한 화면(정상 상태는 해당 리스트 상세)이 열립니다.</li>\n<li><strong>완료 강조.</strong> 범위가 유효하고 값이 최대값에 도달하면 링이 가득 차고 체크 아이콘이 채워진 배지로 바뀝니다. 고정 문구(\"Ready\" 등)는 표시하지 않고 공급자 텍스트를 유지합니다.</li>\n<li><strong>연결 안내.</strong> 메인 슬롯이 비어 있으면(Double Check 미설치, 기본 공급자 미적용, 사용자가 비움) 점선 링과 \"체크리스트 연결 · Double Check\" 안내를 14개 언어로 표시합니다.</li>\n<li><strong>시간·날짜·보조 슬롯.</strong> 중앙 큰 Anton 시간(12/24시간 시스템 설정), 위쪽 날짜, 아래쪽 보조 슬롯 2개(기본 배터리·걸음 수, 변경·비움 가능).</li>\n<li><strong>강조 색상.</strong> 민트·블루·라임·앰버·코랄·라벤더 6색(기본 민트)을 링과 아이콘에 적용합니다.</li>\n<li><strong>AOD.</strong> 시간, 메인 슬롯 텍스트, 얇은 회색 진행 링만 표시합니다. 날짜·보조 슬롯·아이콘·안내는 숨깁니다. 메인 슬롯이 비어 있으면 시간만 표시합니다.</li>\n<li><strong>개인정보.</strong> 리스트 제목은 워치페이스 어디에도 표시하지 않습니다. 워치페이스는 공개 화면이며 Double Check도 제목을 화면 텍스트에 넣지 않습니다.</li>\n</ul>\n<p>메인 슬롯은 타입 기반(<code>RANGED_VALUE</code>, <code>SHORT_TEXT</code>, 비움)이라 다른 공급자도 지정할 수 있습니다. 같은 완료 규칙이 적용되므로 예를 들어 배터리 100%도 완료 강조로 보입니다. <code>SHORT_TEXT</code> 공급자는 링 트랙과 텍스트만 표시합니다.</p>\n<h2>호환성과 결정</h2>\n<p>WFF v2, minSdk 34, targetSdk 35, 코드 없는 리소스 전용 앱입니다. 체크리스트 연동에는 워치에 Double Check의 \"체크리스트 진행 상태\" 컴플리케이션이 포함된 버전이 필요합니다(double-check-pro #28, 2026-11-20 병합, 미출시). 그 버전이 출시되기 전에는 모든 사용자에게 연결 안내만 보이므로 Ready Check 공개는 Double Check 출시 뒤에 해야 합니다.</p>\n<p>기본 공급자 자동 지정은 기기와 Wear OS 정책에 따라 적용되지 않을 수 있습니다. 이때는 편집기에서 Double Check를 직접 고릅니다. 워치페이스에서 항목을 직접 체크하지 않으며 리스트는 1개만 표시합니다(Issue #62 결정 기록).</p>\n",
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "play_version": null,
+      "play_installs": null,
+      "play_updated": null,
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "not_found",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
+    },
+    {
+      "id": 115,
+      "name": "Photo Duo Watch Face",
+      "identity": "시간 위아래에 사진을 한 장씩 담는 워치페이스",
+      "package": "com.watch_go.photo_duo_wff",
+      "landing": "https://watch-go.com/115",
+      "icon_url": "/app-icons/115.png",
+      "repo": "msaltnet/wff-watch-face",
+      "branch": "master",
+      "docs_subdir": "photo-duo-watch-face",
+      "overview_html": "<h1>Photo Duo Watch Face</h1>\n<p>사진 두 장과 시간을 한 화면에서 봅니다. 둥근 사진 카드 두 장을 위아래로 두어 위에 Photo 1, 아래에 Photo 2를 보여주고, 두 카드 사이에 시간을 표시합니다.</p>\n<ul>\n<li>사진: My Photo Watch Frame의 Photo 1·Photo 2 <code>PHOTO_IMAGE</code> 컴플리케이션(기본 공급자). 다른 사진 공급자로 바꿀 수 있습니다.</li>\n<li>Frame이 보내는 정사각형 사진의 가운데 가로 띠를 늘리지 않고 표시</li>\n<li>시간 색상: 흰색·아이보리·로즈·민트·스카이</li>\n<li>워치의 12/24시간 설정을 따르는 시간</li>\n<li>AOD: 사진을 숨기고 흰색 시간만 표시</li>\n<li>공급자 미설치·미선택 쪽은 어두운 빈 사진 카드로 표시하고 시간은 유지</li>\n</ul>\n<p>WFF v2 / Wear OS 5(Android 14, API 34) 이상. 리소스 전용 앱이며 사진 저장·전송·지정은 Frame이 담당합니다. Photo 1·Photo 2 공급자는 Frame <a href=\"https://github.com/msaltnet/my-photo-watch-frame/issues/38\">msaltnet/my-photo-watch-frame#38</a>(PR #39)에서 추가되었고, Frame 출시 버전은 아직 확정되지 않았습니다.</p>\n<p>첫 배포는 두 장 보기 수요를 확인하기 위한 Play 테스트 트랙 한정입니다. 프로덕션 출시, 배치 선택, 추가 컴플리케이션은 포함하지 않습니다.</p>\n",
+      "updates": [],
+      "latest_version": null,
+      "latest_update_date": null,
+      "latest_update_label": null,
+      "play_version": null,
+      "play_installs": null,
+      "play_updated": null,
+      "play_rating": null,
+      "play_rating_count": null,
+      "play_status": "not_found",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
+      "fetch_status": "ok",
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 200,
@@ -645,9 +695,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 201,
@@ -825,9 +875,9 @@
       "play_rating": 3.8,
       "play_rating_count": 111,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 202,
@@ -928,9 +978,9 @@
       "play_rating": 4.2,
       "play_rating_count": 82,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 203,
@@ -1007,9 +1057,9 @@
       "play_rating": 2.9,
       "play_rating_count": 58,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 204,
@@ -1229,9 +1279,9 @@
       "play_rating": 4.2,
       "play_rating_count": 97,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 205,
@@ -1397,9 +1447,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 206,
@@ -1483,9 +1533,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 207,
@@ -1574,9 +1624,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 208,
@@ -1700,9 +1750,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-26T10:44:13.867+09:00"
+      "last_successful_fetch": "2026-11-27T01:03:59.087+09:00"
     },
     {
       "id": 209,
@@ -1723,7 +1773,7 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "not_found",
-      "play_checked_at": "2026-11-26T10:44:13.867+09:00",
+      "play_checked_at": "2026-11-27T01:03:59.087+09:00",
       "fetch_status": "no_docs",
       "last_successful_fetch": null
     }
