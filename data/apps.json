@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-27T01:23:36.082+09:00",
+  "built_at": "2026-11-27T10:38:45.808+09:00",
   "stats": {
     "total": 25,
     "succeeded": 24,
@@ -100,15 +100,15 @@
       "latest_update_date": "2026-11-23",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/100/icon.jpg",
-      "play_version": "8.2.0",
+      "play_version": "8.7.0",
       "play_installs": "10K+",
-      "play_updated": "2026-11-08",
+      "play_updated": "2026-11-23",
       "play_rating": 3.7,
       "play_rating_count": 80,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 102,
@@ -156,9 +156,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 107,
@@ -193,9 +193,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 108,
@@ -230,9 +230,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 103,
@@ -268,9 +268,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 104,
@@ -312,9 +312,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 105,
@@ -356,9 +356,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 106,
@@ -394,9 +394,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 109,
@@ -426,9 +426,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 110,
@@ -458,9 +458,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 111,
@@ -490,9 +490,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 112,
@@ -522,9 +522,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 113,
@@ -554,9 +554,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 114,
@@ -579,9 +579,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "not_found",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 115,
@@ -604,9 +604,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "not_found",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 200,
@@ -695,9 +695,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 201,
@@ -872,12 +872,12 @@
       "play_version": "13.1.0",
       "play_installs": "10K+",
       "play_updated": "2026-11-02",
-      "play_rating": 3.8,
-      "play_rating_count": 111,
+      "play_rating": 3.7,
+      "play_rating_count": 110,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 202,
@@ -978,9 +978,9 @@
       "play_rating": 4.2,
       "play_rating_count": 82,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 203,
@@ -1057,9 +1057,9 @@
       "play_rating": 2.9,
       "play_rating_count": 58,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 204,
@@ -1279,9 +1279,9 @@
       "play_rating": 4.2,
       "play_rating_count": 97,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 205,
@@ -1447,9 +1447,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 206,
@@ -1533,9 +1533,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 207,
@@ -1624,9 +1624,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 208,
@@ -1750,9 +1750,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T01:23:36.082+09:00"
+      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
     },
     {
       "id": 209,
@@ -1773,7 +1773,7 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "not_found",
-      "play_checked_at": "2026-11-27T01:23:36.082+09:00",
+      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
       "fetch_status": "no_docs",
       "last_successful_fetch": null
     }
