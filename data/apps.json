@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-27T10:38:45.808+09:00",
+  "built_at": "2026-11-28T10:19:40.574+09:00",
   "stats": {
     "total": 25,
     "succeeded": 24,
@@ -106,9 +106,9 @@
       "play_rating": 3.7,
       "play_rating_count": 80,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 102,
@@ -156,9 +156,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 107,
@@ -193,9 +193,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 108,
@@ -230,9 +230,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 103,
@@ -268,9 +268,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 104,
@@ -312,9 +312,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 105,
@@ -356,9 +356,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 106,
@@ -394,9 +394,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 109,
@@ -426,9 +426,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 110,
@@ -458,9 +458,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 111,
@@ -490,9 +490,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 112,
@@ -522,9 +522,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 113,
@@ -554,9 +554,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 114,
@@ -573,15 +573,15 @@
       "latest_version": null,
       "latest_update_date": null,
       "latest_update_label": null,
-      "play_version": null,
-      "play_installs": null,
-      "play_updated": null,
+      "play_version": "1.0.0",
+      "play_installs": "0+",
+      "play_updated": "2026-11-20",
       "play_rating": null,
       "play_rating_count": null,
-      "play_status": "not_found",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_status": "ok",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 115,
@@ -604,9 +604,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "not_found",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 200,
@@ -695,9 +695,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 201,
@@ -875,9 +875,9 @@
       "play_rating": 3.7,
       "play_rating_count": 110,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 202,
@@ -978,9 +978,9 @@
       "play_rating": 4.2,
       "play_rating_count": 82,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 203,
@@ -1057,9 +1057,9 @@
       "play_rating": 2.9,
       "play_rating_count": 58,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 204,
@@ -1279,9 +1279,9 @@
       "play_rating": 4.2,
       "play_rating_count": 97,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 205,
@@ -1292,6 +1292,12 @@
       "repo": "msaltnet/watch-pomodoro-timer",
       "overview_html": "<h1>Watch Pomodoro Timer — Overview</h1>\n<p>Android 모바일 앱과 Wear OS 워치 앱을 함께 제공하는 포모도로 타이머입니다. 모바일과 워치 어느 쪽에서도 독립적으로 타이머를 실행할 수 있고, 기록은 두 기기에서 공유됩니다.</p>\n<p>현재 제품 지원·배포 범위는 Android phone과 Wear OS입니다. 저장소의 <code>ios/</code> 디렉터리는 현재 사용·빌드·배포하지 않는 iOS/watchOS 보관용 프로젝트이며 제품 범위에 포함되지 않습니다.</p>\n<h2>주요 기능</h2>\n<ul>\n<li><p><strong>루틴</strong> — 기존 사용자 설정을 보존한 편집 가능한 기본 루틴과 이름을 붙인 루틴 최대 5개를 제공합니다. 첫 화면과 설정 상단의 선택기는 하나의 목록에서 선택·추가·이름 변경·삭제를 제공합니다. 추가는 현재 선택값을 복사하고 이름만 입력한 뒤 저장을 누르면 새 루틴을 선택합니다. 이름 변경도 저장 버튼으로 확정하며 취소하면 변경을 버립니다. 편집 아이콘으로는 이름만 바꾸고 시간·세션 수는 설정 화면에서만 변경합니다. 선택 자체로 타이머를 시작하지 않습니다. 설정의 네 값은 선택 루틴에 자동 저장되고 선택은 중지 후에도 유지됩니다. 선택 이름과 네 값을 함께 Wear OS에 전달해 양쪽의 새 타이머 시작에 사용하며, 실행·일시정지한 타이머는 시작 당시 값을 유지합니다. Wear OS에는 선택 화면이 없습니다.</p>\n</li>\n<li><p><strong>포모도로 타이머</strong> — 작업/휴식/긴 휴식 3단계 루프. 세션 수와 각 단계 길이를 사용자 지정</p>\n</li>\n<li><p><strong>모바일 타이머</strong> — monotonic deadline을 포그라운드 ticker와 elapsed-realtime <code>AlarmManager</code>가 함께 감시하며, generation으로 중복 만료를 방지. Doze·프로세스 재생성·재부팅 복구 지원</p>\n</li>\n<li><p><strong>워치 독립 타이머</strong> — 모바일 없이 워치 단독 사용 가능</p>\n</li>\n<li><p><strong>홈 화면 위젯</strong> — 2x2 / 4x4 크기로 타이머 상태 확인 및 제어 (v7.0.0+)</p>\n</li>\n<li><p><strong>워치페이스 컴플리케이션</strong> — 오늘의 완료 세션 수를 워치페이스에 표시</p>\n</li>\n<li><p><strong>통계 대시보드</strong> — 일간/주간 집중 시간, 시간대별 패턴, 연속 기록, 월별 잔디 차트</p>\n</li>\n<li><p><strong>집중 라벨</strong> — 작업 세션을 업무·공부·프로젝트 등 하나의 라벨로 기록하고 기록 카드에 표시</p>\n</li>\n<li><p><strong>동기 부여 인용구</strong> — 타이머 시작 시 짧은 인용구 (v5.0.0+)</p>\n</li>\n<li><p><strong>온보딩</strong> — 첫 실행 시 가이드</p>\n</li>\n</ul>\n",
       "updates": [
+        {
+          "version": "v11.0.0",
+          "date": "2026-11-27",
+          "label": null,
+          "items_html": "<ul>\n<li>휴대폰 앱에서 이름을 붙인 루틴이 저장되지 않던 문제를 수정했습니다.</li>\n<li>Android 12/12L 휴대폰에서 화면이 꺼져 있어도 타이머 완료 알림이 제때 울리도록 개선했습니다.</li>\n<li>광고 제거 구매의 확인·복원을 개선했습니다. 결제 대기 중에는 적용되지 않고, 환불된 구매는 해제됩니다.</li>\n<li>워치가 꺼진 동안 타이머 시간이 지나면 다시 켰을 때 같은 단계의 처음부터 준비 상태로 표시됩니다.</li>\n<li>워치 타이머 진행 알림이 매분 갱신될 때 소리·진동이 반복되지 않고, 앱 화면을 연 동안 진행 알림이 다시 게시되어 남는 일이 없도록 개선했습니다.</li>\n</ul>\n"
+        },
         {
           "version": "v10.6.0",
           "date": "2026-11-06",
@@ -1437,8 +1443,8 @@
           "items_html": "<ul>\n<li>첫 릴리스</li>\n</ul>\n"
         }
       ],
-      "latest_version": "v10.6.0",
-      "latest_update_date": "2026-11-06",
+      "latest_version": "v11.0.0",
+      "latest_update_date": "2026-11-27",
       "latest_update_label": null,
       "icon_url": "https://watch-go.com/205/icon.png",
       "play_version": "10.6.0",
@@ -1447,9 +1453,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 206,
@@ -1533,9 +1539,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 207,
@@ -1624,9 +1630,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 208,
@@ -1750,9 +1756,9 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "ok",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "ok",
-      "last_successful_fetch": "2026-11-27T10:38:45.808+09:00"
+      "last_successful_fetch": "2026-11-28T10:19:40.574+09:00"
     },
     {
       "id": 209,
@@ -1773,7 +1779,7 @@
       "play_rating": null,
       "play_rating_count": null,
       "play_status": "not_found",
-      "play_checked_at": "2026-11-27T10:38:45.808+09:00",
+      "play_checked_at": "2026-11-28T10:19:40.574+09:00",
       "fetch_status": "no_docs",
       "last_successful_fetch": null
     }
